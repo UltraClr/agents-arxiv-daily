@@ -1,4 +1,4 @@
-## Updated on 2025.09.30
+## Updated on 2025.10.01
 > Usage instructions: [here](./docs/README.md#usage)
 
 <details>
@@ -84,7 +84,7 @@
 |**2025-07-09**|**Gradientsys: A Multi-Agent LLM Scheduler with ReAct Orchestration**|Xinyuan Song et.al.|[2507.06520](http://arxiv.org/abs/2507.06520)|null|
 |**2025-07-10**|**Agent KB: Leveraging Cross-Domain Experience for Agentic Problem Solving**|Xiangru Tang et.al.|[2507.06229](http://arxiv.org/abs/2507.06229)|null|
 
-<p align=right>(<a href=#updated-on-20250930>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20251001>back to top</a>)</p>
 
 ## Multi-Agent
 
@@ -113,7 +113,7 @@
 |**2025-06-29**|**Automated Vehicles Should be Connected with Natural Language**|Xiangbo Gao et.al.|[2507.01059](http://arxiv.org/abs/2507.01059)|null|
 |**2025-07-07**|**Embodied AI Agents: Modeling the World**|Pascale Fung et.al.|[2506.22355](http://arxiv.org/abs/2506.22355)|null|
 
-<p align=right>(<a href=#updated-on-20250930>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20251001>back to top</a>)</p>
 
 ## RL
 
@@ -137,7 +137,7 @@
 |**2024-12-15**|**Partial Identifiability in Inverse Reinforcement Learning For Agents With Non-Exponential Discounting**|Joar Skalse et.al.|[2412.11155](http://arxiv.org/abs/2412.11155)|null|
 |**2011-06-30**|**Reinforcement Learning for Agents with Many Sensors and Actuators Acting in Categorizable Environments**|E. Celaya et.al.|[1107.0048](http://arxiv.org/abs/1107.0048)|null|
 
-<p align=right>(<a href=#updated-on-20250930>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20251001>back to top</a>)</p>
 
 [contributors-shield]: https://img.shields.io/github/contributors/Vincentqyw/cv-arxiv-daily.svg?style=for-the-badge
 [contributors-url]: https://github.com/Vincentqyw/cv-arxiv-daily/graphs/contributors
