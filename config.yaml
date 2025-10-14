@@ -1,0 +1,29 @@
+# TODO: add papers by configuration file
+base_url: "https://arxiv.paperswithcode.com/api/v0/papers/"
+user_name: "ultraclr"
+repo_name: "agent-arxiv-daily"
+show_authors: True
+show_links: True
+show_badge: True
+max_results: 10
+
+publish_readme: True
+publish_gitpage: True
+publish_wechat: True
+
+# file paths
+black_list_path: 'blacklists.txt'
+recent_trend_path: './pdf_analysis/recent_trends.txt'
+json_readme_path: './docs/agent-arxiv-daily.json'
+json_gitpage_path: './docs/agent-arxiv-daily-web.json'
+json_wechat_path: './docs/agent-arxiv-daily-wechat.json'
+
+md_readme_path: 'README.md'
+claudeai_path: 'analysis_by_ai.md'
+md_gitpage_path: './docs/index.md'
+md_wechat_path: './docs/wechat.md'
+
+# keywords to search
+keywords:
+    "Agent": 
+        filters: ["Agent","Multi-Agent","Tool Learning","Agent RL","Autonomous Agent","LLM Agent"]
