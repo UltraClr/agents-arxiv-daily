@@ -183,28 +183,73 @@ def update_paper_links(filename):
     def parse_arxiv_string(s):
         # 转为字符串防御 None
         s = str(s).strip()
-        if not s or '|' not in s:
-            logging.warning(f"⚠️ Empty or invalid arxiv string: {s}")
-            # 返回安全的空占位
-            return "N/A", "N/A", "N/A", "N/A", "null"
+        if not s:
+            logging.warning(f"⚠️ Empty arxiv string")
+            return None, "N/A", "N/A", "N/A", "N/A", "null"
 
-        parts = s.split("|")
-        # 确保有足够的字段，否则补齐
-        while len(parts) < 6:
-            parts.append("N/A")
+        # 检测格式类型
+        is_table_format = s.startswith("|")
+        is_list_format = s.startswith("- ")
+
+        if not is_table_format and not is_list_format:
+            logging.warning(f"⚠️ Unknown format: {s[:50]}...")
+            return None, "N/A", "N/A", "N/A", "N/A", "null"
 
         try:
-            date = parts[1].strip()
-            title = parts[2].strip()
-            authors = parts[3].strip()
-            arxiv_id = parts[4].strip()
-            code = parts[5].strip()
-            arxiv_id = re.sub(r'v\d+', '', arxiv_id)
-        except Exception as e:
-            logging.error(f"parse_arxiv_string error on {s}: {e}")
-            return "N/A", "N/A", "N/A", "N/A", "null"
+            if is_table_format:
+                # 表格格式: |**date**|**title**|author|[id](url)|code|
+                parts = s.split("|")
+                while len(parts) < 6:
+                    parts.append("N/A")
 
-        return date, title, authors, arxiv_id, code
+                date = parts[1].strip()
+                title = parts[2].strip()
+                authors = parts[3].strip()
+                arxiv_id = parts[4].strip()
+                code = parts[5].strip()
+                arxiv_id = re.sub(r'v\d+', '', arxiv_id)
+                return 'table', date, title, authors, arxiv_id, code
+
+            else:  # is_list_format
+                # 列表格式: - date, **title**, author et.al., Paper: [url](url)[, Code: **[url](url)**]
+                # 使用正则表达式精确解析，避免标题中的逗号干扰
+                pattern = r'^-\s+([^,]+),\s+(\*\*.*?\*\*),\s+(.+?),\s+Paper:\s+\[([^\]]+)\]\(([^\)]+)\)(.*)'
+                match = re.match(pattern, s)
+
+                if not match:
+                    logging.warning(f"⚠️ Invalid list format: {s[:100]}...")
+                    return 'list', "N/A", "N/A", "N/A", "N/A", "null"
+
+                date = match.group(1).strip()
+                title = match.group(2).strip()
+                authors = match.group(3).strip()
+                paper_url = match.group(5).strip()
+                rest = match.group(6).strip() if match.group(6) else ""
+
+                # 提取 arxiv_id 从 Paper URL
+                arxiv_match = re.search(r'arxiv\.org/abs/([^\s\)]+)', paper_url)
+                if arxiv_match:
+                    arxiv_id = arxiv_match.group(1)
+                else:
+                    arxiv_id = "N/A"
+
+                # 检查是否有 Code 链接
+                if "Code:" in rest:
+                    code_match = re.search(r'Code:\s+\*\*\[([^\]]+)\]\(([^\)]+)\)\*\*', rest)
+                    if code_match:
+                        code = f"**[link]({code_match.group(2)})**"
+                    else:
+                        code = "null"
+                else:
+                    code = "null"
+
+                return 'list', date, title, authors, f"[{arxiv_id}](http://arxiv.org/abs/{arxiv_id})", code
+
+        except Exception as e:
+            logging.error(f"parse_arxiv_string error on {s[:100]}: {e}")
+            import traceback
+            traceback.print_exc()
+            return None, "N/A", "N/A", "N/A", "N/A", "null"
 
     with open(filename,"r") as f:
         content = f.read()
@@ -220,13 +265,43 @@ def update_paper_links(filename):
             for paper_id,contents in v.items():
                 contents = str(contents)
 
-                update_time, paper_title, paper_first_author, paper_url, code_url = parse_arxiv_string(contents)
+                format_type, update_time, paper_title, paper_first_author, paper_url, code_url = parse_arxiv_string(contents)
 
-                contents = "|{}|{}|{}|{}|{}|\n".format(update_time,paper_title,paper_first_author,paper_url,code_url)
+                if format_type is None:
+                    logging.warning(f"Skipping paper_id={paper_id} due to parse error")
+                    continue
+
+                # 根据原始格式重新格式化
+                if format_type == 'table':
+                    contents = "|{}|{}|{}|{}|{}|\n".format(update_time,paper_title,paper_first_author,paper_url,code_url)
+                    valid_link = False if '|null|' in contents else True
+                else:  # list format
+                    # 提取纯 URL 用于 Paper 链接
+                    arxiv_id_match = re.search(r'\[([^\]]+)\]\(([^\)]+)\)', paper_url)
+                    if arxiv_id_match:
+                        url = arxiv_id_match.group(2)
+                    else:
+                        url = paper_url
+
+                    if code_url != "null" and code_url != "N/A":
+                        # 有代码链接
+                        code_match = re.search(r'\[link\]\(([^\)]+)\)', code_url)
+                        if code_match:
+                            code_link = code_match.group(1)
+                            contents = "- {}, {}, {}, Paper: [{}]({}), Code: **[{}]({})**\n".format(
+                                update_time, paper_title, paper_first_author, url, url, code_link, code_link)
+                        else:
+                            contents = "- {}, {}, {}, Paper: [{}]({})\n".format(
+                                update_time, paper_title, paper_first_author, url, url)
+                    else:
+                        # 没有代码链接
+                        contents = "- {}, {}, {}, Paper: [{}]({})\n".format(
+                            update_time, paper_title, paper_first_author, url, url)
+                    valid_link = False if code_url == "null" else True
+
                 json_data[keywords][paper_id] = str(contents)
-                logging.info(f'paper_id = {paper_id}, contents = {contents}')
-                
-                valid_link = False if '|null|' in contents else True
+                logging.info(f'paper_id = {paper_id}, format = {format_type}, contents = {contents[:100]}...')
+
                 if valid_link:
                     continue
                 try:
@@ -237,7 +312,10 @@ def update_paper_links(filename):
                     # if "official" in r and r["official"]:
                     #     repo_url = r["official"]["url"]
                     #     if repo_url is not None:
-                    #         new_cont = contents.replace('|null|',f'|**[link]({repo_url})**|')
+                    #         if format_type == 'table':
+                    #             new_cont = contents.replace('|null|',f'|**[link]({repo_url})**|')
+                    #         else:  # list format
+                    #             new_cont = contents.replace('\n', f', Code: **[{repo_url}]({repo_url})**\n')
                     #         logging.info(f'ID = {paper_id}, contents = {new_cont}')
                     #         json_data[keywords][paper_id] = str(new_cont)
 
