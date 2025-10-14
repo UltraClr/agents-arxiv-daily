@@ -181,14 +181,30 @@ def update_paper_links(filename):
     weekly update paper links in json file 
     '''
     def parse_arxiv_string(s):
+        # 转为字符串防御 None
+        s = str(s).strip()
+        if not s or '|' not in s:
+            logging.warning(f"⚠️ Empty or invalid arxiv string: {s}")
+            # 返回安全的空占位
+            return "N/A", "N/A", "N/A", "N/A", "null"
+
         parts = s.split("|")
-        date = parts[1].strip()
-        title = parts[2].strip()
-        authors = parts[3].strip()
-        arxiv_id = parts[4].strip()
-        code = parts[5].strip()
-        arxiv_id = re.sub(r'v\d+', '', arxiv_id)
-        return date,title,authors,arxiv_id,code
+        # 确保有足够的字段，否则补齐
+        while len(parts) < 6:
+            parts.append("N/A")
+
+        try:
+            date = parts[1].strip()
+            title = parts[2].strip()
+            authors = parts[3].strip()
+            arxiv_id = parts[4].strip()
+            code = parts[5].strip()
+            arxiv_id = re.sub(r'v\d+', '', arxiv_id)
+        except Exception as e:
+            logging.error(f"parse_arxiv_string error on {s}: {e}")
+            return "N/A", "N/A", "N/A", "N/A", "null"
+
+        return date, title, authors, arxiv_id, code
 
     with open(filename,"r") as f:
         content = f.read()
