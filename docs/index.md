@@ -4,11 +4,24 @@ layout: default
 
 # Agent Research Papers
 ### Automatically Updated on 2025.10.15
+Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Autonomous Agent`,`LLM Agent`
+
+> If you have any other keywords, please feel free to let us know :) 
+
+ 
+
+[Web Page](https://ultraclr.github.io/agent-arxiv-daily/) ([Scrape Code](https://github.com/ultraclr/agent-arxiv-daily)) 
+
 ## Agent
 
 | Publish Date | Title | Authors | PDF | Code |
 |:---------|:-----------------------|:---------|:------|:------|
+|**2025-10-14**|**ERA: Transforming VLMs into Embodied Agents via Embodied Prior Learning and Online Reinforcement Learning**|Hanyang Chen et.al.|[2510.12693](http://arxiv.org/abs/2510.12693)|null|
+|**2025-10-14**|**GOAT: A Training Framework for Goal-Oriented Agent with Tools**|Hyunji Min et.al.|[2510.12218](http://arxiv.org/abs/2510.12218)|null|
+|**2025-10-14**|**Agent-Based Simulation of a Financial Market with Large Language Models**|Ryuji Hashimoto et.al.|[2510.12189](http://arxiv.org/abs/2510.12189)|null|
+|**2025-10-14**|**Empowering LLM Agents with Geospatial Awareness: Toward Grounded Reasoning for Wildfire Response**|Yiheng Chen et.al.|[2510.12061](http://arxiv.org/abs/2510.12061)|null|
 |**2025-10-14**|**Stronger Together: On-Policy Reinforcement Learning for Collaborative LLMs**|Yujie Zhao et.al.|[2510.11062](http://arxiv.org/abs/2510.11062)|null|
+|**2025-10-13**|**Scaling Long-Horizon LLM Agent via Context-Folding**|Weiwei Sun et.al.|[2510.11967](http://arxiv.org/abs/2510.11967)|null|
 |**2025-10-13**|**Demystifying Reinforcement Learning in Agentic Reasoning**|Zhaochen Yu et.al.|[2510.11701](http://arxiv.org/abs/2510.11701)|null|
 |**2025-10-13**|**When Agents Trade: Live Multi-Market Trading Benchmark for LLM Agents**|Lingfei Qian et.al.|[2510.11695](http://arxiv.org/abs/2510.11695)|null|
 |**2025-10-13**|**Analyzing and Internalizing Complex Policy Documents for LLM Agents**|Jiateng Liu et.al.|[2510.11588](http://arxiv.org/abs/2510.11588)|null|
@@ -18,6 +31,7 @@ layout: default
 |**2025-10-13**|**A Survey on Agentic Multimodal Large Language Models**|Huanjin Yao et.al.|[2510.10991](http://arxiv.org/abs/2510.10991)|null|
 |**2025-10-13**|**Rethinking Reward Miscalibration of GRPO in Agentic RL**|Jingyu Liu et.al.|[2509.23870](http://arxiv.org/abs/2509.23870)|null|
 |**2025-10-13**|**EvoEmo: Towards Evolved Emotional Policies for Adversarial LLM Agents in Multi-Turn Price Negotiation**|Yunbo Long et.al.|[2509.04310](http://arxiv.org/abs/2509.04310)|null|
+|**2025-10-12**|**Zero-Shot Large Language Model Agents for Fully Automated Radiotherapy Treatment Planning**|Dongrong Yang et.al.|[2510.11754](http://arxiv.org/abs/2510.11754)|null|
 |**2025-10-12**|**GraphTracer: Graph-Guided Failure Tracing in LLM Agents for Robust Multi-Turn Deep Search**|Heng Zhang et.al.|[2510.10581](http://arxiv.org/abs/2510.10581)|null|
 |**2025-10-12**|**MedCoAct: Confidence-Aware Multi-Agent Collaboration for Complete Clinical Decision**|Hongjie Zheng et.al.|[2510.10461](http://arxiv.org/abs/2510.10461)|null|
 |**2025-10-12**|**Retro*: Optimizing LLMs for Reasoning-Intensive Document Retrieval**|Junwei Lan et.al.|[2509.24869](http://arxiv.org/abs/2509.24869)|null|
