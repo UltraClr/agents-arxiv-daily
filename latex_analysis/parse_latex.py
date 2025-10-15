@@ -276,11 +276,12 @@ class LaTeXParser:
 
         return authors[:20], affiliations[:10]  # Limit to first 20 authors and 10 affiliations
 
-    def parse(self, arxiv_id=None, title=None):
+    def parse(self, arxiv_id=None, title=None, publish_date=None):
         """
         Main parsing function - extract only basic, reliable information
         @param arxiv_id: arXiv ID (if not provided, use directory name)
         @param title: Paper title from arXiv metadata (if not provided, extract from LaTeX)
+        @param publish_date: Paper publish date from arXiv metadata
         """
         if not self.load_content():
             return None
@@ -303,6 +304,7 @@ class LaTeXParser:
         result = {
             'arxiv_id': arxiv_id,
             'title': title,  # From arXiv metadata (preferred) or LaTeX (fallback)
+            'publish_date': publish_date,  # From arXiv metadata
             'authors': authors,
             'affiliations': affiliations,
             'urls': urls,
@@ -347,7 +349,7 @@ def load_arxiv_metadata(json_path):
     """
     Load arXiv metadata from JSON file
     @param json_path: Path to arXiv JSON file
-    @return: Dict mapping arxiv_id -> {title, ...}
+    @return: Dict mapping arxiv_id -> {title, publish_date, ...}
     """
     metadata = {}
     try:
@@ -357,11 +359,17 @@ def load_arxiv_metadata(json_path):
         # Parse all papers from all categories
         for papers in data.values():
             for arxiv_id, row in papers.items():
-                # Parse markdown table row: |date|title|authors|link|code|
+                # Parse markdown table row: |**date**|**title**|authors|link|code|
                 parts = row.split('|')
                 if len(parts) >= 3:
+                    # Extract date from |**2025-10-13**|
+                    date_str = parts[1].replace('**', '').strip()
+                    # Extract title from |**Title**|
                     title = parts[2].replace('**', '').strip()
-                    metadata[arxiv_id] = {'title': title}
+                    metadata[arxiv_id] = {
+                        'title': title,
+                        'publish_date': date_str
+                    }
     except Exception as e:
         logging.warning(f'Failed to load arXiv metadata: {e}')
 
@@ -407,12 +415,13 @@ def parse_all_papers(latex_dir, saved_path, arxiv_json_path='../docs/agent-arxiv
             failed += 1
             continue
 
-        # Get title from arXiv metadata
+        # Get title and publish_date from arXiv metadata
         title = arxiv_metadata.get(arxiv_id, {}).get('title')
+        publish_date = arxiv_metadata.get(arxiv_id, {}).get('publish_date')
 
         # Parse the LaTeX file
         parser = LaTeXParser(main_tex)
-        result = parser.parse(arxiv_id=arxiv_id, title=title)
+        result = parser.parse(arxiv_id=arxiv_id, title=title, publish_date=publish_date)
 
         if result:
             # Save to JSON

@@ -111,6 +111,9 @@ def analyze_paper(parsed_json_path, api_client, output_dir, arxiv_json_path='../
     if not title:
         title = parsed_data.get('title', f'Paper {arxiv_id}')
 
+    # Get publish_date from parsed data (added by parse_latex.py)
+    publish_date = parsed_data.get('publish_date')
+
     # Create prompt
     prompt = create_analysis_prompt(parsed_data)
 
@@ -132,10 +135,11 @@ def analyze_paper(parsed_json_path, api_client, output_dir, arxiv_json_path='../
             else:
                 analysis_json = json.loads(response)
 
-            # Build final result with arxiv_id and title (from arXiv JSON)
+            # Build final result with arxiv_id, title, and publish_date
             result = {
                 'arxiv_id': arxiv_id,
                 'title': title,
+                'publish_date': publish_date,
                 'metadata': analysis_json.get('metadata', {}),
                 'analysis': analysis_json.get('analysis', {})
             }
@@ -145,6 +149,7 @@ def analyze_paper(parsed_json_path, api_client, output_dir, arxiv_json_path='../
             result = {
                 'arxiv_id': arxiv_id,
                 'title': title,
+                'publish_date': publish_date,
                 'metadata': {
                     'authors': parsed_data.get('authors', []),
                     'affiliations': parsed_data.get('affiliations', []),
