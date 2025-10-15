@@ -419,11 +419,11 @@ def json_to_md(filename,
             f.write("> Updated on " + DateNow + "\n")
 
         # TODO: add usage
-        # f.write("Current Search Keywords: `Talking Face`, `Talking Head`, `Visual Dubbing`, `Face Genertation`, `Lip Sync`, `Talker`, `Portrait`, `Talking Video`, `Head Synthesis`, `Face Reenactment`, `Wav2Lip`, `Talking Avatar`, `Lip Generation`, `Lip-Synchronization`, `Portrait Animation`, `Facial Animation`, `Lip Expert`\n\n")
-        # f.write("> If you have any other keywords, please feel free to let us know :) \n\n")
-        # # AI analysis removed
-        # f.write(" \n\n")
-        # f.write("[Web Page](https://ultraclr.github.io/agent-arxiv-daily/) ([Scrape Code](https://github.com/ultraclr/agent-arxiv-daily)) \n\n")
+        f.write("Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Autonomous Agent`,`LLM Agent`\n\n")
+        f.write("> If you have any other keywords, please feel free to let us know :) \n\n")
+        # AI analysis removed
+        f.write(" \n\n")
+        f.write("[Web Page](https://ultraclr.github.io/agent-arxiv-daily/) ([Scrape Code](https://github.com/ultraclr/agent-arxiv-daily)) \n\n")
         
         #Add: table of contents
         if use_tc == True:
