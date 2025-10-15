@@ -234,14 +234,15 @@ def analyze_all_papers(parsed_content_path, saved_path, api='openai', arxiv_json
             logging.info(f'{arxiv_id}: Analysis complete and saved to {category}')
             successful += 1
 
+            # Add delay to avoid rate limits
+            import time
+            logging.info('Waiting 10 seconds before next paper...')
+            time.sleep(10)
+
         except Exception as e:
             logging.error(f'{arxiv_id}: API call failed - {e}')
             failed += 1
             continue
-
-        # Optional: add delay to avoid rate limits
-        # import time
-        # time.sleep(1)
 
     logging.info(f'Analysis complete: {successful} new, {skipped} skipped, {failed} failed')
     logging.info(f'Total papers in analysis file: {sum(len(papers) for papers in analysis_data.values())}')
