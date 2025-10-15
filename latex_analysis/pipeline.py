@@ -25,10 +25,10 @@ def run_latex_analysis_pipeline(args):
     output_dir = args.output_dir
     raw_latex_dir = os.path.join(output_dir, 'raw_latex')
     parsed_content_dir = os.path.join(output_dir, 'parsed_content')
-    llm_analysis_dir = os.path.join(output_dir, 'llm_analysis')
+    llm_analysis_path = '../docs/agent-arxiv-daily-analysis.json'  # Changed from dir to file path
 
     # Create directories
-    for directory in [raw_latex_dir, parsed_content_dir, llm_analysis_dir]:
+    for directory in [raw_latex_dir, parsed_content_dir]:
         os.makedirs(directory, exist_ok=True)
 
     success_count = 0
@@ -91,7 +91,7 @@ def run_latex_analysis_pipeline(args):
             try:
                 if analyze_all_papers(
                     parsed_content_path=parsed_content_dir,
-                    saved_path=llm_analysis_dir,
+                    saved_path=llm_analysis_path,
                     api=args.api,
                     arxiv_json_path=args.json_path
                 ):

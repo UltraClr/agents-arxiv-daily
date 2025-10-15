@@ -28,11 +28,62 @@ def load_old_trends(trends_path):
     return None
 
 
-def analysis(paper_num, analysis_prefix, saved_path, api_key, base_url):
+def convert_analysis_to_text(analysis_data):
+    """
+    Convert analysis JSON to formatted text for LLM input
+    @param analysis_data: Dict with arxiv_id, title, publish_date, metadata, analysis
+    @return: Formatted text string
+    """
+    text = f"## Paper: {analysis_data.get('title', 'Unknown Title')}\n"
+    text += f"ArXiv ID: {analysis_data.get('arxiv_id', 'Unknown')}\n"
+
+    publish_date = analysis_data.get('publish_date')
+    if publish_date:
+        text += f"Published: {publish_date}\n"
+
+    text += "\n### Authors and Affiliations\n"
+    authors = analysis_data.get('metadata', {}).get('authors', [])
+    if authors:
+        text += f"Authors: {', '.join(authors[:5])}"  # First 5 authors
+        if len(authors) > 5:
+            text += " et al."
+        text += "\n"
+
+    affiliations = analysis_data.get('metadata', {}).get('affiliations', [])
+    if affiliations:
+        text += f"Affiliations: {', '.join(affiliations[:3])}\n"  # First 3 affiliations
+
+    # Add analysis content
+    analysis = analysis_data.get('analysis', {})
+
+    if 'core_innovation' in analysis:
+        text += f"\n### Core Innovation\n{analysis['core_innovation']}\n"
+
+    if 'method_explanation' in analysis:
+        text += f"\n### Method\n{analysis['method_explanation']}\n"
+
+    if 'experimental_validation' in analysis:
+        text += f"\n### Experimental Results\n{analysis['experimental_validation']}\n"
+
+    if 'limitations' in analysis:
+        text += f"\n### Limitations\n{analysis['limitations']}\n"
+
+    if 'future_directions' in analysis:
+        text += f"\n### Future Directions\n{analysis['future_directions']}\n"
+
+    # Handle fallback case (raw_text)
+    if 'raw_text' in analysis:
+        text += f"\n### Analysis\n{analysis['raw_text']}\n"
+
+    text += "\n" + "="*80 + "\n\n"
+    return text
+
+
+def analysis(paper_num, analysis_json_path, saved_path, api_key, base_url):
     """
     Analyze recent research trends from analyzed papers
     @param paper_num: Number of recent papers to analyze
-    @param analysis_prefix: Directory containing llm_analysis JSON files
+    @param analysis_json_path: Path to consolidated analysis JSON file (agent-arxiv-daily-analysis.json)
     @param saved_path: Path to save trends.txt
     @param api_key: API key for OpenAI-compatible API
     @param base_url: Base URL for API
@@ -47,37 +98,52 @@ def analysis(paper_num, analysis_prefix, saved_path, api_key, base_url):
     # Load old trends if exists
     old_trends = load_old_trends(saved_path)
 
-    # Get list of analysis files and sort in reverse order (newest first)
-    analysis_files = [f for f in os.listdir(analysis_prefix) if f.endswith('.json')]
-    analysis_files.sort(reverse=True)
-
-    if len(analysis_files) == 0:
-        logging.error('No analysis files found')
+    # Load consolidated analysis JSON file
+    if not os.path.exists(analysis_json_path):
+        logging.error(f'Analysis file not found: {analysis_json_path}')
         return False
 
+    try:
+        with open(analysis_json_path, 'r', encoding='utf-8') as f:
+            analysis_data = json.load(f)
+    except Exception as e:
+        logging.error(f'Failed to load analysis file: {e}')
+        return False
+
+    # Collect all papers from all categories
+    all_papers = []
+    for category, papers in analysis_data.items():
+        for arxiv_id, paper_data in papers.items():
+            all_papers.append(paper_data)
+
+    if len(all_papers) == 0:
+        logging.error('No papers found in analysis file')
+        return False
+
+    # Sort by publish_date (newest first), then by arxiv_id
+    all_papers.sort(key=lambda p: (p.get('publish_date', ''), p.get('arxiv_id', '')), reverse=True)
+
     # Select top N papers
-    selected_files = analysis_files[:paper_num]
-    logging.info(f'Analyzing trends from {len(selected_files)} papers')
+    selected_papers = all_papers[:paper_num]
+    logging.info(f'Analyzing trends from {len(selected_papers)} papers (out of {len(all_papers)} total)')
 
-    # Load and convert papers to text
+    # Convert papers to text
     papers_text = []
-    for filename in tqdm(selected_files, desc='Loading papers'):
-        filepath = os.path.join(analysis_prefix, filename)
+    for paper_data in tqdm(selected_papers, desc='Processing papers'):
         try:
-            with open(filepath, 'r', encoding='utf-8') as f:
-                analysis_data = json.load(f)
-
-            papers_text.append(analysis_data)
+            paper_text = convert_analysis_to_text(paper_data)
+            papers_text.append(paper_text)
         except Exception as e:
-            logging.warning(f'Failed to load {filename}: {e}')
+            arxiv_id = paper_data.get('arxiv_id', 'unknown')
+            logging.warning(f'Failed to convert {arxiv_id}: {e}')
             continue
 
     if len(papers_text) == 0:
-        logging.error('No papers loaded successfully')
+        logging.error('No papers processed successfully')
         return False
 
     # Combine all papers
-    all_papers_text = papers_text
+    all_papers_text = "\n".join(papers_text)
 
     # Create prompt
     if old_trends:
@@ -93,11 +159,29 @@ def analysis(paper_num, analysis_prefix, saved_path, api_key, base_url):
 
 ## Task:
 
-Based on the previous trend analysis and the collection of academic papers, please identify the top five most prominent keywords on recent trends.
-Then summarize them in detail. Focus on synthesizing key themes, methodologies, findings, and any shifts in perspective or new areas of inquiry that these papers collectively highlight.
-The summary should identify interconnectedness amongst the papers and indicate the direction in which the field of study is moving.
-This overview should serve as an insightful guide for researchers seeking to understand the cutting-edge developments and the future trajectory of research within this discipline. 
-The output format: '<b>keyword<b>': 'detailed content'."""
+Based on the previous trend analysis and these new papers, please update the research trend summary. Your task is to:
+
+1. Identify if the trends mentioned in the previous analysis are continuing, strengthening, or fading
+2. Identify any NEW emerging trends from the recent papers
+3. Synthesize the top 5 most important keywords/trends that define the current research direction
+4. For each trend, provide detailed analysis covering:
+   - Key themes and methodologies
+   - Important findings and breakthroughs
+   - Connections between different papers
+   - Future trajectory of the research area
+
+## Output Format:
+
+For each of the top 5 trends, use this format:
+<b>Trend Keyword</b>: Detailed analysis (2-3 paragraphs) covering the points above.
+
+Focus on:
+- Technical accuracy
+- Identifying patterns across papers
+- Understanding how the field is evolving
+- Highlighting the most impactful research directions
+
+Note: Papers are ordered by publication date (newest first). Consider the temporal aspect when analyzing trends."""
 
     else:
         prompt = f"""You are analyzing research trends in AI/ML based on recent academic papers.
@@ -108,11 +192,25 @@ The output format: '<b>keyword<b>': 'detailed content'."""
 
 ## Task:
 
-Based on the collection of academic papers, please identify the top five most prominent keywords on recent trends.
-Then summarize them in detail. Focus on synthesizing key themes, methodologies, findings, and any shifts in perspective or new areas of inquiry that these papers collectively highlight.
-The summary should identify interconnectedness amongst the papers and indicate the direction in which the field of study is moving.
-This overview should serve as an insightful guide for researchers seeking to understand the cutting-edge developments and the future trajectory of research within this discipline. 
-The output format: '<b>keyword<b>': 'detailed content'."""
+Based on these papers, identify the top 5 most prominent keywords/trends in recent research. For each trend, provide detailed analysis covering:
+
+1. Key themes and methodologies
+2. Important findings and breakthroughs
+3. Connections and patterns across papers
+4. Future trajectory of the research area
+
+## Output Format:
+
+For each of the top 5 trends, use this format:
+<b>Trend Keyword</b>: Detailed analysis (2-3 paragraphs) covering the points above.
+
+Focus on:
+- Technical accuracy
+- Identifying patterns across papers
+- Understanding cutting-edge developments
+- Highlighting the most impactful research directions
+
+Note: Papers are ordered by publication date (newest first)."""
 
     # Send to LLM
     logging.info('Sending request to LLM for trend analysis...')
@@ -144,11 +242,11 @@ if __name__ == '__main__':
     # Define arguments
     parser.add_argument('--paper_num', type=int, default=10,
                         help='Number of recent papers to analyze')
-    parser.add_argument('--analysis_prefix', type=str,
-                        default='./results/llm_analysis',
-                        help='Directory containing llm_analysis JSON files')
+    parser.add_argument('--analysis_json_path', type=str,
+                        default='../docs/agent-arxiv-daily-analysis.json',
+                        help='Path to consolidated analysis JSON file')
     parser.add_argument('--saved_path', type=str,
-                        default='./results/trends.txt',
+                        default='../docs/trends.txt',
                         help='Path to save trends analysis (will overwrite)')
     parser.add_argument('--api_key', type=str,
                         default=None,
@@ -174,7 +272,7 @@ if __name__ == '__main__':
     # Call analysis function
     success = analysis(
         args.paper_num,
-        args.analysis_prefix,
+        args.analysis_json_path,
         args.saved_path,
         api_key,
         base_url
