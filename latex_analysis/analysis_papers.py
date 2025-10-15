@@ -37,11 +37,15 @@ Please provide a comprehensive analysis in the following JSON format:
     }}
   }},
   "analysis": {{
-    "core_innovation": "What is the main technical contribution? What makes this approach novel?",
-    "method_explanation": "Explain the proposed method in simple, clear terms. What problem does it solve and how?",
-    "experimental_validation": "Summarize the experimental setup and key findings. What do the results demonstrate?",
-    "limitations": "What are the potential limitations or weaknesses of this approach?",
-    "future_directions": "What future research directions does this work suggest?"
+    "summary": "Provide a concise overview of the paper in 2–3 sentences, highlighting its main objective, approach, and findings.",
+    "research_question": "What is the primary research question or objective of the paper?",
+    "hypothesis": "What is the hypothesis or theses put forward by the authors?",
+    "methodology": "What methodology does the paper employ? Briefly describe the study design, data sources, and analysis techniques.",
+    "key_findings": "What are the key findings or results of the research?",
+    "interpretation": "How do the authors interpret these findings in the context of the existing literature on the topic?",
+    "conclusions": "What conclusions are drawn from the research?",
+    "limitations": "Can you identify any limitations of the study mentioned by the authors?",
+    "future_research": "What future research directions do the authors suggest?"
   }}
 }}
 

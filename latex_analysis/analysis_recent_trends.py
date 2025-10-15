@@ -147,70 +147,49 @@ def analysis(paper_num, analysis_json_path, saved_path, api_key, base_url):
 
     # Create prompt
     if old_trends:
-        prompt = f"""You are analyzing research trends in AI/ML based on recent papers and previous trend analysis.
+        prompt = f"""Analyze research trends in Agent based on previous analysis and new papers.
 
-## Previous Trend Analysis:
-
+## Previous Trends:
 {old_trends}
 
-## New Papers to Analyze:
-
+## New Papers:
 {all_papers_text}
 
 ## Task:
-
-Based on the previous trend analysis and these new papers, please update the research trend summary. Your task is to:
-
-1. Identify if the trends mentioned in the previous analysis are continuing, strengthening, or fading
-2. Identify any NEW emerging trends from the recent papers
-3. Synthesize the top 5 most important keywords/trends that define the current research direction
-4. For each trend, provide detailed analysis covering:
-   - Key themes and methodologies
-   - Important findings and breakthroughs
-   - Connections between different papers
-   - Future trajectory of the research area
+Identify the top five most prominent keywords on recent trends. Then summarize them in detail.
+Focus on synthesizing key themes, methodologies, findings, and any shifts in perspective or new areas of inquiry that these papers collectively highlight.
+The summary should identify interconnectedness amongst the papers and indicate the direction in which the field of study is moving.
+This overview should serve as an insightful guide for researchers seeking to understand the cutting-edge developments and the future trajectory of research within this discipline.
 
 ## Output Format:
+1. <b>Trend Keyword 1</b>
+2. <b>Trend Keyword 2</b>
+3. <b>Trend Keyword 3</b>
+4. <b>Trend Keyword 4</b>
+5. <b>Trend Keyword 5</b>
 
-For each of the top 5 trends, use this format:
-<b>Trend Keyword</b>: Detailed analysis (2-3 paragraphs) covering the points above.
-
-Focus on:
-- Technical accuracy
-- Identifying patterns across papers
-- Understanding how the field is evolving
-- Highlighting the most impactful research directions
-
-Note: Papers are ordered by publication date (newest first). Consider the temporal aspect when analyzing trends."""
+Focus on technical accuracy. Papers are ordered by date (newest first)."""
 
     else:
-        prompt = f"""You are analyzing research trends in AI/ML based on recent academic papers.
+        prompt = f"""Analyze research trends in Agent based on recent papers.
 
-## Papers to Analyze:
-
+## Papers:
 {all_papers_text}
 
 ## Task:
-
-Based on these papers, identify the top 5 most prominent keywords/trends in recent research. For each trend, provide detailed analysis covering:
-
-1. Key themes and methodologies
-2. Important findings and breakthroughs
-3. Connections and patterns across papers
-4. Future trajectory of the research area
+Identify the top five most prominent keywords on recent trends. Then summarize them in detail.
+Focus on synthesizing key themes, methodologies, findings, and any shifts in perspective or new areas of inquiry that these papers collectively highlight.
+The summary should identify interconnectedness amongst the papers and indicate the direction in which the field of study is moving.
+This overview should serve as an insightful guide for researchers seeking to understand the cutting-edge developments and the future trajectory of research within this discipline.
 
 ## Output Format:
+1. <b>Trend Keyword 1</b>
+2. <b>Trend Keyword 2</b>
+3. <b>Trend Keyword 3</b>
+4. <b>Trend Keyword 4</b> 
+5. <b>Trend Keyword 5</b>
 
-For each of the top 5 trends, use this format:
-<b>Trend Keyword</b>: Detailed analysis (2-3 paragraphs) covering the points above.
-
-Focus on:
-- Technical accuracy
-- Identifying patterns across papers
-- Understanding cutting-edge developments
-- Highlighting the most impactful research directions
-
-Note: Papers are ordered by publication date (newest first)."""
+Focus on technical accuracy. Papers are ordered by date (newest first)."""
 
     # Send to LLM
     logging.info('Sending request to LLM for trend analysis...')
@@ -246,7 +225,7 @@ if __name__ == '__main__':
                         default='../docs/agent-arxiv-daily-analysis.json',
                         help='Path to consolidated analysis JSON file')
     parser.add_argument('--saved_path', type=str,
-                        default='../docs/trends.txt',
+                        default='../docs/agent_trends.txt',
                         help='Path to save trends analysis (will overwrite)')
     parser.add_argument('--api_key', type=str,
                         default=None,
