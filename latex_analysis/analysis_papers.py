@@ -1,0 +1,238 @@
+import os
+import json
+import argparse
+import logging
+from tqdm import tqdm
+from openai_api import OpenAIClient
+
+logging.basicConfig(format='[%(asctime)s %(levelname)s] %(message)s',
+                    datefmt='%m/%d/%Y %H:%M:%S',
+                    level=logging.INFO)
+
+
+def create_analysis_prompt(parsed_data):
+    """
+    Create analysis prompt from parsed LaTeX content
+    @param parsed_data: dict from parse_latex.py output (title, authors, affiliations, urls, abstract, sections)
+    @return: formatted prompt string
+    """
+    # Convert parsed_data to formatted JSON string
+    import json
+
+    prompt = f"""Analyze this research paper extracted from LaTeX source:
+
+{json.dumps(parsed_data, indent=2, ensure_ascii=False)}
+
+Please provide a comprehensive analysis in the following JSON format:
+
+{{
+  "metadata": {{
+    "authors": ["list of author names from the paper"],
+    "affiliations": ["list of institutions/universities"],
+    "resources": {{
+      "github": "GitHub repository URL if available, otherwise null",
+      "huggingface": "HuggingFace model/dataset URL if available, otherwise null",
+      "project_page": "Project website URL if available, otherwise null",
+      "other_links": ["any other relevant URLs"]
+    }}
+  }},
+  "analysis": {{
+    "core_innovation": "What is the main technical contribution? What makes this approach novel?",
+    "method_explanation": "Explain the proposed method in simple, clear terms. What problem does it solve and how?",
+    "experimental_validation": "Summarize the experimental setup and key findings. What do the results demonstrate?",
+    "limitations": "What are the potential limitations or weaknesses of this approach?",
+    "future_directions": "What future research directions does this work suggest?"
+  }}
+}}
+
+IMPORTANT:
+- Extract metadata (authors, affiliations, URLs) from the provided data
+- Return valid JSON only, no additional text
+- Be concise but thorough in the analysis section
+- Focus on technical accuracy and practical insights"""
+
+    return prompt
+
+
+def get_title_from_arxiv_json(arxiv_id, json_path='../docs/agent-arxiv-daily.json'):
+    """
+    Get paper title from arXiv JSON metadata
+    @param arxiv_id: arXiv ID
+    @param json_path: Path to arXiv JSON file
+    @return: Title string or None
+    """
+    try:
+        with open(json_path, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+
+        # Search through all categories for this arxiv_id
+        for papers in data.values():
+            if arxiv_id in papers:
+                # Parse markdown table row: |date|title|authors|link|code|
+                row = papers[arxiv_id]
+                parts = row.split('|')
+                if len(parts) >= 3:
+                    # Extract title (strip ** markdown bold)
+                    title = parts[2].replace('**', '').strip()
+                    return title
+        return None
+    except Exception as e:
+        logging.warning(f'Failed to get title from arXiv JSON: {e}')
+        return None
+
+
+def analyze_paper(parsed_json_path, api_client, output_dir, arxiv_json_path='../docs/agent-arxiv-daily.json'):
+    """
+    Analyze a single paper using LLM
+    @param parsed_json_path: path to parsed content JSON
+    @param api_client: OpenAI or Claude API client
+    @param output_dir: directory to save analysis results
+    @param arxiv_json_path: path to arXiv metadata JSON
+    @return: True if successful, False otherwise
+    """
+    arxiv_id = os.path.basename(parsed_json_path).replace('.json', '')
+    output_path = os.path.join(output_dir, f'{arxiv_id}.json')
+
+    # Skip if already analyzed
+    if os.path.exists(output_path):
+        logging.info(f'{arxiv_id}: Already analyzed')
+        return True
+
+    # Load parsed content
+    try:
+        with open(parsed_json_path, 'r', encoding='utf-8') as f:
+            parsed_data = json.load(f)
+    except Exception as e:
+        logging.error(f'{arxiv_id}: Failed to load parsed data - {e}')
+        return False
+
+    # Get title: prefer arXiv JSON, fallback to parsed LaTeX, then arxiv_id
+    title = get_title_from_arxiv_json(arxiv_id, arxiv_json_path)
+    if not title:
+        title = parsed_data.get('title', f'Paper {arxiv_id}')
+
+    # Create prompt
+    prompt = create_analysis_prompt(parsed_data)
+
+    # Call LLM API
+    try:
+        response = api_client.send_message(prompt)
+
+        if not response:
+            logging.error(f'{arxiv_id}: Empty response from API')
+            return False
+
+        # Try to parse LLM response as JSON
+        try:
+            # Try to extract JSON from response (in case LLM adds extra text)
+            import re
+            json_match = re.search(r'\{.*\}', response, re.DOTALL)
+            if json_match:
+                analysis_json = json.loads(json_match.group(0))
+            else:
+                analysis_json = json.loads(response)
+
+            # Build final result with arxiv_id and title (from arXiv JSON)
+            result = {
+                'arxiv_id': arxiv_id,
+                'title': title,
+                'metadata': analysis_json.get('metadata', {}),
+                'analysis': analysis_json.get('analysis', {})
+            }
+        except json.JSONDecodeError:
+            # Fallback: if LLM didn't return valid JSON, save as text
+            logging.warning(f'{arxiv_id}: LLM response is not valid JSON, saving as text')
+            result = {
+                'arxiv_id': arxiv_id,
+                'title': title,
+                'metadata': {
+                    'authors': parsed_data.get('authors', []),
+                    'affiliations': parsed_data.get('affiliations', []),
+                    'resources': {'other_links': parsed_data.get('urls', [])}
+                },
+                'analysis': {'raw_text': response}
+            }
+
+        with open(output_path, 'w', encoding='utf-8') as f:
+            json.dump(result, f, indent=2, ensure_ascii=False)
+
+        logging.info(f'{arxiv_id}: Analysis complete')
+        return True
+
+    except Exception as e:
+        logging.error(f'{arxiv_id}: API call failed - {e}')
+        return False
+
+
+def analyze_all_papers(parsed_content_path, saved_path, api='openai', arxiv_json_path='../docs/agent-arxiv-daily.json'):
+    """
+    Analyze multiple papers using LLM
+    @param parsed_content_path: Directory containing parsed content JSON files
+    @param saved_path: Directory to save analysis results
+    @param api: LLM API to use ('openai' or 'claude')
+    @param arxiv_json_path: Path to arXiv metadata JSON file
+    @return: True if all successful, False otherwise
+    """
+    # Initialize API client
+    if api == 'openai':
+        # Use API key file for OpenAI
+        try:
+            api_key = os.environ.get('ANTHROPIC_AUTH_TOKEN')
+            base_url = os.environ.get('CRS_BASE_URL')
+            api_client = OpenAIClient(api_key, base_url)
+        except Exception as e:
+            logging.error(f'Failed to read API key: {e}')
+            return False
+    else:
+        logging.error(f'Unsupported API: {api}')
+        return False
+
+    # Create output directory
+    os.makedirs(saved_path, exist_ok=True)
+
+    # Get all parsed JSON files
+    json_files = [f for f in os.listdir(parsed_content_path)
+                  if f.endswith('.json')]
+    json_files.sort(reverse=True)  # Process newest first
+
+    logging.info(f'Found {len(json_files)} papers to analyze')
+
+    successful = 0
+    failed = 0
+
+    for json_file in tqdm(json_files, desc='Analyzing papers'):
+        json_path = os.path.join(parsed_content_path, json_file)
+
+        if analyze_paper(json_path, api_client, saved_path, arxiv_json_path):
+            successful += 1
+        else:
+            failed += 1
+
+        # Optional: add delay to avoid rate limits
+        # import time
+        # time.sleep(1)
+
+    logging.info(f'Analysis complete: {successful} successful, {failed} failed')
+    return failed == 0
+
+
+if __name__ == '__main__':
+    parser = argparse.ArgumentParser(description='Analyze parsed LaTeX content using LLM.')
+    parser.add_argument('--parsed_content_path', type=str,
+                        default='./results/parsed_content',
+                        help='Directory containing parsed content JSON files.')
+    parser.add_argument('--saved_path', type=str,
+                        default='./results/llm_analysis',
+                        help='Directory to save analysis results.')
+    parser.add_argument('--api', type=str, default='openai',
+                        choices=['openai', 'claude'],
+                        help='LLM API to use (default: openai)')
+    parser.add_argument('--default_url', type=str,
+                        default=None,
+                        help='API base URL (for OpenAI-compatible APIs)')
+
+    args = parser.parse_args()
+
+    import sys
+    success = analyze_all_papers(args.parsed_content_path, args.saved_path, args.api)
+    sys.exit(0 if success else 1)
