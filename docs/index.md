@@ -3,17 +3,17 @@ layout: default
 ---
 
 # Agent Research Papers
-### Automatically Updated on 2025.10.14
+### Automatically Updated on 2025.10.15
 ## Agent
 
 | Publish Date | Title | Authors | PDF | Code |
 |:---------|:-----------------------|:---------|:------|:------|
+|**2025-10-14**|**Stronger Together: On-Policy Reinforcement Learning for Collaborative LLMs**|Yujie Zhao et.al.|[2510.11062](http://arxiv.org/abs/2510.11062)|null|
 |**2025-10-13**|**Demystifying Reinforcement Learning in Agentic Reasoning**|Zhaochen Yu et.al.|[2510.11701](http://arxiv.org/abs/2510.11701)|null|
 |**2025-10-13**|**When Agents Trade: Live Multi-Market Trading Benchmark for LLM Agents**|Lingfei Qian et.al.|[2510.11695](http://arxiv.org/abs/2510.11695)|null|
 |**2025-10-13**|**Analyzing and Internalizing Complex Policy Documents for LLM Agents**|Jiateng Liu et.al.|[2510.11588](http://arxiv.org/abs/2510.11588)|null|
 |**2025-10-13**|**A Large-Language-Model Assisted Automated Scale Bar Detection and Extraction Framework for Scanning Electron Microscopic Images**|Yuxuan Chen et.al.|[2510.11260](http://arxiv.org/abs/2510.11260)|null|
 |**2025-10-13**|**Can Tool-Integrated Reinforcement Learning Generalize Across Diverse Domains?**|Zhengyu Chen et.al.|[2510.11184](http://arxiv.org/abs/2510.11184)|null|
-|**2025-10-13**|**Stronger Together: On-Policy Reinforcement Learning for Collaborative LLMs**|Yujie Zhao et.al.|[2510.11062](http://arxiv.org/abs/2510.11062)|null|
 |**2025-10-13**|**SusBench: An Online Benchmark for Evaluating Dark Pattern Susceptibility of Computer-Use Agents**|Longjie Guo et.al.|[2510.11035](http://arxiv.org/abs/2510.11035)|null|
 |**2025-10-13**|**A Survey on Agentic Multimodal Large Language Models**|Huanjin Yao et.al.|[2510.10991](http://arxiv.org/abs/2510.10991)|null|
 |**2025-10-13**|**Rethinking Reward Miscalibration of GRPO in Agentic RL**|Jingyu Liu et.al.|[2509.23870](http://arxiv.org/abs/2509.23870)|null|

@@ -1,5 +1,5 @@
 # Agent Research Papers
-> Updated on 2025.10.14
+> Updated on 2025.10.15
 <details>
   <summary>Table of Contents</summary>
   <ol>
@@ -68,7 +68,7 @@
 - 2025-08-27, **Survey of Specialized Large Language Model**, Chenghan Yang et.al., Paper: [http://arxiv.org/abs/2508.19667](http://arxiv.org/abs/2508.19667)
 - 2025-08-31, **Supporting Our AI Overlords: Redesigning Data Systems to be Agent-First**, Shu Liu et.al., Paper: [http://arxiv.org/abs/2509.00997](http://arxiv.org/abs/2509.00997)
 - 2025-09-23, **Structured Cognition for Behavioral Intelligence in Large Language Model Agents: Preliminary Study**, Myung Ho Kim et.al., Paper: [http://arxiv.org/abs/2510.05107](http://arxiv.org/abs/2510.05107)
-- 2025-10-13, **Stronger Together: On-Policy Reinforcement Learning for Collaborative LLMs**, Yujie Zhao et.al., Paper: [http://arxiv.org/abs/2510.11062](http://arxiv.org/abs/2510.11062)
+- 2025-10-14, **Stronger Together: On-Policy Reinforcement Learning for Collaborative LLMs**, Yujie Zhao et.al., Paper: [http://arxiv.org/abs/2510.11062](http://arxiv.org/abs/2510.11062)
 - 2025-10-10, **StreamingVLM: Real-Time Understanding for Infinite Video Streams**, Ruyi Xu et.al., Paper: [http://arxiv.org/abs/2510.09608](http://arxiv.org/abs/2510.09608)
 - 2025-10-07, **Stratified GRPO: Handling Structural Heterogeneity in Reinforcement Learning of LLM Search Agents**, Mingkang Zhu et.al., Paper: [http://arxiv.org/abs/2510.06214](http://arxiv.org/abs/2510.06214)
 - 2025-09-12, **Strategic Tradeoffs Between Humans and AI in Multi-Agent Bargaining**, Crystal Qian et.al., Paper: [http://arxiv.org/abs/2509.09071](http://arxiv.org/abs/2509.09071)
@@ -360,7 +360,7 @@
 - 2025-09-15, **$ε$ -Optimal Multi-Agent Patrol using Recurrent Strategy**, Deepak Mallya et.al., Paper: [http://arxiv.org/abs/2509.11640](http://arxiv.org/abs/2509.11640)
 - 2025-09-27, **"Shall We Dig Deeper?": Designing and Evaluating Strategies for LLM Agents to Advance Knowledge Co-Construction in Asynchronous Online Discussions**, Yuanhao Zhang et.al., Paper: [http://arxiv.org/abs/2509.23327](http://arxiv.org/abs/2509.23327)
 
-<p align=right>(<a href=#updated-on-20251014>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20251015>back to top</a>)</p>
 
 Notes: 
 
