@@ -209,16 +209,11 @@ def json_to_md(analysis_json_path, output_md_path, show_badges=False, repo_name=
 
             # Insert trends if available (between category header and detailed analysis)
             if trends_content:
-                f.write("<details>\n")
-                f.write("<summary><b>📊 Research Trends</b></summary>\n")
-                f.write("<p>\n\n")
+                f.write("<details open>\n")
+                f.write("<summary><b>📊 Research Trends</b> (Click to collapse)</summary>\n\n")
                 f.write(f"{trends_content}\n\n")
-                f.write("</p>\n")
                 f.write("</details>\n\n")
                 f.write("---\n\n")
-
-            # Detailed paper analysis section
-            f.write("### 📄 Detailed Paper Analysis\n\n")
 
             # Sort papers by date
             sorted_papers = sort_papers(papers)

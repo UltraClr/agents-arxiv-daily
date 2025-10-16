@@ -162,13 +162,33 @@ The summary should identify interconnectedness amongst the papers and indicate t
 This overview should serve as an insightful guide for researchers seeking to understand the cutting-edge developments and the future trajectory of research within this discipline.
 
 ## Output Format:
-1. <b>Trend Keyword 1</b>
-2. <b>Trend Keyword 2</b>
-3. <b>Trend Keyword 3</b>
-4. <b>Trend Keyword 4</b>
-5. <b>Trend Keyword 5</b>
+Return a valid JSON object with the following structure:
+{{
+  "trends": [
+    {{
+      "keyword": "Trend Keyword 1",
+      "summary": "Detailed analysis of this trend..."
+    }},
+    {{
+      "keyword": "Trend Keyword 2",
+      "summary": "Detailed analysis of this trend..."
+    }},
+    {{
+      "keyword": "Trend Keyword 3",
+      "summary": "Detailed analysis of this trend..."
+    }},
+    {{
+      "keyword": "Trend Keyword 4",
+      "summary": "Detailed analysis of this trend..."
+    }},
+    {{
+      "keyword": "Trend Keyword 5",
+      "summary": "Detailed analysis of this trend..."
+    }}
+  ]
+}}
 
-Focus on technical accuracy. Papers are ordered by date (newest first)."""
+Focus on technical accuracy. Papers are ordered by date (newest first). Return ONLY the JSON, no additional text."""
 
     else:
         prompt = f"""Analyze research trends in Agent based on recent papers.
@@ -183,13 +203,33 @@ The summary should identify interconnectedness amongst the papers and indicate t
 This overview should serve as an insightful guide for researchers seeking to understand the cutting-edge developments and the future trajectory of research within this discipline.
 
 ## Output Format:
-1. <b>Trend Keyword 1</b>
-2. <b>Trend Keyword 2</b>
-3. <b>Trend Keyword 3</b>
-4. <b>Trend Keyword 4</b> 
-5. <b>Trend Keyword 5</b>
+Return a valid JSON object with the following structure:
+{{
+  "trends": [
+    {{
+      "keyword": "Trend Keyword 1",
+      "summary": "Detailed analysis of this trend..."
+    }},
+    {{
+      "keyword": "Trend Keyword 2",
+      "summary": "Detailed analysis of this trend..."
+    }},
+    {{
+      "keyword": "Trend Keyword 3",
+      "summary": "Detailed analysis of this trend..."
+    }},
+    {{
+      "keyword": "Trend Keyword 4",
+      "summary": "Detailed analysis of this trend..."
+    }},
+    {{
+      "keyword": "Trend Keyword 5",
+      "summary": "Detailed analysis of this trend..."
+    }}
+  ]
+}}
 
-Focus on technical accuracy. Papers are ordered by date (newest first)."""
+Focus on technical accuracy. Papers are ordered by date (newest first). Return ONLY the JSON, no additional text."""
 
     # Send to LLM
     logging.info('Sending request to LLM for trend analysis...')
@@ -200,12 +240,52 @@ Focus on technical accuracy. Papers are ordered by date (newest first)."""
             logging.error('Empty response from API')
             return False
 
-        # Save to file
-        with open(saved_path, 'w', encoding='utf-8') as f:
-            f.write(response)
+        # Parse JSON response
+        try:
+            # Try to extract JSON from response (in case LLM adds extra text)
+            import re
+            json_match = re.search(r'\{.*\}', response, re.DOTALL)
+            if json_match:
+                trends_json = json.loads(json_match.group(0))
+            else:
+                trends_json = json.loads(response)
 
-        logging.info(f'Trends analysis saved to {saved_path}')
-        return True
+            # Convert JSON to markdown format
+            markdown_output = "Top 5 Research Trends in Agent-Based Systems\n\n"
+
+            # Add trend keywords list
+            for i, trend in enumerate(trends_json.get('trends', []), 1):
+                keyword = trend.get('keyword', f'Trend {i}')
+                markdown_output += f"{i}. <strong>{keyword}</strong>\n"
+
+            markdown_output += "\n---\n\nDetailed Analysis of Research Trends\n\n"
+
+            # Add detailed summaries
+            for i, trend in enumerate(trends_json.get('trends', []), 1):
+                keyword = trend.get('keyword', f'Trend {i}')
+                summary = trend.get('summary', 'No summary available.')
+                markdown_output += f"{i}. <strong>{keyword}</strong>\n\n{summary}\n\n"
+
+            # Save markdown to file
+            with open(saved_path, 'w', encoding='utf-8') as f:
+                f.write(markdown_output)
+
+            # Also save raw JSON for potential future use
+            json_path = saved_path.replace('.txt', '.json').replace('.md', '.json')
+            with open(json_path, 'w', encoding='utf-8') as f:
+                json.dump(trends_json, f, indent=2, ensure_ascii=False)
+
+            logging.info(f'Trends analysis saved to {saved_path}')
+            logging.info(f'Raw JSON saved to {json_path}')
+            return True
+
+        except json.JSONDecodeError as e:
+            logging.warning(f'Failed to parse JSON response, saving raw response: {e}')
+            # Fallback: save raw response
+            with open(saved_path, 'w', encoding='utf-8') as f:
+                f.write(response)
+            logging.info(f'Raw trends analysis saved to {saved_path}')
+            return True
 
     except Exception as e:
         logging.error(f'API call failed: {e}')
