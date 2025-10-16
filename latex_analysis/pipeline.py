@@ -304,7 +304,9 @@ if __name__ == '__main__':
         description='Streaming pipeline for LaTeX-based paper analysis (process one paper at a time)',
         formatter_class=argparse.ArgumentDefaultsHelpFormatter
     )
-
+    default_api_key = os.environ.get('ANTHROPIC_AUTH_TOKEN')
+    if not default_api_key:
+        logging.warning('API key not found in env.')
     # Input/Output
     parser.add_argument('--json_path', type=str,
                         default='../docs/agent-arxiv-daily.json',
@@ -317,7 +319,7 @@ if __name__ == '__main__':
     parser.add_argument('--api', type=str, default='openai',
                         choices=['openai', 'claude'],
                         help='LLM API to use')
-    parser.add_argument('--apikey', type=str, default=os.environ.get('ANTHROPIC_AUTH_TOKEN'),
+    parser.add_argument('--apikey', type=str, default=default_api_key,
                         help='API key or path to API key file')
 
     # Control flags
