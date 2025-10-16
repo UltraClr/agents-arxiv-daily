@@ -40,20 +40,32 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install arxiv
-          pip install requests
-          pip install pyyaml
-          
-      - name: Run daily arxiv 
+          pip install arxiv requests pyyaml openai tqdm
+
+      - name: Run daily arxiv
         run: |
           python daily_arxiv.py
-          
-      - name: Push new agent-arxiv-daily.md
+
+      - name: Analyze papers with LLM
+        run: |
+          cd latex_analysis
+          python pipeline.py \
+            --json_path ../docs/agent-arxiv-daily.json \
+            --output_dir ./results \
+            --apikey "${{ secrets.ANTHROPIC_AUTH_TOKEN }}" \
+            --delay_seconds 10 \
+            --report_path ../docs/paper_analysis.md
+        env:
+          ANTHROPIC_AUTH_TOKEN: ${{ secrets.ANTHROPIC_AUTH_TOKEN }}
+          CRS_BASE_URL: ${{ secrets.CRS_BASE_URL }}
+        continue-on-error: true
+
+      - name: Push updates
         uses: github-actions-x/commit@v2.9
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          commit-message: "Github Action Automatic Update CV Arxiv Papers"
-          files: README.md docs/agent-arxiv-daily.json docs/agent-arxiv-daily-web.json docs/index.md docs/agent-arxiv-daily-wechat.json docs/wechat.md
+          commit-message: "Github Action Automatic Update: Papers and Analysis"
+          files: README.md docs/agent-arxiv-daily.json docs/agent-arxiv-daily-web.json docs/index.md docs/agent-arxiv-daily-wechat.json docs/wechat.md docs/agent-arxiv-daily-analysis.json docs/paper_analysis.md
           rebase: 'true'
           name: ${{ env.GITHUB_USER_NAME }}
           email: ${{ env.GITHUB_USER_EMAIL }}
