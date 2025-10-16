@@ -26,6 +26,7 @@ jobs:
     name: update
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
+    environment: llm_client
     
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -52,12 +53,8 @@ jobs:
           python pipeline.py \
             --json_path ../docs/agent-arxiv-daily.json \
             --output_dir ./results \
-            --apikey "${{ secrets.ANTHROPIC_AUTH_TOKEN }}" \
             --delay_seconds 10 \
             --report_path ../docs/paper_analysis.md
-        env:
-          ANTHROPIC_AUTH_TOKEN: ${{ secrets.ANTHROPIC_AUTH_TOKEN }}
-          CRS_BASE_URL: ${{ secrets.CRS_BASE_URL }}
         continue-on-error: true
 
       - name: Push updates
