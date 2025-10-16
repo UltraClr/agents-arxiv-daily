@@ -251,20 +251,20 @@ Focus on technical accuracy. Papers are ordered by date (newest first). Return O
                 trends_json = json.loads(response)
 
             # Convert JSON to markdown format
-            markdown_output = "Top 5 Research Trends in Agent-Based Systems\n\n"
+            markdown_output = "Top 5 Research Trends in Agent-Based Systems<br><br>"
 
             # Add trend keywords list
             for i, trend in enumerate(trends_json.get('trends', []), 1):
                 keyword = trend.get('keyword', f'Trend {i}')
-                markdown_output += f"{i}. <strong>{keyword}</strong>\n"
+                markdown_output += f"{i}. <strong>{keyword}</strong><br>"
 
-            markdown_output += "\n---\n\nDetailed Analysis of Research Trends\n\n"
+            markdown_output += "<br>---<br><br>Detailed Analysis of Research Trends<br><br>"
 
             # Add detailed summaries
             for i, trend in enumerate(trends_json.get('trends', []), 1):
                 keyword = trend.get('keyword', f'Trend {i}')
                 summary = trend.get('summary', 'No summary available.')
-                markdown_output += f"{i}. <strong>{keyword}</strong>\n\n{summary}\n\n"
+                markdown_output += f"{i}. <strong>{keyword}</strong><br><br>{summary}<br><br>"
 
             # Save markdown to file
             with open(saved_path, 'w', encoding='utf-8') as f:

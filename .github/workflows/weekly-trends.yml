@@ -45,12 +45,20 @@ jobs:
             --analysis_json_path ../docs/agent-arxiv-daily-analysis.json \
             --saved_path ../docs/agent_trends.txt
 
-      - name: Push trends update
+      - name: Regenerate paper analysis report with new trends
+        run: |
+          cd latex_analysis
+          python generating_paper_analysis.py \
+            --analysis_json_path ../docs/agent-arxiv-daily-analysis.json \
+            --output_md_path ../docs/paper_analysis.md \
+            --trends_file ../docs/agent_trends.txt
+
+      - name: Push trends and updated report
         uses: github-actions-x/commit@v2.9
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           commit-message: "Weekly Trends Analysis Update"
-          files: docs/agent_trends.txt
+          files: docs/agent_trends.txt docs/agent_trends.json docs/paper_analysis.md
           rebase: 'true'
           name: ${{ env.GITHUB_USER_NAME }}
           email: ${{ env.GITHUB_USER_EMAIL }}
