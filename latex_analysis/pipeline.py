@@ -152,7 +152,7 @@ if __name__ == '__main__':
                         help='Skip LLM analysis step')
 
     # Limits
-    parser.add_argument('--max_papers', type=int, default=2,
+    parser.add_argument('--max_papers', type=int, default=None,
                         help='Maximum number of papers to process (for testing)')
 
     args = parser.parse_args()
