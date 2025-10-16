@@ -49,80 +49,80 @@ def format_analysis_content(paper_data):
         author_str = ', '.join(authors[:5])
         if len(authors) > 5:
             author_str += ' et al.'
-        content_parts.append(f"**Authors**: {author_str}")
+        content_parts.append(f"<strong>Authors</strong>: {author_str}")
 
     affiliations = metadata.get('affiliations', [])
     if affiliations:
         affil_str = ', '.join(affiliations[:3])
-        content_parts.append(f"**Affiliations**: {affil_str}")
+        content_parts.append(f"<strong>Affiliations</strong>: {affil_str}")
 
     # Resources (GitHub, HuggingFace, etc.)
     resources = metadata.get('resources', {})
     resource_links = []
     if resources.get('github'):
-        resource_links.append(f"[GitHub]({resources['github']})")
+        resource_links.append(f'<a href="{resources["github"]}">GitHub</a>')
     if resources.get('huggingface'):
-        resource_links.append(f"[HuggingFace]({resources['huggingface']})")
+        resource_links.append(f'<a href="{resources["huggingface"]}">HuggingFace</a>')
     if resources.get('project_page'):
-        resource_links.append(f"[Project Page]({resources['project_page']})")
+        resource_links.append(f'<a href="{resources["project_page"]}">Project Page</a>')
     if resource_links:
-        content_parts.append(f"**Resources**: {' | '.join(resource_links)}")
+        content_parts.append(f"<strong>Resources</strong>: {' | '.join(resource_links)}")
 
     content_parts.append("")  # Empty line
 
     # New structure fields (preferred)
     if 'summary' in analysis:
-        content_parts.append(f"**Summary**: {analysis['summary']}")
+        content_parts.append(f"<strong>Summary</strong>: {analysis['summary']}")
         content_parts.append("")
 
     if 'research_question' in analysis:
-        content_parts.append(f"**Research Question**: {analysis['research_question']}")
+        content_parts.append(f"<strong>Research Question</strong>: {analysis['research_question']}")
         content_parts.append("")
 
     if 'hypothesis' in analysis:
-        content_parts.append(f"**Hypothesis**: {analysis['hypothesis']}")
+        content_parts.append(f"<strong>Hypothesis</strong>: {analysis['hypothesis']}")
         content_parts.append("")
 
     if 'methodology' in analysis:
-        content_parts.append(f"**Methodology**: {analysis['methodology']}")
+        content_parts.append(f"<strong>Methodology</strong>: {analysis['methodology']}")
         content_parts.append("")
 
     if 'key_findings' in analysis:
-        content_parts.append(f"**Key Findings**: {analysis['key_findings']}")
+        content_parts.append(f"<strong>Key Findings</strong>: {analysis['key_findings']}")
         content_parts.append("")
 
     if 'interpretation' in analysis:
-        content_parts.append(f"**Interpretation**: {analysis['interpretation']}")
+        content_parts.append(f"<strong>Interpretation</strong>: {analysis['interpretation']}")
         content_parts.append("")
 
     if 'conclusions' in analysis:
-        content_parts.append(f"**Conclusions**: {analysis['conclusions']}")
+        content_parts.append(f"<strong>Conclusions</strong>: {analysis['conclusions']}")
         content_parts.append("")
 
     if 'limitations' in analysis:
-        content_parts.append(f"**Limitations**: {analysis['limitations']}")
+        content_parts.append(f"<strong>Limitations</strong>: {analysis['limitations']}")
         content_parts.append("")
 
     if 'future_research' in analysis:
-        content_parts.append(f"**Future Research**: {analysis['future_research']}")
+        content_parts.append(f"<strong>Future Research</strong>: {analysis['future_research']}")
 
     # Backward compatibility: old structure fields
     if not any(key in analysis for key in ['summary', 'research_question', 'methodology']):
         # Old structure
         if 'core_innovation' in analysis:
-            content_parts.append(f"**Core Innovation**: {analysis['core_innovation']}")
+            content_parts.append(f"<strong>Core Innovation</strong>: {analysis['core_innovation']}")
             content_parts.append("")
 
         if 'method_explanation' in analysis:
-            content_parts.append(f"**Method**: {analysis['method_explanation']}")
+            content_parts.append(f"<strong>Method</strong>: {analysis['method_explanation']}")
             content_parts.append("")
 
         if 'experimental_validation' in analysis:
-            content_parts.append(f"**Experimental Results**: {analysis['experimental_validation']}")
+            content_parts.append(f"<strong>Experimental Results</strong>: {analysis['experimental_validation']}")
             content_parts.append("")
 
         if 'future_directions' in analysis:
-            content_parts.append(f"**Future Directions**: {analysis['future_directions']}")
+            content_parts.append(f"<strong>Future Directions</strong>: {analysis['future_directions']}")
 
     # Fallback for raw_text
     if 'raw_text' in analysis and len(content_parts) <= 3:  # Only metadata
