@@ -296,7 +296,11 @@ def run_streaming_pipeline(args):
         except Exception as e:
             logging.error(f'Failed to generate report: {e}')
 
-    return failed == 0
+    # Consider successful if:
+    # 1. At least one paper was successfully processed, OR
+    # 2. All papers were skipped (no new papers to analyze)
+    # Only return failure if there were papers to process but ALL failed
+    return successful > 0 or (failed == 0 and skipped > 0) or len(all_ids) == 0
 
 
 if __name__ == '__main__':
