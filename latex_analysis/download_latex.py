@@ -61,11 +61,15 @@ def download_latex_source(arxiv_id, save_dir):
             with tarfile.open(tar_path, 'r:gz') as tar:
                 tar.extractall(extract_dir)
             logging.info(f'{clean_id}: Extracted as tar.gz')
-        except:
-            # Some papers are single .tex files, not archives
-            # In this case, the downloaded file is already the .tex
-            shutil.copy(tar_path, os.path.join(extract_dir, f'{clean_id}.tex'))
-            logging.info(f'{clean_id}: Copied as single .tex file')
+        except Exception as e:
+            # Failed to extract - likely not a valid LaTeX source or PDF-only submission
+            logging.warning(f'{clean_id}: Failed to extract archive (might be PDF-only submission) - {e}')
+            # Clean up
+            if os.path.exists(tar_path):
+                os.remove(tar_path)
+            if os.path.exists(extract_dir):
+                shutil.rmtree(extract_dir)
+            return None
 
         return extract_dir
 

@@ -20,12 +20,24 @@ class LaTeXParser:
         self.sections = {}
 
     def load_content(self):
-        """Load and preprocess LaTeX content"""
-        try:
-            with open(self.tex_file_path, 'r', encoding='utf-8', errors='ignore') as f:
-                self.content = f.read()
-        except Exception as e:
-            logging.error(f"Failed to load {self.tex_file_path}: {e}")
+        """Load and preprocess LaTeX content with multiple encoding attempts"""
+        # Try multiple encodings commonly used in LaTeX files
+        encodings = ['utf-8', 'latin-1', 'iso-8859-1', 'windows-1252']
+
+        for encoding in encodings:
+            try:
+                with open(self.tex_file_path, 'r', encoding=encoding) as f:
+                    self.content = f.read()
+                logging.debug(f"Successfully loaded {self.tex_file_path} with {encoding}")
+                break
+            except (UnicodeDecodeError, LookupError):
+                continue
+            except Exception as e:
+                logging.error(f"Failed to load {self.tex_file_path}: {e}")
+                return False
+        else:
+            # All encodings failed, skip this file
+            logging.warning(f"⚠️ Skip {self.tex_file_path}: Unable to decode with any known encoding")
             return False
 
         # Remove comments
@@ -65,11 +77,18 @@ class LaTeXParser:
             input_path = os.path.join(self.base_dir, filename)
 
             if os.path.exists(input_path):
-                try:
-                    with open(input_path, 'r', encoding='utf-8', errors='ignore') as f:
-                        return f.read()
-                except:
-                    return match.group(0)  # Return original if failed
+                # Try multiple encodings for included files too
+                for encoding in ['utf-8', 'latin-1', 'iso-8859-1', 'windows-1252']:
+                    try:
+                        with open(input_path, 'r', encoding=encoding) as f:
+                            return f.read()
+                    except (UnicodeDecodeError, LookupError):
+                        continue
+                    except:
+                        return match.group(0)  # Return original if failed
+                # All encodings failed
+                logging.warning(f"Could not decode included file: {input_path}")
+                return match.group(0)
             return match.group(0)
 
         # Recursively replace inputs (max 3 levels to avoid infinite loop)
