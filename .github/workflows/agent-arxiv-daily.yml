@@ -60,12 +60,20 @@ jobs:
             --trends_file ../docs/agent_trends.txt
         continue-on-error: true
 
+      - name: Send DingTalk notification
+        env:
+          DINGTALK_WEBHOOK_URL: ${{ secrets.DINGTALK_WEBHOOK_URL }}
+          DINGTALK_WEBHOOK_SECRET: ${{ secrets.DINGTALK_WEBHOOK_SECRET }}
+        run: |
+          python send_webhook_notification.py
+        continue-on-error: true
+
       - name: Push updates
         uses: github-actions-x/commit@v2.9
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           commit-message: "Github Action Automatic Update: Papers and Analysis"
-          files: README.md docs/agent-arxiv-daily.json docs/agent-arxiv-daily-web.json docs/index.md docs/agent-arxiv-daily-wechat.json docs/wechat.md docs/agent-arxiv-daily-analysis.json docs/paper_analysis.md
+          files: README.md docs/agent-arxiv-daily.json docs/agent-arxiv-daily-web.json docs/index.md docs/agent-arxiv-daily-wechat.json docs/wechat.md docs/agent-arxiv-daily-analysis.json docs/paper_analysis.md docs/newly_analyzed_papers.json
           rebase: 'true'
           name: ${{ env.GITHUB_USER_NAME }}
           email: ${{ env.GITHUB_USER_EMAIL }}

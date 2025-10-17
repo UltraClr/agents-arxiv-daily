@@ -226,6 +226,7 @@ def run_streaming_pipeline(args):
     successful = 0
     failed = 0
     skipped = 0
+    newly_analyzed_papers = []  # Track newly analyzed paper IDs
 
     # Process each paper one by one
     for arxiv_id in tqdm(all_ids, desc='Processing papers'):
@@ -246,6 +247,7 @@ def run_streaming_pipeline(args):
             skipped += 1
         elif result:  # True - success
             successful += 1
+            newly_analyzed_papers.append(arxiv_id)  # Record newly analyzed paper
 
             # Save analysis file after each successful paper (incremental save)
             if api_client:
@@ -272,6 +274,21 @@ def run_streaming_pipeline(args):
     if api_client:
         logging.info(f'Analysis file: {llm_analysis_path}')
     logging.info('='*60 + '\n')
+
+    # Save list of newly analyzed papers for webhook notification
+    if api_client and newly_analyzed_papers:
+        newly_analyzed_path = '../docs/newly_analyzed_papers.json'
+        try:
+            os.makedirs(os.path.dirname(newly_analyzed_path) or '.', exist_ok=True)
+            with open(newly_analyzed_path, 'w', encoding='utf-8') as f:
+                json.dump({
+                    'timestamp': time.strftime('%Y-%m-%d %H:%M:%S UTC', time.gmtime()),
+                    'count': len(newly_analyzed_papers),
+                    'paper_ids': newly_analyzed_papers
+                }, f, indent=2, ensure_ascii=False)
+            logging.info(f'Newly analyzed papers list saved: {newly_analyzed_path}')
+        except Exception as e:
+            logging.warning(f'Failed to save newly analyzed papers list: {e}')
 
     # Generate final report if analysis was performed
     if api_client and not args.skip_report:
