@@ -16,7 +16,19 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 
 | Publish Date | Title | Authors | PDF | Code |
 |:---------|:-----------------------|:---------|:------|:------|
+|**2025-10-16**|**Information Gain-based Policy Optimization: A Simple and Effective Approach for Multi-Turn LLM Agents**|Guoqing Wang et.al.|[2510.14967](http://arxiv.org/abs/2510.14967)|null|
+|**2025-10-16**|**The Gatekeeper Knows Enough**|Fikresilase Wondmeneh Abebayew et.al.|[2510.14881](http://arxiv.org/abs/2510.14881)|null|
+|**2025-10-16**|**Where to Search: Measure the Prior-Structured Search Space of LLM Agents**|Zhuo-Yang Song et.al.|[2510.14846](http://arxiv.org/abs/2510.14846)|null|
+|**2025-10-16**|**ToolPRM: Fine-Grained Inference Scaling of Structured Outputs for Function Calling**|Jianghao Lin et.al.|[2510.14703](http://arxiv.org/abs/2510.14703)|null|
+|**2025-10-16**|**LLM Agents for Automated Web Vulnerability Reproduction: Are We There Yet?**|Bin Liu et.al.|[2510.14700](http://arxiv.org/abs/2510.14700)|null|
+|**2025-10-16**|**LLM Agents Beyond Utility: An Open-Ended Perspective**|Asen Nachkov et.al.|[2510.14548](http://arxiv.org/abs/2510.14548)|null|
+|**2025-10-16**|**Agentic Entropy-Balanced Policy Optimization**|Guanting Dong et.al.|[2510.14545](http://arxiv.org/abs/2510.14545)|null|
+|**2025-10-16**|**Why Instant-Runoff Voting Is So Resilient to Coalitional Manipulation: Phase Transitions in the Perturbed Culture**|François Durand et.al.|[2510.14450](http://arxiv.org/abs/2510.14450)|null|
+|**2025-10-16**|**AlphaQuanter: An End-to-End Tool-Orchestrated Agentic Reinforcement Learning Framework for Stock Trading**|Zheye Deng et.al.|[2510.14264](http://arxiv.org/abs/2510.14264)|null|
+|**2025-10-16**|**Echoes of Human Malice in Agents: Benchmarking LLMs for Multi-Turn Online Harassment Attacks**|Trilok Padhi et.al.|[2510.14207](http://arxiv.org/abs/2510.14207)|null|
 |**2025-10-16**|**Training LLM Agents to Empower Humans**|Evan Ellis et.al.|[2510.13709](http://arxiv.org/abs/2510.13709)|null|
+|**2025-10-15**|**Formalizing the Safety, Security, and Functional Properties of Agentic AI Systems**|Edoardo Allegrini et.al.|[2510.14133](http://arxiv.org/abs/2510.14133)|null|
+|**2025-10-15**|**STEMS: Spatial-Temporal Enhanced Safe Multi-Agent Coordination for Building Energy Management**|Huiliang Zhang et.al.|[2510.14112](http://arxiv.org/abs/2510.14112)|null|
 |**2025-10-15**|**From Refusal to Recovery: A Control-Theoretic Approach to Generative AI Guardrails**|Ravi Pandya et.al.|[2510.13727](http://arxiv.org/abs/2510.13727)|null|
 |**2025-10-15**|**MADREC: A Multi-Aspect Driven LLM Agent for Explainable and Adaptive Recommendation**|Jiin Park et.al.|[2510.13371](http://arxiv.org/abs/2510.13371)|null|
 |**2025-10-15**|**Automated Network Protocol Testing with LLM Agents**|Yunze Wei et.al.|[2510.13248](http://arxiv.org/abs/2510.13248)|null|
