@@ -1,5 +1,5 @@
 # Agent Research Papers
-> Updated on 2025.10.16
+> Updated on 2025.10.17
 Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Autonomous Agent`,`LLM Agent`
 
 > If you have any other keywords, please feel free to let us know :) 
@@ -44,7 +44,7 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 - 2025-10-07, **Training-Free Time Series Classification via In-Context Reasoning with LLM Agents**, Songyuan Sui et.al., Paper: [http://arxiv.org/abs/2510.05950](http://arxiv.org/abs/2510.05950)
 - 2025-10-09, **Training-Free Group Relative Policy Optimization**, Yuzheng Cai et.al., Paper: [http://arxiv.org/abs/2510.08191](http://arxiv.org/abs/2510.08191)
 - 2025-09-24, **Training Task Reasoning LLM Agents for Multi-turn Task Planning via Single-turn Reinforcement Learning**, Hanjiang Hu et.al., Paper: [http://arxiv.org/abs/2509.20616](http://arxiv.org/abs/2509.20616)
-- 2025-10-15, **Training LLM Agents to Empower Humans**, Evan Ellis et.al., Paper: [http://arxiv.org/abs/2510.13709](http://arxiv.org/abs/2510.13709)
+- 2025-10-16, **Training LLM Agents to Empower Humans**, Evan Ellis et.al., Paper: [http://arxiv.org/abs/2510.13709](http://arxiv.org/abs/2510.13709)
 - 2025-09-11, **TrEnv: Transparently Share Serverless Execution Environments Across Different Functions and Nodes**, Jialiang Huang et.al., Paper: [http://arxiv.org/abs/2509.09525](http://arxiv.org/abs/2509.09525)
 - 2025-09-20, **Towards Transparent and Incentive-Compatible Collaboration in Decentralized LLM Multi-Agent Systems: A Blockchain-Driven Approach**, Minfeng Qi et.al., Paper: [http://arxiv.org/abs/2509.16736](http://arxiv.org/abs/2509.16736)
 - 2025-09-19, **Towards Robust Visual Continual Learning with Multi-Prototype Supervision**, Xiwei Liu et.al., Paper: [http://arxiv.org/abs/2509.16011](http://arxiv.org/abs/2509.16011)
@@ -381,7 +381,7 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 - 2025-09-15, **$ε$ -Optimal Multi-Agent Patrol using Recurrent Strategy**, Deepak Mallya et.al., Paper: [http://arxiv.org/abs/2509.11640](http://arxiv.org/abs/2509.11640)
 - 2025-09-27, **"Shall We Dig Deeper?": Designing and Evaluating Strategies for LLM Agents to Advance Knowledge Co-Construction in Asynchronous Online Discussions**, Yuanhao Zhang et.al., Paper: [http://arxiv.org/abs/2509.23327](http://arxiv.org/abs/2509.23327)
 
-<p align=right>(<a href=#updated-on-20251016>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20251017>back to top</a>)</p>
 
 Notes: 
 
