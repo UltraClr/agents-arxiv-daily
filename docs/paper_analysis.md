@@ -1,6 +1,6 @@
 # Agent ArXiv Daily - Paper Analysis
 
-## Updated on 2025.10.17
+## Updated on 2025.10.18
 
 This page contains AI-generated analysis of recent papers. The analysis is generated using Claude AI via OpenAI-compatible API.
 
@@ -3312,5 +3312,5 @@ This page contains AI-generated analysis of recent papers. The analysis is gener
 </details>
 
 
-<p align="right">(<a href="#updated-on-20251017">back to top</a>)</p>
+<p align="right">(<a href="#updated-on-20251018">back to top</a>)</p>
 
