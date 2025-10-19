@@ -1,5 +1,5 @@
 # Agent Research Papers
-### Automatically Updated on 2025.10.18
+### Automatically Updated on 2025.10.19
 Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Autonomous Agent`,`LLM Agent`
 
 > If you have any other keywords, please feel free to let us know :) 
@@ -395,7 +395,7 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 |**2025-08-21**|**Noise, Adaptation, and Strategy: Assessing LLM Fidelity in Decision-Making**|Yuanjun Feng et.al.|[2508.15926](http://arxiv.org/abs/2508.15926)|null|
 |**2025-08-21**|**End-to-End Agentic RAG System Training for Traceable Diagnostic Reasoning**|Qiaoyu Zheng et.al.|[2508.15746](http://arxiv.org/abs/2508.15746)|null|
 
-<p align=right>(<a href=#updated-on-20251018>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20251019>back to top</a>)</p>
 
 Notes: 
 
