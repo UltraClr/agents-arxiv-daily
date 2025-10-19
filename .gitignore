@@ -9,6 +9,9 @@ __pycache__
 prompt1
 results
 
+# Temporary files (generated during workflow, not needed in version control)
+docs/newly_analyzed_papers.json
+
 CMakeLists.txt.user
 CMakeLists_modified.txt
 

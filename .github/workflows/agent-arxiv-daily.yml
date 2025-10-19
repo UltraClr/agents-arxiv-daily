@@ -73,7 +73,7 @@ jobs:
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           commit-message: "Github Action Automatic Update: Papers and Analysis"
-          files: README.md docs/agent-arxiv-daily.json docs/agent-arxiv-daily-web.json docs/index.md docs/agent-arxiv-daily-wechat.json docs/wechat.md docs/agent-arxiv-daily-analysis.json docs/paper_analysis.md docs/newly_analyzed_papers.json
+          files: README.md docs/agent-arxiv-daily.json docs/agent-arxiv-daily-web.json docs/index.md docs/agent-arxiv-daily-wechat.json docs/wechat.md docs/agent-arxiv-daily-analysis.json docs/paper_analysis.md
           rebase: 'true'
           name: ${{ env.GITHUB_USER_NAME }}
           email: ${{ env.GITHUB_USER_EMAIL }}
