@@ -25,5 +25,10 @@ md_wechat_path: './docs/wechat.md'
 
 # keywords to search
 keywords:
-    "Agent": 
+    "Agent":
         filters: ["Agent","Multi-Agent","Tool Learning","Agent RL","Autonomous Agent","LLM Agent"]
+
+# Keyword Relevance Validation
+enable_keyword_validation: true      # Enable automatic keyword relevance checking
+keyword_relevance_threshold: 5.0     # Papers scored below this threshold (0-10 scale) will be blacklisted
+auto_blacklist: true                 # Automatically add low-relevance papers to blacklist

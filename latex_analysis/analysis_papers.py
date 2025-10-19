@@ -2,6 +2,8 @@ import os
 import json
 import argparse
 import logging
+import yaml
+import re
 from tqdm import tqdm
 from openai_api import OpenAIClient
 
@@ -10,14 +12,90 @@ logging.basicConfig(format='[%(asctime)s %(levelname)s] %(message)s',
                     level=logging.INFO)
 
 
-def create_analysis_prompt(parsed_data):
+def load_config(config_path='../config.yaml'):
+    """Load configuration from YAML file"""
+    with open(config_path, 'r') as f:
+        return yaml.load(f, Loader=yaml.FullLoader)
+
+
+def get_search_keywords(config):
+    """Extract search keywords from config"""
+    keywords_list = []
+    for category, data in config.get('keywords', {}).items():
+        keywords_list.extend(data.get('filters', []))
+    return keywords_list
+
+
+def add_to_blacklist(paper_title, blacklist_path='../blacklists.txt'):
+    """Add paper title to blacklist file"""
+    try:
+        # Read existing blacklist
+        if os.path.exists(blacklist_path):
+            with open(blacklist_path, 'r', encoding='utf-8') as f:
+                existing = set(line.strip() for line in f if line.strip())
+        else:
+            existing = set()
+
+        # Add new title if not already present
+        if paper_title not in existing:
+            with open(blacklist_path, 'a', encoding='utf-8') as f:
+                f.write(paper_title + '\n')
+            logging.info(f'Added to blacklist: {paper_title}')
+            return True
+        else:
+            logging.info(f'Already in blacklist: {paper_title}')
+            return False
+    except Exception as e:
+        logging.error(f'Failed to add to blacklist: {e}')
+        return False
+
+
+def extract_relevance_from_json(analysis_json):
+    """Extract relevance score from analysis JSON"""
+    try:
+        # Check for keyword_relevance field
+        if 'keyword_relevance' in analysis_json:
+            kr = analysis_json['keyword_relevance']
+            if isinstance(kr, dict):
+                return kr.get('score'), kr.get('reasoning'), kr.get('matching_keywords', [])
+            elif isinstance(kr, (int, float)):
+                return float(kr), None, []
+
+        # Check for direct relevance_score field
+        if 'relevance_score' in analysis_json:
+            return float(analysis_json['relevance_score']), None, []
+
+        return None, None, []
+    except Exception as e:
+        logging.error(f'Error extracting relevance from JSON: {e}')
+        return None, None, []
+
+
+def create_analysis_prompt(parsed_data, search_keywords=None, enable_validation=False):
     """
     Create analysis prompt from parsed LaTeX content
     @param parsed_data: dict from parse_latex.py output (title, authors, affiliations, urls, abstract, sections)
+    @param search_keywords: list of keywords to validate against (optional)
+    @param enable_validation: whether to include keyword relevance validation
     @return: formatted prompt string
     """
     # Convert parsed_data to formatted JSON string
     import json
+
+    # Build keyword relevance section if validation is enabled
+    keyword_relevance_field = ""
+    keyword_instruction = ""
+    if enable_validation and search_keywords:
+        keywords_str = ', '.join(search_keywords)
+        keyword_relevance_field = f""",
+  "keyword_relevance": {{
+    "score": 0.0,  // 0-10 scale: 0-3=barely related, 4-6=partially related, 7-10=highly relevant
+    "reasoning": "Brief explanation of why this paper does or doesn't relate to the keywords",
+    "matching_keywords": ["list of which specific keywords from [{keywords_str}] this paper addresses"]
+  }}"""
+        keyword_instruction = f"""
+- Evaluate how relevant this paper is to these search keywords: {keywords_str}
+- Provide a relevance score (0-10) and explain your reasoning"""
 
     prompt = f"""Analyze this research paper extracted from LaTeX source:
 
@@ -46,14 +124,14 @@ Please provide a comprehensive analysis in the following JSON format:
     "conclusions": "What conclusions are drawn from the research?",
     "limitations": "Can you identify any limitations of the study mentioned by the authors?",
     "future_research": "What future research directions do the authors suggest?"
-  }}
+  }}{keyword_relevance_field}
 }}
 
 IMPORTANT:
 - Extract metadata (authors, affiliations, URLs) from the provided data
 - Return valid JSON only, no additional text
 - Be concise but thorough in the analysis section
-- Focus on technical accuracy and practical insights"""
+- Focus on technical accuracy and practical insights{keyword_instruction}"""
 
     return prompt
 
@@ -106,15 +184,31 @@ def get_category_from_arxiv_json(arxiv_id, arxiv_json_path):
         return 'Uncategorized'
 
 
-def analyze_all_papers(parsed_content_path, saved_path, api='openai', arxiv_json_path='../docs/agent-arxiv-daily.json'):
+def analyze_all_papers(parsed_content_path, saved_path, api='openai', arxiv_json_path='../docs/agent-arxiv-daily.json', config_path='../config.yaml'):
     """
     Analyze multiple papers using LLM and save to a consolidated JSON file
     @param parsed_content_path: Directory containing parsed content JSON files
     @param saved_path: Path to save consolidated analysis JSON (e.g., ../docs/agent-arxiv-daily-analysis.json)
     @param api: LLM API to use ('openai' or 'claude')
     @param arxiv_json_path: Path to arXiv metadata JSON file
+    @param config_path: Path to configuration file
     @return: True if all successful, False otherwise
     """
+    # Load configuration for keyword validation
+    config = load_config(config_path)
+    enable_validation = config.get('enable_keyword_validation', False)
+    relevance_threshold = config.get('keyword_relevance_threshold', 5.0)
+    auto_blacklist = config.get('auto_blacklist', True)
+    blacklist_path = config.get('black_list_path', '../blacklists.txt')
+
+    # Get search keywords
+    search_keywords = get_search_keywords(config)
+    keywords_str = ', '.join(search_keywords)
+
+    logging.info(f'Keyword validation: {enable_validation}')
+    logging.info(f'Relevance threshold: {relevance_threshold}')
+    logging.info(f'Search keywords: {keywords_str}')
+
     # Initialize API client
     if api == 'openai':
         # Use API key file for OpenAI
@@ -181,8 +275,8 @@ def analyze_all_papers(parsed_content_path, saved_path, api='openai', arxiv_json
 
         publish_date = parsed_data.get('publish_date')
 
-        # Create prompt and call LLM
-        prompt = create_analysis_prompt(parsed_data)
+        # Create prompt and call LLM (with keyword validation if enabled)
+        prompt = create_analysis_prompt(parsed_data, search_keywords, enable_validation)
 
         try:
             response = api_client.send_message(prompt)
@@ -209,6 +303,32 @@ def analyze_all_papers(parsed_content_path, saved_path, api='openai', arxiv_json
                     'metadata': analysis_json.get('metadata', {}),
                     'analysis': analysis_json.get('analysis', {})
                 }
+
+                # Process keyword relevance validation
+                if enable_validation:
+                    relevance_score, reasoning, matching_keywords = extract_relevance_from_json(analysis_json)
+
+                    if relevance_score is not None:
+                        logging.info(f'{arxiv_id}: Relevance score = {relevance_score}')
+                        result['keyword_relevance'] = {
+                            'score': relevance_score,
+                            'reasoning': reasoning,
+                            'matching_keywords': matching_keywords
+                        }
+
+                        # Add to blacklist if below threshold
+                        if auto_blacklist and relevance_score < relevance_threshold:
+                            add_to_blacklist(title, blacklist_path)
+                            logging.warning(f'{arxiv_id}: Low relevance ({relevance_score}), added to blacklist: {title}')
+                            result['blacklisted'] = True
+                        else:
+                            logging.info(f'{arxiv_id}: Relevance score acceptable ({relevance_score} >= {relevance_threshold})')
+                            result['blacklisted'] = False
+                    else:
+                        logging.warning(f'{arxiv_id}: Could not extract relevance score from JSON')
+                        result['keyword_relevance'] = None
+                        result['blacklisted'] = False
+
             except json.JSONDecodeError:
                 # Fallback: if LLM didn't return valid JSON, save as text
                 logging.warning(f'{arxiv_id}: LLM response is not valid JSON, saving as text')
@@ -221,7 +341,8 @@ def analyze_all_papers(parsed_content_path, saved_path, api='openai', arxiv_json
                         'affiliations': parsed_data.get('affiliations', []),
                         'resources': {'other_links': parsed_data.get('urls', [])}
                     },
-                    'analysis': {'raw_text': response}
+                    'analysis': {'raw_text': response},
+                    'blacklisted': False
                 }
 
             # Add to analysis_data under the appropriate category
@@ -254,7 +375,7 @@ def analyze_all_papers(parsed_content_path, saved_path, api='openai', arxiv_json
 
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser(description='Analyze parsed LaTeX content using LLM.')
+    parser = argparse.ArgumentParser(description='Analyze parsed LaTeX content using LLM with optional keyword relevance validation.')
     parser.add_argument('--parsed_content_path', type=str,
                         default='./results/parsed_content',
                         help='Directory containing parsed content JSON files.')
@@ -267,6 +388,9 @@ if __name__ == '__main__':
     parser.add_argument('--arxiv_json_path', type=str,
                         default='../docs/agent-arxiv-daily.json',
                         help='Path to arXiv metadata JSON file')
+    parser.add_argument('--config_path', type=str,
+                        default='../config.yaml',
+                        help='Path to configuration file')
     parser.add_argument('--default_url', type=str,
                         default=None,
                         help='API base URL (for OpenAI-compatible APIs)')
@@ -278,6 +402,7 @@ if __name__ == '__main__':
         args.parsed_content_path,
         args.saved_path,
         args.api,
-        args.arxiv_json_path
+        args.arxiv_json_path,
+        args.config_path
     )
     sys.exit(0 if success else 1)
