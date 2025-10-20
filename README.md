@@ -19,7 +19,15 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 
 |Publish Date|Title|Authors|PDF|Code|
 |---|---|---|---|---|
+|**2025-10-17**|**PolySkill: Learning Generalizable Skills Through Polymorphic Abstraction**|Simon Yu et.al.|[2510.15863](http://arxiv.org/abs/2510.15863)|null|
+|**2025-10-17**|**AURA: An Agent Autonomy Risk Assessment Framework**|Lorenzo Satta Chiris et.al.|[2510.15739](http://arxiv.org/abs/2510.15739)|null|
+|**2025-10-17**|**The Spark Effect: On Engineering Creative Diversity in Multi-Agent AI Systems**|Alexander Doudkin et.al.|[2510.15568](http://arxiv.org/abs/2510.15568)|null|
+|**2025-10-17**|**SHARE: Scene-Human Aligned Reconstruction**|Joshua Li et.al.|[2510.15342](http://arxiv.org/abs/2510.15342)|null|
+|**2025-10-17**|**Exemplar-Guided Planing: Enhanced LLM Agent for KGQA**|Jingao Xu et.al.|[2510.15283](http://arxiv.org/abs/2510.15283)|null|
+|**2025-10-17**|**Multi-dimensional Data Analysis and Applications Basing on LLM Agents and Knowledge Graph Interactions**|Xi Wang et.al.|[2510.15258](http://arxiv.org/abs/2510.15258)|null|
 |**2025-10-17**|**Where to Search: Measure the Prior-Structured Search Space of LLM Agents**|Zhuo-Yang Song et.al.|[2510.14846](http://arxiv.org/abs/2510.14846)|null|
+|**2025-10-16**|**MAGPIE: A benchmark for Multi-AGent contextual PrIvacy Evaluation**|Gurusha Juneja et.al.|[2510.15186](http://arxiv.org/abs/2510.15186)|null|
+|**2025-10-16**|**Internalizing World Models via Self-Play Finetuning for Agentic RL**|Shiqi Chen et.al.|[2510.15047](http://arxiv.org/abs/2510.15047)|null|
 |**2025-10-16**|**Information Gain-based Policy Optimization: A Simple and Effective Approach for Multi-Turn LLM Agents**|Guoqing Wang et.al.|[2510.14967](http://arxiv.org/abs/2510.14967)|null|
 |**2025-10-16**|**The Gatekeeper Knows Enough**|Fikresilase Wondmeneh Abebayew et.al.|[2510.14881](http://arxiv.org/abs/2510.14881)|null|
 |**2025-10-16**|**ToolPRM: Fine-Grained Inference Scaling of Structured Outputs for Function Calling**|Jianghao Lin et.al.|[2510.14703](http://arxiv.org/abs/2510.14703)|null|
