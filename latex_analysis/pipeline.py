@@ -1,6 +1,7 @@
 """
-Streaming pipeline for LaTeX-based paper analysis
+Streaming pipeline for LaTeX-based paper analysis with PDF fallback
 Process each paper as soon as it's downloaded: download -> parse -> analyze
+Automatically falls back to PDF analysis if LaTeX source is unavailable
 """
 import os
 import json
@@ -8,28 +9,51 @@ import argparse
 import logging
 import sys
 import time
+import re
 from tqdm import tqdm
+from pdfminer.high_level import extract_text
 
-# Import individual processing functions
+# Import LaTeX processing functions
 from download_latex import download_latex_source, find_all_tex_files
 from parse_latex import LaTeXParser, find_main_tex_file, load_arxiv_metadata
-from analysis_papers import create_analysis_prompt, get_title_from_arxiv_json, get_category_from_arxiv_json
+from analysis_papers import (
+    create_analysis_prompt,
+    get_title_from_arxiv_json,
+    get_category_from_arxiv_json,
+    load_config,
+    get_search_keywords,
+    extract_relevance_from_json,
+    add_to_blacklist
+)
 from openai_api import OpenAIClient
 from generating_paper_analysis import json_to_md
+
+# Import PDF processing functions (reuse existing code)
+CURRENT_DIR = os.path.dirname(os.path.abspath(__file__))
+PROJECT_ROOT = os.path.abspath(os.path.join(CURRENT_DIR, '..'))
+
+if PROJECT_ROOT not in sys.path:
+    sys.path.insert(0, PROJECT_ROOT)
+
+from pdf_analysis.download_pdf import download_pdf
 
 logging.basicConfig(format='[%(asctime)s %(levelname)s] %(message)s',
                     datefmt='%m/%d/%Y %H:%M:%S',
                     level=logging.INFO)
 
 
-def process_single_paper(arxiv_id, raw_latex_dir, parsed_content_dir,
-                         api_client, analysis_data, arxiv_json_path, arxiv_metadata,
-                         force_reprocess=False):
+def process_single_paper(arxiv_id, raw_latex_dir, raw_pdf_dir, parsed_content_dir,
+                         parsed_pdf_dir, api_client, analysis_data, arxiv_json_path,
+                         arxiv_metadata, config, enable_validation, search_keywords,
+                         relevance_threshold, auto_blacklist, blacklist_path,
+                         force_reprocess=False, enable_pdf_fallback=True):
     """
-    Process a single paper: download -> parse -> analyze
+    Process a single paper: download -> parse -> analyze (with PDF fallback)
     @param arxiv_id: arXiv ID to process
     @param raw_latex_dir: Directory to save raw LaTeX
-    @param parsed_content_dir: Directory to save parsed content
+    @param raw_pdf_dir: Directory to save raw PDFs (for fallback)
+    @param parsed_content_dir: Directory to save parsed LaTeX content
+    @param parsed_pdf_dir: Directory to save parsed PDF content (for fallback)
     @param api_client: LLM API client
     @param analysis_data: Dictionary to store analysis results (modified in place)
     @param arxiv_json_path: Path to arXiv metadata JSON
@@ -52,14 +76,34 @@ def process_single_paper(arxiv_id, raw_latex_dir, parsed_content_dir,
     extract_dir = download_latex_source(arxiv_id, raw_latex_dir)
 
     if not extract_dir:
-        logging.error(f'{arxiv_id}: Download failed, skipping')
-        return False
+        if enable_pdf_fallback:
+            logging.warning(f'{arxiv_id}: LaTeX download failed, trying PDF fallback')
+            return process_single_paper_pdf(
+                arxiv_id, raw_pdf_dir, parsed_pdf_dir,
+                api_client, analysis_data, arxiv_json_path,
+                arxiv_metadata, config, enable_validation,
+                search_keywords, relevance_threshold,
+                auto_blacklist, blacklist_path
+            )
+        else:
+            logging.error(f'{arxiv_id}: LaTeX download failed, skipping')
+            return False
 
     # Verify LaTeX files exist
     tex_files = find_all_tex_files(extract_dir)
     if not tex_files:
-        logging.warning(f'{arxiv_id}: No .tex files found, skipping')
-        return False
+        if enable_pdf_fallback:
+            logging.warning(f'{arxiv_id}: No .tex files found, trying PDF fallback')
+            return process_single_paper_pdf(
+                arxiv_id, raw_pdf_dir, parsed_pdf_dir,
+                api_client, analysis_data, arxiv_json_path,
+                arxiv_metadata, config, enable_validation,
+                search_keywords, relevance_threshold,
+                auto_blacklist, blacklist_path
+            )
+        else:
+            logging.warning(f'{arxiv_id}: No .tex files found, skipping')
+            return False
 
     logging.info(f'{arxiv_id}: Found {len(tex_files)} .tex files')
 
@@ -105,8 +149,8 @@ def process_single_paper(arxiv_id, raw_latex_dir, parsed_content_dir,
     if not title:
         title = parsed_data.get('title', f'Paper {arxiv_id}')
 
-    # Create prompt and call LLM
-    prompt = create_analysis_prompt(parsed_data)
+    # Create prompt and call LLM (with keyword validation if enabled)
+    prompt = create_analysis_prompt(parsed_data, search_keywords, enable_validation)
 
     try:
         response = api_client.send_message(prompt)
@@ -117,7 +161,6 @@ def process_single_paper(arxiv_id, raw_latex_dir, parsed_content_dir,
 
         # Try to parse LLM response as JSON
         try:
-            import re
             json_match = re.search(r'\{.*\}', response, re.DOTALL)
             if json_match:
                 analysis_json = json.loads(json_match.group(0))
@@ -129,9 +172,35 @@ def process_single_paper(arxiv_id, raw_latex_dir, parsed_content_dir,
                 'arxiv_id': arxiv_id,
                 'title': title,
                 'publish_date': publish_date,
+                'source_type': 'latex',  # Mark source type
                 'metadata': analysis_json.get('metadata', {}),
                 'analysis': analysis_json.get('analysis', {})
             }
+
+            # Process keyword relevance validation (same logic as PDF)
+            if enable_validation:
+                relevance_score, reasoning, matching_keywords = extract_relevance_from_json(analysis_json)
+
+                if relevance_score is not None:
+                    logging.info(f'{arxiv_id}: Relevance score = {relevance_score}')
+                    result['keyword_relevance'] = {
+                        'score': relevance_score,
+                        'reasoning': reasoning,
+                        'matching_keywords': matching_keywords
+                    }
+
+                    # Add to blacklist if below threshold
+                    if auto_blacklist and relevance_score < relevance_threshold:
+                        add_to_blacklist(title, blacklist_path)
+                        logging.warning(f'{arxiv_id}: Low relevance ({relevance_score}), added to blacklist')
+                        result['blacklisted'] = True
+                    else:
+                        logging.info(f'{arxiv_id}: Relevance acceptable ({relevance_score} >= {relevance_threshold})')
+                        result['blacklisted'] = False
+                else:
+                    logging.warning(f'{arxiv_id}: Could not extract relevance score')
+                    result['keyword_relevance'] = None
+                    result['blacklisted'] = False
         except json.JSONDecodeError:
             # Fallback: if LLM didn't return valid JSON, save as text
             logging.warning(f'{arxiv_id}: LLM response is not valid JSON, saving as text')
@@ -139,12 +208,14 @@ def process_single_paper(arxiv_id, raw_latex_dir, parsed_content_dir,
                 'arxiv_id': arxiv_id,
                 'title': title,
                 'publish_date': publish_date,
+                'source_type': 'latex',  # Mark source type
                 'metadata': {
                     'authors': parsed_data.get('authors', []),
                     'affiliations': parsed_data.get('affiliations', []),
                     'resources': {'other_links': parsed_data.get('urls', [])}
                 },
-                'analysis': {'raw_text': response}
+                'analysis': {'raw_text': response},
+                'blacklisted': False
             }
 
         # Add to analysis_data under the appropriate category
@@ -161,19 +232,205 @@ def process_single_paper(arxiv_id, raw_latex_dir, parsed_content_dir,
         return False
 
 
+def process_single_paper_pdf(arxiv_id, raw_pdf_dir, parsed_pdf_dir,
+                             api_client, analysis_data, arxiv_json_path,
+                             arxiv_metadata, config, enable_validation,
+                             search_keywords, relevance_threshold,
+                             auto_blacklist, blacklist_path):
+    """
+    PDF fallback processing pipeline
+    Called when LaTeX source is unavailable
+    Reuses pdf_analysis module components
+    @return: True if successful, False otherwise
+    """
+    logging.info(f'{arxiv_id}: [PDF FALLBACK] LaTeX not available, using PDF analysis')
+
+    # Step 1: Download PDF (reuse pdf_analysis/download_pdf.py)
+    logging.info(f'{arxiv_id}: [1/3] Downloading PDF...')
+    pdf_url = f'https://arxiv.org/pdf/{arxiv_id}.pdf'
+    pdf_path = os.path.join(raw_pdf_dir, f'{arxiv_id}.pdf')
+
+    try:
+        os.makedirs(raw_pdf_dir, exist_ok=True)
+        download_pdf(raw_pdf_dir, arxiv_id, pdf_url)
+
+        if not os.path.exists(pdf_path):
+            logging.error(f'{arxiv_id}: PDF download failed')
+            return False
+
+        logging.info(f'{arxiv_id}: PDF downloaded successfully')
+    except Exception as e:
+        logging.error(f'{arxiv_id}: PDF download error - {e}')
+        return False
+
+    # Step 2: Parse PDF
+    logging.info(f'{arxiv_id}: [2/3] Parsing PDF...')
+    parsed_md_path = os.path.join(parsed_pdf_dir, f'{arxiv_id}.md')
+
+    if not os.path.exists(parsed_md_path):
+        try:
+            # Extract text using pdfminer
+            text_content = extract_text(pdf_path)
+
+            # Clean text
+            text_content = re.sub(r"-\n", "", text_content)
+            text_content = text_content.replace("\n\n\n", "\n\n")
+
+            # Get title
+            title = arxiv_metadata.get(arxiv_id, {}).get('title', f'Paper {arxiv_id}')
+            if not title or title == f'Paper {arxiv_id}':
+                title = get_title_from_arxiv_json(arxiv_id, arxiv_json_path)
+
+            # Save as markdown
+            os.makedirs(parsed_pdf_dir, exist_ok=True)
+            with open(parsed_md_path, 'w', encoding='utf-8') as f:
+                f.write(f"# {title}\n\n{text_content}")
+
+            logging.info(f'{arxiv_id}: PDF parsed successfully')
+        except Exception as e:
+            logging.error(f'{arxiv_id}: PDF parsing failed - {e}')
+            return False
+
+    # Step 3: LLM Analysis
+    if not api_client:
+        logging.info(f'{arxiv_id}: Skipping analysis (no API client)')
+        return True
+
+    logging.info(f'{arxiv_id}: [3/3] Running LLM analysis...')
+
+    # Read parsed content
+    with open(parsed_md_path, 'r', encoding='utf-8') as f:
+        parsed_text = f.read()
+
+    # Build parsed_data structure (compatible with LaTeX format)
+    title = arxiv_metadata.get(arxiv_id, {}).get('title')
+    if not title:
+        title = get_title_from_arxiv_json(arxiv_id, arxiv_json_path)
+
+    publish_date = arxiv_metadata.get(arxiv_id, {}).get('publish_date')
+
+    parsed_data = {
+        'title': title or f'Paper {arxiv_id}',
+        'abstract': '',  # PDF hard to extract accurately
+        'authors': [],
+        'affiliations': [],
+        'urls': [],
+        'sections': parsed_text[:100000],  # Limit length to avoid token limit
+        'source_type': 'pdf'  # Mark source type
+    }
+
+    # Get paper category
+    category = get_category_from_arxiv_json(arxiv_id, arxiv_json_path)
+
+    # Create prompt (with keyword validation)
+    prompt = create_analysis_prompt(parsed_data, search_keywords, enable_validation)
+
+    try:
+        response = api_client.send_message(prompt)
+
+        if not response:
+            logging.error(f'{arxiv_id}: Empty response from API')
+            return False
+
+        # Parse JSON response
+        try:
+            json_match = re.search(r'\{.*\}', response, re.DOTALL)
+            if json_match:
+                analysis_json = json.loads(json_match.group(0))
+            else:
+                analysis_json = json.loads(response)
+
+            # Build result
+            result = {
+                'arxiv_id': arxiv_id,
+                'title': title,
+                'publish_date': publish_date,
+                'source_type': 'pdf',  # Mark source
+                'metadata': analysis_json.get('metadata', {}),
+                'analysis': analysis_json.get('analysis', {})
+            }
+
+            # Process keyword validation (same logic as LaTeX)
+            if enable_validation:
+                relevance_score, reasoning, matching_keywords = extract_relevance_from_json(analysis_json)
+
+                if relevance_score is not None:
+                    logging.info(f'{arxiv_id}: Relevance score = {relevance_score}')
+                    result['keyword_relevance'] = {
+                        'score': relevance_score,
+                        'reasoning': reasoning,
+                        'matching_keywords': matching_keywords
+                    }
+
+                    # Add to blacklist if below threshold
+                    if auto_blacklist and relevance_score < relevance_threshold:
+                        add_to_blacklist(title, blacklist_path)
+                        logging.warning(f'{arxiv_id}: Low relevance ({relevance_score}), added to blacklist')
+                        result['blacklisted'] = True
+                    else:
+                        logging.info(f'{arxiv_id}: Relevance acceptable ({relevance_score} >= {relevance_threshold})')
+                        result['blacklisted'] = False
+                else:
+                    logging.warning(f'{arxiv_id}: Could not extract relevance score')
+                    result['keyword_relevance'] = None
+                    result['blacklisted'] = False
+
+        except json.JSONDecodeError:
+            logging.warning(f'{arxiv_id}: Invalid JSON response, saving as text')
+            result = {
+                'arxiv_id': arxiv_id,
+                'title': title,
+                'publish_date': publish_date,
+                'source_type': 'pdf',
+                'metadata': {'authors': [], 'affiliations': [], 'resources': {}},
+                'analysis': {'raw_text': response},
+                'blacklisted': False
+            }
+
+        # Add to analysis data
+        if category not in analysis_data:
+            analysis_data[category] = {}
+
+        analysis_data[category][arxiv_id] = result
+
+        logging.info(f'{arxiv_id}: PDF analysis complete (category: {category})')
+        return True
+
+    except Exception as e:
+        logging.error(f'{arxiv_id}: API call failed - {e}')
+        return False
+
+
 def run_streaming_pipeline(args):
     """
-    Run the streaming LaTeX analysis pipeline
+    Run the streaming LaTeX analysis pipeline with PDF fallback
     Process papers one by one: download -> parse -> analyze
+    Automatically falls back to PDF if LaTeX is unavailable
     """
+    # Load configuration for keyword validation
+    config = load_config(args.config_path)
+    enable_validation = config.get('enable_keyword_validation', False)
+    relevance_threshold = config.get('keyword_relevance_threshold', 5.0)
+    auto_blacklist = config.get('auto_blacklist', True)
+    blacklist_path = config.get('black_list_path', '../blacklists.txt')
+
+    # Get search keywords
+    search_keywords = get_search_keywords(config)
+
+    logging.info(f'Keyword validation: {enable_validation}')
+    logging.info(f'Relevance threshold: {relevance_threshold}')
+    logging.info(f'PDF fallback: {args.enable_pdf_fallback}')
+
     # Define paths
     output_dir = args.output_dir
     raw_latex_dir = os.path.join(output_dir, 'raw_latex')
+    raw_pdf_dir = os.path.join(output_dir, 'raw_pdfs')          # Added for PDF fallback
     parsed_content_dir = os.path.join(output_dir, 'parsed_content')
+    parsed_pdf_dir = os.path.join(output_dir, 'parsed_pdfs')    # Added for PDF fallback
     llm_analysis_path = '../docs/agent-arxiv-daily-analysis.json'
 
     # Create directories
-    for directory in [raw_latex_dir, parsed_content_dir]:
+    for directory in [raw_latex_dir, raw_pdf_dir, parsed_content_dir, parsed_pdf_dir]:
         os.makedirs(directory, exist_ok=True)
 
     # Initialize API client if needed
@@ -234,12 +491,21 @@ def run_streaming_pipeline(args):
         result = process_single_paper(
             arxiv_id=arxiv_id,
             raw_latex_dir=raw_latex_dir,
+            raw_pdf_dir=raw_pdf_dir,                    # Added
             parsed_content_dir=parsed_content_dir,
+            parsed_pdf_dir=parsed_pdf_dir,              # Added
             api_client=api_client,
             analysis_data=analysis_data,
             arxiv_json_path=args.json_path,
             arxiv_metadata=arxiv_metadata,
-            force_reprocess=args.force_reprocess
+            config=config,                              # Added
+            enable_validation=enable_validation,        # Added
+            search_keywords=search_keywords,            # Added
+            relevance_threshold=relevance_threshold,    # Added
+            auto_blacklist=auto_blacklist,              # Added
+            blacklist_path=blacklist_path,              # Added
+            force_reprocess=args.force_reprocess,
+            enable_pdf_fallback=args.enable_pdf_fallback  # Added
         )
 
         # Handle different results
@@ -322,7 +588,7 @@ def run_streaming_pipeline(args):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(
-        description='Streaming pipeline for LaTeX-based paper analysis (process one paper at a time)',
+        description='Streaming pipeline for LaTeX-based paper analysis with PDF fallback',
         formatter_class=argparse.ArgumentDefaultsHelpFormatter
     )
     default_api_key = os.environ.get('ANTHROPIC_AUTH_TOKEN')
@@ -348,6 +614,12 @@ if __name__ == '__main__':
                         help='Skip LLM analysis step (only download and parse)')
     parser.add_argument('--force_reprocess', action='store_true',
                         help='Force reprocessing of already analyzed papers')
+    parser.add_argument('--enable_pdf_fallback', action='store_true',
+                        default=True,
+                        help='Enable PDF fallback when LaTeX source is unavailable (default: True)')
+    parser.add_argument('--config_path', type=str,
+                        default='../config.yaml',
+                        help='Path to configuration file for keyword validation')
 
     # Limits
     parser.add_argument('--max_papers', type=int, default=None,
