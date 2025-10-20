@@ -1,5 +1,5 @@
 # Agent Research Papers
-### Automatically Updated on 2025.10.19
+### Automatically Updated on 2025.10.20
 Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Autonomous Agent`,`LLM Agent`
 
 > If you have any other keywords, please feel free to let us know :) 
@@ -19,9 +19,9 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 
 |Publish Date|Title|Authors|PDF|Code|
 |---|---|---|---|---|
+|**2025-10-17**|**Where to Search: Measure the Prior-Structured Search Space of LLM Agents**|Zhuo-Yang Song et.al.|[2510.14846](http://arxiv.org/abs/2510.14846)|null|
 |**2025-10-16**|**Information Gain-based Policy Optimization: A Simple and Effective Approach for Multi-Turn LLM Agents**|Guoqing Wang et.al.|[2510.14967](http://arxiv.org/abs/2510.14967)|null|
 |**2025-10-16**|**The Gatekeeper Knows Enough**|Fikresilase Wondmeneh Abebayew et.al.|[2510.14881](http://arxiv.org/abs/2510.14881)|null|
-|**2025-10-16**|**Where to Search: Measure the Prior-Structured Search Space of LLM Agents**|Zhuo-Yang Song et.al.|[2510.14846](http://arxiv.org/abs/2510.14846)|null|
 |**2025-10-16**|**ToolPRM: Fine-Grained Inference Scaling of Structured Outputs for Function Calling**|Jianghao Lin et.al.|[2510.14703](http://arxiv.org/abs/2510.14703)|null|
 |**2025-10-16**|**LLM Agents for Automated Web Vulnerability Reproduction: Are We There Yet?**|Bin Liu et.al.|[2510.14700](http://arxiv.org/abs/2510.14700)|null|
 |**2025-10-16**|**LLM Agents Beyond Utility: An Open-Ended Perspective**|Asen Nachkov et.al.|[2510.14548](http://arxiv.org/abs/2510.14548)|null|
@@ -395,7 +395,7 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 |**2025-08-21**|**Noise, Adaptation, and Strategy: Assessing LLM Fidelity in Decision-Making**|Yuanjun Feng et.al.|[2508.15926](http://arxiv.org/abs/2508.15926)|null|
 |**2025-08-21**|**End-to-End Agentic RAG System Training for Traceable Diagnostic Reasoning**|Qiaoyu Zheng et.al.|[2508.15746](http://arxiv.org/abs/2508.15746)|null|
 
-<p align=right>(<a href=#updated-on-20251019>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20251020>back to top</a>)</p>
 
 Notes: 
 

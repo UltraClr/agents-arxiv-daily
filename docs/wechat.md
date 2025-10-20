@@ -1,5 +1,5 @@
 # Agent Research Papers
-> Updated on 2025.10.19
+> Updated on 2025.10.20
 Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Autonomous Agent`,`LLM Agent`
 
 > If you have any other keywords, please feel free to let us know :) 
@@ -21,7 +21,7 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 - 2025-10-12, **Zero-Shot Large Language Model Agents for Fully Automated Radiotherapy Treatment Planning**, Dongrong Yang et.al., Paper: [http://arxiv.org/abs/2510.11754](http://arxiv.org/abs/2510.11754)
 - 2025-09-30, **Your Agent May Misevolve: Emergent Risks in Self-evolving LLM Agents**, Shuai Shao et.al., Paper: [http://arxiv.org/abs/2509.26354](http://arxiv.org/abs/2509.26354)
 - 2025-10-16, **Why Instant-Runoff Voting Is So Resilient to Coalitional Manipulation: Phase Transitions in the Perturbed Culture**, François Durand et.al., Paper: [http://arxiv.org/abs/2510.14450](http://arxiv.org/abs/2510.14450)
-- 2025-10-16, **Where to Search: Measure the Prior-Structured Search Space of LLM Agents**, Zhuo-Yang Song et.al., Paper: [http://arxiv.org/abs/2510.14846](http://arxiv.org/abs/2510.14846)
+- 2025-10-17, **Where to Search: Measure the Prior-Structured Search Space of LLM Agents**, Zhuo-Yang Song et.al., Paper: [http://arxiv.org/abs/2510.14846](http://arxiv.org/abs/2510.14846)
 - 2025-09-29, **Where LLM Agents Fail and How They can Learn From Failures**, Kunlun Zhu et.al., Paper: [http://arxiv.org/abs/2509.25370](http://arxiv.org/abs/2509.25370)
 - 2025-10-08, **When Machines Meet Each Other: Network Effects and the Strategic Role of History in Multi-Agent AI**, Yu Liu et.al., Paper: [http://arxiv.org/abs/2510.06903](http://arxiv.org/abs/2510.06903)
 - 2025-10-10, **When LLM Agents Meet Graph Optimization: An Automated Data Quality Improvement Approach**, Zhihan Zhang et.al., Paper: [http://arxiv.org/abs/2510.08952](http://arxiv.org/abs/2510.08952)
@@ -393,7 +393,7 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 - 2025-09-15, **$ε$ -Optimal Multi-Agent Patrol using Recurrent Strategy**, Deepak Mallya et.al., Paper: [http://arxiv.org/abs/2509.11640](http://arxiv.org/abs/2509.11640)
 - 2025-09-27, **"Shall We Dig Deeper?": Designing and Evaluating Strategies for LLM Agents to Advance Knowledge Co-Construction in Asynchronous Online Discussions**, Yuanhao Zhang et.al., Paper: [http://arxiv.org/abs/2509.23327](http://arxiv.org/abs/2509.23327)
 
-<p align=right>(<a href=#updated-on-20251019>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20251020>back to top</a>)</p>
 
 Notes: 
 
