@@ -46,10 +46,12 @@ jobs:
           pip install arxiv requests pyyaml openai tqdm pdfminer.six
 
       - name: Run daily arxiv
+        timeout-minutes: 30
         run: |
           python daily_arxiv.py
 
       - name: Analyze papers with LLM
+        timeout-minutes: 150
         run: |
           cd latex_analysis
           python pipeline.py \
@@ -62,6 +64,7 @@ jobs:
         continue-on-error: true
 
       - name: Send DingTalk notification
+        timeout-minutes: 10
         env:
           DINGTALK_WEBHOOK_URL: ${{ secrets.DINGTALK_WEBHOOK_URL }}
           DINGTALK_WEBHOOK_SECRET: ${{ secrets.DINGTALK_WEBHOOK_SECRET }}
