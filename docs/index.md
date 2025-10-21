@@ -16,6 +16,22 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 
 | Publish Date | Title | Authors | PDF | Code |
 |:---------|:-----------------------|:---------|:------|:------|
+|**2025-10-20**|**Enterprise Deep Research: Steerable Multi-Agent Deep Research for Enterprise Analytics**|Akshara Prabhakar et.al.|[2510.17797](http://arxiv.org/abs/2510.17797)|null|
+|**2025-10-20**|**Executable Knowledge Graphs for Replicating AI Research**|Yujie Luo et.al.|[2510.17795](http://arxiv.org/abs/2510.17795)|null|
+|**2025-10-20**|**ShapeCraft: LLM Agents for Structured, Textured and Interactive 3D Modeling**|Shuyuan Zhang et.al.|[2510.17603](http://arxiv.org/abs/2510.17603)|null|
+|**2025-10-20**|**Cybersecurity AI: Evaluating Agentic Cybersecurity in Attack/Defense CTFs**|Francesco Balassone et.al.|[2510.17521](http://arxiv.org/abs/2510.17521)|null|
+|**2025-10-20**|**Empowering Real-World: A Survey on the Technology, Practice, and Evaluation of LLM-driven Industry Agents**|Yihong Tang et.al.|[2510.17491](http://arxiv.org/abs/2510.17491)|null|
+|**2025-10-20**|**Agentic Reinforcement Learning for Search is Unsafe**|Yushi Yang et.al.|[2510.17431](http://arxiv.org/abs/2510.17431)|null|
+|**2025-10-20**|**Diverse Planning with Simulators via Linear Temporal Logic**|Mustafa F. Abdelwahed et.al.|[2510.17418](http://arxiv.org/abs/2510.17418)|null|
+|**2025-10-20**|**Verification-Aware Planning for Multi-Agent Systems**|Tianyang Xu et.al.|[2510.17109](http://arxiv.org/abs/2510.17109)|null|
+|**2025-10-19**|**STARK: Strategic Team of Agents for Refining Kernels**|Juncheng Dong et.al.|[2510.16996](http://arxiv.org/abs/2510.16996)|null|
+|**2025-10-19**|**Lark: Biologically Inspired Neuroevolution for Multi-Stakeholder LLM Agents**|Dheeraj Chintapalli et.al.|[2510.16978](http://arxiv.org/abs/2510.16978)|null|
+|**2025-10-19**|**VAGEN: Reinforcing World Model Reasoning for Multi-Turn VLM Agents**|Kangrui Wang et.al.|[2510.16907](http://arxiv.org/abs/2510.16907)|null|
+|**2025-10-18**|**Unleashing Diverse Thinking Modes in LLMs through Multi-Agent Collaboration**|Zhixuan He et.al.|[2510.16645](http://arxiv.org/abs/2510.16645)|null|
+|**2025-10-18**|**BuildArena: A Physics-Aligned Interactive Benchmark of LLMs for Engineering Construction**|Tian Xia et.al.|[2510.16559](http://arxiv.org/abs/2510.16559)|null|
+|**2025-10-18**|**Check Yourself Before You Wreck Yourself: Selectively Quitting Improves LLM Agent Safety**|Vamshi Krishna Bonagiri et.al.|[2510.16492](http://arxiv.org/abs/2510.16492)|null|
+|**2025-10-18**|**ATA: A Neuro-Symbolic Approach to Implement Autonomous and Trustworthy Agents**|David Peer et.al.|[2510.16381](http://arxiv.org/abs/2510.16381)|null|
+|**2025-10-17**|**EvolveR: Self-Evolving LLM Agents through an Experience-Driven Lifecycle**|Rong Wu et.al.|[2510.16079](http://arxiv.org/abs/2510.16079)|null|
 |**2025-10-17**|**PolySkill: Learning Generalizable Skills Through Polymorphic Abstraction**|Simon Yu et.al.|[2510.15863](http://arxiv.org/abs/2510.15863)|null|
 |**2025-10-17**|**AURA: An Agent Autonomy Risk Assessment Framework**|Lorenzo Satta Chiris et.al.|[2510.15739](http://arxiv.org/abs/2510.15739)|null|
 |**2025-10-17**|**The Spark Effect: On Engineering Creative Diversity in Multi-Agent AI Systems**|Alexander Doudkin et.al.|[2510.15568](http://arxiv.org/abs/2510.15568)|null|
