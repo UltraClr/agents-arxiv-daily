@@ -11,7 +11,7 @@ logging.basicConfig(format='[%(asctime)s %(levelname)s] %(message)s',
 class OpenAIClient:
     """OpenAI API client for chat completions."""
 
-    def __init__(self, api_key, base_url="http://47.99.91.71:8080/openai", model_name="gpt-5"):
+    def __init__(self, api_key, base_url="http://47.99.91.71:8080/openai/claude/v1/", model_name="claude-sonnet-4-5-20250929"):
         """
         Initialize OpenAI client
         @param api_key: OpenAI API key
