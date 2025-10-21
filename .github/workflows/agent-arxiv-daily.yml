@@ -53,6 +53,7 @@ jobs:
         run: |
           cd latex_analysis
           python pipeline.py \
+            --api claude \
             --json_path ../docs/agent-arxiv-daily.json \
             --output_dir ./results \
             --delay_seconds 10 \

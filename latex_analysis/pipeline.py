@@ -25,7 +25,8 @@ from analysis_papers import (
     extract_relevance_from_json,
     add_to_blacklist
 )
-from openai_api import OpenAIClient
+from openai_api import OpenAIClient as OpenAIClientOrig
+from claude_api import OpenAIClient as ClaudeClient
 from generating_paper_analysis import json_to_md
 
 # Import PDF processing functions (reuse existing code)
@@ -440,8 +441,13 @@ def run_streaming_pipeline(args):
             logging.warning('API key not found. Skipping analysis step.')
         else:
             try:
-                api_client = OpenAIClient(args.apikey, os.environ.get('CRS_BASE_URL'))
-                logging.info('API client initialized')
+                # Select API client based on --api argument
+                if args.api == 'claude':
+                    api_client = ClaudeClient(args.apikey, os.environ.get('CRS_BASE_URL'))
+                    logging.info('Claude API client initialized')
+                else:  # openai
+                    api_client = OpenAIClientOrig(args.apikey, os.environ.get('CRS_BASE_URL'))
+                    logging.info('OpenAI API client initialized')
             except Exception as e:
                 logging.error(f'Failed to initialize API client: {e}')
 
@@ -603,9 +609,9 @@ if __name__ == '__main__':
                         help='Base directory for all outputs')
 
     # API configuration
-    parser.add_argument('--api', type=str, default='openai',
+    parser.add_argument('--api', type=str, default='claude',
                         choices=['openai', 'claude'],
-                        help='LLM API to use')
+                        help='LLM API to use (default: claude)')
     parser.add_argument('--apikey', type=str, default=default_api_key,
                         help='API key or path to API key file')
 

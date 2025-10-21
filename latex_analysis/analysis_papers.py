@@ -5,7 +5,8 @@ import logging
 import yaml
 import re
 from tqdm import tqdm
-from openai_api import OpenAIClient
+from openai_api import OpenAIClient as OpenAIClientOrig
+from claude_api import OpenAIClient as ClaudeClient
 
 logging.basicConfig(format='[%(asctime)s %(levelname)s] %(message)s',
                     datefmt='%m/%d/%Y %H:%M:%S',
@@ -210,17 +211,21 @@ def analyze_all_papers(parsed_content_path, saved_path, api='openai', arxiv_json
     logging.info(f'Search keywords: {keywords_str}')
 
     # Initialize API client
-    if api == 'openai':
-        # Use API key file for OpenAI
-        try:
-            api_key = os.environ.get('ANTHROPIC_AUTH_TOKEN')
-            base_url = os.environ.get('CRS_BASE_URL')
-            api_client = OpenAIClient(api_key, base_url)
-        except Exception as e:
-            logging.error(f'Failed to read API key: {e}')
+    try:
+        api_key = os.environ.get('ANTHROPIC_AUTH_TOKEN')
+        base_url = os.environ.get('CRS_BASE_URL')
+
+        if api == 'claude':
+            api_client = ClaudeClient(api_key, base_url)
+            logging.info('Claude API client initialized')
+        elif api == 'openai':
+            api_client = OpenAIClientOrig(api_key, base_url)
+            logging.info('OpenAI API client initialized')
+        else:
+            logging.error(f'Unsupported API: {api}')
             return False
-    else:
-        logging.error(f'Unsupported API: {api}')
+    except Exception as e:
+        logging.error(f'Failed to initialize API client: {e}')
         return False
 
     # Load existing analysis file if it exists
@@ -382,9 +387,9 @@ if __name__ == '__main__':
     parser.add_argument('--saved_path', type=str,
                         default='../docs/agent-arxiv-daily-analysis.json',
                         help='Path to save consolidated analysis JSON file.')
-    parser.add_argument('--api', type=str, default='openai',
+    parser.add_argument('--api', type=str, default='claude',
                         choices=['openai', 'claude'],
-                        help='LLM API to use (default: openai)')
+                        help='LLM API to use (default: claude)')
     parser.add_argument('--arxiv_json_path', type=str,
                         default='../docs/agent-arxiv-daily.json',
                         help='Path to arXiv metadata JSON file')

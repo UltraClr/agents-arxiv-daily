@@ -3,7 +3,8 @@ import json
 import argparse
 import logging
 from tqdm import tqdm
-from openai_api import OpenAIClient
+from openai_api import OpenAIClient as OpenAIClientOrig
+from claude_api import OpenAIClient as ClaudeClient
 
 logging.basicConfig(format='[%(asctime)s %(levelname)s] %(message)s',
                     datefmt='%m/%d/%Y %H:%M:%S',
@@ -79,7 +80,7 @@ def convert_analysis_to_text(analysis_data):
     return text
 
 
-def analysis(paper_num, analysis_json_path, saved_path, api_key, base_url):
+def analysis(paper_num, analysis_json_path, saved_path, api_key, base_url, api='claude'):
     """
     Analyze recent research trends from analyzed papers
     @param paper_num: Number of recent papers to analyze
@@ -87,10 +88,19 @@ def analysis(paper_num, analysis_json_path, saved_path, api_key, base_url):
     @param saved_path: Path to save trends.txt
     @param api_key: API key for OpenAI-compatible API
     @param base_url: Base URL for API
+    @param api: API to use ('claude' or 'openai', default: 'claude')
     """
     # Initialize API client
     try:
-        api_client = OpenAIClient(api_key, base_url)
+        if api == 'claude':
+            api_client = ClaudeClient(api_key, base_url)
+            logging.info('Claude API client initialized')
+        elif api == 'openai':
+            api_client = OpenAIClientOrig(api_key, base_url)
+            logging.info('OpenAI API client initialized')
+        else:
+            logging.error(f'Unsupported API: {api}')
+            return False
     except Exception as e:
         logging.error(f'Failed to initialize API client: {e}')
         return False
@@ -313,6 +323,9 @@ if __name__ == '__main__':
     parser.add_argument('--base_url', type=str,
                         default=None,
                         help='API base URL (defaults to CRS_BASE_URL env var)')
+    parser.add_argument('--api', type=str, default='claude',
+                        choices=['openai', 'claude'],
+                        help='LLM API to use (default: claude)')
 
     # Parse arguments
     args = parser.parse_args()
@@ -334,7 +347,8 @@ if __name__ == '__main__':
         args.analysis_json_path,
         args.saved_path,
         api_key,
-        base_url
+        base_url,
+        args.api
     )
 
     exit(0 if success else 1)
