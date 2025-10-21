@@ -1,5 +1,5 @@
 # Agent Research Papers
-> Updated on 2025.10.20
+> Updated on 2025.10.21
 Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Autonomous Agent`,`LLM Agent`
 
 > If you have any other keywords, please feel free to let us know :) 
@@ -401,7 +401,7 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 - 2025-09-15, **$ε$ -Optimal Multi-Agent Patrol using Recurrent Strategy**, Deepak Mallya et.al., Paper: [http://arxiv.org/abs/2509.11640](http://arxiv.org/abs/2509.11640)
 - 2025-09-27, **"Shall We Dig Deeper?": Designing and Evaluating Strategies for LLM Agents to Advance Knowledge Co-Construction in Asynchronous Online Discussions**, Yuanhao Zhang et.al., Paper: [http://arxiv.org/abs/2509.23327](http://arxiv.org/abs/2509.23327)
 
-<p align=right>(<a href=#updated-on-20251020>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20251021>back to top</a>)</p>
 
 Notes: 
 
