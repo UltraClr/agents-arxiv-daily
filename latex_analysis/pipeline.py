@@ -468,30 +468,37 @@ def run_streaming_pipeline(args):
     with open(args.json_path, 'r') as file:
         data = json.load(file)
 
-    # Collect all arxiv IDs with their publish dates
-    all_ids_with_dates = []
+    # Collect arxiv IDs by category, sorted by date (newest first)
+    all_ids = []
     for keyword in data.keys():
+        # Collect papers for this category with dates
+        category_papers = []
         for arxiv_id in data[keyword].keys():
             # Skip old format IDs (contain '/')
             if '/' in arxiv_id:
                 continue
             # Get publish date from metadata
             publish_date = arxiv_metadata.get(arxiv_id, {}).get('publish_date', '1970-01-01')
-            all_ids_with_dates.append((arxiv_id, publish_date))
+            category_papers.append((arxiv_id, publish_date))
 
-    # Sort by date (newest first)
-    all_ids_with_dates.sort(key=lambda x: x[1], reverse=True)
-    all_ids = [arxiv_id for arxiv_id, _ in all_ids_with_dates]
+        # Sort this category by date (newest first)
+        category_papers.sort(key=lambda x: x[1], reverse=True)
 
-    logging.info(f'Papers sorted by date (newest first)')
-    if all_ids:
-        newest_date = all_ids_with_dates[0][1]
-        oldest_date = all_ids_with_dates[-1][1]
-        logging.info(f'Date range: {newest_date} (newest) to {oldest_date} (oldest)')
+        # Limit papers per category if max_papers specified
+        if args.max_papers:
+            category_papers = category_papers[:args.max_papers]
+            logging.info(f'Category "{keyword}": selecting {len(category_papers)} newest papers (max_papers={args.max_papers})')
+        else:
+            logging.info(f'Category "{keyword}": processing all {len(category_papers)} papers')
 
-    # Limit if max_papers specified
-    if args.max_papers:
-        all_ids = all_ids[:args.max_papers]
+        # Show date range for this category
+        if category_papers:
+            newest_date = category_papers[0][1]
+            oldest_date = category_papers[-1][1]
+            logging.info(f'  Date range: {newest_date} (newest) to {oldest_date} (oldest)')
+
+        # Add to overall list
+        all_ids.extend([arxiv_id for arxiv_id, _ in category_papers])
 
     logging.info(f'\n{"="*60}')
     logging.info(f'Starting streaming pipeline for {len(all_ids)} papers')
