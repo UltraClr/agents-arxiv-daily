@@ -5,7 +5,7 @@ repo_name: "agent-arxiv-daily"
 show_authors: True
 show_links: True
 show_badge: True
-max_results: 20
+max_results: 200
 
 publish_readme: True
 publish_gitpage: True
@@ -26,9 +26,13 @@ md_wechat_path: './docs/wechat.md'
 # keywords to search
 keywords:
     "Agent":
-        filters: ["Agent","Multi-Agent","Tool Learning","Agent RL","Autonomous Agent","LLM Agent"]
+        filters: ["Agent","Multi-Agent","LLM Agent","AI Agent","Autonomous Agent","Agentic","Tool Use","Tool Learning","Function Calling","ReAct","Planning","Agent Framework","Agent Workflow","Agent Collaboration","Agent Communication","Embodied Agent","Web Agent","Code Agent","Agent RL","Agent Reasoning"]
+    "Large Language Models":
+        filters: ["Large Language Model","LLM","GPT","BERT","Transformer","Language Model","Pre-training","Fine-tuning","Prompt","In-Context Learning","Chain of Thought","Instruction Tuning","Model Alignment","RLHF","Mixture of Experts","Model Compression","Quantization","Distillation","Retrieval-Augmented","RAG"]
+    "Reinforcement Learning":
+        filters: ["Reinforcement Learning","RL","Policy Gradient","Actor Critic","Q-Learning","Deep RL","DQN","PPO","SAC","TD3","RLHF","Reward Model","Offline RL","Online RL","Model-Based RL","Multi-Agent RL","MARL","Imitation Learning","Inverse RL","Exploration","Reward Shaping","Value Function","Monte Carlo"]
 
 # Keyword Relevance Validation
 enable_keyword_validation: true      # Enable automatic keyword relevance checking
-keyword_relevance_threshold: 5.0     # Papers scored below this threshold (0-10 scale) will be blacklisted
+keyword_relevance_threshold: 6.0     # Papers scored below this threshold (0-10 scale) will be blacklisted
 auto_blacklist: true                 # Automatically add low-relevance papers to blacklist
