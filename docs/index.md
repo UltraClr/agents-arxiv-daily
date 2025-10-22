@@ -685,7 +685,7 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 |**2025-10-21**|**Two-loop QCD corrections for real and off-shell diphoton and triphoton production via quark loops**|Dario Kermanschah et.al.|[2510.18801](http://arxiv.org/abs/2510.18801)|null|
 |**2025-10-21**|**WebSeer: Training Deeper Search Agents through Reinforcement Learning with Self-Reflection**|Guanzhong He et.al.|[2510.18798](http://arxiv.org/abs/2510.18798)|null|
 |**2025-10-21**|**Beware of the running $n_s$ when producing heavy primordial black holes**|Sasha Allegrini et.al.|[2510.18791](http://arxiv.org/abs/2510.18791)|null|
-|**2025-10-21**|**Analysis note: measurement of thrust and track energy-energy correlator in e+e- collisions at 91.2 GeV with DELPHI open data**|Jingyu Zhang et.al.|[2510.18762](http://arxiv.org/abs/2510.18762)|null|
+|**2025-10-21**|**Analysis note: measurement of thrust and track energy-energy correlator in $e^+e^-$ collisions at 91.2 GeV with DELPHI open data**|Jingyu Zhang et.al.|[2510.18762](http://arxiv.org/abs/2510.18762)|null|
 |**2025-10-21**|**Verifiable Accuracy and Abstention Rewards in Curriculum RL to Alleviate Lost-in-Conversation**|Ming Li et.al.|[2510.18731](http://arxiv.org/abs/2510.18731)|null|
 |**2025-10-21**|**Preference-based Reinforcement Learning beyond Pairwise Comparisons: Benefits of Multiple Options**|Joongkyu Lee et.al.|[2510.18713](http://arxiv.org/abs/2510.18713)|null|
 |**2025-10-21**|**Chemistry, Climate, and Transmission Spectra of TRAPPIST-1 e Explored with a Multimodel Sparse Sampled Ensemble**|Eric T. Wolf et.al.|[2510.18704](http://arxiv.org/abs/2510.18704)|null|
