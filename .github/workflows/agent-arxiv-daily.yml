@@ -60,7 +60,8 @@ jobs:
             --output_dir ./results \
             --delay_seconds 10 \
             --report_path ../docs/paper_analysis.md \
-            --trends_file ../docs/agent_trends.txt
+            --trends_file ../docs/agent_trends.txt \
+            --max_papers 20
         continue-on-error: true
 
       - name: Send DingTalk notification

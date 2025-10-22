@@ -468,14 +468,26 @@ def run_streaming_pipeline(args):
     with open(args.json_path, 'r') as file:
         data = json.load(file)
 
-    # Collect all arxiv IDs
-    all_ids = []
+    # Collect all arxiv IDs with their publish dates
+    all_ids_with_dates = []
     for keyword in data.keys():
         for arxiv_id in data[keyword].keys():
             # Skip old format IDs (contain '/')
             if '/' in arxiv_id:
                 continue
-            all_ids.append(arxiv_id)
+            # Get publish date from metadata
+            publish_date = arxiv_metadata.get(arxiv_id, {}).get('publish_date', '1970-01-01')
+            all_ids_with_dates.append((arxiv_id, publish_date))
+
+    # Sort by date (newest first)
+    all_ids_with_dates.sort(key=lambda x: x[1], reverse=True)
+    all_ids = [arxiv_id for arxiv_id, _ in all_ids_with_dates]
+
+    logging.info(f'Papers sorted by date (newest first)')
+    if all_ids:
+        newest_date = all_ids_with_dates[0][1]
+        oldest_date = all_ids_with_dates[-1][1]
+        logging.info(f'Date range: {newest_date} (newest) to {oldest_date} (oldest)')
 
     # Limit if max_papers specified
     if args.max_papers:
