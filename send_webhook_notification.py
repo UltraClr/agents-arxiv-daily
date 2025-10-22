@@ -54,33 +54,51 @@ def collect_papers_info(paper_ids: List[str], analysis_data: Dict) -> List[Dict]
 
 
 def generate_llm_summary_prompt(papers: List[Dict]) -> str:
-    """Generate prompt for LLM to summarize papers"""
+    """Generate prompt for LLM to summarize papers by category"""
+
+    # Group papers by category
+    papers_by_category = {}
+    for paper in papers:
+        category = paper.get('category', 'Other')
+        if category not in papers_by_category:
+            papers_by_category[category] = []
+        papers_by_category[category].append(paper)
+
+    # Get category names dynamically
+    category_names = ', '.join(papers_by_category.keys())
 
     prompt_lines = [
-        "请对以下新分析的 arXiv 论文进行整体总结。要求：",
-        "1. 用简洁的语言概括今日论文的主要研究方向和趋势",
-        "2. 突出最有价值或最有创新性的研究",
-        "3. 简要提一下每篇论文的内容，总结控制在500字以内",
-        "4. 用中文输出，语言要专业但易懂",
+        "请对以下新分析的 arXiv 论文进行分类总结。要求：",
+        f"1. 按照类别（{category_names}）分别总结",
+        "2. 每个类别用简洁的语言概括主要研究方向和趋势",
+        "3. 突出最有价值或最有创新性的研究",
+        "4. 每个类别的总结控制在300字以内",
+        "5. 用中文输出，语言要专业但易懂",
         "",
         "今日论文列表：",
         ""
     ]
 
-    for i, paper in enumerate(papers, 1):
-        prompt_lines.append(f"{i}. 【{paper['category']}】{paper['title']}")
+    for category, category_papers in papers_by_category.items():
+        prompt_lines.append(f"## {category} ({len(category_papers)}篇)")
+        prompt_lines.append("")
 
-        analysis = paper['analysis']
-        if isinstance(analysis, dict):
-            if 'summary' in analysis:
-                summary_text = analysis['summary'][:300]
-                prompt_lines.append(f"   研究内容: {summary_text}")
-            elif 'research_question' in analysis:
-                prompt_lines.append(f"   研究问题: {analysis['research_question'][:200]}")
+        for i, paper in enumerate(category_papers, 1):
+            prompt_lines.append(f"{i}. {paper['title']}")
+
+            analysis = paper['analysis']
+            if isinstance(analysis, dict):
+                if 'summary' in analysis:
+                    summary_text = analysis['summary'][:200]
+                    prompt_lines.append(f"   研究内容: {summary_text}")
+                elif 'research_question' in analysis:
+                    prompt_lines.append(f"   研究问题: {analysis['research_question'][:150]}")
+
+            prompt_lines.append("")
 
         prompt_lines.append("")
 
-    prompt_lines.append("请生成一个简洁的总结：")
+    prompt_lines.append("请按类别生成简洁的分类总结：")
 
     return '\n'.join(prompt_lines)
 
@@ -101,13 +119,29 @@ def call_llm_for_summary(prompt: str, api_key: str, base_url: Optional[str] = No
 
 
 def format_dingtalk_message(summary: str, papers: List[Dict], timestamp: str) -> str:
-    """Format message for DingTalk markdown"""
+    """Format message for DingTalk markdown with category grouping"""
+
+    # Group papers by category
+    papers_by_category = {}
+    for paper in papers:
+        category = paper.get('category', 'Other')
+        if category not in papers_by_category:
+            papers_by_category[category] = []
+        papers_by_category[category].append(paper)
 
     lines = [
         "# 📚 arXiv 每日论文分析更新",
         "",
         f"**更新时间：** {timestamp}",
         f"**新分析论文数：** {len(papers)} 篇",
+        ""
+    ]
+
+    # Show category counts
+    for category, category_papers in papers_by_category.items():
+        lines.append(f"- **{category}**: {len(category_papers)} 篇")
+
+    lines.extend([
         "",
         "---",
         "",
@@ -119,16 +153,22 @@ def format_dingtalk_message(summary: str, papers: List[Dict], timestamp: str) ->
         "",
         "## 📄 论文列表",
         ""
-    ]
+    ])
 
-    for i, paper in enumerate(papers[:10], 1):  # Show max 10 papers
-        lines.append(f"{i}. **[{paper['category']}]** {paper['title'][:60]}...")
-        lines.append(f"   🔗 https://arxiv.org/abs/{paper['id']}")
+    # Display papers by category
+    for category, category_papers in papers_by_category.items():
+        lines.append(f"### {category} ({len(category_papers)}篇)")
         lines.append("")
 
-    if len(papers) > 10:
-        lines.append(f"... 以及其他 {len(papers) - 10} 篇论文")
-        lines.append("")
+        # Show up to 5 papers per category
+        for i, paper in enumerate(category_papers[:5], 1):
+            lines.append(f"{i}. {paper['title'][:60]}...")
+            lines.append(f"   🔗 https://arxiv.org/abs/{paper['id']}")
+            lines.append("")
+
+        if len(category_papers) > 5:
+            lines.append(f"... 以及其他 {len(category_papers) - 5} 篇论文")
+            lines.append("")
 
     lines.append("---")
     lines.append("")
