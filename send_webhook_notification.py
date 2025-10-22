@@ -14,7 +14,7 @@ import hashlib
 import base64
 import urllib.parse
 from typing import Dict, List, Optional
-from latex_analysis.openai_api import OpenAIClient
+from latex_analysis.claude_api import OpenAIClient
 
 
 def load_newly_analyzed_papers(newly_analyzed_path: str) -> Optional[Dict]:
@@ -60,7 +60,7 @@ def generate_llm_summary_prompt(papers: List[Dict]) -> str:
         "请对以下新分析的 arXiv 论文进行整体总结。要求：",
         "1. 用简洁的语言概括今日论文的主要研究方向和趋势",
         "2. 突出最有价值或最有创新性的研究",
-        "3. 总结控制在300字以内",
+        "3. 简要提一下每篇论文的内容，总结控制在500字以内",
         "4. 用中文输出，语言要专业但易懂",
         "",
         "今日论文列表：",
