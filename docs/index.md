@@ -3,7 +3,7 @@ layout: default
 ---
 
 # Agent Research Papers
-### Automatically Updated on 2025.10.22
+### Automatically Updated on 2025.10.23
 Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Autonomous Agent`,`LLM Agent`
 
 > If you have any other keywords, please feel free to let us know :) 
@@ -566,7 +566,7 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 
 | Publish Date | Title | Authors | PDF | Code |
 |:---------|:-----------------------|:---------|:------|:------|
-|**2025-10-21**|**Grasp Any Region: Towards Precise, Contextual Pixel Understanding for Multimodal LLMs**|Haochen Wang et.al.|[2510.18876](http://arxiv.org/abs/2510.18876)|null|
+|**2025-10-22**|**Grasp Any Region: Towards Precise, Contextual Pixel Understanding for Multimodal LLMs**|Haochen Wang et.al.|[2510.18876](http://arxiv.org/abs/2510.18876)|null|
 |**2025-10-21**|**Retaining by Doing: The Role of On-Policy Data in Mitigating Forgetting**|Howard Chen et.al.|[2510.18874](http://arxiv.org/abs/2510.18874)|null|
 |**2025-10-21**|**DSI-Bench: A Benchmark for Dynamic Spatial Intelligence**|Ziang Zhang et.al.|[2510.18873](http://arxiv.org/abs/2510.18873)|null|
 |**2025-10-21**|**How Do LLMs Use Their Depth?**|Akshat Gupta et.al.|[2510.18871](http://arxiv.org/abs/2510.18871)|null|

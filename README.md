@@ -1,5 +1,5 @@
 # Agent Research Papers
-### Automatically Updated on 2025.10.22
+### Automatically Updated on 2025.10.23
 Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Autonomous Agent`,`LLM Agent`
 
 > If you have any other keywords, please feel free to let us know :) 
@@ -567,13 +567,13 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 |**2025-08-21**|**Noise, Adaptation, and Strategy: Assessing LLM Fidelity in Decision-Making**|Yuanjun Feng et.al.|[2508.15926](http://arxiv.org/abs/2508.15926)|null|
 |**2025-08-21**|**End-to-End Agentic RAG System Training for Traceable Diagnostic Reasoning**|Qiaoyu Zheng et.al.|[2508.15746](http://arxiv.org/abs/2508.15746)|null|
 
-<p align=right>(<a href=#updated-on-20251022>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20251023>back to top</a>)</p>
 
 ## Large Language Models
 
 |Publish Date|Title|Authors|PDF|Code|
 |---|---|---|---|---|
-|**2025-10-21**|**Grasp Any Region: Towards Precise, Contextual Pixel Understanding for Multimodal LLMs**|Haochen Wang et.al.|[2510.18876](http://arxiv.org/abs/2510.18876)|null|
+|**2025-10-22**|**Grasp Any Region: Towards Precise, Contextual Pixel Understanding for Multimodal LLMs**|Haochen Wang et.al.|[2510.18876](http://arxiv.org/abs/2510.18876)|null|
 |**2025-10-21**|**Retaining by Doing: The Role of On-Policy Data in Mitigating Forgetting**|Howard Chen et.al.|[2510.18874](http://arxiv.org/abs/2510.18874)|null|
 |**2025-10-21**|**DSI-Bench: A Benchmark for Dynamic Spatial Intelligence**|Ziang Zhang et.al.|[2510.18873](http://arxiv.org/abs/2510.18873)|null|
 |**2025-10-21**|**How Do LLMs Use Their Depth?**|Akshat Gupta et.al.|[2510.18871](http://arxiv.org/abs/2510.18871)|null|
@@ -674,7 +674,7 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 |**2025-10-21**|**DelvePO: Direction-Guided Self-Evolving Framework for Flexible Prompt Optimization**|Tao Tao et.al.|[2510.18257](http://arxiv.org/abs/2510.18257)|null|
 |**2025-10-21**|**Illusions of reflection: open-ended task reveals systematic failures in Large Language Models' reflective reasoning**|Sion Weatherhead et.al.|[2510.18254](http://arxiv.org/abs/2510.18254)|null|
 
-<p align=right>(<a href=#updated-on-20251022>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20251023>back to top</a>)</p>
 
 ## Reinforcement Learning
 
@@ -791,7 +791,7 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 |**2025-10-20**|**Learning to Design Soft Hands using Reward Models**|Xueqian Bai et.al.|[2510.17086](http://arxiv.org/abs/2510.17086)|null|
 |**2025-10-20**|**Consistent Zero-Shot Imitation with Contrastive Goal Inference**|Kathryn Wantlin et.al.|[2510.17059](http://arxiv.org/abs/2510.17059)|null|
 
-<p align=right>(<a href=#updated-on-20251022>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20251023>back to top</a>)</p>
 
 Notes: 
 

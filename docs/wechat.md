@@ -1,5 +1,5 @@
 # Agent Research Papers
-> Updated on 2025.10.22
+> Updated on 2025.10.23
 Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Autonomous Agent`,`LLM Agent`
 
 > If you have any other keywords, please feel free to let us know :) 
@@ -565,7 +565,7 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 - 2025-10-13, **$How^{2}$ : How to learn from procedural How-to questions**, Gautier Dagan et.al., Paper: [http://arxiv.org/abs/2510.11144](http://arxiv.org/abs/2510.11144)
 - 2025-09-27, **"Shall We Dig Deeper?": Designing and Evaluating Strategies for LLM Agents to Advance Knowledge Co-Construction in Asynchronous Online Discussions**, Yuanhao Zhang et.al., Paper: [http://arxiv.org/abs/2509.23327](http://arxiv.org/abs/2509.23327)
 
-<p align=right>(<a href=#updated-on-20251022>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20251023>back to top</a>)</p>
 
 ## Large Language Models
 
@@ -633,7 +633,7 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 - 2025-10-21, **HarmNet: A Framework for Adaptive Multi-Turn Jailbreak Attacks on Large Language Models**, Sidhant Narula et.al., Paper: [http://arxiv.org/abs/2510.18728](http://arxiv.org/abs/2510.18728)
 - 2025-10-21, **Hardness of Learning Regular Languages in the Next Symbol Prediction Setting**, Satwik Bhattamishra et.al., Paper: [http://arxiv.org/abs/2510.18634](http://arxiv.org/abs/2510.18634)
 - 2025-10-21, **Grounding or Guessing? Visual Signals for Detecting Hallucinations in Sign Language Translation**, Yasser Hamidullah et.al., Paper: [http://arxiv.org/abs/2510.18439](http://arxiv.org/abs/2510.18439)
-- 2025-10-21, **Grasp Any Region: Towards Precise, Contextual Pixel Understanding for Multimodal LLMs**, Haochen Wang et.al., Paper: [http://arxiv.org/abs/2510.18876](http://arxiv.org/abs/2510.18876)
+- 2025-10-22, **Grasp Any Region: Towards Precise, Contextual Pixel Understanding for Multimodal LLMs**, Haochen Wang et.al., Paper: [http://arxiv.org/abs/2510.18876](http://arxiv.org/abs/2510.18876)
 - 2025-10-21, **Genesis: Evolving Attack Strategies for LLM Web Agent Red-Teaming**, Zheng Zhang et.al., Paper: [http://arxiv.org/abs/2510.18314](http://arxiv.org/abs/2510.18314)
 - 2025-10-21, **GPTFace: Generative Pre-training of Facial-Linguistic Transformer by Span Masking and Weakly Correlated Text-image Data**, Yudong Li et.al., Paper: [http://arxiv.org/abs/2510.18345](http://arxiv.org/abs/2510.18345)
 - 2025-10-21, **From Retrieval to Generation: Unifying External and Parametric Knowledge for Medical Question Answering**, Lei Li et.al., Paper: [http://arxiv.org/abs/2510.18297](http://arxiv.org/abs/2510.18297)
@@ -670,7 +670,7 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 - 2025-10-21, **An Encoder-Decoder Foundation Chemical Language Model for Generative Polymer Design**, Harikrishna Sahu et.al., Paper: [http://arxiv.org/abs/2510.18860](http://arxiv.org/abs/2510.18860)
 - 2025-10-21, **Adamas: Hadamard Sparse Attention for Efficient Long-Context Inference**, Siyuan Yan et.al., Paper: [http://arxiv.org/abs/2510.18413](http://arxiv.org/abs/2510.18413)
 
-<p align=right>(<a href=#updated-on-20251022>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20251023>back to top</a>)</p>
 
 ## Reinforcement Learning
 
@@ -785,7 +785,7 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 - 2025-10-20, **ALPINE: A Lightweight and Adaptive Privacy-Decision Agent Framework for Dynamic Edge Crowdsensing**, Guanjie Cheng et.al., Paper: [http://arxiv.org/abs/2510.17162](http://arxiv.org/abs/2510.17162)
 - 2025-10-20, **A Principle of Targeted Intervention for Multi-Agent Reinforcement Learning**, Anjie Liu et.al., Paper: [http://arxiv.org/abs/2510.17697](http://arxiv.org/abs/2510.17697)
 
-<p align=right>(<a href=#updated-on-20251022>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20251023>back to top</a>)</p>
 
 Notes: 
 
