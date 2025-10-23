@@ -21,6 +21,26 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 
 |Publish Date|Title|Authors|PDF|Code|
 |---|---|---|---|---|
+|**2025-10-22**|**Beyond Reactivity: Measuring Proactive Problem Solving in LLM Agents**|Gil Pasternak et.al.|[2510.19771](http://arxiv.org/abs/2510.19771)|null|
+|**2025-10-22**|**Review of Tools for Zero-Code LLM Based Application Development**|Priyaranjan Pattnayak et.al.|[2510.19747](http://arxiv.org/abs/2510.19747)|null|
+|**2025-10-22**|**Misalignment Bounty: Crowdsourcing AI Agent Misbehavior**|Rustem Turtayev et.al.|[2510.19738](http://arxiv.org/abs/2510.19738)|null|
+|**2025-10-22**|**Memo: Training Memory-Efficient Embodied Agents with Reinforcement Learning**|Gunshi Gupta et.al.|[2510.19732](http://arxiv.org/abs/2510.19732)|null|
+|**2025-10-22**|**Are Large Language Models Sensitive to the Motives Behind Communication?**|Addison J. Wu et.al.|[2510.19687](http://arxiv.org/abs/2510.19687)|null|
+|**2025-10-22**|**Pragmatic Heterogeneous Collaborative Perception via Generative Communication Mechanism**|Junfei Zhou et.al.|[2510.19618](http://arxiv.org/abs/2510.19618)|null|
+|**2025-10-22**|**Human-Agent Collaborative Paper-to-Page Crafting for Under $0.1**|Qianli Ma et.al.|[2510.19600](http://arxiv.org/abs/2510.19600)|null|
+|**2025-10-22**|**gem5 Co-Pilot: AI Assistant Agent for Architectural Design Space Exploration**|Zuoming Fu et.al.|[2510.19577](http://arxiv.org/abs/2510.19577)|null|
+|**2025-10-22**|**AegisMCP: Online Graph Intrusion Detection for Tool-Augmented LLMs on Edge Devices**|Zhonghao Zhan et.al.|[2510.19462](http://arxiv.org/abs/2510.19462)|null|
+|**2025-10-22**|**MSC-Bench: A Rigorous Benchmark for Multi-Server Tool Orchestration**|Jia-Kai Dong et.al.|[2510.19423](http://arxiv.org/abs/2510.19423)|null|
+|**2025-10-22**|**ColorAgent: Building A Robust, Personalized, and Interactive OS Agent**|Ning Li et.al.|[2510.19386](http://arxiv.org/abs/2510.19386)|null|
+|**2025-10-22**|**Nonmonotone subgradient methods based on a local descent lemma**|Francisco J. Aragón-Artacho et.al.|[2510.19341](http://arxiv.org/abs/2510.19341)|null|
+|**2025-10-22**|**Learning to Make Friends: Coaching LLM Agents toward Emergent Social Ties**|Philipp J. Schneider et.al.|[2510.19299](http://arxiv.org/abs/2510.19299)|null|
+|**2025-10-22**|**Trace: Securing Smart Contract Repository Against Access Control Vulnerability**|Chong Chen et.al.|[2510.19254](http://arxiv.org/abs/2510.19254)|null|
+|**2025-10-22**|**SheetBrain: A Neuro-Symbolic Agent for Accurate Reasoning over Complex and Large Spreadsheets**|Ziwei Wang et.al.|[2510.19247](http://arxiv.org/abs/2510.19247)|null|
+|**2025-10-22**|**DiSRouter: Distributed Self-Routing for LLM Selections**|Hang Zheng et.al.|[2510.19208](http://arxiv.org/abs/2510.19208)|null|
+|**2025-10-22**|**Defending Against Prompt Injection with DataFilter**|Yizhu Wang et.al.|[2510.19207](http://arxiv.org/abs/2510.19207)|null|
+|**2025-10-22**|**WebGraphEval: Multi-Turn Trajectory Evaluation for Web Agents using Graph Representation**|Yaoyao Qian et.al.|[2510.19205](http://arxiv.org/abs/2510.19205)|null|
+|**2025-10-21**|**When Your AI Agent Succumbs to Peer-Pressure: Studying Opinion-Change Dynamics of LLMs**|Aliakbar Mehdizadeh et.al.|[2510.19107](http://arxiv.org/abs/2510.19107)|null|
+|**2025-10-21**|**Plural Voices, Single Agent: Towards Inclusive AI in Multi-User Domestic Spaces**|Joydeep Chandra et.al.|[2510.19008](http://arxiv.org/abs/2510.19008)|null|
 |**2025-10-21**|**Search Self-play: Pushing the Frontier of Agent Capability without Supervision**|Hongliang Lu et.al.|[2510.18821](http://arxiv.org/abs/2510.18821)|null|
 |**2025-10-21**|**WebSeer: Training Deeper Search Agents through Reinforcement Learning with Self-Reflection**|Guanzhong He et.al.|[2510.18798](http://arxiv.org/abs/2510.18798)|null|
 |**2025-10-21**|**KAT-Coder Technical Report**|Zizheng Zhan et.al.|[2510.18779](http://arxiv.org/abs/2510.18779)|null|
@@ -573,6 +593,16 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 
 |Publish Date|Title|Authors|PDF|Code|
 |---|---|---|---|---|
+|**2025-10-22**|**Semantic World Models**|Jacob Berg et.al.|[2510.19818](http://arxiv.org/abs/2510.19818)|null|
+|**2025-10-22**|**olmOCR 2: Unit Test Rewards for Document OCR**|Jake Poznanski et.al.|[2510.19817](http://arxiv.org/abs/2510.19817)|null|
+|**2025-10-22**|**Hubble: a Model Suite to Advance the Study of LLM Memorization**|Johnny Tian-Zheng Wei et.al.|[2510.19811](http://arxiv.org/abs/2510.19811)|null|
+|**2025-10-22**|**Scaf-GRPO: Scaffolded Group Relative Policy Optimization for Enhancing LLM Reasoning**|Xichen Zhang et.al.|[2510.19807](http://arxiv.org/abs/2510.19807)|null|
+|**2025-10-22**|**The Art of Asking: Multilingual Prompt Optimization for Synthetic Data**|David Mora et.al.|[2510.19806](http://arxiv.org/abs/2510.19806)|null|
+|**2025-10-22**|**Forbidden Sidon subsets of perfect difference sets, featuring a human-assisted proof**|Boris Alexeev et.al.|[2510.19804](http://arxiv.org/abs/2510.19804)|null|
+|**2025-10-22**|**Class-Aware Prototype Learning with Negative Contrast for Test-Time Adaptation of Vision-Language Models**|Xiaozhen Qiao et.al.|[2510.19802](http://arxiv.org/abs/2510.19802)|null|
+|**2025-10-22**|**The Feasibility of Training Sovereign Language Models in the Global South: A Study of Brazil and Mexico**|Sandra Malagon et.al.|[2510.19801](http://arxiv.org/abs/2510.19801)|null|
+|**2025-10-22**|**Integrating Transparent Models, LLMs, and Practitioner-in-the-Loop: A Case of Nonprofit Program Evaluation**|Ji Ma et.al.|[2510.19799](http://arxiv.org/abs/2510.19799)|null|
+|**2025-10-22**|**Blackbox Model Provenance via Palimpsestic Membership Inference**|Rohith Kuditipudi et.al.|[2510.19796](http://arxiv.org/abs/2510.19796)|null|
 |**2025-10-22**|**Grasp Any Region: Towards Precise, Contextual Pixel Understanding for Multimodal LLMs**|Haochen Wang et.al.|[2510.18876](http://arxiv.org/abs/2510.18876)|null|
 |**2025-10-21**|**Retaining by Doing: The Role of On-Policy Data in Mitigating Forgetting**|Howard Chen et.al.|[2510.18874](http://arxiv.org/abs/2510.18874)|null|
 |**2025-10-21**|**DSI-Bench: A Benchmark for Dynamic Spatial Intelligence**|Ziang Zhang et.al.|[2510.18873](http://arxiv.org/abs/2510.18873)|null|
@@ -680,6 +710,26 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 
 |Publish Date|Title|Authors|PDF|Code|
 |---|---|---|---|---|
+|**2025-10-22**|**olmOCR 2: Unit Test Rewards for Document OCR**|Jake Poznanski et.al.|[2510.19817](http://arxiv.org/abs/2510.19817)|null|
+|**2025-10-22**|**Pico-Banana-400K: A Large-Scale Dataset for Text-Guided Image Editing**|Yusu Qian et.al.|[2510.19808](http://arxiv.org/abs/2510.19808)|null|
+|**2025-10-22**|**Scaf-GRPO: Scaffolded Group Relative Policy Optimization for Enhancing LLM Reasoning**|Xichen Zhang et.al.|[2510.19807](http://arxiv.org/abs/2510.19807)|null|
+|**2025-10-22**|**SmartSwitch: Advancing LLM Reasoning by Overcoming Underthinking via Promoting Deeper Thought Exploration**|Xichen Zhang et.al.|[2510.19767](http://arxiv.org/abs/2510.19767)|null|
+|**2025-10-22**|**SEA: Semantic Map Prediction for Active Exploration of Uncertain Areas**|Hongyu Ding et.al.|[2510.19766](http://arxiv.org/abs/2510.19766)|null|
+|**2025-10-22**|**Memo: Training Memory-Efficient Embodied Agents with Reinforcement Learning**|Gunshi Gupta et.al.|[2510.19732](http://arxiv.org/abs/2510.19732)|null|
+|**2025-10-22**|**Semi-Implicit Approaches for Large-Scale Bayesian Spatial Interpolation**|Sébastien Garneau et.al.|[2510.19722](http://arxiv.org/abs/2510.19722)|null|
+|**2025-10-22**|**MedReason-R1: Learning to Reason for CT Diagnosis with Reinforcement Learning and Local Zoom**|Yifan Li et.al.|[2510.19626](http://arxiv.org/abs/2510.19626)|null|
+|**2025-10-22**|**DAIL: Beyond Task Ambiguity for Language-Conditioned Reinforcement Learning**|Runpeng Xie et.al.|[2510.19562](http://arxiv.org/abs/2510.19562)|null|
+|**2025-10-22**|**Demonstrating Real Advantage of Machine-Learning-Enhanced Monte Carlo for Combinatorial Optimization**|Luca Maria Del Bono et.al.|[2510.19544](http://arxiv.org/abs/2510.19544)|null|
+|**2025-10-22**|**Quantum Monte Carlo study of low-dimensional Fermi fluids of dipolar atoms**|Clio Johnson et.al.|[2510.19533](http://arxiv.org/abs/2510.19533)|null|
+|**2025-10-22**|**The Confusing Instance Principle for Online Linear Quadratic Control**|Waris Radji et.al.|[2510.19531](http://arxiv.org/abs/2510.19531)|null|
+|**2025-10-22**|**Optimizing the Unknown: Black Box Bayesian Optimization with Energy-Based Model and Reinforcement Learning**|Ruiyao Miao et.al.|[2510.19530](http://arxiv.org/abs/2510.19530)|null|
+|**2025-10-22**|**Learning Upper Lower Value Envelopes to Shape Online RL: A Principled Approach**|Sebastian Reboul et.al.|[2510.19528](http://arxiv.org/abs/2510.19528)|null|
+|**2025-10-22**|**Practical algorithm for simulating thermal pure quantum states**|Wei-Bo He et.al.|[2510.19504](http://arxiv.org/abs/2510.19504)|null|
+|**2025-10-22**|**Using Non-Expert Data to Robustify Imitation Learning via Offline Reinforcement Learning**|Kevin Huang et.al.|[2510.19495](http://arxiv.org/abs/2510.19495)|null|
+|**2025-10-22**|**Quantum Machine Learning methods for Fourier-based distribution estimation with application in option pricing**|Fernando Alonso et.al.|[2510.19494](http://arxiv.org/abs/2510.19494)|null|
+|**2025-10-22**|**Monte Carlo study of the $O(2)$-invariant $φ^4$ theory with a cubic perturbation in three dimensions**|Martin Hasenbusch et.al.|[2510.19473](http://arxiv.org/abs/2510.19473)|null|
+|**2025-10-22**|**Reasoning Like Experts: Leveraging Multimodal Large Language Models for Drawing-based Psychoanalysis**|Xueqi Ma et.al.|[2510.19451](http://arxiv.org/abs/2510.19451)|null|
+|**2025-10-22**|**Universal Quantitative Abstraction: Categorical Duality and Logical Completeness for Probabilistic Systems**|Nivar Anwer et.al.|[2510.19444](http://arxiv.org/abs/2510.19444)|null|
 |**2025-10-21**|**Retaining by Doing: The Role of On-Policy Data in Mitigating Forgetting**|Howard Chen et.al.|[2510.18874](http://arxiv.org/abs/2510.18874)|null|
 |**2025-10-21**|**EffiReasonTrans: RL-Optimized Reasoning for Code Translation**|Yanlin Wang et.al.|[2510.18863](http://arxiv.org/abs/2510.18863)|null|
 |**2025-10-21**|**Every Step Evolves: Scaling Reinforcement Learning for Trillion-Scale Thinking Model**|Ling Team et.al.|[2510.18855](http://arxiv.org/abs/2510.18855)|null|
