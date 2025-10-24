@@ -1,5 +1,5 @@
 # Agent Research Papers
-> Updated on 2025.10.23
+> Updated on 2025.10.24
 Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Autonomous Agent`,`LLM Agent`
 
 > If you have any other keywords, please feel free to let us know :) 
@@ -585,11 +585,12 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 - 2025-10-13, **$How^{2}$ : How to learn from procedural How-to questions**, Gautier Dagan et.al., Paper: [http://arxiv.org/abs/2510.11144](http://arxiv.org/abs/2510.11144)
 - 2025-09-27, **"Shall We Dig Deeper?": Designing and Evaluating Strategies for LLM Agents to Advance Knowledge Co-Construction in Asynchronous Online Discussions**, Yuanhao Zhang et.al., Paper: [http://arxiv.org/abs/2509.23327](http://arxiv.org/abs/2509.23327)
 
-<p align=right>(<a href=#updated-on-20251023>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20251024>back to top</a>)</p>
 
 ## Large Language Models
 
 - 2025-10-22, **olmOCR 2: Unit Test Rewards for Document OCR**, Jake Poznanski et.al., Paper: [http://arxiv.org/abs/2510.19817](http://arxiv.org/abs/2510.19817)
+- 2025-10-23, **Zhyper: Factorized Hypernetworks for Conditioned LLM Fine-Tuning**, M. H. I. Abdalla et.al., Paper: [http://arxiv.org/abs/2510.19733](http://arxiv.org/abs/2510.19733)
 - 2025-10-21, **Zero-Shot Vehicle Model Recognition via Text-Based Retrieval-Augmented Generation**, Wei-Chia Chang et.al., Paper: [http://arxiv.org/abs/2510.18502](http://arxiv.org/abs/2510.18502)
 - 2025-10-21, **Why Policy Gradient Algorithms Work for Undiscounted Total-Reward MDPs**, Jongmin Lee et.al., Paper: [http://arxiv.org/abs/2510.18340](http://arxiv.org/abs/2510.18340)
 - 2025-10-21, **Verifiable Accuracy and Abstention Rewards in Curriculum RL to Alleviate Lost-in-Conversation**, Ming Li et.al., Paper: [http://arxiv.org/abs/2510.18731](http://arxiv.org/abs/2510.18731)
@@ -600,9 +601,12 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 - 2025-10-21, **Training Diverse Graph Experts for Ensembles: A Systematic Empirical Study**, Gangda Deng et.al., Paper: [http://arxiv.org/abs/2510.18370](http://arxiv.org/abs/2510.18370)
 - 2025-10-21, **Towards Faithful and Controllable Personalization via Critique-Post-Edit Reinforcement Learning**, Chenghao Zhu et.al., Paper: [http://arxiv.org/abs/2510.18849](http://arxiv.org/abs/2510.18849)
 - 2025-10-21, **Topoformer: brain-like topographic organization in Transformer language models through spatial querying and reweighting**, Taha Binhuraib et.al., Paper: [http://arxiv.org/abs/2510.18745](http://arxiv.org/abs/2510.18745)
+- 2025-10-22, **Top-P Masking for Cross Language Information Retrieval**, Joseph Casale et.al., Paper: [http://arxiv.org/abs/2510.19758](http://arxiv.org/abs/2510.19758)
+- 2025-10-22, **ToolDreamer: Instilling LLM Reasoning Into Tool Retrievers**, Saptarshi Sengupta et.al., Paper: [http://arxiv.org/abs/2510.19791](http://arxiv.org/abs/2510.19791)
 - 2025-10-21, **Tokencake: A KV-Cache-centric Serving Framework for LLM-based Multi-Agent Applications**, Zhuohang Bian et.al., Paper: [http://arxiv.org/abs/2510.18586](http://arxiv.org/abs/2510.18586)
 - 2025-10-21, **Think with 3D: Geometric Imagination Grounded Spatial Reasoning from Limited Views**, Zhangquan Chen et.al., Paper: [http://arxiv.org/abs/2510.18632](http://arxiv.org/abs/2510.18632)
 - 2025-10-21, **The Trust Paradox in LLM-Based Multi-Agent Systems: When Collaboration Becomes a Security Vulnerability**, Zijie Xu et.al., Paper: [http://arxiv.org/abs/2510.18563](http://arxiv.org/abs/2510.18563)
+- 2025-10-22, **The Tail Tells All: Estimating Model-Level Membership Inference Vulnerability Without Reference Models**, Euodia Dodd et.al., Paper: [http://arxiv.org/abs/2510.19773](http://arxiv.org/abs/2510.19773)
 - 2025-10-21, **The Impact of Image Resolution on Biomedical Multimodal Large Language Models**, Liangyu Chen et.al., Paper: [http://arxiv.org/abs/2510.18304](http://arxiv.org/abs/2510.18304)
 - 2025-10-22, **The Feasibility of Training Sovereign Language Models in the Global South: A Study of Brazil and Mexico**, Sandra Malagon et.al., Paper: [http://arxiv.org/abs/2510.19801](http://arxiv.org/abs/2510.19801)
 - 2025-10-21, **The Attribution Story of WhisperGate: An Academic Perspective**, Oleksandr Adamov et.al., Paper: [http://arxiv.org/abs/2510.18484](http://arxiv.org/abs/2510.18484)
@@ -612,6 +616,7 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 - 2025-10-21, **StreamingTOM: Streaming Token Compression for Efficient Video Understanding**, Xueyi Chen et.al., Paper: [http://arxiv.org/abs/2510.18269](http://arxiv.org/abs/2510.18269)
 - 2025-10-21, **StarBench: A Turn-Based RPG Benchmark for Agentic Multimodal Decision-Making and Information Seeking**, Haoran Zhang et.al., Paper: [http://arxiv.org/abs/2510.18483](http://arxiv.org/abs/2510.18483)
 - 2025-10-21, **Socialized Learning and Emergent Behaviors in Multi-Agent Systems based on Multimodal Large Language Models**, Sureyya Akin et.al., Paper: [http://arxiv.org/abs/2510.18515](http://arxiv.org/abs/2510.18515)
+- 2025-10-22, **SmartSwitch: Advancing LLM Reasoning by Overcoming Underthinking via Promoting Deeper Thought Exploration**, Xichen Zhang et.al., Paper: [http://arxiv.org/abs/2510.19767](http://arxiv.org/abs/2510.19767)
 - 2025-10-21, **Simple and Efficient Heterogeneous Temporal Graph Neural Network**, Yili Wang et.al., Paper: [http://arxiv.org/abs/2510.18467](http://arxiv.org/abs/2510.18467)
 - 2025-10-21, **ShaRE your Data! Characterizing Datasets for LLM-based Requirements Engineering**, Quim Motger et.al., Paper: [http://arxiv.org/abs/2510.18787](http://arxiv.org/abs/2510.18787)
 - 2025-10-21, **SemiAdapt and SemiLoRA: Efficient Domain Adaptation for Transformer-based Low-Resource Language Translation with a Case Study on Irish**, Josh McGiff et.al., Paper: [http://arxiv.org/abs/2510.18725](http://arxiv.org/abs/2510.18725)
@@ -622,8 +627,10 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 - 2025-10-22, **Scaf-GRPO: Scaffolded Group Relative Policy Optimization for Enhancing LLM Reasoning**, Xichen Zhang et.al., Paper: [http://arxiv.org/abs/2510.19807](http://arxiv.org/abs/2510.19807)
 - 2025-10-21, **SSD: Spatial-Semantic Head Decoupling for Efficient Autoregressive Image Generation**, Siyong Jian et.al., Paper: [http://arxiv.org/abs/2510.18716](http://arxiv.org/abs/2510.18716)
 - 2025-10-21, **SLICE: SLO-Driven Scheduling for LLM Inference on Edge Computing Devices**, Pan Zhou et.al., Paper: [http://arxiv.org/abs/2510.18544](http://arxiv.org/abs/2510.18544)
+- 2025-10-22, **Review of Tools for Zero-Code LLM Based Application Development**, Priyaranjan Pattnayak et.al., Paper: [http://arxiv.org/abs/2510.19747](http://arxiv.org/abs/2510.19747)
 - 2025-10-21, **Retaining by Doing: The Role of On-Policy Data in Mitigating Forgetting**, Howard Chen et.al., Paper: [http://arxiv.org/abs/2510.18874](http://arxiv.org/abs/2510.18874)
 - 2025-10-21, **Reasoning Language Model Inference Serving Unveiled: An Empirical Study**, Qi Li et.al., Paper: [http://arxiv.org/abs/2510.18672](http://arxiv.org/abs/2510.18672)
+- 2025-10-22, **RLIE: Rule Generation with Logistic Regression, Iterative Refinement, and Evaluation for Large Language Models**, Yang Yang et.al., Paper: [http://arxiv.org/abs/2510.19698](http://arxiv.org/abs/2510.19698)
 - 2025-10-21, **Prompting the Priorities: A First Look at Evaluating LLMs for Vulnerability Triage and Prioritization**, Osama Al Haddad et.al., Paper: [http://arxiv.org/abs/2510.18508](http://arxiv.org/abs/2510.18508)
 - 2025-10-21, **Probabilistic Modeling of Intentions in Socially Intelligent LLM Agents**, Feifan Xia et.al., Paper: [http://arxiv.org/abs/2510.18476](http://arxiv.org/abs/2510.18476)
 - 2025-10-21, **Proactive Reasoning-with-Retrieval Framework for Medical Multimodal Large Language Models**, Lehan Wang et.al., Paper: [http://arxiv.org/abs/2510.18303](http://arxiv.org/abs/2510.18303)
@@ -632,6 +639,7 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 - 2025-10-21, **PlanU: Large Language Model Decision Making through Planning under Uncertainty**, Ziwei Deng et.al., Paper: [http://arxiv.org/abs/2510.18442](http://arxiv.org/abs/2510.18442)
 - 2025-10-21, **ParaStyleTTS: Toward Efficient and Robust Paralinguistic Style Control for Expressive Text-to-Speech Generation**, Haowei Lou et.al., Paper: [http://arxiv.org/abs/2510.18308](http://arxiv.org/abs/2510.18308)
 - 2025-10-21, **One Size Fits All? A Modular Adaptive Sanitization Kit (MASK) for Customizable Privacy-Preserving Phone Scam Detection**, Kangzhong Wang et.al., Paper: [http://arxiv.org/abs/2510.18493](http://arxiv.org/abs/2510.18493)
+- 2025-10-22, **On Controlled Change: Generative AI's Impact on Professional Authority in Journalism**, Tomás Dodds et.al., Paper: [http://arxiv.org/abs/2510.19792](http://arxiv.org/abs/2510.19792)
 - 2025-10-21, **Noise-Conditioned Mixture-of-Experts Framework for Robust Speaker Verification**, Bin Gu et.al., Paper: [http://arxiv.org/abs/2510.18533](http://arxiv.org/abs/2510.18533)
 - 2025-10-21, **Med-VRAgent: A Framework for Medical Visual Reasoning-Enhanced Agents**, Guangfu Guo et.al., Paper: [http://arxiv.org/abs/2510.18424](http://arxiv.org/abs/2510.18424)
 - 2025-10-21, **MTraining: Distributed Dynamic Sparse Attention for Efficient Ultra-Long Context Training**, Wenxuan Li et.al., Paper: [http://arxiv.org/abs/2510.18830](http://arxiv.org/abs/2510.18830)
@@ -669,6 +677,7 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 - 2025-10-21, **Fine-Tuned Thoughts: Leveraging Chain-of-Thought Reasoning for Industrial Asset Health Monitoring**, Shuxin Lin et.al., Paper: [http://arxiv.org/abs/2510.18817](http://arxiv.org/abs/2510.18817)
 - 2025-10-21, **FedDEAP: Adaptive Dual-Prompt Tuning for Multi-Domain Federated Learning**, Yubin Zheng et.al., Paper: [http://arxiv.org/abs/2510.18837](http://arxiv.org/abs/2510.18837)
 - 2025-10-21, **FeClustRE: Hierarchical Clustering and Semantic Tagging of App Features from User Reviews**, Max Tiessler et.al., Paper: [http://arxiv.org/abs/2510.18799](http://arxiv.org/abs/2510.18799)
+- 2025-10-23, **Fast Inference via Hierarchical Speculative Decoding**, Clara Mohri et.al., Paper: [http://arxiv.org/abs/2510.19705](http://arxiv.org/abs/2510.19705)
 - 2025-10-21, **Exploring a Unified Vision-Centric Contrastive Alternatives on Multi-Modal Web Documents**, Yiqi Lin et.al., Paper: [http://arxiv.org/abs/2510.18703](http://arxiv.org/abs/2510.18703)
 - 2025-10-21, **Exploring Membership Inference Vulnerabilities in Clinical Large Language Models**, Alexander Nemecek et.al., Paper: [http://arxiv.org/abs/2510.18674](http://arxiv.org/abs/2510.18674)
 - 2025-10-21, **Evaluating Large Language Models in detecting Secrets in Android Apps**, Marco Alecci et.al., Paper: [http://arxiv.org/abs/2510.18601](http://arxiv.org/abs/2510.18601)
@@ -699,8 +708,9 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 - 2025-10-21, **Automated urban waterlogging assessment and early warning through a mixture of foundation models**, Chenxu Zhang et.al., Paper: [http://arxiv.org/abs/2510.18425](http://arxiv.org/abs/2510.18425)
 - 2025-10-21, **An Encoder-Decoder Foundation Chemical Language Model for Generative Polymer Design**, Harikrishna Sahu et.al., Paper: [http://arxiv.org/abs/2510.18860](http://arxiv.org/abs/2510.18860)
 - 2025-10-21, **Adamas: Hadamard Sparse Attention for Efficient Long-Context Inference**, Siyuan Yan et.al., Paper: [http://arxiv.org/abs/2510.18413](http://arxiv.org/abs/2510.18413)
+- 2025-10-22, **AdaSPEC: Selective Knowledge Distillation for Efficient Speculative Decoders**, Yuezhou Hu et.al., Paper: [http://arxiv.org/abs/2510.19779](http://arxiv.org/abs/2510.19779)
 
-<p align=right>(<a href=#updated-on-20251023>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20251024>back to top</a>)</p>
 
 ## Reinforcement Learning
 
@@ -806,7 +816,7 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 - 2025-10-20, **Deep Neural Network extraction of Unpolarized Transverse Momentum Distributions**, I. P. Fernando et.al., Paper: [http://arxiv.org/abs/2510.17243](http://arxiv.org/abs/2510.17243)
 - 2025-10-20, **Decentralized Real-Time Planning for Multi-UAV Cooperative Manipulation via Imitation Learning**, Shantnav Agarwal et.al., Paper: [http://arxiv.org/abs/2510.17143](http://arxiv.org/abs/2510.17143)
 - 2025-10-21, **DeLoad: Demand-Driven Short-Video Preloading with Scalable Watch-Time Estimation**, Tong Liu et.al., Paper: [http://arxiv.org/abs/2510.18459](http://arxiv.org/abs/2510.18459)
-- 2025-10-22, **DAIL: Beyond Task Ambiguity for Language-Conditioned Reinforcement Learning**, Runpeng Xie et.al., Paper: [http://arxiv.org/abs/2510.19562](http://arxiv.org/abs/2510.19562)
+- 2025-10-23, **DAIL: Beyond Task Ambiguity for Language-Conditioned Reinforcement Learning**, Runpeng Xie et.al., Paper: [http://arxiv.org/abs/2510.19562](http://arxiv.org/abs/2510.19562)
 - 2025-10-20, **D2C-HRHR: Discrete Actions with Double Distributional Critics for High-Risk-High-Return Tasks**, Jundong Zhang et.al., Paper: [http://arxiv.org/abs/2510.17212](http://arxiv.org/abs/2510.17212)
 - 2025-10-20, **CrossGuard: Safeguarding MLLMs against Joint-Modal Implicit Malicious Attacks**, Xu Zhang et.al., Paper: [http://arxiv.org/abs/2510.17687](http://arxiv.org/abs/2510.17687)
 - 2025-10-20, **Continuous Q-Score Matching: Diffusion Guided Reinforcement Learning for Continuous-Time Control**, Chengxiu Hua et.al., Paper: [http://arxiv.org/abs/2510.17122](http://arxiv.org/abs/2510.17122)
@@ -835,7 +845,7 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 - 2025-10-20, **ALPINE: A Lightweight and Adaptive Privacy-Decision Agent Framework for Dynamic Edge Crowdsensing**, Guanjie Cheng et.al., Paper: [http://arxiv.org/abs/2510.17162](http://arxiv.org/abs/2510.17162)
 - 2025-10-20, **A Principle of Targeted Intervention for Multi-Agent Reinforcement Learning**, Anjie Liu et.al., Paper: [http://arxiv.org/abs/2510.17697](http://arxiv.org/abs/2510.17697)
 
-<p align=right>(<a href=#updated-on-20251023>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20251024>back to top</a>)</p>
 
 Notes: 
 

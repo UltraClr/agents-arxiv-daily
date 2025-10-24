@@ -3,7 +3,7 @@ layout: default
 ---
 
 # Agent Research Papers
-### Automatically Updated on 2025.10.23
+### Automatically Updated on 2025.10.24
 Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Autonomous Agent`,`LLM Agent`
 
 > If you have any other keywords, please feel free to let us know :) 
@@ -586,6 +586,8 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 
 | Publish Date | Title | Authors | PDF | Code |
 |:---------|:-----------------------|:---------|:------|:------|
+|**2025-10-23**|**Zhyper: Factorized Hypernetworks for Conditioned LLM Fine-Tuning**|M. H. I. Abdalla et.al.|[2510.19733](http://arxiv.org/abs/2510.19733)|null|
+|**2025-10-23**|**Fast Inference via Hierarchical Speculative Decoding**|Clara Mohri et.al.|[2510.19705](http://arxiv.org/abs/2510.19705)|null|
 |**2025-10-22**|**Semantic World Models**|Jacob Berg et.al.|[2510.19818](http://arxiv.org/abs/2510.19818)|null|
 |**2025-10-22**|**olmOCR 2: Unit Test Rewards for Document OCR**|Jake Poznanski et.al.|[2510.19817](http://arxiv.org/abs/2510.19817)|null|
 |**2025-10-22**|**Hubble: a Model Suite to Advance the Study of LLM Memorization**|Johnny Tian-Zheng Wei et.al.|[2510.19811](http://arxiv.org/abs/2510.19811)|null|
@@ -596,6 +598,14 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 |**2025-10-22**|**The Feasibility of Training Sovereign Language Models in the Global South: A Study of Brazil and Mexico**|Sandra Malagon et.al.|[2510.19801](http://arxiv.org/abs/2510.19801)|null|
 |**2025-10-22**|**Integrating Transparent Models, LLMs, and Practitioner-in-the-Loop: A Case of Nonprofit Program Evaluation**|Ji Ma et.al.|[2510.19799](http://arxiv.org/abs/2510.19799)|null|
 |**2025-10-22**|**Blackbox Model Provenance via Palimpsestic Membership Inference**|Rohith Kuditipudi et.al.|[2510.19796](http://arxiv.org/abs/2510.19796)|null|
+|**2025-10-22**|**On Controlled Change: Generative AI's Impact on Professional Authority in Journalism**|Tomás Dodds et.al.|[2510.19792](http://arxiv.org/abs/2510.19792)|null|
+|**2025-10-22**|**ToolDreamer: Instilling LLM Reasoning Into Tool Retrievers**|Saptarshi Sengupta et.al.|[2510.19791](http://arxiv.org/abs/2510.19791)|null|
+|**2025-10-22**|**AdaSPEC: Selective Knowledge Distillation for Efficient Speculative Decoders**|Yuezhou Hu et.al.|[2510.19779](http://arxiv.org/abs/2510.19779)|null|
+|**2025-10-22**|**The Tail Tells All: Estimating Model-Level Membership Inference Vulnerability Without Reference Models**|Euodia Dodd et.al.|[2510.19773](http://arxiv.org/abs/2510.19773)|null|
+|**2025-10-22**|**SmartSwitch: Advancing LLM Reasoning by Overcoming Underthinking via Promoting Deeper Thought Exploration**|Xichen Zhang et.al.|[2510.19767](http://arxiv.org/abs/2510.19767)|null|
+|**2025-10-22**|**Top-P Masking for Cross Language Information Retrieval**|Joseph Casale et.al.|[2510.19758](http://arxiv.org/abs/2510.19758)|null|
+|**2025-10-22**|**Review of Tools for Zero-Code LLM Based Application Development**|Priyaranjan Pattnayak et.al.|[2510.19747](http://arxiv.org/abs/2510.19747)|null|
+|**2025-10-22**|**RLIE: Rule Generation with Logistic Regression, Iterative Refinement, and Evaluation for Large Language Models**|Yang Yang et.al.|[2510.19698](http://arxiv.org/abs/2510.19698)|null|
 |**2025-10-22**|**Grasp Any Region: Towards Precise, Contextual Pixel Understanding for Multimodal LLMs**|Haochen Wang et.al.|[2510.18876](http://arxiv.org/abs/2510.18876)|null|
 |**2025-10-21**|**Retaining by Doing: The Role of On-Policy Data in Mitigating Forgetting**|Howard Chen et.al.|[2510.18874](http://arxiv.org/abs/2510.18874)|null|
 |**2025-10-21**|**DSI-Bench: A Benchmark for Dynamic Spatial Intelligence**|Ziang Zhang et.al.|[2510.18873](http://arxiv.org/abs/2510.18873)|null|
@@ -701,6 +711,7 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 
 | Publish Date | Title | Authors | PDF | Code |
 |:---------|:-----------------------|:---------|:------|:------|
+|**2025-10-23**|**DAIL: Beyond Task Ambiguity for Language-Conditioned Reinforcement Learning**|Runpeng Xie et.al.|[2510.19562](http://arxiv.org/abs/2510.19562)|null|
 |**2025-10-22**|**olmOCR 2: Unit Test Rewards for Document OCR**|Jake Poznanski et.al.|[2510.19817](http://arxiv.org/abs/2510.19817)|null|
 |**2025-10-22**|**Pico-Banana-400K: A Large-Scale Dataset for Text-Guided Image Editing**|Yusu Qian et.al.|[2510.19808](http://arxiv.org/abs/2510.19808)|null|
 |**2025-10-22**|**Scaf-GRPO: Scaffolded Group Relative Policy Optimization for Enhancing LLM Reasoning**|Xichen Zhang et.al.|[2510.19807](http://arxiv.org/abs/2510.19807)|null|
@@ -709,7 +720,6 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 |**2025-10-22**|**Memo: Training Memory-Efficient Embodied Agents with Reinforcement Learning**|Gunshi Gupta et.al.|[2510.19732](http://arxiv.org/abs/2510.19732)|null|
 |**2025-10-22**|**Semi-Implicit Approaches for Large-Scale Bayesian Spatial Interpolation**|Sébastien Garneau et.al.|[2510.19722](http://arxiv.org/abs/2510.19722)|null|
 |**2025-10-22**|**MedReason-R1: Learning to Reason for CT Diagnosis with Reinforcement Learning and Local Zoom**|Yifan Li et.al.|[2510.19626](http://arxiv.org/abs/2510.19626)|null|
-|**2025-10-22**|**DAIL: Beyond Task Ambiguity for Language-Conditioned Reinforcement Learning**|Runpeng Xie et.al.|[2510.19562](http://arxiv.org/abs/2510.19562)|null|
 |**2025-10-22**|**Demonstrating Real Advantage of Machine-Learning-Enhanced Monte Carlo for Combinatorial Optimization**|Luca Maria Del Bono et.al.|[2510.19544](http://arxiv.org/abs/2510.19544)|null|
 |**2025-10-22**|**Quantum Monte Carlo study of low-dimensional Fermi fluids of dipolar atoms**|Clio Johnson et.al.|[2510.19533](http://arxiv.org/abs/2510.19533)|null|
 |**2025-10-22**|**The Confusing Instance Principle for Online Linear Quadratic Control**|Waris Radji et.al.|[2510.19531](http://arxiv.org/abs/2510.19531)|null|

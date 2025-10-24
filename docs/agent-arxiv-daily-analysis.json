@@ -19005,6 +19005,341 @@
         ]
       },
       "blacklisted": false
+    },
+    "2510.19733": {
+      "arxiv_id": "2510.19733",
+      "title": "Zhyper: Factorized Hypernetworks for Conditioned LLM Fine-Tuning",
+      "publish_date": "2025-10-23",
+      "source_type": "latex",
+      "metadata": {
+        "authors": [
+          "Mohamed Hesham Ibrahim Abdalla",
+          "Zhipin Wang",
+          "Christian Frey"
+        ],
+        "affiliations": [
+          "Department of Computer Science, University of Technology Nuremberg"
+        ],
+        "resources": {
+          "github": "https://github.com/machinelearningnuremberg/Zhyper",
+          "huggingface": null,
+          "project_page": null,
+          "other_links": []
+        }
+      },
+      "analysis": {
+        "summary": "This paper introduces Zhyper, a parameter-efficient factorized hypernetwork framework for context-aware fine-tuning of Large Language Models (LLMs). The method generates LoRA adapters conditioned on textual descriptions (task or cultural contexts) using a compact hypernetwork that produces modulation signals rather than full adapter weights, achieving up to 26x parameter reduction compared to state-of-the-art baselines while maintaining competitive performance on task conditioning and cultural alignment benchmarks.",
+        "research_question": "How can we efficiently condition LLMs on diverse textual contexts (tasks or cultural descriptions) without requiring massive parameter overhead, enabling flexible adaptation to various downstream settings while maintaining competitive performance?",
+        "hypothesis": "A factorized hypernetwork that generates compact modulation signals (diagonal or square matrices) for pre-trained LoRA adapters can achieve parameter-efficient context-aware fine-tuning with better generalization than methods that generate full adapter weights, particularly for cultural alignment and task conditioning.",
+        "methodology": "The authors develop Zhyper, which uses: (1) frozen base LLM weights with trainable LoRA adapters (matrices A and B); (2) a hypernetwork conditioned on context embeddings (from text encoders), layer-specific embeddings, and module-type embeddings; (3) the hypernetwork outputs compact modulation matrices (diagonal r-vectors or r×r square matrices) rather than full adapter weights; (4) training on 479 SNI datasets for task conditioning and Reddit AskX subreddits for cultural alignment; (5) evaluation on 10 benchmark datasets (ARC, PIQA, GSM8K, etc.) for tasks and CulturalBench/GlobalOpinionQA for cultural alignment, comparing against T2L, MTL, Hyperdecoders, and other baselines.",
+        "key_findings": "1) Zhyper achieves competitive performance (65.9% avg on task benchmarks) with 26x fewer parameters than T2L (4.2M vs 110M); 2) No statistically significant difference between Zhyper and T2L on task benchmarks via Friedman/Nemenyi tests; 3) On cultural alignment, Zhyper outperforms baselines on both seen (70.15% Easy, 40.39% Hard) and unseen countries (67.79% Easy, 36.27% Hard); 4) The diagonal modulation variant (Zhyper-diag) achieves best parameter-performance tradeoff; 5) Better generalization to out-of-domain cultures compared to existing methods.",
+        "interpretation": "The authors interpret their results as demonstrating that full adapter generation is unnecessarily parameter-heavy. By fixing the LoRA matrices (A, B) and only learning compact modulation signals, Zhyper achieves tighter generalization bounds (lower Rademacher complexity) while maintaining expressiveness. The superior cultural alignment performance suggests that compact, context-specific modulation is more effective for capturing fine-grained cultural values than generating entirely new adapters. The cross-cultural generalization indicates the model learns transferable cultural representations rather than memorizing training cultures.",
+        "conclusions": "Zhyper establishes hypernetwork-conditioned LoRA adaptation as a scalable, parameter-efficient path toward building adaptable and value-sensitive LLMs. The factorized approach reduces computational demands by up to 26x while achieving competitive task performance and superior cultural alignment. The method successfully extends to cultural conditioning, demonstrating improved generalization to unseen contexts. This represents an environmentally friendly solution for dynamic LLM adaptation without prohibitive computational costs.",
+        "limitations": "1) Reddit data introduces biases and may not represent broader populations; 2) No filtering for political correctness or harmful content in training data; 3) Top-voted comments can still contain conflicting opinions; 4) Cultural alignment limited to Reddit users' perspectives; 5) Lower hypothesis class expressiveness than full adapter generation (though empirically this doesn't hurt performance); 6) Evaluation sensitivity to prompt design in survey-based assessments; 7) Limited to Mistral-7B backbone for main experiments.",
+        "future_research": "While not explicitly stated, implicit directions include: (1) exploring other LLM backbones (Llama, GPT variants); (2) applying to additional cultural contexts beyond Reddit; (3) investigating other modulation matrix structures; (4) extending to multimodal contexts; (5) combining with other parameter-efficient methods; (6) addressing data quality and bias issues in cultural training; (7) evaluating on additional cultural benchmarks and survey sources."
+      },
+      "keyword_relevance": {
+        "score": 6.5,
+        "reasoning": "This paper is moderately relevant to the search keywords. It heavily involves Large Language Models (LLMs), fine-tuning, prompt engineering (textual descriptions as conditions), and instruction tuning concepts. The hypernetwork approach relates to model architecture and parameter-efficient methods. However, the paper does NOT focus on agentic systems, multi-agent scenarios, tool use, planning, or autonomous agents. It's primarily about efficient LLM adaptation through hypernetwork-conditioned LoRA, not about building or deploying LLM agents. The connection to agent-related keywords is tangential at best—one could use this method to condition agents, but that's not the paper's focus.",
+        "matching_keywords": [
+          "Large Language Model",
+          "LLM",
+          "Transformer",
+          "Language Model",
+          "Fine-tuning",
+          "Prompt",
+          "In-Context Learning",
+          "Instruction Tuning",
+          "Model Compression",
+          "RLHF"
+        ]
+      },
+      "blacklisted": false
+    },
+    "2510.19705": {
+      "arxiv_id": "2510.19705",
+      "title": "Fast Inference via Hierarchical Speculative Decoding",
+      "publish_date": "2025-10-23",
+      "source_type": "latex",
+      "metadata": {
+        "authors": [],
+        "affiliations": [],
+        "resources": {
+          "github": null,
+          "huggingface": null,
+          "project_page": null,
+          "other_links": []
+        }
+      },
+      "analysis": {
+        "summary": "This paper introduces Hierarchical Speculative Decoding (HSD), a novel algorithm that accelerates inference in transformer language models by stacking multiple draft models into a hierarchy. Unlike standard speculative decoding that uses a single draft model, HSD leverages multiple models of varying accuracy and speed, where each model verifies tokens from the model below it. The authors derive an expected latency expression, show that finding the optimal hierarchy can be solved in polynomial time via reduction to the Generalized Shortest Path problem, and demonstrate up to 1.2× speedup over single-draft baselines on open-source LLMs.",
+        "research_question": "Can leveraging multiple draft models in a hierarchical structure further reduce inference latency in transformer language models compared to standard single-draft speculative decoding?",
+        "hypothesis": "Using a hierarchy of draft models with increasing cost and accuracy, where each model verifies tokens from models below it, can achieve lower inference latency than using a single draft model while preserving the output distribution of the target model.",
+        "methodology": "The authors develop HSD, a recursive algorithm where only the smallest model generates tokens autoregressively, and larger models verify tokens in parallel. They derive a theoretical expression for expected latency per token using acceptance rates and model costs. To find the optimal hierarchy among exponentially many possibilities, they formulate the problem as a Generalized Shortest Path (GSP) problem and provide a polynomial-time solution (O(T⁴K⁴ log(TK))). Empirically, they evaluate HSD on LayerSkip models (7B, 13B, 70B) and Gemma2-9B on CNN-DM and XSUM datasets, comparing against single-draft baselines and autoregressive decoding.",
+        "key_findings": "1) HSD achieves up to 1.76× speedup over autoregressive decoding and up to 1.2× speedup over optimal single-draft baselines. 2) The optimal hierarchy can be computed efficiently in polynomial time despite exponential search space. 3) Using multiple drafters (typically 3 models) consistently improves latency across different model sizes (7B-70B parameters). 4) The theoretical latency predictions closely match empirical measurements, validating the IID acceptance rate assumption. 5) LayerSkip models with early-exit pretraining show greater improvements than Gemma2 models with post-hoc trained heads.",
+        "interpretation": "The authors interpret their results as validating the paradigm shift from single-draft to multi-draft speculative decoding. They argue that the natural tradeoff in drafter selection (faster but less accurate vs. slower but more reliable) can be exploited by using multiple drafters hierarchically. The polynomial-time optimization solution makes the approach practical despite the exponential search space. The smaller improvements on Gemma2 suggest that draft model quality (early-exit pretraining vs. post-hoc training) significantly impacts HSD effectiveness.",
+        "conclusions": "HSD successfully extends speculative decoding to leverage multiple draft models, achieving measurable speedups beyond single-draft methods while maintaining output distribution guarantees. The optimal hierarchy selection problem, though complex, admits an efficient polynomial-time solution via GSP reduction. The method is practical and complementary to existing speculative decoding improvements, offering a new dimension for inference acceleration.",
+        "limitations": "1) The theoretical analysis assumes IID acceptance rates, which is an approximation though empirically validated. 2) Memory overhead grows linearly with the number of models in the hierarchy (for models requiring separate heads). 3) The optimization requires computing pairwise acceptance rates across all candidate models (about 1 hour on 4 GPUs in their experiments). 4) Improvements are modest on models without early-exit pretraining (Gemma2). 5) The paper focuses on early-exit models and doesn't extensively explore other types of draft model candidates.",
+        "future_research": "1) Integrating HSD with other speculative decoding techniques (Medusa, SpecInfer, etc.) that improve single-draft settings. 2) Extending to online/adaptive hierarchy selection based on prompt characteristics. 3) Applying the hierarchical framework to domains beyond language models, such as graph random walks with heavy-tailed transitions. 4) Reducing the computational cost of estimating pairwise acceptance rates. 5) Exploring HSD with different types of draft models beyond early-exits (e.g., distilled models, quantized variants)."
+      },
+      "keyword_relevance": {
+        "score": 7,
+        "reasoning": "This paper is highly relevant to several core keywords related to Large Language Models and inference optimization. It directly addresses LLM inference acceleration using transformer-based language models (GPT-style architectures), making it relevant to 'Large Language Model', 'LLM', 'Transformer', and 'Language Model' keywords. The paper extensively discusses model efficiency techniques related to 'Model Compression' and optimization strategies. While not directly about agents, the inference acceleration techniques are crucial for making LLM-based agents practical and responsive. The paper is less relevant to agent-specific topics (planning, tool use, multi-agent collaboration) and RL-specific methods, though RLHF is briefly mentioned as a related technique. The focus is on inference optimization rather than agent capabilities, planning, or interactive behaviors.",
+        "matching_keywords": [
+          "Large Language Model",
+          "LLM",
+          "Transformer",
+          "Language Model",
+          "Model Compression",
+          "GPT",
+          "Fine-tuning",
+          "Distillation",
+          "In-Context Learning"
+        ]
+      },
+      "blacklisted": false
+    },
+    "2510.19792": {
+      "arxiv_id": "2510.19792",
+      "title": "On Controlled Change: Generative AI's Impact on Professional Authority in Journalism",
+      "publish_date": "2025-10-22",
+      "source_type": "latex",
+      "metadata": {
+        "authors": [
+          "Not explicitly listed in the provided LaTeX source"
+        ],
+        "affiliations": [
+          "Not explicitly listed in the provided LaTeX source"
+        ],
+        "resources": {
+          "github": null,
+          "huggingface": null,
+          "project_page": null,
+          "other_links": []
+        }
+      },
+      "analysis": {
+        "summary": "This paper examines how Dutch journalists integrate generative AI technologies, particularly large language models like ChatGPT, into newsroom practices while maintaining professional authority. Through 13 semi-structured interviews with journalists, editors, and innovation managers in Dutch media organizations, the authors introduce the concept of 'controlled change' to describe journalists' proactive, supervised approach to AI adoption that preserves their gatekeeping role and expertise.",
+        "research_question": "How are journalists navigating the integration of AI technologies in newsrooms, and what role does professional authority play in their approach to controlled change?",
+        "hypothesis": "The authors hypothesize that journalists are not passively adopting AI technologies but are actively managing and supervising their integration through deliberate mechanisms to maintain professional authority. They propose that journalists anticipate AI integration in a supervised manner rather than viewing it as an inevitable disruptor or resisting it outright.",
+        "methodology": "The study employs qualitative research methods with 13 semi-structured interviews conducted between May and August 2023 with media professionals (journalists, editors-in-chief, innovation managers, data chiefs) from major Dutch news organizations including AD, NPO, NOS, ANP, RTL, NRC, Het Parool, De Volkskrant, and DPG. Interviews averaged 34 minutes, were recorded, transcribed verbatim, and translated from Dutch to English. Analysis followed grounded theory principles with multi-step coding (open coding, axial coding, and selective coding) to identify emergent themes.",
+        "key_findings": "The study identifies three primary mechanisms through which journalists manage AI integration: (1) developing adaptive 'living document' guidelines that align AI use with ethical codes and journalistic values, (2) conducting controlled experimentation with AI tools for tasks like transcription, summarization, and brainstorming while maintaining human oversight, and (3) critically assessing AI capabilities and limitations to prevent overreliance and ensure AI complements rather than replaces human judgment. Journalists view AI as a tool for efficiency enhancement rather than a replacement for core journalistic functions.",
+        "interpretation": "The authors interpret these findings as evidence that professional authority in journalism is adapting rather than being eroded by AI. This aligns with Carlson's relational model of journalistic authority and Anderson's institutional adaptability framework. The controlled change concept extends previous research by emphasizing the structured, negotiated process of AI adoption, contrasting with deterministic views that portray AI as either an inevitable disruptor or subject to outright rejection. The findings support boundary work theory, showing how journalists reassert professional authority through negotiated interactions with emerging technologies.",
+        "conclusions": "Dutch journalists are approaching AI integration with measured optimism and caution, actively shaping the terms under which AI is used rather than passively adopting or resisting it. Professional authority is maintained through deliberate supervision, ethical governance, and the redefinition of journalistic roles as gatekeepers and critical interpreters of AI-generated content. The concept of controlled change demonstrates that journalists are proactively managing technological transitions to preserve core journalistic values while leveraging AI's efficiency benefits.",
+        "limitations": "The study focuses exclusively on Dutch newsrooms, which may limit generalizability to other national contexts with different media landscapes and regulatory environments. The sample size of 13 interviews, while providing in-depth insights, represents a limited cross-section of the journalism profession. The study was conducted in 2023, and given the rapid evolution of AI technologies, findings may require updating. The authors acknowledge uncertainty about future developments, with one interviewee noting 'no one really knows where it will be in three years from now.'",
+        "future_research": "While not explicitly outlined, the paper suggests several directions: longitudinal studies tracking how adaptive guidelines evolve over time, comparative research across different national contexts and media systems, investigation of actual AI implementation outcomes versus stated intentions, examination of audience perceptions of AI-generated versus human-generated content, and analysis of how professional authority negotiations unfold as AI capabilities advance. The 'living document' nature of guidelines suggests ongoing monitoring of how policies evolve in practice."
+      },
+      "keyword_relevance": {
+        "score": 4.5,
+        "reasoning": "This paper is partially relevant to the search keywords. While it extensively discusses Large Language Models (LLMs), specifically ChatGPT and GPT-4, and touches on generative AI applications (tool use) in professional contexts, it is primarily a qualitative social science study about journalism rather than a technical AI/ML research paper. The paper examines how LLMs are being integrated as tools in newsrooms but does not address agent architectures, multi-agent systems, reinforcement learning, or technical AI development. The focus is on human-AI interaction, professional authority, and organizational adaptation rather than agent reasoning, planning, or autonomous agent frameworks. Keywords like 'Prompt' and 'LLM' are relevant, but the paper doesn't explore in-context learning, fine-tuning, RLHF, or other technical aspects of these systems.",
+        "matching_keywords": [
+          "Large Language Model",
+          "LLM",
+          "GPT",
+          "Tool Use",
+          "Prompt"
+        ]
+      },
+      "blacklisted": true
+    },
+    "2510.19791": {
+      "arxiv_id": "2510.19791",
+      "title": "ToolDreamer: Instilling LLM Reasoning Into Tool Retrievers",
+      "publish_date": "2025-10-22",
+      "source_type": "latex",
+      "metadata": {
+        "authors": [
+          "Saptarshi Sengupta",
+          "Zhengyu Zhou",
+          "Jun Araki",
+          "Xingbo Wang",
+          "Bingqing Wang",
+          "Suhang Wang",
+          "Zhe Feng"
+        ],
+        "affiliations": [
+          "The Pennsylvania State University",
+          "Bosch Research North America"
+        ],
+        "resources": {
+          "github": null,
+          "huggingface": null,
+          "project_page": null,
+          "other_links": []
+        }
+      },
+      "analysis": {
+        "summary": "ToolDreamer is a framework for improving tool retrieval in Large Language Model (LLM) systems by training retriever models on LLM-generated hypothetical tool descriptions rather than direct query-tool mappings. The approach addresses the context window limitation problem when dealing with large tool sets by using an external retriever conditioned on synthetic tool descriptions that better align with the semantic space of actual tool descriptions, achieving 4-19% improvements across various retrieval metrics.",
+        "research_question": "How can tool retrieval for LLMs be improved when the number of available tools exceeds the context window limit, particularly addressing the misalignment between user queries and tool descriptions in traditional retrieval approaches?",
+        "hypothesis": "The authors hypothesize that training retriever models to map LLM-generated hypothetical tool descriptions to actual gold tools (tool-tool alignment) will outperform traditional query-tool alignment approaches, as hypothetical tools generated by LLMs provide better semantic alignment within the tool description language space and incorporate reasoning about tool necessity.",
+        "methodology": "The methodology consists of two phases: (1) Training Phase: GPT-4.1 generates hypothetical tools (HTs) for queries with associated reasoning, names, and descriptions; HTs are aligned to gold tools using bipartite graph matching with the Hungarian algorithm based on semantic similarity (Qwen3-8B embeddings); retriever models are trained using InfoNCE loss on aligned (HT, GT) pairs with two input formats (TND: Thought-Name-Description, and QTND: Query+TND). (2) Inference Phase: HTs are generated for test queries, the trained retriever retrieves top-K tools for each HT, and results are unified using Reciprocal Rank Fusion (RRF). The framework is evaluated on the ToolRet dataset (26 combined datasets, ~44K tools, ~8K queries across Web, Code, and Customized splits) using NDCG@10, Precision@10, Recall@10, and MRR metrics, comparing BM25 (sparse) and Qwen3-8B (dense) retrievers against baselines including COLT and direct HT usage.",
+        "key_findings": "ToolDreamer achieves substantial improvements: 8-19% gains in zero-shot settings over baseline retrievers using only questions; 4-10% improvements when training with aligned tools versus traditional query-tool training; consistent improvements across both sparse (BM25) and dense (Qwen3-8B) retrievers; the QTND format (Query+TND) generally outperforms TND alone; the framework works with open-source LLMs (Qwen3-32B) for HT generation with minimal performance degradation; LLM-based fusion can provide additional 6-10% improvements over RRF but with caveats (cost, hallucination risks); high-quality hypothetical tools are critical (inferior prompts cause 1-5% performance drops); tool alignment quality (embedding model and matching algorithm) has modest impact compared to HT quality.",
+        "interpretation": "The authors interpret their findings as validation that the traditional query-tool similarity paradigm is suboptimal for tool retrieval. By offloading reasoning to the LLM during HT generation and training retrievers on tool-tool relationships, the framework creates a more natural alignment in the tool description semantic space. The success across both sparse and dense retrievers demonstrates the quality of generated HTs (lexical similarity for BM25) and learned representations (semantic understanding for dense models). The framework's effectiveness with open-source models and without training (zero-shot) highlights its flexibility and practical applicability, addressing both cost and privacy concerns in real-world deployments.",
+        "conclusions": "ToolDreamer successfully conditions retrievers to perform targeted tool search by learning hypothetical tool-to-gold tool mappings rather than query-to-tool mappings. The framework is flexible (works with multiple retriever types and LLM generators), sample-efficient (achieves superior results with fewer training samples), and scalable (simpler than complex multi-stage approaches like COLT). By incorporating LLM reasoning into the retrieval process, it enables more effective handling of large tool collections without overwhelming LLM context windows, representing a step toward better LLM tool-calling capabilities.",
+        "limitations": "The framework requires high-quality hypothetical tools, necessitating careful prompt engineering and testing (though this is considered reasonable given prompting's importance in generative tasks). Reciprocal Rank Fusion adds processing overhead compared to direct retrieval, though this is not a significant bottleneck on modern hardware. LLM instruction-following failures occasionally occur (0.3% during training, requiring sample removal; occasional format errors during inference handled by fallback to base query). The alignment between hypothetical and gold tools may not be perfect, though the authors argue this imperfect mapping still provides sufficient signal for training effective retrievers.",
+        "future_research": "The authors suggest exploring alternative loss objectives beyond InfoNCE for training retrievers on hypothetical-gold tool pairs, and investigating different tool alignment algorithms beyond the Hungarian algorithm to potentially improve the quality of HT-GT mappings and further enhance retriever efficiency."
+      },
+      "keyword_relevance": {
+        "score": 9,
+        "reasoning": "This paper is highly relevant to the specified keywords. It directly addresses Tool Use, Tool Learning, and Function Calling as core topics, focusing on improving tool retrieval for LLM-based systems. The work extensively involves LLMs (Large Language Models, GPT-4.1, Qwen3), including techniques like Prompt engineering, In-Context Learning (zero-shot application), and Fine-tuning (retriever training). It touches on Agent Reasoning through LLM-generated hypothetical tools that incorporate reasoning chains. The framework supports Agentic behavior by enabling LLMs to effectively access large tool collections. While not explicitly about multi-agent systems or traditional RL, the paper is central to the LLM Agent ecosystem, specifically addressing the critical problem of Tool Use at scale. The Retrieval-Augmented component (external retriever paired with LLM) and Model Alignment (aligning hypothetical with gold tools) are also present.",
+        "matching_keywords": [
+          "Tool Use",
+          "Tool Learning",
+          "Function Calling",
+          "LLM Agent",
+          "Agent Reasoning",
+          "Large Language Model",
+          "LLM",
+          "GPT",
+          "Prompt",
+          "In-Context Learning",
+          "Fine-tuning",
+          "Retrieval-Augmented",
+          "Model Alignment",
+          "Agentic",
+          "Planning"
+        ]
+      },
+      "blacklisted": false
+    },
+    "2510.19779": {
+      "arxiv_id": "2510.19779",
+      "title": "AdaSPEC: Selective Knowledge Distillation for Efficient Speculative Decoders",
+      "publish_date": "2025-10-22",
+      "source_type": "latex",
+      "metadata": {
+        "authors": [
+          "Yuezhou Hu",
+          "Jiaxin Guo",
+          "Xinyu Feng",
+          "Tuo Zhao"
+        ],
+        "affiliations": [
+          "University of California, Berkeley",
+          "Tsinghua University",
+          "Georgia Institute of Technology"
+        ],
+        "resources": {
+          "github": "https://github.com/yuezhouhu/adaspec",
+          "huggingface": null,
+          "project_page": null,
+          "other_links": []
+        }
+      },
+      "analysis": {
+        "summary": "This paper introduces AdaSPEC, a novel selective knowledge distillation method for improving Speculative Decoding (SD) in large language models. AdaSPEC addresses the misalignment between traditional knowledge distillation objectives and SD's goal of maximizing token acceptance rate by using a reference model to filter out difficult-to-learn tokens, allowing the draft model to focus its limited capacity on more learnable tokens. Experiments across diverse tasks show AdaSPEC achieves up to 15% higher acceptance rates compared to the state-of-the-art DistillSpec method.",
+        "research_question": "How can we improve the efficiency of Speculative Decoding by better aligning draft models with target models through selective knowledge distillation that accounts for the draft model's limited capacity?",
+        "hypothesis": "The authors hypothesize that conventional knowledge distillation methods are suboptimal for Speculative Decoding because they uniformly minimize KL divergence across all tokens, wasting the draft model's limited capacity on tokens that are inherently difficult to learn. By selectively filtering out hard-to-learn tokens and focusing distillation on more tractable tokens, the draft model can achieve better alignment with the target model on tokens it can realistically predict, thereby improving overall token acceptance rates.",
+        "methodology": "AdaSPEC operates in two phases: (1) Reference Model Distillation - a reference model (initialized as a copy of the draft model) is distilled using the target model as teacher via forward KL divergence minimization; (2) Selective Draft Model Distillation - the reference model identifies 'hard' tokens by computing token-wise loss differences (Δ_L) between draft and reference models, filtering out tokens with low Δ_L values, then distilling the draft model only on the top k% of tokens with highest Δ_L. Experiments evaluate two model configurations (Pythia-31M/1.4B and CodeGen-350M/Phi-2) across five tasks (GSM8K, Alpaca, MBPP, CNN/Daily Mail, XSUM) under two settings (3-Epoch and Optimal-Epoch).",
+        "key_findings": "AdaSPEC consistently outperforms DistillSpec across all tasks and model configurations, achieving acceptance rate improvements up to 15%. The method shows particularly strong gains when the size gap between draft and target models is larger (e.g., 64x for Pythia-31M to 1.4B). AdaSPEC demonstrates 10-20% wall-clock speedup in real-world deployment using vLLM. Ablation studies confirm that token selection based on Δ_L is critical, with top 40% token selection significantly outperforming bottom 40% selection. The approach generalizes beyond vanilla SD, showing improvements when integrated with advanced methods like EAGLE and scaling to larger models (Qwen2.5-0.5B/32B).",
+        "interpretation": "The authors interpret their findings as validation that the conventional knowledge distillation objective (minimizing KL divergence uniformly) is fundamentally misaligned with Speculative Decoding's actual goal (maximizing acceptance rate). The success of selective token filtering demonstrates that draft models with limited capacity benefit more from focused learning on tractable tokens rather than attempting to match the target model's full distribution. The observation that AdaSPEC predominantly selects task-critical tokens (e.g., mathematical tokens for GSM8K) suggests the method effectively identifies and prioritizes tokens most relevant for maintaining generation quality while improving acceptance rates.",
+        "conclusions": "AdaSPEC provides a more effective training paradigm for draft models in Speculative Decoding by introducing adaptive token filtering based on learnability. The method successfully bridges the capacity gap between draft and target models, achieving superior alignment on tokens the draft model can realistically predict while avoiding wasteful optimization on intractable tokens. This selective approach consistently improves both acceptance rates and wall-clock inference speed across diverse tasks and model scales.",
+        "limitations": "As acknowledged by the authors, this is a preliminary study using simple loss-based token filtering. The study is limited to relatively small model scales (up to 2.7B parameters for most experiments, though some validation on 32B models is included) and trains for fewer epochs than the original DistillSpec work due to computational constraints. The token filtering mechanism is based solely on perplexity differences and may not capture all aspects of token difficulty or importance. The paper does not extensively explore integration with tree-based or multi-step verification frameworks.",
+        "future_research": "The authors suggest several directions: (1) designing more adaptive and sophisticated token filtering strategies beyond simple loss-based selection, (2) integrating AdaSPEC with tree-based or multi-step verification frameworks to further improve both speed and quality, (3) exploring the method's effectiveness on even larger model scales, and (4) investigating task-specific token selection strategies that could better capture domain-specific patterns."
+      },
+      "keyword_relevance": {
+        "score": 6.5,
+        "reasoning": "This paper is moderately relevant to the search keywords, primarily through its focus on Large Language Models (LLM), knowledge distillation (a form of model compression), and fine-tuning techniques. The paper addresses core LLM optimization challenges including model compression, distillation, and efficient inference. However, it does not directly address agent-related topics (Agent, Multi-Agent, Tool Use, Planning, etc.) or reinforcement learning methods (RL, PPO, DQN, etc.). The relevance is primarily in the LLM and model optimization domain rather than agentic systems or RL-based approaches.",
+        "matching_keywords": [
+          "Large Language Model",
+          "LLM",
+          "Transformer",
+          "Language Model",
+          "Fine-tuning",
+          "Model Compression",
+          "Distillation",
+          "Instruction Tuning"
+        ]
+      },
+      "blacklisted": false
+    },
+    "2510.19773": {
+      "arxiv_id": "2510.19773",
+      "title": "The Tail Tells All: Estimating Model-Level Membership Inference Vulnerability Without Reference Models",
+      "publish_date": "2025-10-22",
+      "source_type": "latex",
+      "metadata": {
+        "authors": [
+          "Euodia Dodd",
+          "Nataša Krčo",
+          "Igor Shilov",
+          "Yves-Alexandre de Montjoye"
+        ],
+        "affiliations": [
+          "Imperial College London"
+        ],
+        "resources": {
+          "github": null,
+          "huggingface": null,
+          "project_page": null,
+          "other_links": []
+        }
+      },
+      "analysis": {
+        "summary": "This paper presents a novel method for estimating machine learning models' vulnerability to membership inference attacks (MIAs) without requiring expensive reference models. The authors observe that loss distributions are asymmetric and heavy-tailed, and that vulnerable training samples move from the high-loss tail to the low-loss head during training. They propose using the True Negative Rate (TNR) of a simple loss-based attack to predict vulnerability to state-of-the-art attacks like LiRA.",
+        "research_question": "Can we accurately estimate a model's vulnerability to state-of-the-art membership inference attacks without training computationally expensive reference models?",
+        "hypothesis": "The authors hypothesize that (1) loss distributions are asymmetric and heavy-tailed, (2) samples most vulnerable to MIAs have moved from the high-loss tail to the low-loss head during training, and (3) measuring the absence of training samples from the high-loss region (via TNR of a simple loss attack) can accurately predict vulnerability to sophisticated reference model-based attacks.",
+        "methodology": "The researchers conducted empirical analysis across 9 neural network architectures (ranging from 60K to 172M parameters) on 4 image classification datasets (MNIST, CIFAR-10, CINIC-10, CIFAR-100). They trained models following established protocols, instantiated state-of-the-art attacks (LiRA with 64 reference models in online setting), and compared their proposed LOSS TNR metric against baselines including train-test accuracy gap, LT-IQR AUC, LOSS AUC, and low-cost RMIA. They also tested on GPT-2 models (10M to 1018M parameters) trained on C4 dataset with 256 reference models for LLM evaluation.",
+        "key_findings": "The LOSS TNR metric achieves strong predictive performance for LiRA TPR@FPR=0.001 with R²=0.945 and RMSE=0.036 across diverse setups. It outperforms both traditional metrics (train-test gap, LOSS AUC) and the state-of-the-art low-cost attack RMIA (which requires 2 reference models). Non-linear functions, particularly exponential fits, further improve prediction accuracy (R²=0.983). For LLMs, which exhibit more symmetric loss distributions, LOSS AUC provides good risk estimation (RMSE=0.01). The method successfully predicts vulnerability across varying numbers of reference models (4-64).",
+        "interpretation": "The authors interpret their findings as evidence that the fundamental mechanism of MIAs is the memorization of hard examples that shift from the tail to the head of the loss distribution. This explains why simple loss-based attacks have high AUC but low TPR at low FPR—they can identify easy non-members in the tail but struggle with the overlapping head region. The success of TNR as a predictor demonstrates that the degree of tail separation directly correlates with vulnerability, supporting theories about the relationship between memorization, generalization, and privacy risk. The different behavior in LLMs (requiring AUC instead of TNR) confirms known differences in LLM memorization patterns.",
+        "conclusions": "The paper concludes that model-level vulnerability to state-of-the-art membership inference attacks can be accurately estimated without any reference models by measuring the absence of samples from the high-loss tail of the training distribution. This provides a practical, zero-cost alternative to expensive SOTA attacks for privacy risk assessment, particularly valuable in iterative development workflows. The method's effectiveness across diverse architectures and datasets, and its applicability (with modifications) to LLMs, demonstrates its broad utility for privacy evaluation in machine learning.",
+        "limitations": "The authors acknowledge several limitations: (1) evaluation is limited to LiRA and does not assess transferability to other MIAs or broader privacy threats like reconstruction or inversion attacks, (2) despite testing across multiple setups, TNR is an estimator and may not generalize to all cases, (3) LLM experiments are limited to five mid-sized GPT-2 models due to computational constraints, and (4) sensitivity to different training regimes has not been fully explored. The method's applicability to other domains beyond image classification and text modeling remains to be validated.",
+        "future_research": "The authors suggest several directions for future work: (1) evaluating the method on larger LLMs and datasets to assess scaling behavior, (2) testing sensitivity to various training regimes and hyperparameters, (3) assessing transferability to other types of membership inference attacks beyond LiRA, (4) exploring applicability to broader privacy threats such as model inversion and attribute inference, and (5) investigating the use of non-linear estimation functions for improved risk prediction, particularly for strong attackers training many reference models."
+      },
+      "keyword_relevance": {
+        "score": 4,
+        "reasoning": "This paper focuses on privacy and security evaluation of machine learning models through membership inference attacks. While it extensively discusses Large Language Models (LLMs) including GPT-2 models and evaluates them empirically, the core contribution is about privacy assessment methodology rather than agent systems, tool use, or agentic behaviors. The paper mentions LLM, GPT, Transformer concepts in the context of evaluating their privacy vulnerabilities, and discusses Fine-tuning in passing. However, it does not address agent frameworks, multi-agent systems, planning, tool use, ReAct, or any reinforcement learning approaches. The connection to the keyword list is peripheral—LLMs are subjects of study for privacy analysis, not the methodological focus related to agent capabilities or architectures.",
+        "matching_keywords": [
+          "Large Language Model",
+          "LLM",
+          "GPT",
+          "Fine-tuning"
+        ]
+      },
+      "blacklisted": true
+    },
+    "2510.19758": {
+      "arxiv_id": "2510.19758",
+      "title": "Top-P Masking for Cross Language Information Retrieval",
+      "publish_date": "2025-10-22",
+      "source_type": "latex",
+      "metadata": {
+        "authors": [
+          "Joseph Casale",
+          "Andrew Silverschotz",
+          "Joseph DeSimone"
+        ],
+        "affiliations": [],
+        "resources": {
+          "github": null,
+          "huggingface": null,
+          "project_page": null,
+          "other_links": []
+        }
+      },
+      "analysis": {
+        "summary": "This paper proposes Top-P Dynamic Masking as an alternative to Top-K masking for promoting sparse representations in Cross-Language Information Retrieval (CLIR) systems. Drawing inspiration from nucleus sampling in language models, the authors apply this technique to the BLADE algorithm and demonstrate improved mean Average Precision (mAP) scores compared to traditional Top-K masking approaches on the NeuCLIR Mandarin dataset.",
+        "research_question": "Can Top-P Dynamic Masking achieve better effectiveness (higher mAP) with comparable or better efficiency (query throughput) than Top-K masking in Cross-Language Information Retrieval tasks?",
+        "hypothesis": "The authors hypothesize that: (1) Top-P Dynamic Masking will achieve higher mAP effectiveness with higher efficiency compared to Top-K masking by allowing a dynamic number of terms to be selected, and (2) Different optimal values of P or K may exist for queries versus documents due to their differing complexity and length.",
+        "methodology": "The study uses the BLADE-C model architecture, substituting Top-K masking with Top-P Dynamic Masking in post-processing. Experiments are conducted on a subset (75,000 documents) of the NeuCLIR Mandarin dataset (3.2M documents total). Documents are split into 256-token passages and indexed using Anserini. The methodology compares mAP scores and query throughput across various P values (0 to 1) and K values (0.005×|V| to 0.02×|V|). They also test asymmetric configurations with different P values for queries versus documents. Scoring uses the MaxP operation, and metrics are computed using the ir_measures Python package.",
+        "key_findings": "Top-P Dynamic Masking consistently outperforms Top-K masking across comparable settings. The method selects more terms for documents but fewer terms for queries compared to Top-K masking with similar throughput, resulting in improved mAP. Specifically, at p=0.98 and k=352 (comparable throughput), Top-P selects more document terms but fewer query terms. The value p=0.85 shows particularly strong improvement in query throughput at similar mAP scores. However, indexing time increases slightly (approximately 40 minutes more for the full dataset).",
+        "interpretation": "The authors interpret their findings as evidence that dynamic term selection is more appropriate than fixed-k selection for CLIR tasks. The asymmetry in term selection (more for documents, fewer for queries) aligns with the intuition that documents are more complex and queries are simpler. The technique successfully adapts nucleus sampling from text generation to information retrieval, suggesting cross-pollination of techniques between different NLP domains can be beneficial.",
+        "conclusions": "Top-P Dynamic Masking provides a simple, effective drop-in replacement for Top-K masking in sparse CLIR systems like BLADE. The method achieves better effectiveness-efficiency trade-offs without increasing algorithmic complexity (both are O(|V|log|V|)). The dynamic nature of term selection naturally accommodates the different characteristics of queries versus documents.",
+        "limitations": "The authors explicitly acknowledge several significant limitations: (1) This was a class project from 2022 with preliminary results, (2) Experiments used only a partial subset (75,000 of 3.2M documents) due to computational constraints, (3) No formal statistical significance testing was performed, (4) The work has not undergone peer review, (5) Results should not be generalized to other datasets or settings, (6) Only the Mandarin subset of NeuCLIR was evaluated, limiting language diversity assessment.",
+        "future_research": "While not explicitly stated, the paper implicitly suggests several research directions: (1) Evaluation on the complete dataset with statistical significance testing, (2) Testing across multiple languages and CLIR datasets (e.g., CLEF 2003, full NeuCLIR), (3) Systematic exploration of asymmetric P values for queries versus documents, (4) Investigation of adaptive P values that adjust based on input characteristics, (5) Application to other sparse IR models beyond BLADE (e.g., SPLADE, SPLADE-X)."
+      },
+      "keyword_relevance": {
+        "score": 4,
+        "reasoning": "This paper has partial relevance to the search keywords. It uses BERT-based transformer models (mBERT) and discusses pre-training, which connects to 'BERT', 'Transformer', 'Language Model', and 'Pre-training'. The paper also mentions retrieval-augmented approaches in the context of embedding-space CLIR, weakly relating to 'Retrieval-Augmented' and 'RAG' concepts. However, the paper is fundamentally about information retrieval optimization techniques (sparse representations, masking strategies) rather than agents, autonomous systems, tool use, or reinforcement learning. It does not address agentic behaviors, multi-agent systems, planning, reasoning agents, or any RL methodologies. The LLM connection is tangential—while it uses transformer models and mentions nucleus sampling from LLMs, it's not about LLM capabilities, alignment, or deployment.",
+        "matching_keywords": [
+          "BERT",
+          "Transformer",
+          "Language Model",
+          "Pre-training",
+          "Retrieval-Augmented"
+        ]
+      },
+      "blacklisted": true
     }
   },
   "Reinforcement Learning": {
