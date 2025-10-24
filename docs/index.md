@@ -16,6 +16,26 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 
 | Publish Date | Title | Authors | PDF | Code |
 |:---------|:-----------------------|:---------|:------|:------|
+|**2025-10-23**|**Co-Designing Quantum Codes with Transversal Diagonal Gates via Multi-Agent Systems**|Xi He et.al.|[2510.20728](http://arxiv.org/abs/2510.20728)|null|
+|**2025-10-23**|**C-NAV: Towards Self-Evolving Continual Object Navigation in Open World**|Ming-Ming Yu et.al.|[2510.20685](http://arxiv.org/abs/2510.20685)|null|
+|**2025-10-23**|**Open-o3 Video: Grounded Video Reasoning with Explicit Spatio-Temporal Evidence**|Jiahao Meng et.al.|[2510.20579](http://arxiv.org/abs/2510.20579)|null|
+|**2025-10-23**|**EmbodiedBrain: Expanding Performance Boundaries of Task Planning for Embodied Intelligence**|Ding Zou et.al.|[2510.20578](http://arxiv.org/abs/2510.20578)|null|
+|**2025-10-23**|**Designing Intent Communication for Agent-Human Collaboration**|Yi Li et.al.|[2510.20409](http://arxiv.org/abs/2510.20409)|null|
+|**2025-10-23**|**Balancing Specialization and Centralization: A Multi-Agent Reinforcement Learning Benchmark for Sequential Industrial Control**|Tom Maus et.al.|[2510.20408](http://arxiv.org/abs/2510.20408)|null|
+|**2025-10-23**|**GhostEI-Bench: Do Mobile Agents Resilience to Environmental Injection in Dynamic On-Device Environments?**|Chiyu Chen et.al.|[2510.20333](http://arxiv.org/abs/2510.20333)|null|
+|**2025-10-23**|**From Generation to Attribution: Music AI Agent Architectures for the Post-Streaming Era**|Wonil Kim et.al.|[2510.20276](http://arxiv.org/abs/2510.20276)|null|
+|**2025-10-23**|**ImpossibleBench: Measuring LLMs' Propensity of Exploiting Test Cases**|Ziqian Zhong et.al.|[2510.20270](http://arxiv.org/abs/2510.20270)|null|
+|**2025-10-23**|**Towards AI Agents for Course Instruction in Higher Education: Early Experiences from the Field**|Yogesh Simmhan et.al.|[2510.20255](http://arxiv.org/abs/2510.20255)|null|
+|**2025-10-23**|**Automated Cloud Infrastructure-as-Code Reconciliation with AI Agents**|Zhenning Yang et.al.|[2510.20211](http://arxiv.org/abs/2510.20211)|null|
+|**2025-10-23**|**Merge and Conquer: Evolutionarily Optimizing AI for 2048**|Maggie Bai et.al.|[2510.20205](http://arxiv.org/abs/2510.20205)|null|
+|**2025-10-23**|**Mixture-of-Minds: Multi-Agent Reinforcement Learning for Table Understanding**|Yuhang Zhou et.al.|[2510.20176](http://arxiv.org/abs/2510.20176)|null|
+|**2025-10-23**|**Human-Centered LLM-Agent System for Detecting Anomalous Digital Asset Transactions**|Gyuyeon Na et.al.|[2510.20102](http://arxiv.org/abs/2510.20102)|null|
+|**2025-10-22**|**ToolScope: Enhancing LLM Agent Tool Use through Tool Merging and Context-Aware Filtering**|Marianne Menglin Liu et.al.|[2510.20036](http://arxiv.org/abs/2510.20036)|null|
+|**2025-10-22**|**Communication to Completion: Modeling Collaborative Workflows with Intelligent Multi-Agent Communication**|Yiming Lu et.al.|[2510.19995](http://arxiv.org/abs/2510.19995)|null|
+|**2025-10-22**|**A Tutorial on Cognitive Biases in Agentic AI-Driven 6G Autonomous Networks**|Hatim Chergui et.al.|[2510.19973](http://arxiv.org/abs/2510.19973)|null|
+|**2025-10-22**|**Seed3D 1.0: From Images to High-Fidelity Simulation-Ready 3D Assets**|Jiashi Feng et.al.|[2510.19944](http://arxiv.org/abs/2510.19944)|null|
+|**2025-10-22**|**Learning from Supervision with Semantic and Episodic Memory: A Reflective Approach to Agent Adaptation**|Jackson Hassell et.al.|[2510.19897](http://arxiv.org/abs/2510.19897)|null|
+|**2025-10-22**|**Large Language Model enabled Mathematical Modeling**|Guoyun Zhang et.al.|[2510.19895](http://arxiv.org/abs/2510.19895)|null|
 |**2025-10-22**|**Beyond Reactivity: Measuring Proactive Problem Solving in LLM Agents**|Gil Pasternak et.al.|[2510.19771](http://arxiv.org/abs/2510.19771)|null|
 |**2025-10-22**|**Review of Tools for Zero-Code LLM Based Application Development**|Priyaranjan Pattnayak et.al.|[2510.19747](http://arxiv.org/abs/2510.19747)|null|
 |**2025-10-22**|**Misalignment Bounty: Crowdsourcing AI Agent Misbehavior**|Rustem Turtayev et.al.|[2510.19738](http://arxiv.org/abs/2510.19738)|null|
@@ -586,6 +606,16 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 
 | Publish Date | Title | Authors | PDF | Code |
 |:---------|:-----------------------|:---------|:------|:------|
+|**2025-10-23**|**KL-Regularized Reinforcement Learning is Designed to Mode Collapse**|Anthony GX-Chen et.al.|[2510.20817](http://arxiv.org/abs/2510.20817)|null|
+|**2025-10-23**|**Generative Reasoning Recommendation via LLMs**|Minjie Hong et.al.|[2510.20815](http://arxiv.org/abs/2510.20815)|null|
+|**2025-10-23**|**Small Drafts, Big Verdict: Information-Intensive Visual Reasoning via Speculation**|Yuhan Liu et.al.|[2510.20812](http://arxiv.org/abs/2510.20812)|null|
+|**2025-10-23**|**On the Detectability of LLM-Generated Text: What Exactly Is LLM-Generated Text?**|Mingmeng Geng et.al.|[2510.20810](http://arxiv.org/abs/2510.20810)|null|
+|**2025-10-23**|**Video Prediction of Dynamic Physical Simulations With Pixel-Space Spatiotemporal Transformers**|Dean L Slack et.al.|[2510.20807](http://arxiv.org/abs/2510.20807)|null|
+|**2025-10-23**|**ARGenSeg: Image Segmentation with Autoregressive Image Generation Model**|Xiaolong Wang et.al.|[2510.20803](http://arxiv.org/abs/2510.20803)|null|
+|**2025-10-23**|**Simple Context Compression: Mean-Pooling and Multi-Ratio Training**|Yair Feldman et.al.|[2510.20797](http://arxiv.org/abs/2510.20797)|null|
+|**2025-10-23**|**A Use-Case Specific Dataset for Measuring Dimensions of Responsible Performance in LLM-generated Text**|Alicia Sagae et.al.|[2510.20782](http://arxiv.org/abs/2510.20782)|null|
+|**2025-10-23**|**RAGRank: Using PageRank to Counter Poisoning in CTI LLM Pipelines**|Austin Jia et.al.|[2510.20768](http://arxiv.org/abs/2510.20768)|null|
+|**2025-10-23**|**Empathic Prompting: Non-Verbal Context Integration for Multimodal LLM Conversations**|Lorenzo Stacchio et.al.|[2510.20743](http://arxiv.org/abs/2510.20743)|null|
 |**2025-10-23**|**Zhyper: Factorized Hypernetworks for Conditioned LLM Fine-Tuning**|M. H. I. Abdalla et.al.|[2510.19733](http://arxiv.org/abs/2510.19733)|null|
 |**2025-10-23**|**Fast Inference via Hierarchical Speculative Decoding**|Clara Mohri et.al.|[2510.19705](http://arxiv.org/abs/2510.19705)|null|
 |**2025-10-22**|**Semantic World Models**|Jacob Berg et.al.|[2510.19818](http://arxiv.org/abs/2510.19818)|null|
@@ -711,6 +741,26 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 
 | Publish Date | Title | Authors | PDF | Code |
 |:---------|:-----------------------|:---------|:------|:------|
+|**2025-10-23**|**KL-Regularized Reinforcement Learning is Designed to Mode Collapse**|Anthony GX-Chen et.al.|[2510.20817](http://arxiv.org/abs/2510.20817)|null|
+|**2025-10-23**|**GSWorld: Closed-Loop Photo-Realistic Simulation Suite for Robotic Manipulation**|Guangqi Jiang et.al.|[2510.20813](http://arxiv.org/abs/2510.20813)|null|
+|**2025-10-23**|**A Microphysical Probe of Neutron Star Interiors: Constraining the Equation of State with Glitch Dynamics**|Zhonghao Tu et.al.|[2510.20791](http://arxiv.org/abs/2510.20791)|null|
+|**2025-10-23**|**Consumption-Investment Problem in Rank-Based Models**|David Itkin et.al.|[2510.20763](http://arxiv.org/abs/2510.20763)|null|
+|**2025-10-23**|**Reinforcement Learning and Consumption-Savings Behavior**|Brandon Kaplowitz et.al.|[2510.20748](http://arxiv.org/abs/2510.20748)|null|
+|**2025-10-23**|**No-Regret Thompson Sampling for Finite-Horizon Markov Decision Processes with Gaussian Processes**|Jasmine Bayrooti et.al.|[2510.20725](http://arxiv.org/abs/2510.20725)|null|
+|**2025-10-23**|**Real-Time Gait Adaptation for Quadrupeds using Model Predictive Control and Reinforcement Learning**|Ganga Nair B et.al.|[2510.20706](http://arxiv.org/abs/2510.20706)|null|
+|**2025-10-23**|**Measuring cosmic dipole with the GRB luminosity-time relation**|Jessica Santiago et.al.|[2510.20705](http://arxiv.org/abs/2510.20705)|null|
+|**2025-10-23**|**Plan Then Retrieve: Reinforcement Learning-Guided Complex Reasoning over Knowledge Graphs**|Yanlin Song et.al.|[2510.20691](http://arxiv.org/abs/2510.20691)|null|
+|**2025-10-23**|**Downsizing Diffusion Models for Cardinality Estimation**|Xinhe Mu et.al.|[2510.20681](http://arxiv.org/abs/2510.20681)|null|
+|**2025-10-23**|**The Shape of Reasoning: Topological Analysis of Reasoning Traces in Large Language Models**|Xue Wen Tan et.al.|[2510.20665](http://arxiv.org/abs/2510.20665)|null|
+|**2025-10-23**|**Open-o3 Video: Grounded Video Reasoning with Explicit Spatio-Temporal Evidence**|Jiahao Meng et.al.|[2510.20579](http://arxiv.org/abs/2510.20579)|null|
+|**2025-10-23**|**EmbodiedBrain: Expanding Performance Boundaries of Task Planning for Embodied Intelligence**|Ding Zou et.al.|[2510.20578](http://arxiv.org/abs/2510.20578)|null|
+|**2025-10-23**|**Monte Carlo Sampling for Wave Functions Requiring (Anti)Symmetrization**|Koyena Bose et.al.|[2510.20577](http://arxiv.org/abs/2510.20577)|null|
+|**2025-10-23**|**AdaDoS: Adaptive DoS Attack via Deep Adversarial Reinforcement Learning in SDN**|Wei Shao et.al.|[2510.20566](http://arxiv.org/abs/2510.20566)|null|
+|**2025-10-23**|**GlobalRAG: Enhancing Global Reasoning in Multi-hop Question Answering via Reinforcement Learning**|Jinchang Luo et.al.|[2510.20548](http://arxiv.org/abs/2510.20548)|null|
+|**2025-10-23**|**A Unified Framework for Zero-Shot Reinforcement Learning**|Jacopo Di Ventura et.al.|[2510.20542](http://arxiv.org/abs/2510.20542)|null|
+|**2025-10-23**|**Detection of ultra-high-energy cosmic rays in the southern hemisphere with FAST: data acquisition and preliminary results**|Jakub Kmec et.al.|[2510.20522](http://arxiv.org/abs/2510.20522)|null|
+|**2025-10-23**|**Conan: Progressive Learning to Reason Like a Detective over Multi-Scale Visual Evidence**|Kun Ouyang et.al.|[2510.20470](http://arxiv.org/abs/2510.20470)|null|
+|**2025-10-23**|**On Multiple Robustness of Proximal Dynamic Treatment Regimes**|Yuanshan Gao et.al.|[2510.20451](http://arxiv.org/abs/2510.20451)|null|
 |**2025-10-23**|**DAIL: Beyond Task Ambiguity for Language-Conditioned Reinforcement Learning**|Runpeng Xie et.al.|[2510.19562](http://arxiv.org/abs/2510.19562)|null|
 |**2025-10-22**|**olmOCR 2: Unit Test Rewards for Document OCR**|Jake Poznanski et.al.|[2510.19817](http://arxiv.org/abs/2510.19817)|null|
 |**2025-10-22**|**Pico-Banana-400K: A Large-Scale Dataset for Text-Guided Image Editing**|Yusu Qian et.al.|[2510.19808](http://arxiv.org/abs/2510.19808)|null|
