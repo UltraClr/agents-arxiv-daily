@@ -6,13 +6,13 @@ This page contains AI-generated analysis of recent papers. The analysis is gener
 
 **Note**: The generated contents are not guaranteed to be 100% accurate.
 
-**Total Papers Analyzed**: 545
+**Total Papers Analyzed**: 552
 
 <details>
   <summary>Table of Contents</summary>
   <ol>
     <li><a href="#agent">Agent</a> (451 papers)</li>
-    <li><a href="#large-language-models">Large Language Models</a> (48 papers)</li>
+    <li><a href="#large-language-models">Large Language Models</a> (55 papers)</li>
     <li><a href="#reinforcement-learning">Reinforcement Learning</a> (46 papers)</li>
   </ol>
 </details>
@@ -4205,6 +4205,69 @@ Top 5 Research Trends in Agent-Based Systems<br><br>1. <strong>Reinforcement Lea
 <p>
 
 <strong>Authors</strong>: Lorenzo Stacchio, Andrea Ubaldi, Alessandro Galdelli, Maurizio Mauri, Emanuele Frontoni et al.<br><strong>Affiliations</strong>: University of Macerata, Università Cattolica del Sacro Cuore, Università Politecnica delle Marche<br><br><strong>Summary</strong>: This paper presents Empathic Prompting, a framework for integrating non-verbal emotional cues (facial expressions) into LLM conversations to enhance empathic human-AI interaction. The system uses Noldus FaceReader to capture real-time affective data (valence, arousal, emotion categories) and embeds these signals into prompts for a locally deployed DeepSeek LLM instance. Preliminary evaluation (N=5) demonstrates feasible integration of multimodal context with perceived improvements in conversational fluidity and empathic alignment.<br><br><strong>Research Question</strong>: Can integrating non-verbal affective context (facial expressions) through prompting improve perceived empathy and conversational alignment in LLM-based interactions?<br><br><strong>Hypothesis</strong>: The authors hypothesize that enriching LLM prompts with real-time non-verbal emotional signals will enhance empathic communication by enabling the system to align responses with users' implicit affective states, improving conversational fit, safety, and emotional appropriateness without requiring model retraining.<br><br><strong>Methodology</strong>: The study employs a mixed-methods approach: (1) System design implementing a modular client-server architecture with FaceReader for emotion detection, middleware for data structuring, and DeepSeek LLM for generation; (2) LLM-as-a-Judge evaluation using GPT-based scoring across three rubrics (Empathy Support, Safety Boundary, System-Prompt Adherence) to compare four LLM backbones; (3) Internal usability study (N=5) with validated psychometric scales (SUS, PETS, Godspeed subscales) following a structured protocol involving visual priming and chatbot interaction; (4) Qualitative temporal analysis of emotional flow during conversations.<br><br><strong>Key Findings</strong>: Key findings include: (1) DeepSeek-R1:32b achieved highest empathy support (0.938) and system prompt adherence (0.662) among tested models; (2) All models maintained perfect safety boundary compliance; (3) Participants rated the system highly on empathy (EMP), perceived intelligence (COMP), and likeability (LIKE) constructs; (4) System usability (SUS) showed positive results with participants finding the interface simple and well-integrated; (5) Perceived safety (SAFE) showed lower and more variable scores, indicating this dimension requires refinement; (6) Qualitative analysis confirmed the system tracked and adapted to affective shifts, though some inconsistencies (hallucinations, redundancy) were observed.<br><br><strong>Interpretation</strong>: The authors interpret their findings as initial evidence that embedding affective awareness into language generation through prompting is feasible and can improve perceived empathy in human-AI interaction. They position their work within the broader context of empathic computing, noting that while LLMs demonstrate capabilities in generating empathic responses, traditional text-only approaches miss critical non-verbal channels central to human empathic communication. The framework addresses this gap by treating non-verbal signals as first-class conversational context, enabling recovery of key empathic interaction ingredients (tone calibration, supportive strategy selection, handling verbal-nonverbal incongruence) through transparent prompting rather than model retraining.<br><br><strong>Conclusions</strong>: The authors conclude that Empathic Prompting represents a viable approach for integrating non-verbal affective cues into LLM conversations, demonstrating consistent integration of emotional context into coherent outputs with high perceived empathy and intelligence. The modular, semantically transparent architecture enables rapid cross-platform portability and human oversight. However, they emphasize this is a preliminary proof-of-concept requiring larger-scale, IRB-approved empirical validation before deployment in sensitive domains like healthcare or education.<br><br><strong>Limitations</strong>: The authors explicitly acknowledge several limitations: (1) Small sample size (N=5) limited to internal team members, restricting statistical generalizability and external validity; (2) Limited evaluation dataset consisting of only five synthetic conversations (21 rounds) validated by psychologists rather than real user data; (3) Low and inconsistent scores on perceived safety construct, suggesting this dimension needs refinement; (4) Some observed failure modes including verbosity, occasional hallucinations, and textual redundancies that could hinder conversational fluency; (5) The study design did not involve explicit objectives or emotionally demanding scenarios, limiting evaluation of instrumental empathic support; (6) DeepSeek's slower response time (23.31s mean) compared to other models may affect real-time interaction quality.<br><br><strong>Future Research</strong>: The authors propose several future research directions: (1) Conducting larger-scale, ethically approved user studies with external participants to establish generalizability and efficacy; (2) Expanding evaluation to multiple use cases and datasets in specific domains (healthcare, education, mental health support); (3) Refining the perceived safety dimension through task-specific investigation and design improvements; (4) Integrating additional non-verbal modalities beyond facial expressions (vocal prosody, physiological signals, behavioral cues) to create richer affective context; (5) Investigating long-term implications of affective-augmented conversations on human-AI interaction patterns; (6) Exploring the trade-offs between response richness, latency, and conversational coherence in real-time empathic systems.
+
+</p>
+</details>
+
+<details>
+<summary><b>2025-10-23</b> Learning to Triage Taint Flows Reported by Dynamic Program Analysis in Node.js Packages (Unknown Author) <a href="http://arxiv.org/abs/2510.20739">arXiv</a> | <a href="http://arxiv.org/pdf/2510.20739.pdf">PDF</a></summary>
+<p>
+
+
+
+</p>
+</details>
+
+<details>
+<summary><b>2025-10-23</b> Automated Extraction of Fluoropyrimidine Treatment and Treatment-Related Toxicities from Clinical Notes Using Natural Language Processing (Unknown Author) <a href="http://arxiv.org/abs/2510.20727">arXiv</a> | <a href="http://arxiv.org/pdf/2510.20727.pdf">PDF</a></summary>
+<p>
+
+<strong>Resources</strong>: <a href="https://github.com/PittNAIL/NLP4FPandToxicity">GitHub</a><br>
+
+</p>
+</details>
+
+<details>
+<summary><b>2025-10-23</b> User Perceptions of Privacy and Helpfulness in LLM Responses to Privacy-Sensitive Scenarios (Unknown Author) <a href="http://arxiv.org/abs/2510.20721">arXiv</a> | <a href="http://arxiv.org/pdf/2510.20721.pdf">PDF</a></summary>
+<p>
+
+
+
+</p>
+</details>
+
+<details>
+<summary><b>2025-10-23</b> Mixing Importance with Diversity: Joint Optimization for KV Cache Compression in Large Vision-Language Models (Unknown Author) <a href="http://arxiv.org/abs/2510.20707">arXiv</a> | <a href="http://arxiv.org/pdf/2510.20707.pdf">PDF</a></summary>
+<p>
+
+<strong>Resources</strong>: <a href="https://github.com/xuyang-liu16/MixKV">GitHub</a><br>
+
+</p>
+</details>
+
+<details>
+<summary><b>2025-10-23</b> Structure-Conditional Minimum Bayes Risk Decoding (Unknown Author) <a href="http://arxiv.org/abs/2510.20700">arXiv</a> | <a href="http://arxiv.org/pdf/2510.20700.pdf">PDF</a></summary>
+<p>
+
+<strong>Resources</strong>: <a href="https://github.com/Roxot/structure-conditional-mbr">GitHub</a> | <a href="https://huggingface.co/sentence-transformers/all-mpnet-base-v2">HuggingFace</a><br>
+
+</p>
+</details>
+
+<details>
+<summary><b>2025-10-23</b> Diagnosing Visual Reasoning: Challenges, Insights, and a Path Forward (Unknown Author) <a href="http://arxiv.org/abs/2510.20696">arXiv</a> | <a href="http://arxiv.org/pdf/2510.20696.pdf">PDF</a></summary>
+<p>
+
+
+
+</p>
+</details>
+
+<details>
+<summary><b>2025-10-23</b> Exploring Large Language Models for Access Control Policy Synthesis and Summarization (Unknown Author) <a href="http://arxiv.org/abs/2510.20692">arXiv</a> | <a href="http://arxiv.org/pdf/2510.20692.pdf">PDF</a></summary>
+<p>
+
+
 
 </p>
 </details>

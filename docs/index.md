@@ -616,6 +616,16 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 |**2025-10-23**|**A Use-Case Specific Dataset for Measuring Dimensions of Responsible Performance in LLM-generated Text**|Alicia Sagae et.al.|[2510.20782](http://arxiv.org/abs/2510.20782)|null|
 |**2025-10-23**|**RAGRank: Using PageRank to Counter Poisoning in CTI LLM Pipelines**|Austin Jia et.al.|[2510.20768](http://arxiv.org/abs/2510.20768)|null|
 |**2025-10-23**|**Empathic Prompting: Non-Verbal Context Integration for Multimodal LLM Conversations**|Lorenzo Stacchio et.al.|[2510.20743](http://arxiv.org/abs/2510.20743)|null|
+|**2025-10-23**|**Learning to Triage Taint Flows Reported by Dynamic Program Analysis in Node.js Packages**|Ronghao Ni et.al.|[2510.20739](http://arxiv.org/abs/2510.20739)|null|
+|**2025-10-23**|**Automated Extraction of Fluoropyrimidine Treatment and Treatment-Related Toxicities from Clinical Notes Using Natural Language Processing**|Xizhi Wu et.al.|[2510.20727](http://arxiv.org/abs/2510.20727)|null|
+|**2025-10-23**|**User Perceptions of Privacy and Helpfulness in LLM Responses to Privacy-Sensitive Scenarios**|Xiaoyuan Wu et.al.|[2510.20721](http://arxiv.org/abs/2510.20721)|null|
+|**2025-10-23**|**Mixing Importance with Diversity: Joint Optimization for KV Cache Compression in Large Vision-Language Models**|Xuyang Liu et.al.|[2510.20707](http://arxiv.org/abs/2510.20707)|null|
+|**2025-10-23**|**Structure-Conditional Minimum Bayes Risk Decoding**|Bryan Eikema et.al.|[2510.20700](http://arxiv.org/abs/2510.20700)|null|
+|**2025-10-23**|**Diagnosing Visual Reasoning: Challenges, Insights, and a Path Forward**|Jing Bi et.al.|[2510.20696](http://arxiv.org/abs/2510.20696)|null|
+|**2025-10-23**|**Exploring Large Language Models for Access Control Policy Synthesis and Summarization**|Adarsh Vatsa et.al.|[2510.20692](http://arxiv.org/abs/2510.20692)|null|
+|**2025-10-23**|**Plan Then Retrieve: Reinforcement Learning-Guided Complex Reasoning over Knowledge Graphs**|Yanlin Song et.al.|[2510.20691](http://arxiv.org/abs/2510.20691)|null|
+|**2025-10-23**|**Neural Diversity Regularizes Hallucinations in Small Models**|Kushal Chakrabarti et.al.|[2510.20690](http://arxiv.org/abs/2510.20690)|null|
+|**2025-10-23**|**Bayesian Jammer Localization with a Hybrid CNN and Path-Loss Mixture of Experts**|Mariona Jaramillo-Civill et.al.|[2510.20666](http://arxiv.org/abs/2510.20666)|null|
 |**2025-10-23**|**Zhyper: Factorized Hypernetworks for Conditioned LLM Fine-Tuning**|M. H. I. Abdalla et.al.|[2510.19733](http://arxiv.org/abs/2510.19733)|null|
 |**2025-10-23**|**Fast Inference via Hierarchical Speculative Decoding**|Clara Mohri et.al.|[2510.19705](http://arxiv.org/abs/2510.19705)|null|
 |**2025-10-22**|**Semantic World Models**|Jacob Berg et.al.|[2510.19818](http://arxiv.org/abs/2510.19818)|null|

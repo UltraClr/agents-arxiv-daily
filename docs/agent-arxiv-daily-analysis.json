@@ -20769,6 +20769,378 @@
         ]
       },
       "blacklisted": false
+    },
+    "2510.20739": {
+      "arxiv_id": "2510.20739",
+      "title": "Learning to Triage Taint Flows Reported by Dynamic Program Analysis in Node.js Packages",
+      "publish_date": "2025-10-23",
+      "source_type": "latex",
+      "first_author": "Unknown",
+      "corresponding_author": null,
+      "author_affiliations": {},
+      "urls": {
+        "github": null,
+        "huggingface": null,
+        "project_page": null,
+        "other": [
+          "https://doi.org/10.5281/zenodo.16758243"
+        ]
+      },
+      "one_sentence_summary": "提出了一个机器学习驱动的漏洞分类框架，使用GNN、经典ML和LLM（包括DeepSeek-R1-Distill-Qwen-7B等模型）对NodeMedic-FINE动态污点分析工具报告的1,883个Node.js包中的ACE/ACI漏洞进行分类，最佳模型达到F1分数0.915，在保持7%假阴性率的情况下减少66.9%的人工审查工作量。",
+      "metadata": {
+        "first_author": "Unknown",
+        "corresponding_author": null,
+        "author_affiliations": {},
+        "resources": {
+          "github": null,
+          "huggingface": null,
+          "project_page": null,
+          "other_links": [
+            "https://doi.org/10.5281/zenodo.16758243"
+          ]
+        }
+      },
+      "keyword_relevance_score": 6.5,
+      "keyword_reasoning": "该论文主要关注使用大语言模型（LLM）进行安全漏洞分类任务，涉及LLM的多种使用方式（零样本、微调、LoRA等），以及与经典机器学习模型和图神经网络的比较。虽然论文的核心应用是静态/动态程序分析和漏洞检测，但其在LLM应用、fine-tuning、prompt engineering、模型评估等方面与关键词有较强相关性。论文评估了多个LLM模型（GPT-4.1、Gemini 2.5 Pro、DeepSeek、Llama、Qwen等），探讨了不同的微调策略（Full Fine-tuning、LoRA Fine-tuning、Linear Probing），并使用了Chain-of-Thought推理模型。然而，论文并不涉及Agent系统、多Agent协作、工具使用、强化学习等核心Agent相关概念，因此相关性处于中等偏上水平。",
+      "matching_keywords": [
+        "Large Language Model",
+        "LLM",
+        "GPT",
+        "Transformer",
+        "Language Model",
+        "Fine-tuning",
+        "Prompt",
+        "In-Context Learning",
+        "Chain of Thought",
+        "Quantization",
+        "Distillation"
+      ],
+      "blacklisted": false,
+      "blacklist_reason": ""
+    },
+    "2510.20727": {
+      "arxiv_id": "2510.20727",
+      "title": "Automated Extraction of Fluoropyrimidine Treatment and Treatment-Related Toxicities from Clinical Notes Using Natural Language Processing",
+      "publish_date": "2025-10-23",
+      "source_type": "pdf",
+      "first_author": "Xizhi Wu",
+      "corresponding_author": "Yanshan Wang",
+      "author_affiliations": {
+        "Xizhi Wu": "University of Pittsburgh",
+        "Madeline S. Kreider": "University of Pittsburgh",
+        "Philip E. Empey": "University of Pittsburgh",
+        "Chenyu Li": "University of Pittsburgh",
+        "Yanshan Wang": "University of Pittsburgh"
+      },
+      "urls": {
+        "github": "https://github.com/PittNAIL/NLP4FPandToxicity",
+        "huggingface": null,
+        "project_page": null,
+        "other": []
+      },
+      "one_sentence_summary": "提出了一个多方法NLP系统比较框架，使用规则、机器学习、深度学习和LLM（包括零样本提示和错误分析提示）方法，在236篇临床笔记的金标准数据集上提取氟嘧啶治疗及相关毒性信息，其中错误分析提示方法达到了F1=1.000的最佳性能。",
+      "metadata": {
+        "first_author": "Xizhi Wu",
+        "corresponding_author": "Yanshan Wang",
+        "author_affiliations": {
+          "Xizhi Wu": "University of Pittsburgh",
+          "Madeline S. Kreider": "University of Pittsburgh",
+          "Philip E. Empey": "University of Pittsburgh",
+          "Chenyu Li": "University of Pittsburgh",
+          "Yanshan Wang": "University of Pittsburgh"
+        },
+        "resources": {
+          "github": "https://github.com/PittNAIL/NLP4FPandToxicity",
+          "huggingface": null,
+          "project_page": null,
+          "other_links": []
+        }
+      },
+      "keyword_relevance_score": 6.5,
+      "keyword_reasoning": "该论文与关键词有中等偏上的相关性。论文大量使用了LLM相关技术，包括LLaMA 3.1、零样本提示（zero-shot prompting）、链式思考（chain-of-thought）、提示工程等，这些与LLM、Prompt、In-Context Learning、Chain of Thought等关键词高度相关。同时使用了BERT和ClinicalBERT等Transformer模型，涉及Fine-tuning。然而，论文主要聚焦于医疗信息提取的NLP任务，而非Agent系统、多智能体协作、强化学习等核心Agent研究领域。虽然LLM是Agent的重要组成部分，但本文没有涉及自主决策、工具使用、规划、Agent工作流等典型Agent特征。",
+      "matching_keywords": [
+        "Large Language Model",
+        "LLM",
+        "BERT",
+        "Transformer",
+        "Language Model",
+        "Fine-tuning",
+        "Prompt",
+        "In-Context Learning",
+        "Chain of Thought"
+      ],
+      "blacklisted": false,
+      "blacklist_reason": ""
+    },
+    "2510.20721": {
+      "arxiv_id": "2510.20721",
+      "title": "User Perceptions of Privacy and Helpfulness in LLM Responses to Privacy-Sensitive Scenarios",
+      "publish_date": "2025-10-23",
+      "source_type": "latex",
+      "first_author": "Xiaoyuan Wu",
+      "corresponding_author": null,
+      "author_affiliations": {
+        "Xiaoyuan Wu": "Fujitsu Research of America Inc. and Carnegie Mellon University",
+        "Roshni Kaushik": "Fujitsu Research of America Inc.",
+        "Wenkai Li": "Carnegie Mellon University",
+        "Lujo Bauer": "Carnegie Mellon University",
+        "Koichi Onoue": "Fujitsu Research of America Inc."
+      },
+      "urls": {
+        "github": null,
+        "huggingface": null,
+        "project_page": null,
+        "other": []
+      },
+      "one_sentence_summary": "通过94名参与者的用户研究评估了LLM在隐私敏感场景中生成响应的隐私保护质量和有用性，发现代理LLM的评估与真实用户感知之间仅存在弱到中等相关性(Spearman's ρ=0.24-0.68)，表明需要以用户为中心的评估方法。",
+      "metadata": {
+        "first_author": "Xiaoyuan Wu",
+        "corresponding_author": null,
+        "author_affiliations": {
+          "Xiaoyuan Wu": "Fujitsu Research of America Inc. and Carnegie Mellon University",
+          "Roshni Kaushik": "Fujitsu Research of America Inc.",
+          "Wenkai Li": "Carnegie Mellon University",
+          "Lujo Bauer": "Carnegie Mellon University",
+          "Koichi Onoue": "Fujitsu Research of America Inc."
+        },
+        "resources": {
+          "github": null,
+          "huggingface": null,
+          "project_page": null,
+          "other_links": []
+        }
+      },
+      "keyword_relevance_score": 7,
+      "keyword_reasoning": "This paper is highly relevant to LLM research and agent-related topics. It specifically evaluates LLMs (including GPT-5, Llama-3.3, Gemma-3, Qwen-3, Mistral) in privacy-sensitive task scenarios such as email drafting, meeting summarization, and question answering - which are typical LLM Agent use cases. The paper uses 'proxy LLMs' to evaluate other LLM outputs, which relates to LLM reasoning and evaluation. It extensively discusses prompting (privacy-enhancing prompts), in-context learning scenarios (multi-turn interactions, complex contextual information), and model alignment issues (aligning LLM outputs with user privacy preferences). The PrivacyLens benchmark used is designed for evaluating LLM agent behaviors in real-world scenarios. While not focused on autonomous agents, tool use, or RL, the paper addresses core LLM capabilities in agentic workflows where LLMs assist with practical tasks involving sensitive information.",
+      "matching_keywords": [
+        "LLM Agent",
+        "Large Language Model",
+        "LLM",
+        "GPT",
+        "Prompt",
+        "In-Context Learning",
+        "Model Alignment",
+        "Agent Reasoning",
+        "Agent Framework"
+      ],
+      "blacklisted": false,
+      "blacklist_reason": ""
+    },
+    "2510.20707": {
+      "arxiv_id": "2510.20707",
+      "title": "Mixing Importance with Diversity: Joint Optimization for KV Cache Compression in Large Vision-Language Models",
+      "publish_date": "2025-10-23",
+      "source_type": "latex",
+      "first_author": "Xuyang Liu",
+      "corresponding_author": "Linfeng Zhang",
+      "author_affiliations": {
+        "Xuyang Liu": "EPIC Lab, Shanghai Jiao Tong University",
+        "Xiyan Gui": "Sichuan University",
+        "Yuchao Zhang": "Huazhong University of Science and Technology",
+        "Linfeng Zhang": "EPIC Lab, Shanghai Jiao Tong University"
+      },
+      "urls": {
+        "github": "https://github.com/xuyang-liu16/MixKV",
+        "huggingface": null,
+        "project_page": null,
+        "other": []
+      },
+      "one_sentence_summary": "提出了MixKV框架，通过联合优化重要性与多样性的头部自适应混合机制进行KV缓存压缩，在DocVQA、OCRBench、TextVQA等五个多模态理解基准上，在极端压缩设置下（budget=64）相比SnapKV和AdaKV等基线方法平均提升5.1%，在GUI定位任务上提升8.0%-9.0%。",
+      "metadata": {
+        "first_author": "Xuyang Liu",
+        "corresponding_author": "Linfeng Zhang",
+        "author_affiliations": {
+          "Xuyang Liu": "EPIC Lab, Shanghai Jiao Tong University",
+          "Xiyan Gui": "Sichuan University",
+          "Yuchao Zhang": "Huazhong University of Science and Technology",
+          "Linfeng Zhang": "EPIC Lab, Shanghai Jiao Tong University"
+        },
+        "resources": {
+          "github": "https://github.com/xuyang-liu16/MixKV",
+          "huggingface": null,
+          "project_page": null,
+          "other_links": []
+        }
+      },
+      "keyword_relevance_score": 6,
+      "keyword_reasoning": "This paper is partially related to the search keywords. It directly addresses Large Language Models (LLMs), Large Vision-Language Models (LVLMs), Transformers, and Model Compression techniques (specifically KV cache compression and quantization). The work involves optimization of attention mechanisms in language models, which is foundational to many agent and LLM applications. However, it does not directly address agent-specific topics like multi-agent systems, tool use, planning, ReAct, or agent frameworks. The paper focuses on inference efficiency optimization rather than agent reasoning, collaboration, or workflow. The compression technique could enable more efficient deployment of LLM-based agents, but this is an indirect application rather than the core focus.",
+      "matching_keywords": [
+        "Large Language Model",
+        "LLM",
+        "Transformer",
+        "Model Compression",
+        "Quantization",
+        "Fine-tuning",
+        "In-Context Learning"
+      ],
+      "blacklisted": false,
+      "blacklist_reason": ""
+    },
+    "2510.20700": {
+      "arxiv_id": "2510.20700",
+      "title": "Structure-Conditional Minimum Bayes Risk Decoding",
+      "publish_date": "2025-10-23",
+      "source_type": "latex",
+      "first_author": "Bryan Eikema",
+      "corresponding_author": "Bryan Eikema",
+      "author_affiliations": {
+        "Bryan Eikema": "University of Amsterdam",
+        "Anna Rutkiewicz": "University of Zurich",
+        "Mario Giulianelli": "UCL"
+      },
+      "urls": {
+        "github": "https://github.com/Roxot/structure-conditional-mbr",
+        "huggingface": "https://huggingface.co/sentence-transformers/all-mpnet-base-v2",
+        "project_page": null,
+        "other": []
+      },
+      "one_sentence_summary": "提出了结构条件最小贝叶斯风险(Structure-Conditional MBR)解码方法,通过三种轻量级效用函数适配技术(Utility Cut-off、Clustering、Structure Embeddings),在AlpacaEval和MT-Bench指令遵循基准上相比GPT-4o提升最高13.7个百分点的胜率。",
+      "metadata": {
+        "first_author": "Bryan Eikema",
+        "corresponding_author": "Bryan Eikema",
+        "author_affiliations": {
+          "Bryan Eikema": "University of Amsterdam",
+          "Anna Rutkiewicz": "University of Zurich",
+          "Mario Giulianelli": "UCL"
+        },
+        "resources": {
+          "github": "https://github.com/Roxot/structure-conditional-mbr",
+          "huggingface": "https://huggingface.co/sentence-transformers/all-mpnet-base-v2",
+          "project_page": null,
+          "other_links": []
+        }
+      },
+      "keyword_relevance_score": 6.5,
+      "keyword_reasoning": "该论文主要关注语言模型的解码策略优化,特别是针对开放式生成任务(对话、指令遵循)的最小贝叶斯风险解码。虽然论文涉及LLM、指令遵循、prompt工程等相关技术,并在instruction-following任务上进行评估,但核心贡献在于解码算法而非Agent系统设计。论文使用了LLM(OLMo 2)和评估模型(Prometheus),涉及指令遵循(Instruction Following)、提示工程(Prompt)等概念,但不直接涉及Agent架构、多Agent协作、工具使用、规划等核心Agent研究主题。该工作更偏向于语言模型生成质量优化,可以作为Agent系统的底层技术组件,因此具有中等相关性。",
+      "matching_keywords": [
+        "Large Language Model",
+        "LLM",
+        "Instruction Tuning",
+        "Prompt",
+        "Fine-tuning",
+        "Transformer",
+        "Language Model",
+        "In-Context Learning"
+      ],
+      "blacklisted": false,
+      "blacklist_reason": ""
+    },
+    "2510.20696": {
+      "arxiv_id": "2510.20696",
+      "title": "Diagnosing Visual Reasoning: Challenges, Insights, and a Path Forward",
+      "publish_date": "2025-10-23",
+      "source_type": "latex",
+      "first_author": "Jing Bi",
+      "corresponding_author": "Chenliang Xu",
+      "author_affiliations": {
+        "Jing Bi": "University of Rochester",
+        "Guangyu Sun": "University of Central Florida",
+        "Ali Vosoughi": "University of Rochester",
+        "Chen Chen": "University of Central Florida",
+        "Chenliang Xu": "University of Rochester"
+      },
+      "urls": {
+        "github": null,
+        "huggingface": null,
+        "project_page": null,
+        "other": []
+      },
+      "one_sentence_summary": "提出了一个agent-based架构和三阶段诊断框架，使用LLM推理结合轻量级视觉模块和工具调用（OCR、Python解释器等），在MMMU和MathVista数据集上相比7B基线模型分别提升10.3和6.0个百分点，达到或超越更大规模模型的性能。",
+      "metadata": {
+        "first_author": "Jing Bi",
+        "corresponding_author": "Chenliang Xu",
+        "author_affiliations": {
+          "Jing Bi": "University of Rochester",
+          "Guangyu Sun": "University of Central Florida",
+          "Ali Vosoughi": "University of Rochester",
+          "Chen Chen": "University of Central Florida",
+          "Chenliang Xu": "University of Rochester"
+        },
+        "resources": {
+          "github": null,
+          "huggingface": null,
+          "project_page": null,
+          "other_links": []
+        }
+      },
+      "keyword_relevance_score": 8.5,
+      "keyword_reasoning": "This paper is highly relevant to the search keywords. It focuses on developing an agent-based architecture that integrates LLM reasoning with external tools (OCR, Python interpreter, image QA, captioning) for visual reasoning tasks. The paper explicitly discusses agent frameworks, tool use/calling, iterative reasoning, planning, and combines LLMs with specialized modules. Key relevant aspects include: (1) Agent-based architecture for multimodal reasoning, (2) Tool use and function calling with external modules, (3) LLM reasoning with chain-of-thought prompting, (4) Iterative diagnosis and backtracing for error correction, (5) Comparison with prior agent systems (MM-ReAct, MC-tree). The paper directly addresses agent frameworks, tool learning, LLM agent design, and reasoning - core topics in the keyword list.",
+      "matching_keywords": [
+        "Agent",
+        "LLM Agent",
+        "AI Agent",
+        "Agentic",
+        "Tool Use",
+        "Tool Learning",
+        "Function Calling",
+        "ReAct",
+        "Planning",
+        "Agent Framework",
+        "Agent Workflow",
+        "Agent Reasoning",
+        "Large Language Model",
+        "LLM",
+        "Transformer",
+        "Language Model",
+        "Prompt",
+        "In-Context Learning",
+        "Chain of Thought"
+      ],
+      "blacklisted": false,
+      "blacklist_reason": ""
+    },
+    "2510.20692": {
+      "arxiv_id": "2510.20692",
+      "title": "Exploring Large Language Models for Access Control Policy Synthesis and Summarization",
+      "publish_date": "2025-10-23",
+      "source_type": "latex",
+      "first_author": "Adarsh Vatsa",
+      "corresponding_author": null,
+      "author_affiliations": {
+        "Adarsh Vatsa": "Stevens Institute of Technology",
+        "Bethel Hall": "Stevens Institute of Technology",
+        "William Eiers": "Stevens Institute of Technology"
+      },
+      "urls": {
+        "github": null,
+        "huggingface": null,
+        "project_page": null,
+        "other": []
+      },
+      "one_sentence_summary": "提出了一种结合大语言模型和形式化方法的访问控制策略分析框架VERISYNTH,通过自动机理论和模型计数技术对AWS等云平台的访问控制策略进行语义摘要和验证,在Quacky数据集的41个策略上实现了平均0.889的相似度得分,比基于SMT的基线方法提升2.7倍。",
+      "metadata": {
+        "first_author": "Adarsh Vatsa",
+        "corresponding_author": null,
+        "author_affiliations": {
+          "Adarsh Vatsa": "Stevens Institute of Technology",
+          "Bethel Hall": "Stevens Institute of Technology",
+          "William Eiers": "Stevens Institute of Technology"
+        },
+        "resources": {
+          "github": null,
+          "huggingface": null,
+          "project_page": null,
+          "other_links": []
+        }
+      },
+      "keyword_relevance_score": 6.5,
+      "keyword_reasoning": "本文主要研究大语言模型在访问控制策略合成和摘要任务中的应用,与关键词具有中等到较高的相关性。论文系统评估了多个LLM(包括GPT、Claude、Mistral等)在策略理解、重构和生成方面的能力,涉及Prompt工程、In-Context Learning等技术。虽然论文的核心应用场景是云安全领域的访问控制策略,而非传统的Agent系统,但它深入探讨了LLM的代码生成、理解和推理能力,以及如何将LLM与形式化验证方法结合。论文提出的'可验证合成悖论'和将LLM作为'交互式需求工程师'的愿景,与Agent推理、工具使用概念有一定关联。然而,论文不涉及Agent协作、多Agent系统、强化学习等核心Agent研究主题,因此相关性为中等偏上。",
+      "matching_keywords": [
+        "LLM Agent",
+        "Large Language Model",
+        "LLM",
+        "GPT",
+        "Transformer",
+        "Language Model",
+        "Fine-tuning",
+        "Prompt",
+        "In-Context Learning",
+        "Chain of Thought",
+        "Agent Reasoning",
+        "Tool Use"
+      ],
+      "blacklisted": false,
+      "blacklist_reason": ""
     }
   },
   "Reinforcement Learning": {
