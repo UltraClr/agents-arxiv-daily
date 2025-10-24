@@ -37,7 +37,25 @@ PROJECT_ROOT = os.path.abspath(os.path.join(CURRENT_DIR, '..'))
 if PROJECT_ROOT not in sys.path:
     sys.path.insert(0, PROJECT_ROOT)
 
-from pdf_analysis.download_pdf import download_pdf
+# Simple PDF download function
+import requests
+
+def download_pdf(output_dir, arxiv_id, pdf_url):
+    """Download PDF from arXiv"""
+    os.makedirs(output_dir, exist_ok=True)
+    pdf_path = os.path.join(output_dir, f'{arxiv_id}.pdf')
+
+    try:
+        response = requests.get(pdf_url, timeout=30)
+        response.raise_for_status()
+
+        with open(pdf_path, 'wb') as f:
+            f.write(response.content)
+
+        return pdf_path
+    except Exception as e:
+        logging.error(f'Failed to download PDF from {pdf_url}: {e}')
+        return None
 
 logging.basicConfig(format='[%(asctime)s %(levelname)s] %(message)s',
                     datefmt='%m/%d/%Y %H:%M:%S',
