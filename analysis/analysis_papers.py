@@ -162,12 +162,15 @@ def create_analysis_prompt(parsed_data, search_keywords=None, enable_validation=
 
 {json.dumps(parsed_data, indent=2, ensure_ascii=False)}
 
-Please provide a comprehensive analysis in the following JSON format:
+Please provide analysis in the following JSON format:
 
 {{
   "metadata": {{
-    "authors": ["list of author names from the paper"],
-    "affiliations": ["list of institutions/universities"],
+    "first_author": "Full name of the first author",
+    "corresponding_author": "Full name of the corresponding author (look for *, †, ✉ markers or 'Corresponding' label), or null if cannot identify",
+    "author_affiliations": {{
+      "Author Name": "Institution Name"
+    }},
     "resources": {{
       "github": "GitHub repository URL if available, otherwise null",
       "huggingface": "HuggingFace model/dataset URL if available, otherwise null",
@@ -175,24 +178,15 @@ Please provide a comprehensive analysis in the following JSON format:
       "other_links": ["any other relevant URLs"]
     }}
   }},
-  "analysis": {{
-    "summary": "Provide a concise overview of the paper in 2–3 sentences, highlighting its main objective, approach, and findings.",
-    "research_question": "What is the primary research question or objective of the paper?",
-    "hypothesis": "What is the hypothesis or theses put forward by the authors?",
-    "methodology": "What methodology does the paper employ? Briefly describe the study design, data sources, and analysis techniques.",
-    "key_findings": "What are the key findings or results of the research?",
-    "interpretation": "How do the authors interpret these findings in the context of the existing literature on the topic?",
-    "conclusions": "What conclusions are drawn from the research?",
-    "limitations": "Can you identify any limitations of the study mentioned by the authors?",
-    "future_research": "What future research directions do the authors suggest?"
-  }}{keyword_relevance_field}
+  "one_sentence_summary": "用一句话概括：提出了什么框架/方法 + 使用了什么技术 + 在什么数据集/benchmark上 + 取得了什么成果。示例：'提出了AgentFormer框架，使用层次化强化学习方法，在StarCraft II上比QMIX提升23%胜率。'"{keyword_relevance_field}
 }}
 
 IMPORTANT:
-- Extract metadata (authors, affiliations, URLs) from the provided data
-- Return valid JSON only, no additional text
-- Be concise but thorough in the analysis section
-- Focus on technical accuracy and practical insights{keyword_instruction}"""
+- Extract first_author from author list (first person)
+- For corresponding_author: look for *, †, ✉ markers; set to null if cannot identify
+- For author_affiliations: match authors to institutions (best effort); can be empty {{}} if unable
+- For one_sentence_summary: write ONE complete sentence in Chinese covering goal, method, dataset, and results
+- Return valid JSON only, no additional text{keyword_instruction}"""
 
     return prompt
 

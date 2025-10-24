@@ -187,14 +187,35 @@ def process_single_paper(arxiv_id, raw_latex_dir, raw_pdf_dir, parsed_content_di
             else:
                 analysis_json = json.loads(response)
 
-            # Build final result
+            # Extract metadata from LLM response
+            llm_metadata = analysis_json.get('metadata', {})
+            llm_resources = llm_metadata.get('resources', {})
+
+            # Build final result with new fields
             result = {
                 'arxiv_id': arxiv_id,
                 'title': title,
                 'publish_date': publish_date,
-                'source_type': 'latex',  # Mark source type
-                'metadata': analysis_json.get('metadata', {}),
-                'analysis': analysis_json.get('analysis', {})
+                'source_type': 'latex',
+
+                # New metadata fields
+                'first_author': llm_metadata.get('first_author'),
+                'corresponding_author': llm_metadata.get('corresponding_author'),
+                'author_affiliations': llm_metadata.get('author_affiliations', {}),
+
+                # URLs (restructured)
+                'urls': {
+                    'github': llm_resources.get('github'),
+                    'huggingface': llm_resources.get('huggingface'),
+                    'project_page': llm_resources.get('project_page'),
+                    'other': llm_resources.get('other_links', [])
+                },
+
+                # One sentence summary
+                'one_sentence_summary': analysis_json.get('one_sentence_summary'),
+
+                # Keep metadata for backward compatibility (optional)
+                'metadata': llm_metadata
             }
 
             # Process keyword relevance validation (same logic as PDF)
@@ -203,11 +224,9 @@ def process_single_paper(arxiv_id, raw_latex_dir, raw_pdf_dir, parsed_content_di
 
                 if relevance_score is not None:
                     logging.info(f'{arxiv_id}: Relevance score = {relevance_score}')
-                    result['keyword_relevance'] = {
-                        'score': relevance_score,
-                        'reasoning': reasoning,
-                        'matching_keywords': matching_keywords
-                    }
+                    result['keyword_relevance_score'] = relevance_score
+                    result['keyword_reasoning'] = reasoning
+                    result['matching_keywords'] = matching_keywords
 
                     # Add to blacklist if below threshold
                     if auto_blacklist and relevance_score < relevance_threshold:
@@ -216,13 +235,19 @@ def process_single_paper(arxiv_id, raw_latex_dir, raw_pdf_dir, parsed_content_di
                         remove_paper_from_json_files(arxiv_id, title, config)
                         logging.warning(f'{arxiv_id}: Low relevance ({relevance_score}), added to blacklist and removed from JSON files')
                         result['blacklisted'] = True
+                        result['blacklist_reason'] = f"Low relevance score: {relevance_score}"
                     else:
                         logging.info(f'{arxiv_id}: Relevance acceptable ({relevance_score} >= {relevance_threshold})')
                         result['blacklisted'] = False
+                        result['blacklist_reason'] = ""
                 else:
                     logging.warning(f'{arxiv_id}: Could not extract relevance score')
-                    result['keyword_relevance'] = None
+                    result['keyword_relevance_score'] = None
                     result['blacklisted'] = False
+                    result['blacklist_reason'] = ""
+            else:
+                result['blacklisted'] = False
+                result['blacklist_reason'] = ""
         except json.JSONDecodeError:
             # Fallback: if LLM didn't return valid JSON, save as text
             logging.warning(f'{arxiv_id}: LLM response is not valid JSON, saving as text')
@@ -362,14 +387,35 @@ def process_single_paper_pdf(arxiv_id, raw_pdf_dir, parsed_pdf_dir,
             else:
                 analysis_json = json.loads(response)
 
-            # Build result
+            # Extract metadata from LLM response (same as LaTeX)
+            llm_metadata = analysis_json.get('metadata', {})
+            llm_resources = llm_metadata.get('resources', {})
+
+            # Build result with new fields (same structure as LaTeX)
             result = {
                 'arxiv_id': arxiv_id,
                 'title': title,
                 'publish_date': publish_date,
-                'source_type': 'pdf',  # Mark source
-                'metadata': analysis_json.get('metadata', {}),
-                'analysis': analysis_json.get('analysis', {})
+                'source_type': 'pdf',
+
+                # New metadata fields
+                'first_author': llm_metadata.get('first_author'),
+                'corresponding_author': llm_metadata.get('corresponding_author'),
+                'author_affiliations': llm_metadata.get('author_affiliations', {}),
+
+                # URLs (restructured)
+                'urls': {
+                    'github': llm_resources.get('github'),
+                    'huggingface': llm_resources.get('huggingface'),
+                    'project_page': llm_resources.get('project_page'),
+                    'other': llm_resources.get('other_links', [])
+                },
+
+                # One sentence summary
+                'one_sentence_summary': analysis_json.get('one_sentence_summary'),
+
+                # Keep metadata for backward compatibility
+                'metadata': llm_metadata
             }
 
             # Process keyword validation (same logic as LaTeX)
@@ -378,11 +424,9 @@ def process_single_paper_pdf(arxiv_id, raw_pdf_dir, parsed_pdf_dir,
 
                 if relevance_score is not None:
                     logging.info(f'{arxiv_id}: Relevance score = {relevance_score}')
-                    result['keyword_relevance'] = {
-                        'score': relevance_score,
-                        'reasoning': reasoning,
-                        'matching_keywords': matching_keywords
-                    }
+                    result['keyword_relevance_score'] = relevance_score
+                    result['keyword_reasoning'] = reasoning
+                    result['matching_keywords'] = matching_keywords
 
                     # Add to blacklist if below threshold
                     if auto_blacklist and relevance_score < relevance_threshold:
@@ -391,13 +435,19 @@ def process_single_paper_pdf(arxiv_id, raw_pdf_dir, parsed_pdf_dir,
                         remove_paper_from_json_files(arxiv_id, title, config)
                         logging.warning(f'{arxiv_id}: Low relevance ({relevance_score}), added to blacklist and removed from JSON files')
                         result['blacklisted'] = True
+                        result['blacklist_reason'] = f"Low relevance score: {relevance_score}"
                     else:
                         logging.info(f'{arxiv_id}: Relevance acceptable ({relevance_score} >= {relevance_threshold})')
                         result['blacklisted'] = False
+                        result['blacklist_reason'] = ""
                 else:
                     logging.warning(f'{arxiv_id}: Could not extract relevance score')
-                    result['keyword_relevance'] = None
+                    result['keyword_relevance_score'] = None
                     result['blacklisted'] = False
+                    result['blacklist_reason'] = ""
+            else:
+                result['blacklisted'] = False
+                result['blacklist_reason'] = ""
 
         except json.JSONDecodeError:
             logging.warning(f'{arxiv_id}: Invalid JSON response, saving as text')
@@ -436,7 +486,7 @@ def run_streaming_pipeline(args):
     enable_validation = config.get('enable_keyword_validation', False)
     relevance_threshold = config.get('keyword_relevance_threshold', 5.0)
     auto_blacklist = config.get('auto_blacklist', True)
-    blacklist_path = config.get('black_list_path', '../blacklists.txt')
+    blacklist_path = "../blacklists.txt"
 
     # Get search keywords
     search_keywords = get_search_keywords(config)
