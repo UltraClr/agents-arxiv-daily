@@ -39,7 +39,7 @@ jobs:
 
       - name: Analyze trends from recent papers
         run: |
-          cd latex_analysis
+          cd analysis
           python analysis_recent_trends.py \
             --paper_num 30 \
             --analysis_json_path ../docs/agent-arxiv-daily-analysis.json \
@@ -47,7 +47,7 @@ jobs:
 
       - name: Regenerate paper analysis report with new trends
         run: |
-          cd latex_analysis
+          cd analysis
           python generating_paper_analysis.py \
             --analysis_json_path ../docs/agent-arxiv-daily-analysis.json \
             --output_md_path ../docs/paper_analysis.md \

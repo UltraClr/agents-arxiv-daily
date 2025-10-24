@@ -14,7 +14,7 @@ import hashlib
 import base64
 import urllib.parse
 from typing import Dict, List, Optional
-from latex_analysis.claude_api import OpenAIClient
+from analysis.claude_api import OpenAIClient
 
 
 def load_newly_analyzed_papers(newly_analyzed_path: str) -> Optional[Dict]:

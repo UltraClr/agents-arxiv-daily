@@ -53,7 +53,7 @@ jobs:
       - name: Analyze papers with LLM
         timeout-minutes: 150
         run: |
-          cd latex_analysis
+          cd analysis
           python pipeline.py \
             --api claude \
             --json_path ../docs/agent-arxiv-daily.json \

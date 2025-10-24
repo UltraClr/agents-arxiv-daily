@@ -23,7 +23,8 @@ from analysis_papers import (
     load_config,
     get_search_keywords,
     extract_relevance_from_json,
-    add_to_blacklist
+    add_to_blacklist,
+    remove_paper_from_json_files
 )
 from openai_api import OpenAIClient as OpenAIClientOrig
 from claude_api import OpenAIClient as ClaudeClient
@@ -193,7 +194,9 @@ def process_single_paper(arxiv_id, raw_latex_dir, raw_pdf_dir, parsed_content_di
                     # Add to blacklist if below threshold
                     if auto_blacklist and relevance_score < relevance_threshold:
                         add_to_blacklist(title, blacklist_path)
-                        logging.warning(f'{arxiv_id}: Low relevance ({relevance_score}), added to blacklist')
+                        # Remove from JSON data files
+                        remove_paper_from_json_files(arxiv_id, title, config)
+                        logging.warning(f'{arxiv_id}: Low relevance ({relevance_score}), added to blacklist and removed from JSON files')
                         result['blacklisted'] = True
                     else:
                         logging.info(f'{arxiv_id}: Relevance acceptable ({relevance_score} >= {relevance_threshold})')
@@ -366,7 +369,9 @@ def process_single_paper_pdf(arxiv_id, raw_pdf_dir, parsed_pdf_dir,
                     # Add to blacklist if below threshold
                     if auto_blacklist and relevance_score < relevance_threshold:
                         add_to_blacklist(title, blacklist_path)
-                        logging.warning(f'{arxiv_id}: Low relevance ({relevance_score}), added to blacklist')
+                        # Remove from JSON data files
+                        remove_paper_from_json_files(arxiv_id, title, config)
+                        logging.warning(f'{arxiv_id}: Low relevance ({relevance_score}), added to blacklist and removed from JSON files')
                         result['blacklisted'] = True
                     else:
                         logging.info(f'{arxiv_id}: Relevance acceptable ({relevance_score} >= {relevance_threshold})')

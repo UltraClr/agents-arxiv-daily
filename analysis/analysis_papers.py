@@ -51,6 +51,66 @@ def add_to_blacklist(paper_title, blacklist_path='../blacklists.txt'):
         return False
 
 
+def remove_paper_from_json_files(arxiv_id, title, config):
+    """
+    Remove paper from all JSON data files
+    @param arxiv_id: arXiv ID to remove
+    @param title: Paper title (for logging)
+    @param config: Configuration dictionary containing JSON file paths
+    @return: Number of files successfully updated
+    """
+    # Get JSON file paths from config
+    json_files = [
+        config.get('json_readme_path', '../docs/agent-arxiv-daily.json'),
+        config.get('json_gitpage_path', '../docs/agent-arxiv-daily-web.json'),
+        config.get('json_wechat_path', '../docs/agent-arxiv-daily-wechat.json')
+    ]
+
+    updated_count = 0
+
+    for json_path in json_files:
+        # Convert relative path to absolute if needed
+        if not os.path.isabs(json_path):
+            # Get path relative to analysis directory
+            current_dir = os.path.dirname(os.path.abspath(__file__))
+            json_path = os.path.join(current_dir, json_path)
+
+        if not os.path.exists(json_path):
+            logging.warning(f'{arxiv_id}: JSON file not found: {json_path}')
+            continue
+
+        try:
+            # Load JSON data
+            with open(json_path, 'r', encoding='utf-8') as f:
+                data = json.load(f)
+
+            # Find and remove the paper from all categories
+            removed = False
+            for category, papers in data.items():
+                if arxiv_id in papers:
+                    del papers[arxiv_id]
+                    removed = True
+                    logging.info(f'{arxiv_id}: Removed from category "{category}" in {os.path.basename(json_path)}')
+
+            if removed:
+                # Save updated data
+                with open(json_path, 'w', encoding='utf-8') as f:
+                    json.dump(data, f, indent=2, ensure_ascii=False)
+                updated_count += 1
+                logging.info(f'{arxiv_id}: Successfully updated {os.path.basename(json_path)}')
+            else:
+                logging.debug(f'{arxiv_id}: Not found in {os.path.basename(json_path)}')
+
+        except Exception as e:
+            logging.error(f'{arxiv_id}: Failed to update {json_path} - {e}')
+            continue
+
+    if updated_count > 0:
+        logging.info(f'{arxiv_id}: Removed "{title}" from {updated_count} JSON file(s)')
+
+    return updated_count
+
+
 def extract_relevance_from_json(analysis_json):
     """Extract relevance score from analysis JSON"""
     try:
