@@ -1,5 +1,5 @@
 # Agent Research Papers
-> Updated on 2025.10.25
+> Updated on 2025.10.26
 Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Autonomous Agent`,`LLM Agent`
 
 > If you have any other keywords, please feel free to let us know :) 
@@ -605,7 +605,7 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 - 2025-10-13, **$How^{2}$ : How to learn from procedural How-to questions**, Gautier Dagan et.al., Paper: [http://arxiv.org/abs/2510.11144](http://arxiv.org/abs/2510.11144)
 - 2025-09-27, **"Shall We Dig Deeper?": Designing and Evaluating Strategies for LLM Agents to Advance Knowledge Co-Construction in Asynchronous Online Discussions**, Yuanhao Zhang et.al., Paper: [http://arxiv.org/abs/2509.23327](http://arxiv.org/abs/2509.23327)
 
-<p align=right>(<a href=#updated-on-20251025>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20251026>back to top</a>)</p>
 
 ## Large Language Models
 
@@ -750,7 +750,7 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 - 2025-10-23, **ARGenSeg: Image Segmentation with Autoregressive Image Generation Model**, Xiaolong Wang et.al., Paper: [http://arxiv.org/abs/2510.20803](http://arxiv.org/abs/2510.20803)
 - 2025-10-23, **A Use-Case Specific Dataset for Measuring Dimensions of Responsible Performance in LLM-generated Text**, Alicia Sagae et.al., Paper: [http://arxiv.org/abs/2510.20782](http://arxiv.org/abs/2510.20782)
 
-<p align=right>(<a href=#updated-on-20251025>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20251026>back to top</a>)</p>
 
 ## Reinforcement Learning
 
@@ -905,7 +905,7 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 - 2025-10-20, **A Principle of Targeted Intervention for Multi-Agent Reinforcement Learning**, Anjie Liu et.al., Paper: [http://arxiv.org/abs/2510.17697](http://arxiv.org/abs/2510.17697)
 - 2025-10-23, **A Microphysical Probe of Neutron Star Interiors: Constraining the Equation of State with Glitch Dynamics**, Zhonghao Tu et.al., Paper: [http://arxiv.org/abs/2510.20791](http://arxiv.org/abs/2510.20791)
 
-<p align=right>(<a href=#updated-on-20251025>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20251026>back to top</a>)</p>
 
 Notes: 
 
