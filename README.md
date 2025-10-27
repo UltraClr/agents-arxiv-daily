@@ -1,5 +1,5 @@
 # Agent Research Papers
-### Automatically Updated on 2025.10.26
+### Automatically Updated on 2025.10.27
 Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Autonomous Agent`,`LLM Agent`
 
 > If you have any other keywords, please feel free to let us know :) 
@@ -21,6 +21,7 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 
 |Publish Date|Title|Authors|PDF|Code|
 |---|---|---|---|---|
+|**2025-10-24**|**Mixture-of-Minds: Multi-Agent Reinforcement Learning for Table Understanding**|Yuhang Zhou et.al.|[2510.20176](http://arxiv.org/abs/2510.20176)|null|
 |**2025-10-23**|**Co-Designing Quantum Codes with Transversal Diagonal Gates via Multi-Agent Systems**|Xi He et.al.|[2510.20728](http://arxiv.org/abs/2510.20728)|null|
 |**2025-10-23**|**C-NAV: Towards Self-Evolving Continual Object Navigation in Open World**|Ming-Ming Yu et.al.|[2510.20685](http://arxiv.org/abs/2510.20685)|null|
 |**2025-10-23**|**Open-o3 Video: Grounded Video Reasoning with Explicit Spatio-Temporal Evidence**|Jiahao Meng et.al.|[2510.20579](http://arxiv.org/abs/2510.20579)|null|
@@ -33,7 +34,6 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 |**2025-10-23**|**Towards AI Agents for Course Instruction in Higher Education: Early Experiences from the Field**|Yogesh Simmhan et.al.|[2510.20255](http://arxiv.org/abs/2510.20255)|null|
 |**2025-10-23**|**Automated Cloud Infrastructure-as-Code Reconciliation with AI Agents**|Zhenning Yang et.al.|[2510.20211](http://arxiv.org/abs/2510.20211)|null|
 |**2025-10-23**|**Merge and Conquer: Evolutionarily Optimizing AI for 2048**|Maggie Bai et.al.|[2510.20205](http://arxiv.org/abs/2510.20205)|null|
-|**2025-10-23**|**Mixture-of-Minds: Multi-Agent Reinforcement Learning for Table Understanding**|Yuhang Zhou et.al.|[2510.20176](http://arxiv.org/abs/2510.20176)|null|
 |**2025-10-23**|**Human-Centered LLM-Agent System for Detecting Anomalous Digital Asset Transactions**|Gyuyeon Na et.al.|[2510.20102](http://arxiv.org/abs/2510.20102)|null|
 |**2025-10-22**|**ToolScope: Enhancing LLM Agent Tool Use through Tool Merging and Context-Aware Filtering**|Marianne Menglin Liu et.al.|[2510.20036](http://arxiv.org/abs/2510.20036)|null|
 |**2025-10-22**|**Communication to Completion: Modeling Collaborative Workflows with Intelligent Multi-Agent Communication**|Yiming Lu et.al.|[2510.19995](http://arxiv.org/abs/2510.19995)|null|
@@ -607,7 +607,7 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 |**2025-08-21**|**Noise, Adaptation, and Strategy: Assessing LLM Fidelity in Decision-Making**|Yuanjun Feng et.al.|[2508.15926](http://arxiv.org/abs/2508.15926)|null|
 |**2025-08-21**|**End-to-End Agentic RAG System Training for Traceable Diagnostic Reasoning**|Qiaoyu Zheng et.al.|[2508.15746](http://arxiv.org/abs/2508.15746)|null|
 
-<p align=right>(<a href=#updated-on-20251026>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20251027>back to top</a>)</p>
 
 ## Large Language Models
 
@@ -754,19 +754,19 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 |**2025-10-21**|**DelvePO: Direction-Guided Self-Evolving Framework for Flexible Prompt Optimization**|Tao Tao et.al.|[2510.18257](http://arxiv.org/abs/2510.18257)|null|
 |**2025-10-21**|**Illusions of reflection: open-ended task reveals systematic failures in Large Language Models' reflective reasoning**|Sion Weatherhead et.al.|[2510.18254](http://arxiv.org/abs/2510.18254)|null|
 
-<p align=right>(<a href=#updated-on-20251026>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20251027>back to top</a>)</p>
 
 ## Reinforcement Learning
 
 |Publish Date|Title|Authors|PDF|Code|
 |---|---|---|---|---|
+|**2025-10-24**|**Real-Time Gait Adaptation for Quadrupeds using Model Predictive Control and Reinforcement Learning**|Prakrut Kotecha et.al.|[2510.20706](http://arxiv.org/abs/2510.20706)|null|
 |**2025-10-23**|**KL-Regularized Reinforcement Learning is Designed to Mode Collapse**|Anthony GX-Chen et.al.|[2510.20817](http://arxiv.org/abs/2510.20817)|null|
 |**2025-10-23**|**GSWorld: Closed-Loop Photo-Realistic Simulation Suite for Robotic Manipulation**|Guangqi Jiang et.al.|[2510.20813](http://arxiv.org/abs/2510.20813)|null|
 |**2025-10-23**|**A Microphysical Probe of Neutron Star Interiors: Constraining the Equation of State with Glitch Dynamics**|Zhonghao Tu et.al.|[2510.20791](http://arxiv.org/abs/2510.20791)|null|
 |**2025-10-23**|**Consumption-Investment Problem in Rank-Based Models**|David Itkin et.al.|[2510.20763](http://arxiv.org/abs/2510.20763)|null|
 |**2025-10-23**|**Reinforcement Learning and Consumption-Savings Behavior**|Brandon Kaplowitz et.al.|[2510.20748](http://arxiv.org/abs/2510.20748)|null|
 |**2025-10-23**|**No-Regret Thompson Sampling for Finite-Horizon Markov Decision Processes with Gaussian Processes**|Jasmine Bayrooti et.al.|[2510.20725](http://arxiv.org/abs/2510.20725)|null|
-|**2025-10-23**|**Real-Time Gait Adaptation for Quadrupeds using Model Predictive Control and Reinforcement Learning**|Ganga Nair B et.al.|[2510.20706](http://arxiv.org/abs/2510.20706)|null|
 |**2025-10-23**|**Measuring cosmic dipole with the GRB luminosity-time relation**|Jessica Santiago et.al.|[2510.20705](http://arxiv.org/abs/2510.20705)|null|
 |**2025-10-23**|**Plan Then Retrieve: Reinforcement Learning-Guided Complex Reasoning over Knowledge Graphs**|Yanlin Song et.al.|[2510.20691](http://arxiv.org/abs/2510.20691)|null|
 |**2025-10-23**|**Downsizing Diffusion Models for Cardinality Estimation**|Xinhe Mu et.al.|[2510.20681](http://arxiv.org/abs/2510.20681)|null|
@@ -911,7 +911,7 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 |**2025-10-20**|**Learning to Design Soft Hands using Reward Models**|Xueqian Bai et.al.|[2510.17086](http://arxiv.org/abs/2510.17086)|null|
 |**2025-10-20**|**Consistent Zero-Shot Imitation with Contrastive Goal Inference**|Kathryn Wantlin et.al.|[2510.17059](http://arxiv.org/abs/2510.17059)|null|
 
-<p align=right>(<a href=#updated-on-20251026>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20251027>back to top</a>)</p>
 
 Notes: 
 

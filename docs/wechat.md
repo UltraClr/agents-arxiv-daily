@@ -1,5 +1,5 @@
 # Agent Research Papers
-> Updated on 2025.10.26
+> Updated on 2025.10.27
 Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Autonomous Agent`,`LLM Agent`
 
 > If you have any other keywords, please feel free to let us know :) 
@@ -247,7 +247,7 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 - 2025-10-14, **Multi-Agent Debate for LLM Judges with Adaptive Stability Detection**, Tianyu Hu et.al., Paper: [http://arxiv.org/abs/2510.12697](http://arxiv.org/abs/2510.12697)
 - 2025-09-09, **Multi Robot Coordination in Highly Dynamic Environments: Tackling Asymmetric Obstacles and Limited Communication**, Vincenzo Suriani et.al., Paper: [http://arxiv.org/abs/2509.08859](http://arxiv.org/abs/2509.08859)
 - 2025-10-19, **More with Less: An Empirical Study of Turn-Control Strategies for Efficient Coding Agents**, Pengfei Gao et.al., Paper: [http://arxiv.org/abs/2510.16786](http://arxiv.org/abs/2510.16786)
-- 2025-10-23, **Mixture-of-Minds: Multi-Agent Reinforcement Learning for Table Understanding**, Yuhang Zhou et.al., Paper: [http://arxiv.org/abs/2510.20176](http://arxiv.org/abs/2510.20176)
+- 2025-10-24, **Mixture-of-Minds: Multi-Agent Reinforcement Learning for Table Understanding**, Yuhang Zhou et.al., Paper: [http://arxiv.org/abs/2510.20176](http://arxiv.org/abs/2510.20176)
 - 2025-09-28, **Mix-Ecom: Towards Mixed-Type E-Commerce Dialogues with Complex Domain Rules**, Chenyu Zhou et.al., Paper: [http://arxiv.org/abs/2509.23836](http://arxiv.org/abs/2509.23836)
 - 2025-10-22, **Misalignment Bounty: Crowdsourcing AI Agent Misbehavior**, Rustem Turtayev et.al., Paper: [http://arxiv.org/abs/2510.19738](http://arxiv.org/abs/2510.19738)
 - 2025-09-16, **Mining the Long Tail: A Comparative Study of Data-Centric Criticality Metrics for Robust Offline Reinforcement Learning in Autonomous Motion Planning**, Antonio Guillen-Perez et.al., Paper: [http://arxiv.org/abs/2508.18397](http://arxiv.org/abs/2508.18397)
@@ -605,7 +605,7 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 - 2025-10-13, **$How^{2}$ : How to learn from procedural How-to questions**, Gautier Dagan et.al., Paper: [http://arxiv.org/abs/2510.11144](http://arxiv.org/abs/2510.11144)
 - 2025-09-27, **"Shall We Dig Deeper?": Designing and Evaluating Strategies for LLM Agents to Advance Knowledge Co-Construction in Asynchronous Online Discussions**, Yuanhao Zhang et.al., Paper: [http://arxiv.org/abs/2509.23327](http://arxiv.org/abs/2509.23327)
 
-<p align=right>(<a href=#updated-on-20251026>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20251027>back to top</a>)</p>
 
 ## Large Language Models
 
@@ -750,7 +750,7 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 - 2025-10-23, **ARGenSeg: Image Segmentation with Autoregressive Image Generation Model**, Xiaolong Wang et.al., Paper: [http://arxiv.org/abs/2510.20803](http://arxiv.org/abs/2510.20803)
 - 2025-10-23, **A Use-Case Specific Dataset for Measuring Dimensions of Responsible Performance in LLM-generated Text**, Alicia Sagae et.al., Paper: [http://arxiv.org/abs/2510.20782](http://arxiv.org/abs/2510.20782)
 
-<p align=right>(<a href=#updated-on-20251026>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20251027>back to top</a>)</p>
 
 ## Reinforcement Learning
 
@@ -792,7 +792,7 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 - 2025-10-21, **Reinforcement Learning with Imperfect Transition Predictions: A Bellman-Jensen Approach**, Chenbei Lu et.al., Paper: [http://arxiv.org/abs/2510.18687](http://arxiv.org/abs/2510.18687)
 - 2025-10-23, **Reinforcement Learning and Consumption-Savings Behavior**, Brandon Kaplowitz et.al., Paper: [http://arxiv.org/abs/2510.20748](http://arxiv.org/abs/2510.20748)
 - 2025-10-22, **Reasoning Like Experts: Leveraging Multimodal Large Language Models for Drawing-based Psychoanalysis**, Xueqi Ma et.al., Paper: [http://arxiv.org/abs/2510.19451](http://arxiv.org/abs/2510.19451)
-- 2025-10-23, **Real-Time Gait Adaptation for Quadrupeds using Model Predictive Control and Reinforcement Learning**, Ganga Nair B et.al., Paper: [http://arxiv.org/abs/2510.20706](http://arxiv.org/abs/2510.20706)
+- 2025-10-24, **Real-Time Gait Adaptation for Quadrupeds using Model Predictive Control and Reinforcement Learning**, Prakrut Kotecha et.al., Paper: [http://arxiv.org/abs/2510.20706](http://arxiv.org/abs/2510.20706)
 - 2025-10-21, **Ranking-based Preference Optimization for Diffusion Models from Implicit User Feedback**, Yi-Lun Wu et.al., Paper: [http://arxiv.org/abs/2510.18353](http://arxiv.org/abs/2510.18353)
 - 2025-10-20, **RL-Driven Security-Aware Resource Allocation Framework for UAV-Assisted O-RAN**, Zaineh Abughazzah et.al., Paper: [http://arxiv.org/abs/2510.18084](http://arxiv.org/abs/2510.18084)
 - 2025-10-20, **RESample: A Robust Data Augmentation Framework via Exploratory Sampling for Robotic Manipulation**, Yuquan Xue et.al., Paper: [http://arxiv.org/abs/2510.17640](http://arxiv.org/abs/2510.17640)
@@ -905,7 +905,7 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 - 2025-10-20, **A Principle of Targeted Intervention for Multi-Agent Reinforcement Learning**, Anjie Liu et.al., Paper: [http://arxiv.org/abs/2510.17697](http://arxiv.org/abs/2510.17697)
 - 2025-10-23, **A Microphysical Probe of Neutron Star Interiors: Constraining the Equation of State with Glitch Dynamics**, Zhonghao Tu et.al., Paper: [http://arxiv.org/abs/2510.20791](http://arxiv.org/abs/2510.20791)
 
-<p align=right>(<a href=#updated-on-20251026>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20251027>back to top</a>)</p>
 
 Notes: 
 
