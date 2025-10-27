@@ -16,6 +16,11 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 
 | Publish Date | Title | Authors | PDF | Code |
 |:---------|:-----------------------|:---------|:------|:------|
+|**2025-10-24**|**A Knowledge-Graph Translation Layer for Mission-Aware Multi-Agent Path Planning in Spatiotemporal Dynamics**|Edward Holmberg et.al.|[2510.21695](http://arxiv.org/abs/2510.21695)|null|
+|**2025-10-24**|**AstaBench: Rigorous Benchmarking of AI Agents with a Scientific Research Suite**|Jonathan Bragg et.al.|[2510.21652](http://arxiv.org/abs/2510.21652)|null|
+|**2025-10-24**|**Five-loop beta function for gauge theories: computations, results and consequences**|F. Herzog et.al.|[2510.21624](http://arxiv.org/abs/2510.21624)|null|
+|**2025-10-24**|**DeepAgent: A General Reasoning Agent with Scalable Toolsets**|Xiaoxi Li et.al.|[2510.21618](http://arxiv.org/abs/2510.21618)|null|
+|**2025-10-24**|**Huxley-Gödel Machine: Human-Level Coding Agent Development by an Approximation of the Optimal Self-Improving Machine**|Wenyi Wang et.al.|[2510.21614](http://arxiv.org/abs/2510.21614)|null|
 |**2025-10-24**|**Mixture-of-Minds: Multi-Agent Reinforcement Learning for Table Understanding**|Yuhang Zhou et.al.|[2510.20176](http://arxiv.org/abs/2510.20176)|null|
 |**2025-10-23**|**Co-Designing Quantum Codes with Transversal Diagonal Gates via Multi-Agent Systems**|Xi He et.al.|[2510.20728](http://arxiv.org/abs/2510.20728)|null|
 |**2025-10-23**|**C-NAV: Towards Self-Evolving Continual Object Navigation in Open World**|Ming-Ming Yu et.al.|[2510.20685](http://arxiv.org/abs/2510.20685)|null|
@@ -751,6 +756,26 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 
 | Publish Date | Title | Authors | PDF | Code |
 |:---------|:-----------------------|:---------|:------|:------|
+|**2025-10-24**|**Mechanistic Interpretability for Neural TSP Solvers**|Reuben Narad et.al.|[2510.21693](http://arxiv.org/abs/2510.21693)|null|
+|**2025-10-24**|**Reduced Floating-Point Precision Implicit Monte Carlo**|Simon Butson et.al.|[2510.21683](http://arxiv.org/abs/2510.21683)|null|
+|**2025-10-24**|**Goal-based portfolio selection with fixed transaction costs**|Erhan Bayraktar et.al.|[2510.21650](http://arxiv.org/abs/2510.21650)|null|
+|**2025-10-24**|**Electroweak corrections to $gg\rightarrow γγ$**|Gabriele Fiore et.al.|[2510.21643](http://arxiv.org/abs/2510.21643)|null|
+|**2025-10-24**|**Predicted observational effects of rapid rotation for Be stars**|Rina G. Rast et.al.|[2510.21640](http://arxiv.org/abs/2510.21640)|null|
+|**2025-10-24**|**DEEDEE: Fast and Scalable Out-of-Distribution Dynamics Detection**|Tala Aljaafari et.al.|[2510.21638](http://arxiv.org/abs/2510.21638)|null|
+|**2025-10-24**|**DeepAgent: A General Reasoning Agent with Scalable Toolsets**|Xiaoxi Li et.al.|[2510.21618](http://arxiv.org/abs/2510.21618)|null|
+|**2025-10-24**|**Enhancing Tactile-based Reinforcement Learning for Robotic Control**|Elle Miller et.al.|[2510.21609](http://arxiv.org/abs/2510.21609)|null|
+|**2025-10-24**|**Multilevel Picard scheme for solving high-dimensional drift control problems with state constraints**|Yuan Zhong et.al.|[2510.21607](http://arxiv.org/abs/2510.21607)|null|
+|**2025-10-24**|**RETuning: Upgrading Inference-Time Scaling for Stock Movement Prediction with Large Language Models**|Xueyuan Lin et.al.|[2510.21604](http://arxiv.org/abs/2510.21604)|null|
+|**2025-10-24**|**Three-nucleon lepton-number-violating potentials in chiral EFT and their matrix elements in light nuclei**|Graham Chambers-Wall et.al.|[2510.21564](http://arxiv.org/abs/2510.21564)|null|
+|**2025-10-24**|**System-Theoretic Analysis of Dynamic Generalized Nash Equilibrium Problems -- Turnpikes and Dissipativity**|Sophie Hall et.al.|[2510.21556](http://arxiv.org/abs/2510.21556)|null|
+|**2025-10-24**|**Cost Minimization for Space-Air-Ground Integrated Multi-Access Edge Computing Systems**|Weihong Qin et.al.|[2510.21541](http://arxiv.org/abs/2510.21541)|null|
+|**2025-10-24**|**A Unified Model for Multi-Task Drone Routing in Post-Disaster Road Assessment**|Huatian Gong et.al.|[2510.21525](http://arxiv.org/abs/2510.21525)|null|
+|**2025-10-24**|**Surrogate-based quantification of policy uncertainty in generative flow networks**|Ramón Nartallo-Kaluarachchi et.al.|[2510.21523](http://arxiv.org/abs/2510.21523)|null|
+|**2025-10-24**|**The population of Galactic young massive star clusters in the TeV range**|Rowan Batzofin et.al.|[2510.21480](http://arxiv.org/abs/2510.21480)|null|
+|**2025-10-24**|**MRO: Enhancing Reasoning in Diffusion Language Models via Multi-Reward Optimization**|Chenglong Wang et.al.|[2510.21473](http://arxiv.org/abs/2510.21473)|null|
+|**2025-10-24**|**Constraints on ultra-heavy dark matter from the CDEX-10 experiment at the China Jinping Underground Laboratory**|Y. F. Wang et.al.|[2510.21458](http://arxiv.org/abs/2510.21458)|null|
+|**2025-10-24**|**Unified token representations for sequential decision models**|Zhuojing Tian et.al.|[2510.21448](http://arxiv.org/abs/2510.21448)|null|
+|**2025-10-24**|**Causality Meets Locality: Provably Generalizable and Scalable Policy Learning for Networked Systems**|Hao Liang et.al.|[2510.21427](http://arxiv.org/abs/2510.21427)|null|
 |**2025-10-24**|**Real-Time Gait Adaptation for Quadrupeds using Model Predictive Control and Reinforcement Learning**|Prakrut Kotecha et.al.|[2510.20706](http://arxiv.org/abs/2510.20706)|null|
 |**2025-10-23**|**KL-Regularized Reinforcement Learning is Designed to Mode Collapse**|Anthony GX-Chen et.al.|[2510.20817](http://arxiv.org/abs/2510.20817)|null|
 |**2025-10-23**|**GSWorld: Closed-Loop Photo-Realistic Simulation Suite for Robotic Manipulation**|Guangqi Jiang et.al.|[2510.20813](http://arxiv.org/abs/2510.20813)|null|
