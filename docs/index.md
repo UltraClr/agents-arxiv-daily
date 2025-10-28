@@ -3,7 +3,7 @@ layout: default
 ---
 
 # Agent Research Papers
-### Automatically Updated on 2025.10.27
+### Automatically Updated on 2025.10.28
 Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Autonomous Agent`,`LLM Agent`
 
 > If you have any other keywords, please feel free to let us know :) 
@@ -21,7 +21,20 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 |**2025-10-24**|**Five-loop beta function for gauge theories: computations, results and consequences**|F. Herzog et.al.|[2510.21624](http://arxiv.org/abs/2510.21624)|null|
 |**2025-10-24**|**DeepAgent: A General Reasoning Agent with Scalable Toolsets**|Xiaoxi Li et.al.|[2510.21618](http://arxiv.org/abs/2510.21618)|null|
 |**2025-10-24**|**Huxley-Gödel Machine: Human-Level Coding Agent Development by an Approximation of the Optimal Self-Improving Machine**|Wenyi Wang et.al.|[2510.21614](http://arxiv.org/abs/2510.21614)|null|
+|**2025-10-24**|**Doc-Researcher: A Unified System for Multimodal Document Parsing and Deep Research**|Kuicai Dong et.al.|[2510.21603](http://arxiv.org/abs/2510.21603)|null|
+|**2025-10-24**|**EU-Agent-Bench: Measuring Illegal Behavior of LLM Agents Under EU Law**|Ilija Lichkovski et.al.|[2510.21524](http://arxiv.org/abs/2510.21524)|null|
+|**2025-10-24**|**OpenHype: Hyperbolic Embeddings for Hierarchical Open-Vocabulary Radiance Fields**|Lisa Weijler et.al.|[2510.21441](http://arxiv.org/abs/2510.21441)|null|
+|**2025-10-24**|**Context Engineering for AI Agents in Open-Source Software**|Seyedmoein Mohsenimofidi et.al.|[2510.21413](http://arxiv.org/abs/2510.21413)|null|
+|**2025-10-24**|**HIKMA: Human-Inspired Knowledge by Machine Agents through a Multi-Agent Framework for Semi-Autonomous Scientific Conferences**|Zain Ul Abideen Tariq et.al.|[2510.21370](http://arxiv.org/abs/2510.21370)|null|
+|**2025-10-24**|**Magellan: Guided MCTS for Latent Space Exploration and Novelty Generation**|Lufan Chang et.al.|[2510.21341](http://arxiv.org/abs/2510.21341)|null|
+|**2025-10-24**|**Towards Reliable Code-as-Policies: A Neuro-Symbolic Framework for Embodied Task Planning**|Sanghyun Ahn et.al.|[2510.21302](http://arxiv.org/abs/2510.21302)|null|
+|**2025-10-24**|**Securing AI Agent Execution**|Christoph Bühler et.al.|[2510.21236](http://arxiv.org/abs/2510.21236)|null|
+|**2025-10-24**|**DispatchMAS: Fusing taxonomy and artificial intelligence agents for emergency medical services**|Xiang Li et.al.|[2510.21228](http://arxiv.org/abs/2510.21228)|null|
+|**2025-10-24**|**DAO-AI: Evaluating Collective Decision-Making through Agentic AI in Decentralized Governance**|Chunghyun Han et.al.|[2510.21117](http://arxiv.org/abs/2510.21117)|null|
+|**2025-10-24**|**Soft Instruction De-escalation Defense**|Nils Philipp Walter et.al.|[2510.21057](http://arxiv.org/abs/2510.21057)|null|
 |**2025-10-24**|**Mixture-of-Minds: Multi-Agent Reinforcement Learning for Table Understanding**|Yuhang Zhou et.al.|[2510.20176](http://arxiv.org/abs/2510.20176)|null|
+|**2025-10-23**|**From Questions to Queries: An AI-powered Multi-Agent Framework for Spatial Text-to-SQL**|Ali Khosravi Kazazi et.al.|[2510.21045](http://arxiv.org/abs/2510.21045)|null|
+|**2025-10-23**|**AgentArcEval: An Architecture Evaluation Method for Foundation Model based Agents**|Qinghua Lu et.al.|[2510.21031](http://arxiv.org/abs/2510.21031)|null|
 |**2025-10-23**|**Co-Designing Quantum Codes with Transversal Diagonal Gates via Multi-Agent Systems**|Xi He et.al.|[2510.20728](http://arxiv.org/abs/2510.20728)|null|
 |**2025-10-23**|**C-NAV: Towards Self-Evolving Continual Object Navigation in Open World**|Ming-Ming Yu et.al.|[2510.20685](http://arxiv.org/abs/2510.20685)|null|
 |**2025-10-23**|**Open-o3 Video: Grounded Video Reasoning with Explicit Spatio-Temporal Evidence**|Jiahao Meng et.al.|[2510.20579](http://arxiv.org/abs/2510.20579)|null|
@@ -611,6 +624,26 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 
 | Publish Date | Title | Authors | PDF | Code |
 |:---------|:-----------------------|:---------|:------|:------|
+|**2025-10-24**|**A Multimodal Benchmark for Framing of Oil & Gas Advertising and Potential Greenwashing Detection**|Gaku Morio et.al.|[2510.21679](http://arxiv.org/abs/2510.21679)|null|
+|**2025-10-24**|**A Data-Centric Approach to Multilingual E-Commerce Product Search: Case Study on Query-Category and Query-Item Relevance**|Yabo Yin et.al.|[2510.21671](http://arxiv.org/abs/2510.21671)|null|
+|**2025-10-24**|**The Universal Landscape of Human Reasoning**|Qiguang Chen et.al.|[2510.21623](http://arxiv.org/abs/2510.21623)|null|
+|**2025-10-24**|**Huxley-Gödel Machine: Human-Level Coding Agent Development by an Approximation of the Optimal Self-Improving Machine**|Wenyi Wang et.al.|[2510.21614](http://arxiv.org/abs/2510.21614)|null|
+|**2025-10-24**|**Modest-Align: Data-Efficient Alignment for Vision-Language Models**|Jiaxiang Liu et.al.|[2510.21606](http://arxiv.org/abs/2510.21606)|null|
+|**2025-10-24**|**RETuning: Upgrading Inference-Time Scaling for Stock Movement Prediction with Large Language Models**|Xueyuan Lin et.al.|[2510.21604](http://arxiv.org/abs/2510.21604)|null|
+|**2025-10-24**|**From Polyester Girlfriends to Blind Mice: Creating the First Pragmatics Understanding Benchmarks for Slovene**|Mojca Brglez et.al.|[2510.21575](http://arxiv.org/abs/2510.21575)|null|
+|**2025-10-24**|**ColorEcosystem: Powering Personalized, Standardized, and Trustworthy Agentic Service in massive-agent Ecosystem**|Fangwen Wu et.al.|[2510.21566](http://arxiv.org/abs/2510.21566)|null|
+|**2025-10-24**|**Are the LLMs Capable of Maintaining at Least the Language Genus?**|Sandra Mitrović et.al.|[2510.21561](http://arxiv.org/abs/2510.21561)|null|
+|**2025-10-24**|**EU-Agent-Bench: Measuring Illegal Behavior of LLM Agents Under EU Law**|Ilija Lichkovski et.al.|[2510.21524](http://arxiv.org/abs/2510.21524)|null|
+|**2025-10-24**|**Brain-tuning Improves Generalizability and Efficiency of Brain Alignment in Speech Models**|Omer Moussa et.al.|[2510.21520](http://arxiv.org/abs/2510.21520)|null|
+|**2025-10-24**|**Head Pursuit: Probing Attention Specialization in Multimodal Transformers**|Lorenzo Basile et.al.|[2510.21518](http://arxiv.org/abs/2510.21518)|null|
+|**2025-10-24**|**Wisdom and Delusion of LLM Ensembles for Code Generation and Repair**|Fernando Vallecillos Ruiz et.al.|[2510.21513](http://arxiv.org/abs/2510.21513)|null|
+|**2025-10-24**|**Actionable Cybersecurity Notifications for Smart Homes: A User Study on the Role of Length and Complexity**|Victor Jüttner et.al.|[2510.21508](http://arxiv.org/abs/2510.21508)|null|
+|**2025-10-24**|**MRO: Enhancing Reasoning in Diffusion Language Models via Multi-Reward Optimization**|Chenglong Wang et.al.|[2510.21473](http://arxiv.org/abs/2510.21473)|null|
+|**2025-10-24**|**Risk Management for Mitigating Benchmark Failure Modes: BenchRisk**|Sean McGregor et.al.|[2510.21460](http://arxiv.org/abs/2510.21460)|null|
+|**2025-10-24**|**SBASH: a Framework for Designing and Evaluating RAG vs. Prompt-Tuned LLM Honeypots**|Adetayo Adebimpe et.al.|[2510.21459](http://arxiv.org/abs/2510.21459)|null|
+|**2025-10-24**|**ParaRNN: Unlocking Parallel Training of Nonlinear RNNs for Large Language Models**|Federico Danieli et.al.|[2510.21450](http://arxiv.org/abs/2510.21450)|null|
+|**2025-10-24**|**MoniTor: Exploiting Large Language Models with Instruction for Online Video Anomaly Detection**|Shengtian Yang et.al.|[2510.21449](http://arxiv.org/abs/2510.21449)|null|
+|**2025-10-24**|**REMONI: An Autonomous System Integrating Wearables and Multimodal Large Language Models for Enhanced Remote Health Monitoring**|Thanh Cong Ho et.al.|[2510.21445](http://arxiv.org/abs/2510.21445)|null|
 |**2025-10-23**|**KL-Regularized Reinforcement Learning is Designed to Mode Collapse**|Anthony GX-Chen et.al.|[2510.20817](http://arxiv.org/abs/2510.20817)|null|
 |**2025-10-23**|**Generative Reasoning Recommendation via LLMs**|Minjie Hong et.al.|[2510.20815](http://arxiv.org/abs/2510.20815)|null|
 |**2025-10-23**|**Small Drafts, Big Verdict: Information-Intensive Visual Reasoning via Speculation**|Yuhan Liu et.al.|[2510.20812](http://arxiv.org/abs/2510.20812)|null|
