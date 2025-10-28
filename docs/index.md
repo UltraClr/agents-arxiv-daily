@@ -16,6 +16,16 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 
 | Publish Date | Title | Authors | PDF | Code |
 |:---------|:-----------------------|:---------|:------|:------|
+|**2025-10-27**|**Are Agents Just Automata? On the Formal Equivalence Between Agentic AI and the Chomsky Hierarchy**|Roham Koohestani et.al.|[2510.23487](http://arxiv.org/abs/2510.23487)|null|
+|**2025-10-27**|**BrowseConf: Confidence-Guided Test-Time Scaling for Web Agents**|Litu Ou et.al.|[2510.23458](http://arxiv.org/abs/2510.23458)|null|
+|**2025-10-27**|**Model Proficiency in Centralized Multi-Agent Systems: A Performance Study**|Anna Guerra et.al.|[2510.23447](http://arxiv.org/abs/2510.23447)|null|
+|**2025-10-27**|**AutoStreamPipe: LLM Assisted Automatic Generation of Data Stream Processing Pipelines**|Abolfazl Younesi et.al.|[2510.23408](http://arxiv.org/abs/2510.23408)|null|
+|**2025-10-27**|**Multi-Stakeholder Alignment in LLM-Powered Collaborative AI Systems: A Multi-Agent Framework for Intelligent Tutoring**|Alexandre P Uchoa et.al.|[2510.23245](http://arxiv.org/abs/2510.23245)|null|
+|**2025-10-27**|**Evaluation of Vision-LLMs in Surveillance Video**|Pascal Benschop et.al.|[2510.23190](http://arxiv.org/abs/2510.23190)|null|
+|**2025-10-27**|**SI-Bench: Benchmarking Social Intelligence of Large Language Models in Human-to-Human Conversations**|Shuai Huang et.al.|[2510.23182](http://arxiv.org/abs/2510.23182)|null|
+|**2025-10-27**|**Adapting Interleaved Encoders with PPO for Language-Guided Reinforcement Learning in BabyAI**|Aryan Mathur et.al.|[2510.23148](http://arxiv.org/abs/2510.23148)|null|
+|**2025-10-27**|**Lost in Tokenization: Context as the Key to Unlocking Biomolecular Understanding in Scientific LLMs**|Kai Zhuang et.al.|[2510.23127](http://arxiv.org/abs/2510.23127)|null|
+|**2025-10-27**|**Incentivizing Agentic Reasoning in LLM Judges via Tool-Integrated Reinforcement Learning**|Ran Xu et.al.|[2510.23038](http://arxiv.org/abs/2510.23038)|null|
 |**2025-10-24**|**A Knowledge-Graph Translation Layer for Mission-Aware Multi-Agent Path Planning in Spatiotemporal Dynamics**|Edward Holmberg et.al.|[2510.21695](http://arxiv.org/abs/2510.21695)|null|
 |**2025-10-24**|**AstaBench: Rigorous Benchmarking of AI Agents with a Scientific Research Suite**|Jonathan Bragg et.al.|[2510.21652](http://arxiv.org/abs/2510.21652)|null|
 |**2025-10-24**|**Five-loop beta function for gauge theories: computations, results and consequences**|F. Herzog et.al.|[2510.21624](http://arxiv.org/abs/2510.21624)|null|
@@ -624,6 +634,26 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 
 | Publish Date | Title | Authors | PDF | Code |
 |:---------|:-----------------------|:---------|:------|:------|
+|**2025-10-27**|**PixelRefer: A Unified Framework for Spatio-Temporal Object Referring with Arbitrary Granularity**|Yuqian Yuan et.al.|[2510.23603](http://arxiv.org/abs/2510.23603)|null|
+|**2025-10-27**|**Alita-G: Self-Evolving Generative Agent for Agent Generation**|Jiahao Qiu et.al.|[2510.23601](http://arxiv.org/abs/2510.23601)|null|
+|**2025-10-27**|**Think Twice: Branch-and-Rethink Reasoning Reward Model**|Yizhu Jiao et.al.|[2510.23596](http://arxiv.org/abs/2510.23596)|null|
+|**2025-10-27**|**Multi-Agent Evolve: LLM Self-Improve through Co-evolution**|Yixing Chen et.al.|[2510.23595](http://arxiv.org/abs/2510.23595)|null|
+|**2025-10-27**|**PRISM-Bench: A Benchmark of Puzzle-Based Visual Tasks with CoT Error Detection**|Yusu Qian et.al.|[2510.23594](http://arxiv.org/abs/2510.23594)|null|
+|**2025-10-27**|**Lightweight Robust Direct Preference Optimization**|Cheol Woo Kim et.al.|[2510.23590](http://arxiv.org/abs/2510.23590)|null|
+|**2025-10-27**|**FARMER: Flow AutoRegressive Transformer over Pixels**|Guangting Zheng et.al.|[2510.23588](http://arxiv.org/abs/2510.23588)|null|
+|**2025-10-27**|**A Survey of Data Agents: Emerging Paradigm or Overstated Hype?**|Yizhang Zhu et.al.|[2510.23587](http://arxiv.org/abs/2510.23587)|null|
+|**2025-10-27**|**RobotArena $\infty$ : Scalable Robot Benchmarking via Real-to-Sim Translation**|Yash Jangir et.al.|[2510.23571](http://arxiv.org/abs/2510.23571)|null|
+|**2025-10-27**|**EgoThinker: Unveiling Egocentric Reasoning with Spatio-Temporal CoT**|Baoqi Pei et.al.|[2510.23569](http://arxiv.org/abs/2510.23569)|null|
+|**2025-10-27**|**ReCode: Unify Plan and Action for Universal Granularity Control**|Zhaoyang Yu et.al.|[2510.23564](http://arxiv.org/abs/2510.23564)|null|
+|**2025-10-27**|**ISA-Bench: Benchmarking Instruction Sensitivity for Large Audio Language Models**|Bohan Li et.al.|[2510.23558](http://arxiv.org/abs/2510.23558)|null|
+|**2025-10-27**|**Minimizing Human Intervention in Online Classification**|William Réveillard et.al.|[2510.23557](http://arxiv.org/abs/2510.23557)|null|
+|**2025-10-27**|**IPQA: A Benchmark for Core Intent Identification in Personalized Question Answering**|Jieyong Kim et.al.|[2510.23536](http://arxiv.org/abs/2510.23536)|null|
+|**2025-10-27**|**Point Convergence of Nesterov's Accelerated Gradient Method: An AI-Assisted Proof**|Uijeong Jang et.al.|[2510.23513](http://arxiv.org/abs/2510.23513)|null|
+|**2025-10-27**|**Deductive Chain-of-Thought Augmented Socially-aware Robot Navigation World Model**|Weizheng Wang et.al.|[2510.23509](http://arxiv.org/abs/2510.23509)|null|
+|**2025-10-27**|**Emotion-Coherent Reasoning for Multimodal LLMs via Emotional Rationale Verifier**|Hyeongseop Rha et.al.|[2510.23506](http://arxiv.org/abs/2510.23506)|null|
+|**2025-10-27**|**VOLD: Reasoning Transfer from LLMs to Vision-Language Models via On-Policy Distillation**|Walid Bousselham et.al.|[2510.23497](http://arxiv.org/abs/2510.23497)|null|
+|**2025-10-27**|**Learning the PTM Code through a Coarse-to-Fine, Mechanism-Aware Framework**|Jingjie Zhang et.al.|[2510.23492](http://arxiv.org/abs/2510.23492)|null|
+|**2025-10-27**|**Learning to Reason Efficiently with Discounted Reinforcement Learning**|Alex Ayoub et.al.|[2510.23486](http://arxiv.org/abs/2510.23486)|null|
 |**2025-10-24**|**A Multimodal Benchmark for Framing of Oil & Gas Advertising and Potential Greenwashing Detection**|Gaku Morio et.al.|[2510.21679](http://arxiv.org/abs/2510.21679)|null|
 |**2025-10-24**|**A Data-Centric Approach to Multilingual E-Commerce Product Search: Case Study on Query-Category and Query-Item Relevance**|Yabo Yin et.al.|[2510.21671](http://arxiv.org/abs/2510.21671)|null|
 |**2025-10-24**|**The Universal Landscape of Human Reasoning**|Qiguang Chen et.al.|[2510.21623](http://arxiv.org/abs/2510.21623)|null|
@@ -789,6 +819,26 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 
 | Publish Date | Title | Authors | PDF | Code |
 |:---------|:-----------------------|:---------|:------|:------|
+|**2025-10-27**|**Think Twice: Branch-and-Rethink Reasoning Reward Model**|Yizhu Jiao et.al.|[2510.23596](http://arxiv.org/abs/2510.23596)|null|
+|**2025-10-27**|**Multi-Agent Evolve: LLM Self-Improve through Co-evolution**|Yixing Chen et.al.|[2510.23595](http://arxiv.org/abs/2510.23595)|null|
+|**2025-10-27**|**Cosmic magnification on multi-catalogue Herschel submillimetre galaxies**|R. Fernandez-Fernandez et.al.|[2510.23582](http://arxiv.org/abs/2510.23582)|null|
+|**2025-10-27**|**Towards Stochastic (N-1)-Secure Redispatch**|Oleksii Molodchyk et.al.|[2510.23551](http://arxiv.org/abs/2510.23551)|null|
+|**2025-10-27**|**Variational Thermal State Preparation on Digital Quantum Processors Assisted by Matrix Product States**|Rui-Hao Li et.al.|[2510.23546](http://arxiv.org/abs/2510.23546)|null|
+|**2025-10-27**|**Approximately optimal distributed controls for high-dimensional stochastic systems with pairwise interaction through controls**|Elise Devey et.al.|[2510.23537](http://arxiv.org/abs/2510.23537)|null|
+|**2025-10-27**|**Sequential Multi-Agent Dynamic Algorithm Configuration**|Chen Lu et.al.|[2510.23535](http://arxiv.org/abs/2510.23535)|null|
+|**2025-10-27**|**VOLD: Reasoning Transfer from LLMs to Vision-Language Models via On-Policy Distillation**|Walid Bousselham et.al.|[2510.23497](http://arxiv.org/abs/2510.23497)|null|
+|**2025-10-27**|**Learning to Reason Efficiently with Discounted Reinforcement Learning**|Alex Ayoub et.al.|[2510.23486](http://arxiv.org/abs/2510.23486)|null|
+|**2025-10-27**|**MergeMix: A Unified Augmentation Paradigm for Visual and Multi-Modal Understanding**|Xin Jin et.al.|[2510.23479](http://arxiv.org/abs/2510.23479)|null|
+|**2025-10-27**|**Video-Thinker: Sparking "Thinking with Videos" via Reinforcement Learning**|Shijian Wang et.al.|[2510.23473](http://arxiv.org/abs/2510.23473)|null|
+|**2025-10-27**|**Adaptive Multilevel Splitting: First Application to Rare-Event Derivative Pricing**|Riccardo Gozzo et.al.|[2510.23461](http://arxiv.org/abs/2510.23461)|null|
+|**2025-10-27**|**SGFusion: Stochastic Geographic Gradient Fusion in Federated Learning**|Khoa Nguyen et.al.|[2510.23455](http://arxiv.org/abs/2510.23455)|null|
+|**2025-10-27**|**Omni-Reward: Towards Generalist Omni-Modal Reward Modeling with Free-Form Preferences**|Zhuoran Jin et.al.|[2510.23451](http://arxiv.org/abs/2510.23451)|null|
+|**2025-10-27**|**An Information-Theoretic Analysis of Out-of-Distribution Generalization in Meta-Learning with Applications to Meta-RL**|Xingtu Liu et.al.|[2510.23448](http://arxiv.org/abs/2510.23448)|null|
+|**2025-10-27**|**Causal Deep Q Network**|Elouanes Khelifi et.al.|[2510.23424](http://arxiv.org/abs/2510.23424)|null|
+|**2025-10-27**|**A Sequential Planning Framework for the Operational Reality of Interacting Air Traffic Flow Regulations and Traffic Flow Programs**|Thinh Hoang et.al.|[2510.23402](http://arxiv.org/abs/2510.23402)|null|
+|**2025-10-27**|**VideoTG-R1: Boosting Video Temporal Grounding via Curriculum Reinforcement Learning on Reflected Boundary Annotations**|Lu Dong et.al.|[2510.23397](http://arxiv.org/abs/2510.23397)|null|
+|**2025-10-27**|**The Best of N Worlds: Aligning Reinforcement Learning with Best-of-N Sampling via max@k Optimisation**|Farid Bagirov et.al.|[2510.23393](http://arxiv.org/abs/2510.23393)|null|
+|**2025-10-27**|**Ground-state phase diagram of S = 1/2 Heisenberg model on 2D square-hexagon-octagon lattice**|Yumeng Luo et.al.|[2510.23376](http://arxiv.org/abs/2510.23376)|null|
 |**2025-10-24**|**Mechanistic Interpretability for Neural TSP Solvers**|Reuben Narad et.al.|[2510.21693](http://arxiv.org/abs/2510.21693)|null|
 |**2025-10-24**|**Reduced Floating-Point Precision Implicit Monte Carlo**|Simon Butson et.al.|[2510.21683](http://arxiv.org/abs/2510.21683)|null|
 |**2025-10-24**|**Goal-based portfolio selection with fixed transaction costs**|Erhan Bayraktar et.al.|[2510.21650](http://arxiv.org/abs/2510.21650)|null|
