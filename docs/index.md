@@ -3,7 +3,7 @@ layout: default
 ---
 
 # Agent Research Papers
-### Automatically Updated on 2025.10.28
+### Automatically Updated on 2025.10.29
 Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Autonomous Agent`,`LLM Agent`
 
 > If you have any other keywords, please feel free to let us know :) 
@@ -16,8 +16,9 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 
 | Publish Date | Title | Authors | PDF | Code |
 |:---------|:-----------------------|:---------|:------|:------|
+|**2025-10-28**|**BrowseConf: Confidence-Guided Test-Time Scaling for Web Agents**|Litu Ou et.al.|[2510.23458](http://arxiv.org/abs/2510.23458)|null|
+|**2025-10-28**|**Look and Tell: A Dataset for Multimodal Grounding Across Egocentric and Exocentric Views**|Anna Deichler et.al.|[2510.22672](http://arxiv.org/abs/2510.22672)|null|
 |**2025-10-27**|**Are Agents Just Automata? On the Formal Equivalence Between Agentic AI and the Chomsky Hierarchy**|Roham Koohestani et.al.|[2510.23487](http://arxiv.org/abs/2510.23487)|null|
-|**2025-10-27**|**BrowseConf: Confidence-Guided Test-Time Scaling for Web Agents**|Litu Ou et.al.|[2510.23458](http://arxiv.org/abs/2510.23458)|null|
 |**2025-10-27**|**Model Proficiency in Centralized Multi-Agent Systems: A Performance Study**|Anna Guerra et.al.|[2510.23447](http://arxiv.org/abs/2510.23447)|null|
 |**2025-10-27**|**AutoStreamPipe: LLM Assisted Automatic Generation of Data Stream Processing Pipelines**|Abolfazl Younesi et.al.|[2510.23408](http://arxiv.org/abs/2510.23408)|null|
 |**2025-10-27**|**Multi-Stakeholder Alignment in LLM-Powered Collaborative AI Systems: A Multi-Agent Framework for Intelligent Tutoring**|Alexandre P Uchoa et.al.|[2510.23245](http://arxiv.org/abs/2510.23245)|null|
@@ -26,6 +27,15 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 |**2025-10-27**|**Adapting Interleaved Encoders with PPO for Language-Guided Reinforcement Learning in BabyAI**|Aryan Mathur et.al.|[2510.23148](http://arxiv.org/abs/2510.23148)|null|
 |**2025-10-27**|**Lost in Tokenization: Context as the Key to Unlocking Biomolecular Understanding in Scientific LLMs**|Kai Zhuang et.al.|[2510.23127](http://arxiv.org/abs/2510.23127)|null|
 |**2025-10-27**|**Incentivizing Agentic Reasoning in LLM Judges via Tool-Integrated Reinforcement Learning**|Ran Xu et.al.|[2510.23038](http://arxiv.org/abs/2510.23038)|null|
+|**2025-10-27**|**P1GPT: a multi-agent LLM workflow module for multi-modal financial information analysis**|Chen-Che Lu et.al.|[2510.23032](http://arxiv.org/abs/2510.23032)|null|
+|**2025-10-27**|**TALM: Dynamic Tree-Structured Multi-Agent Framework with Long-Term Memory for Scalable Code Generation**|Ming-Tung Shen et.al.|[2510.23010](http://arxiv.org/abs/2510.23010)|null|
+|**2025-10-27**|**CodeAD: Synthesize Code of Rules for Log-based Anomaly Detection with LLMs**|Junjie Huang et.al.|[2510.22986](http://arxiv.org/abs/2510.22986)|null|
+|**2025-10-27**|**Language Server CLI Empowers Language Agents with Process Rewards**|Yifan Zhang et.al.|[2510.22907](http://arxiv.org/abs/2510.22907)|null|
+|**2025-10-27**|**On Generalization in Agentic Tool Calling: CoreThink Agentic Reasoner and MAVEN Dataset**|Vishvesh Bhat et.al.|[2510.22898](http://arxiv.org/abs/2510.22898)|null|
+|**2025-10-26**|**Distributed Multi-Agent Bandits Over Erdős-Rényi Random Networks**|Jingyuan Liu et.al.|[2510.22811](http://arxiv.org/abs/2510.22811)|null|
+|**2025-10-26**|**Collaborative LLM Agents for C4 Software Architecture Design Automation**|Kamil Szczepanik et.al.|[2510.22787](http://arxiv.org/abs/2510.22787)|null|
+|**2025-10-26**|**How Do AI Agents Do Human Work? Comparing AI and Human Workflows Across Diverse Occupations**|Zora Zhiruo Wang et.al.|[2510.22780](http://arxiv.org/abs/2510.22780)|null|
+|**2025-10-26**|**ATLAS: Actor-Critic Task-Completion with Look-ahead Action Simulation**|Jiali Cheng et.al.|[2510.22732](http://arxiv.org/abs/2510.22732)|null|
 |**2025-10-24**|**A Knowledge-Graph Translation Layer for Mission-Aware Multi-Agent Path Planning in Spatiotemporal Dynamics**|Edward Holmberg et.al.|[2510.21695](http://arxiv.org/abs/2510.21695)|null|
 |**2025-10-24**|**AstaBench: Rigorous Benchmarking of AI Agents with a Scientific Research Suite**|Jonathan Bragg et.al.|[2510.21652](http://arxiv.org/abs/2510.21652)|null|
 |**2025-10-24**|**Five-loop beta function for gauge theories: computations, results and consequences**|F. Herzog et.al.|[2510.21624](http://arxiv.org/abs/2510.21624)|null|
@@ -634,11 +644,11 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 
 | Publish Date | Title | Authors | PDF | Code |
 |:---------|:-----------------------|:---------|:------|:------|
+|**2025-10-28**|**Multi-Agent Evolve: LLM Self-Improve through Co-evolution**|Yixing Chen et.al.|[2510.23595](http://arxiv.org/abs/2510.23595)|null|
+|**2025-10-28**|**PRISM-Bench: A Benchmark of Puzzle-Based Visual Tasks with CoT Error Detection**|Yusu Qian et.al.|[2510.23594](http://arxiv.org/abs/2510.23594)|null|
 |**2025-10-27**|**PixelRefer: A Unified Framework for Spatio-Temporal Object Referring with Arbitrary Granularity**|Yuqian Yuan et.al.|[2510.23603](http://arxiv.org/abs/2510.23603)|null|
 |**2025-10-27**|**Alita-G: Self-Evolving Generative Agent for Agent Generation**|Jiahao Qiu et.al.|[2510.23601](http://arxiv.org/abs/2510.23601)|null|
 |**2025-10-27**|**Think Twice: Branch-and-Rethink Reasoning Reward Model**|Yizhu Jiao et.al.|[2510.23596](http://arxiv.org/abs/2510.23596)|null|
-|**2025-10-27**|**Multi-Agent Evolve: LLM Self-Improve through Co-evolution**|Yixing Chen et.al.|[2510.23595](http://arxiv.org/abs/2510.23595)|null|
-|**2025-10-27**|**PRISM-Bench: A Benchmark of Puzzle-Based Visual Tasks with CoT Error Detection**|Yusu Qian et.al.|[2510.23594](http://arxiv.org/abs/2510.23594)|null|
 |**2025-10-27**|**Lightweight Robust Direct Preference Optimization**|Cheol Woo Kim et.al.|[2510.23590](http://arxiv.org/abs/2510.23590)|null|
 |**2025-10-27**|**FARMER: Flow AutoRegressive Transformer over Pixels**|Guangting Zheng et.al.|[2510.23588](http://arxiv.org/abs/2510.23588)|null|
 |**2025-10-27**|**A Survey of Data Agents: Emerging Paradigm or Overstated Hype?**|Yizhang Zhu et.al.|[2510.23587](http://arxiv.org/abs/2510.23587)|null|
@@ -819,19 +829,19 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 
 | Publish Date | Title | Authors | PDF | Code |
 |:---------|:-----------------------|:---------|:------|:------|
+|**2025-10-28**|**Multi-Agent Evolve: LLM Self-Improve through Co-evolution**|Yixing Chen et.al.|[2510.23595](http://arxiv.org/abs/2510.23595)|null|
+|**2025-10-28**|**VOLD: Reasoning Transfer from LLMs to Vision-Language Models via On-Policy Distillation**|Walid Bousselham et.al.|[2510.23497](http://arxiv.org/abs/2510.23497)|null|
+|**2025-10-28**|**SGFusion: Stochastic Geographic Gradient Fusion in Federated Learning**|Khoa Nguyen et.al.|[2510.23455](http://arxiv.org/abs/2510.23455)|null|
 |**2025-10-27**|**Think Twice: Branch-and-Rethink Reasoning Reward Model**|Yizhu Jiao et.al.|[2510.23596](http://arxiv.org/abs/2510.23596)|null|
-|**2025-10-27**|**Multi-Agent Evolve: LLM Self-Improve through Co-evolution**|Yixing Chen et.al.|[2510.23595](http://arxiv.org/abs/2510.23595)|null|
 |**2025-10-27**|**Cosmic magnification on multi-catalogue Herschel submillimetre galaxies**|R. Fernandez-Fernandez et.al.|[2510.23582](http://arxiv.org/abs/2510.23582)|null|
 |**2025-10-27**|**Towards Stochastic (N-1)-Secure Redispatch**|Oleksii Molodchyk et.al.|[2510.23551](http://arxiv.org/abs/2510.23551)|null|
 |**2025-10-27**|**Variational Thermal State Preparation on Digital Quantum Processors Assisted by Matrix Product States**|Rui-Hao Li et.al.|[2510.23546](http://arxiv.org/abs/2510.23546)|null|
 |**2025-10-27**|**Approximately optimal distributed controls for high-dimensional stochastic systems with pairwise interaction through controls**|Elise Devey et.al.|[2510.23537](http://arxiv.org/abs/2510.23537)|null|
 |**2025-10-27**|**Sequential Multi-Agent Dynamic Algorithm Configuration**|Chen Lu et.al.|[2510.23535](http://arxiv.org/abs/2510.23535)|null|
-|**2025-10-27**|**VOLD: Reasoning Transfer from LLMs to Vision-Language Models via On-Policy Distillation**|Walid Bousselham et.al.|[2510.23497](http://arxiv.org/abs/2510.23497)|null|
 |**2025-10-27**|**Learning to Reason Efficiently with Discounted Reinforcement Learning**|Alex Ayoub et.al.|[2510.23486](http://arxiv.org/abs/2510.23486)|null|
 |**2025-10-27**|**MergeMix: A Unified Augmentation Paradigm for Visual and Multi-Modal Understanding**|Xin Jin et.al.|[2510.23479](http://arxiv.org/abs/2510.23479)|null|
 |**2025-10-27**|**Video-Thinker: Sparking "Thinking with Videos" via Reinforcement Learning**|Shijian Wang et.al.|[2510.23473](http://arxiv.org/abs/2510.23473)|null|
 |**2025-10-27**|**Adaptive Multilevel Splitting: First Application to Rare-Event Derivative Pricing**|Riccardo Gozzo et.al.|[2510.23461](http://arxiv.org/abs/2510.23461)|null|
-|**2025-10-27**|**SGFusion: Stochastic Geographic Gradient Fusion in Federated Learning**|Khoa Nguyen et.al.|[2510.23455](http://arxiv.org/abs/2510.23455)|null|
 |**2025-10-27**|**Omni-Reward: Towards Generalist Omni-Modal Reward Modeling with Free-Form Preferences**|Zhuoran Jin et.al.|[2510.23451](http://arxiv.org/abs/2510.23451)|null|
 |**2025-10-27**|**An Information-Theoretic Analysis of Out-of-Distribution Generalization in Meta-Learning with Applications to Meta-RL**|Xingtu Liu et.al.|[2510.23448](http://arxiv.org/abs/2510.23448)|null|
 |**2025-10-27**|**Causal Deep Q Network**|Elouanes Khelifi et.al.|[2510.23424](http://arxiv.org/abs/2510.23424)|null|
