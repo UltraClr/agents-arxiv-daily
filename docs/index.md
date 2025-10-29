@@ -16,6 +16,26 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 
 | Publish Date | Title | Authors | PDF | Code |
 |:---------|:-----------------------|:---------|:------|:------|
+|**2025-10-28**|**Agent Data Protocol: Unifying Datasets for Diverse, Effective Fine-tuning of LLM Agents**|Yueqi Song et.al.|[2510.24702](http://arxiv.org/abs/2510.24702)|null|
+|**2025-10-28**|**AgentFold: Long-Horizon Web Agents with Proactive Context Management**|Rui Ye et.al.|[2510.24699](http://arxiv.org/abs/2510.24699)|null|
+|**2025-10-28**|**AgentFrontier: Expanding the Capability Frontier of LLM Agents with ZPD-Guided Data Synthesis**|Xuanzhong Chen et.al.|[2510.24695](http://arxiv.org/abs/2510.24695)|null|
+|**2025-10-28**|**Repurposing Synthetic Data for Fine-grained Search Agent Supervision**|Yida Zhao et.al.|[2510.24694](http://arxiv.org/abs/2510.24694)|null|
+|**2025-10-28**|**OrchDAG: Complex Tool Orchestration in Multi-Turn Interactions with Plan DAGs**|Yifu Lu et.al.|[2510.24663](http://arxiv.org/abs/2510.24663)|null|
+|**2025-10-28**|**FunReason-MT Technical Report: Overcoming the Complexity Barrier in Multi-Turn Function Calling**|Zengzhuang Xu et.al.|[2510.24645](http://arxiv.org/abs/2510.24645)|null|
+|**2025-10-28**|**ReplicationBench: Can AI Agents Replicate Astrophysics Research Papers?**|Christine Ye et.al.|[2510.24591](http://arxiv.org/abs/2510.24591)|null|
+|**2025-10-28**|**Affordance Representation and Recognition for Autonomous Agents**|Habtom Kahsay Gidey et.al.|[2510.24459](http://arxiv.org/abs/2510.24459)|null|
+|**2025-10-28**|**Law in Silico: Simulating Legal Society with LLM-Based Agents**|Yiding Wang et.al.|[2510.24442](http://arxiv.org/abs/2510.24442)|null|
+|**2025-10-28**|**Can LLMs Write Faithfully? An Agent-Based Evaluation of LLM-generated Islamic Content**|Abdullah Mushtaq et.al.|[2510.24438](http://arxiv.org/abs/2510.24438)|null|
+|**2025-10-28**|**Policy Cards: Machine-Readable Runtime Governance for Autonomous AI Agents**|Juraj Mavračić et.al.|[2510.24383](http://arxiv.org/abs/2510.24383)|null|
+|**2025-10-28**|**Automatically Benchmarking LLM Code Agents through Agent-Driven Annotation and Evaluation**|Lingyue Fu et.al.|[2510.24358](http://arxiv.org/abs/2510.24358)|null|
+|**2025-10-28**|**Cybersecurity AI Benchmark (CAIBench): A Meta-Benchmark for Evaluating Cybersecurity AI Agents**|María Sanz-Gómez et.al.|[2510.24317](http://arxiv.org/abs/2510.24317)|null|
+|**2025-10-28**|**Retrieval and Argumentation Enhanced Multi-Agent LLMs for Judgmental Forecasting**|Deniz Gorur et.al.|[2510.24303](http://arxiv.org/abs/2510.24303)|null|
+|**2025-10-28**|**MCP-Flow: Facilitating LLM Agents to Master Real-World, Diverse and Scaling MCP Tools**|Wenhao Wang et.al.|[2510.24284](http://arxiv.org/abs/2510.24284)|null|
+|**2025-10-28**|**Investigating Software Aging in LLM-Generated Software Systems**|César Santos et.al.|[2510.24188](http://arxiv.org/abs/2510.24188)|null|
+|**2025-10-28**|**BLM $_1$ : A Boundless Large Model for Cross-Space, Cross-Task, and Cross-Embodiment Learning**|Wentao Tan et.al.|[2510.24161](http://arxiv.org/abs/2510.24161)|null|
+|**2025-10-28**|**From Observability Data to Diagnosis: An Evolving Multi-agent System for Incident Management in Cloud Systems**|Yu Luo et.al.|[2510.24145](http://arxiv.org/abs/2510.24145)|null|
+|**2025-10-28**|**Reinforcement Learning for Long-Horizon Multi-Turn Search Agents**|Vivek Kalyan et.al.|[2510.24126](http://arxiv.org/abs/2510.24126)|null|
+|**2025-10-28**|**PFEA: An LLM-based High-Level Natural Language Planning and Feedback Embodied Agent for Human-Centered AI**|Wenbin Ding et.al.|[2510.24109](http://arxiv.org/abs/2510.24109)|null|
 |**2025-10-28**|**BrowseConf: Confidence-Guided Test-Time Scaling for Web Agents**|Litu Ou et.al.|[2510.23458](http://arxiv.org/abs/2510.23458)|null|
 |**2025-10-28**|**Look and Tell: A Dataset for Multimodal Grounding Across Egocentric and Exocentric Views**|Anna Deichler et.al.|[2510.22672](http://arxiv.org/abs/2510.22672)|null|
 |**2025-10-27**|**Are Agents Just Automata? On the Formal Equivalence Between Agentic AI and the Chomsky Hierarchy**|Roham Koohestani et.al.|[2510.23487](http://arxiv.org/abs/2510.23487)|null|
@@ -644,6 +664,26 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 
 | Publish Date | Title | Authors | PDF | Code |
 |:---------|:-----------------------|:---------|:------|:------|
+|**2025-10-28**|**Routing Matters in MoE: Scaling Diffusion Transformers with Explicit Routing Guidance**|Yujie Wei et.al.|[2510.24711](http://arxiv.org/abs/2510.24711)|null|
+|**2025-10-28**|**ComboBench: Can LLMs Manipulate Physical Devices to Play Virtual Reality Games?**|Shuqing Li et.al.|[2510.24706](http://arxiv.org/abs/2510.24706)|null|
+|**2025-10-28**|**Tongyi DeepResearch Technical Report**|Tongyi DeepResearch Team et.al.|[2510.24701](http://arxiv.org/abs/2510.24701)|null|
+|**2025-10-28**|**Greedy Sampling Is Provably Efficient for RLHF**|Di Wu et.al.|[2510.24700](http://arxiv.org/abs/2510.24700)|null|
+|**2025-10-28**|**WebLeaper: Empowering Efficiency and Efficacy in WebAgent via Enabling Info-Rich Seeking**|Zhengwei Tao et.al.|[2510.24697](http://arxiv.org/abs/2510.24697)|null|
+|**2025-10-28**|**AgentFrontier: Expanding the Capability Frontier of LLM Agents with ZPD-Guided Data Synthesis**|Xuanzhong Chen et.al.|[2510.24695](http://arxiv.org/abs/2510.24695)|null|
+|**2025-10-28**|**STAR-Bench: Probing Deep Spatio-Temporal Reasoning as Audio 4D Intelligence**|Zihan Liu et.al.|[2510.24693](http://arxiv.org/abs/2510.24693)|null|
+|**2025-10-28**|**Dissecting Role Cognition in Medical LLMs via Neuronal Ablation**|Xun Liang et.al.|[2510.24677](http://arxiv.org/abs/2510.24677)|null|
+|**2025-10-28**|**Evolving Diagnostic Agents in a Virtual Clinical Environment**|Pengcheng Qiu et.al.|[2510.24654](http://arxiv.org/abs/2510.24654)|null|
+|**2025-10-28**|**Optimizing Retrieval for RAG via Reinforced Contrastive Learning**|Jiawei Zhou et.al.|[2510.24652](http://arxiv.org/abs/2510.24652)|null|
+|**2025-10-28**|**Advancing site-specific disease and pest management in precision agriculture: From reasoning-driven foundation models to adaptive, feedback-based learning**|Nitin Rai et.al.|[2510.24650](http://arxiv.org/abs/2510.24650)|null|
+|**2025-10-28**|**FunReason-MT Technical Report: Overcoming the Complexity Barrier in Multi-Turn Function Calling**|Zengzhuang Xu et.al.|[2510.24645](http://arxiv.org/abs/2510.24645)|null|
+|**2025-10-28**|**OpenReward: Learning to Reward Long-form Agentic Tasks via Reinforcement Learning**|Ziyou Hu et.al.|[2510.24636](http://arxiv.org/abs/2510.24636)|null|
+|**2025-10-28**|**Relative Scaling Laws for LLMs**|William Held et.al.|[2510.24626](http://arxiv.org/abs/2510.24626)|null|
+|**2025-10-28**|**Zero-Shot Cross-Lingual Transfer using Prefix-Based Adaptation**|Snegha A et.al.|[2510.24619](http://arxiv.org/abs/2510.24619)|null|
+|**2025-10-28**|**Diffusion LLM with Native Variable Generation Lengths: Let [EOS] Lead the Way**|Yicun Yang et.al.|[2510.24605](http://arxiv.org/abs/2510.24605)|null|
+|**2025-10-28**|**ReForm: Reflective Autoformalization with Prospective Bounded Sequence Optimization**|Guoxin Chen et.al.|[2510.24592](http://arxiv.org/abs/2510.24592)|null|
+|**2025-10-28**|**ReplicationBench: Can AI Agents Replicate Astrophysics Research Papers?**|Christine Ye et.al.|[2510.24591](http://arxiv.org/abs/2510.24591)|null|
+|**2025-10-28**|**Generative AI for Healthcare: Fundamentals, Challenges, and Perspectives**|Gang Chen et.al.|[2510.24551](http://arxiv.org/abs/2510.24551)|null|
+|**2025-10-28**|**Open Korean Historical Corpus: A Millennia-Scale Diachronic Collection of Public Domain Texts**|Seyoung Song et.al.|[2510.24541](http://arxiv.org/abs/2510.24541)|null|
 |**2025-10-28**|**Multi-Agent Evolve: LLM Self-Improve through Co-evolution**|Yixing Chen et.al.|[2510.23595](http://arxiv.org/abs/2510.23595)|null|
 |**2025-10-28**|**PRISM-Bench: A Benchmark of Puzzle-Based Visual Tasks with CoT Error Detection**|Yusu Qian et.al.|[2510.23594](http://arxiv.org/abs/2510.23594)|null|
 |**2025-10-27**|**PixelRefer: A Unified Framework for Spatio-Temporal Object Referring with Arbitrary Granularity**|Yuqian Yuan et.al.|[2510.23603](http://arxiv.org/abs/2510.23603)|null|
@@ -829,6 +869,26 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 
 | Publish Date | Title | Authors | PDF | Code |
 |:---------|:-----------------------|:---------|:------|:------|
+|**2025-10-28**|**Cluster Dose Prediction in Carbon Ion Therapy: Using Transfer Learning from a Pretrained Dose Prediction U-Net**|Miriam Schwarze et.al.|[2510.24703](http://arxiv.org/abs/2510.24703)|null|
+|**2025-10-28**|**Greedy Sampling Is Provably Efficient for RLHF**|Di Wu et.al.|[2510.24700](http://arxiv.org/abs/2510.24700)|null|
+|**2025-10-28**|**How Flat is a Plateau? Evolution of Late-Time TDE Disks**|Yael Alush et.al.|[2510.24696](http://arxiv.org/abs/2510.24696)|null|
+|**2025-10-28**|**SPICE: Self-Play In Corpus Environments Improves Reasoning**|Bo Liu et.al.|[2510.24684](http://arxiv.org/abs/2510.24684)|null|
+|**2025-10-28**|**Fare: Failure Resilience in Learned Visual Navigation Control**|Zishuo Wang et.al.|[2510.24680](http://arxiv.org/abs/2510.24680)|null|
+|**2025-10-28**|**Learning to Drive Safely with Hybrid Options**|Bram De Cooman et.al.|[2510.24674](http://arxiv.org/abs/2510.24674)|null|
+|**2025-10-28**|**Prospects for a 95 GeV Higgs Boson at Future Higgs Factories with Transformer Networks**|Yabo Dong et.al.|[2510.24662](http://arxiv.org/abs/2510.24662)|null|
+|**2025-10-28**|**Evolving Diagnostic Agents in a Virtual Clinical Environment**|Pengcheng Qiu et.al.|[2510.24654](http://arxiv.org/abs/2510.24654)|null|
+|**2025-10-28**|**Advancing site-specific disease and pest management in precision agriculture: From reasoning-driven foundation models to adaptive, feedback-based learning**|Nitin Rai et.al.|[2510.24650](http://arxiv.org/abs/2510.24650)|null|
+|**2025-10-28**|**OpenReward: Learning to Reward Long-form Agentic Tasks via Reinforcement Learning**|Ziyou Hu et.al.|[2510.24636](http://arxiv.org/abs/2510.24636)|null|
+|**2025-10-28**|**Fast Bayesian Multilevel Quasi-Monte Carlo**|Aleksei G. Sorokin et.al.|[2510.24604](http://arxiv.org/abs/2510.24604)|null|
+|**2025-10-28**|**Low-lying baryon resonances from lattice QCD**|Colin Morningstar et.al.|[2510.24596](http://arxiv.org/abs/2510.24596)|null|
+|**2025-10-28**|**Towards Quadrupedal Jumping and Walking for Dynamic Locomotion using Reinforcement Learning**|Jørgen Anker Olsen et.al.|[2510.24584](http://arxiv.org/abs/2510.24584)|null|
+|**2025-10-28**|**Dual-Mind World Models: A General Framework for Learning in Dynamic Wireless Networks**|Lingyi Wang et.al.|[2510.24546](http://arxiv.org/abs/2510.24546)|null|
+|**2025-10-28**|**Sample-efficient and Scalable Exploration in Continuous-Time RL**|Klemens Iten et.al.|[2510.24482](http://arxiv.org/abs/2510.24482)|null|
+|**2025-10-28**|**Adaptive Surrogate Gradients for Sequential Reinforcement Learning in Spiking Neural Networks**|Korneel Van den Berghe et.al.|[2510.24461](http://arxiv.org/abs/2510.24461)|null|
+|**2025-10-28**|**Pair Approximation Meets Reality: Diffusion of Innovation in Organizational Networks within the biased-independence q-Voter Model**|Angelika Abramiuk-Szurlej et.al.|[2510.24447](http://arxiv.org/abs/2510.24447)|null|
+|**2025-10-28**|**SPARTA: Evaluating Reasoning Segmentation Robustness through Black-Box Adversarial Paraphrasing in Text Autoencoder Latent Space**|Viktoriia Zinkovich et.al.|[2510.24446](http://arxiv.org/abs/2510.24446)|null|
+|**2025-10-28**|**Fill in the Blanks: Accelerating Q-Learning with a Handful of Demonstrations in Sparse Reward Settings**|Seyed Mahdi Basiri Azad et.al.|[2510.24432](http://arxiv.org/abs/2510.24432)|null|
+|**2025-10-28**|**MiniOneRec: An Open-Source Framework for Scaling Generative Recommendation**|Xiaoyu Kong et.al.|[2510.24431](http://arxiv.org/abs/2510.24431)|null|
 |**2025-10-28**|**Multi-Agent Evolve: LLM Self-Improve through Co-evolution**|Yixing Chen et.al.|[2510.23595](http://arxiv.org/abs/2510.23595)|null|
 |**2025-10-28**|**VOLD: Reasoning Transfer from LLMs to Vision-Language Models via On-Policy Distillation**|Walid Bousselham et.al.|[2510.23497](http://arxiv.org/abs/2510.23497)|null|
 |**2025-10-28**|**SGFusion: Stochastic Geographic Gradient Fusion in Federated Learning**|Khoa Nguyen et.al.|[2510.23455](http://arxiv.org/abs/2510.23455)|null|
