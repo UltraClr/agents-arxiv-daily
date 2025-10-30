@@ -3,7 +3,7 @@ layout: default
 ---
 
 # Agent Research Papers
-### Automatically Updated on 2025.10.29
+### Automatically Updated on 2025.10.30
 Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Autonomous Agent`,`LLM Agent`
 
 > If you have any other keywords, please feel free to let us know :) 
@@ -664,6 +664,7 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 
 | Publish Date | Title | Authors | PDF | Code |
 |:---------|:-----------------------|:---------|:------|:------|
+|**2025-10-29**|**OpenReward: Learning to Reward Long-form Agentic Tasks via Reinforcement Learning**|Ziyou Hu et.al.|[2510.24636](http://arxiv.org/abs/2510.24636)|null|
 |**2025-10-28**|**Routing Matters in MoE: Scaling Diffusion Transformers with Explicit Routing Guidance**|Yujie Wei et.al.|[2510.24711](http://arxiv.org/abs/2510.24711)|null|
 |**2025-10-28**|**ComboBench: Can LLMs Manipulate Physical Devices to Play Virtual Reality Games?**|Shuqing Li et.al.|[2510.24706](http://arxiv.org/abs/2510.24706)|null|
 |**2025-10-28**|**Tongyi DeepResearch Technical Report**|Tongyi DeepResearch Team et.al.|[2510.24701](http://arxiv.org/abs/2510.24701)|null|
@@ -676,7 +677,6 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 |**2025-10-28**|**Optimizing Retrieval for RAG via Reinforced Contrastive Learning**|Jiawei Zhou et.al.|[2510.24652](http://arxiv.org/abs/2510.24652)|null|
 |**2025-10-28**|**Advancing site-specific disease and pest management in precision agriculture: From reasoning-driven foundation models to adaptive, feedback-based learning**|Nitin Rai et.al.|[2510.24650](http://arxiv.org/abs/2510.24650)|null|
 |**2025-10-28**|**FunReason-MT Technical Report: Overcoming the Complexity Barrier in Multi-Turn Function Calling**|Zengzhuang Xu et.al.|[2510.24645](http://arxiv.org/abs/2510.24645)|null|
-|**2025-10-28**|**OpenReward: Learning to Reward Long-form Agentic Tasks via Reinforcement Learning**|Ziyou Hu et.al.|[2510.24636](http://arxiv.org/abs/2510.24636)|null|
 |**2025-10-28**|**Relative Scaling Laws for LLMs**|William Held et.al.|[2510.24626](http://arxiv.org/abs/2510.24626)|null|
 |**2025-10-28**|**Zero-Shot Cross-Lingual Transfer using Prefix-Based Adaptation**|Snegha A et.al.|[2510.24619](http://arxiv.org/abs/2510.24619)|null|
 |**2025-10-28**|**Diffusion LLM with Native Variable Generation Lengths: Let [EOS] Lead the Way**|Yicun Yang et.al.|[2510.24605](http://arxiv.org/abs/2510.24605)|null|
@@ -869,16 +869,16 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 
 | Publish Date | Title | Authors | PDF | Code |
 |:---------|:-----------------------|:---------|:------|:------|
+|**2025-10-29**|**Prospects for a 95 GeV Higgs Boson at Future Higgs Factories with Transformer Networks**|Yabo Dong et.al.|[2510.24662](http://arxiv.org/abs/2510.24662)|null|
+|**2025-10-29**|**OpenReward: Learning to Reward Long-form Agentic Tasks via Reinforcement Learning**|Ziyou Hu et.al.|[2510.24636](http://arxiv.org/abs/2510.24636)|null|
 |**2025-10-28**|**Cluster Dose Prediction in Carbon Ion Therapy: Using Transfer Learning from a Pretrained Dose Prediction U-Net**|Miriam Schwarze et.al.|[2510.24703](http://arxiv.org/abs/2510.24703)|null|
 |**2025-10-28**|**Greedy Sampling Is Provably Efficient for RLHF**|Di Wu et.al.|[2510.24700](http://arxiv.org/abs/2510.24700)|null|
 |**2025-10-28**|**How Flat is a Plateau? Evolution of Late-Time TDE Disks**|Yael Alush et.al.|[2510.24696](http://arxiv.org/abs/2510.24696)|null|
 |**2025-10-28**|**SPICE: Self-Play In Corpus Environments Improves Reasoning**|Bo Liu et.al.|[2510.24684](http://arxiv.org/abs/2510.24684)|null|
 |**2025-10-28**|**Fare: Failure Resilience in Learned Visual Navigation Control**|Zishuo Wang et.al.|[2510.24680](http://arxiv.org/abs/2510.24680)|null|
 |**2025-10-28**|**Learning to Drive Safely with Hybrid Options**|Bram De Cooman et.al.|[2510.24674](http://arxiv.org/abs/2510.24674)|null|
-|**2025-10-28**|**Prospects for a 95 GeV Higgs Boson at Future Higgs Factories with Transformer Networks**|Yabo Dong et.al.|[2510.24662](http://arxiv.org/abs/2510.24662)|null|
 |**2025-10-28**|**Evolving Diagnostic Agents in a Virtual Clinical Environment**|Pengcheng Qiu et.al.|[2510.24654](http://arxiv.org/abs/2510.24654)|null|
 |**2025-10-28**|**Advancing site-specific disease and pest management in precision agriculture: From reasoning-driven foundation models to adaptive, feedback-based learning**|Nitin Rai et.al.|[2510.24650](http://arxiv.org/abs/2510.24650)|null|
-|**2025-10-28**|**OpenReward: Learning to Reward Long-form Agentic Tasks via Reinforcement Learning**|Ziyou Hu et.al.|[2510.24636](http://arxiv.org/abs/2510.24636)|null|
 |**2025-10-28**|**Fast Bayesian Multilevel Quasi-Monte Carlo**|Aleksei G. Sorokin et.al.|[2510.24604](http://arxiv.org/abs/2510.24604)|null|
 |**2025-10-28**|**Low-lying baryon resonances from lattice QCD**|Colin Morningstar et.al.|[2510.24596](http://arxiv.org/abs/2510.24596)|null|
 |**2025-10-28**|**Towards Quadrupedal Jumping and Walking for Dynamic Locomotion using Reinforcement Learning**|Jørgen Anker Olsen et.al.|[2510.24584](http://arxiv.org/abs/2510.24584)|null|

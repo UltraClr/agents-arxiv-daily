@@ -1,5 +1,5 @@
 # Agent Research Papers
-> Updated on 2025.10.29
+> Updated on 2025.10.30
 Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Autonomous Agent`,`LLM Agent`
 
 > If you have any other keywords, please feel free to let us know :) 
@@ -663,7 +663,7 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 - 2025-10-13, **$How^{2}$ : How to learn from procedural How-to questions**, Gautier Dagan et.al., Paper: [http://arxiv.org/abs/2510.11144](http://arxiv.org/abs/2510.11144)
 - 2025-09-27, **"Shall We Dig Deeper?": Designing and Evaluating Strategies for LLM Agents to Advance Knowledge Co-Construction in Asynchronous Online Discussions**, Yuanhao Zhang et.al., Paper: [http://arxiv.org/abs/2509.23327](http://arxiv.org/abs/2509.23327)
 
-<p align=right>(<a href=#updated-on-20251029>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20251030>back to top</a>)</p>
 
 ## Large Language Models
 
@@ -746,7 +746,7 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 - 2025-10-24, **ParaRNN: Unlocking Parallel Training of Nonlinear RNNs for Large Language Models**, Federico Danieli et.al., Paper: [http://arxiv.org/abs/2510.21450](http://arxiv.org/abs/2510.21450)
 - 2025-10-28, **PRISM-Bench: A Benchmark of Puzzle-Based Visual Tasks with CoT Error Detection**, Yusu Qian et.al., Paper: [http://arxiv.org/abs/2510.23594](http://arxiv.org/abs/2510.23594)
 - 2025-10-28, **Optimizing Retrieval for RAG via Reinforced Contrastive Learning**, Jiawei Zhou et.al., Paper: [http://arxiv.org/abs/2510.24652](http://arxiv.org/abs/2510.24652)
-- 2025-10-28, **OpenReward: Learning to Reward Long-form Agentic Tasks via Reinforcement Learning**, Ziyou Hu et.al., Paper: [http://arxiv.org/abs/2510.24636](http://arxiv.org/abs/2510.24636)
+- 2025-10-29, **OpenReward: Learning to Reward Long-form Agentic Tasks via Reinforcement Learning**, Ziyou Hu et.al., Paper: [http://arxiv.org/abs/2510.24636](http://arxiv.org/abs/2510.24636)
 - 2025-10-28, **Open Korean Historical Corpus: A Millennia-Scale Diachronic Collection of Public Domain Texts**, Seyoung Song et.al., Paper: [http://arxiv.org/abs/2510.24541](http://arxiv.org/abs/2510.24541)
 - 2025-10-21, **One Size Fits All? A Modular Adaptive Sanitization Kit (MASK) for Customizable Privacy-Preserving Phone Scam Detection**, Kangzhong Wang et.al., Paper: [http://arxiv.org/abs/2510.18493](http://arxiv.org/abs/2510.18493)
 - 2025-10-23, **On the Detectability of LLM-Generated Text: What Exactly Is LLM-Generated Text?**, Mingmeng Geng et.al., Paper: [http://arxiv.org/abs/2510.20810](http://arxiv.org/abs/2510.20810)
@@ -868,7 +868,7 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 - 2025-10-24, **A Multimodal Benchmark for Framing of Oil & Gas Advertising and Potential Greenwashing Detection**, Gaku Morio et.al., Paper: [http://arxiv.org/abs/2510.21679](http://arxiv.org/abs/2510.21679)
 - 2025-10-24, **A Data-Centric Approach to Multilingual E-Commerce Product Search: Case Study on Query-Category and Query-Item Relevance**, Yabo Yin et.al., Paper: [http://arxiv.org/abs/2510.21671](http://arxiv.org/abs/2510.21671)
 
-<p align=right>(<a href=#updated-on-20251029>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20251030>back to top</a>)</p>
 
 ## Reinforcement Learning
 
@@ -940,7 +940,7 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 - 2025-10-22, **Quantum Monte Carlo study of low-dimensional Fermi fluids of dipolar atoms**, Clio Johnson et.al., Paper: [http://arxiv.org/abs/2510.19533](http://arxiv.org/abs/2510.19533)
 - 2025-10-22, **Quantum Machine Learning methods for Fourier-based distribution estimation with application in option pricing**, Fernando Alonso et.al., Paper: [http://arxiv.org/abs/2510.19494](http://arxiv.org/abs/2510.19494)
 - 2025-10-20, **Provably Optimal Reinforcement Learning under Safety Filtering**, Donggeon David Oh et.al., Paper: [http://arxiv.org/abs/2510.18082](http://arxiv.org/abs/2510.18082)
-- 2025-10-28, **Prospects for a 95 GeV Higgs Boson at Future Higgs Factories with Transformer Networks**, Yabo Dong et.al., Paper: [http://arxiv.org/abs/2510.24662](http://arxiv.org/abs/2510.24662)
+- 2025-10-29, **Prospects for a 95 GeV Higgs Boson at Future Higgs Factories with Transformer Networks**, Yabo Dong et.al., Paper: [http://arxiv.org/abs/2510.24662](http://arxiv.org/abs/2510.24662)
 - 2025-10-21, **Proactive Reasoning-with-Retrieval Framework for Medical Multimodal Large Language Models**, Lehan Wang et.al., Paper: [http://arxiv.org/abs/2510.18303](http://arxiv.org/abs/2510.18303)
 - 2025-10-21, **Preference-based Reinforcement Learning beyond Pairwise Comparisons: Benefits of Multiple Options**, Joongkyu Lee et.al., Paper: [http://arxiv.org/abs/2510.18713](http://arxiv.org/abs/2510.18713)
 - 2025-10-24, **Predicted observational effects of rapid rotation for Be stars**, Rina G. Rast et.al., Paper: [http://arxiv.org/abs/2510.21640](http://arxiv.org/abs/2510.21640)
@@ -955,7 +955,7 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 - 2025-10-20, **Oxidation State Dynamics and Emerging Patterns in Magnetite**, Emre Gürsoy et.al., Paper: [http://arxiv.org/abs/2510.18061](http://arxiv.org/abs/2510.18061)
 - 2025-10-22, **Optimizing the Unknown: Black Box Bayesian Optimization with Energy-Based Model and Reinforcement Learning**, Ruiyao Miao et.al., Paper: [http://arxiv.org/abs/2510.19530](http://arxiv.org/abs/2510.19530)
 - 2025-10-20, **Optimizing Energy Management of Smart Grid using Reinforcement Learning aided by Surrogate models built using Physics-informed Neural Networks**, Julen Cestero et.al., Paper: [http://arxiv.org/abs/2510.17380](http://arxiv.org/abs/2510.17380)
-- 2025-10-28, **OpenReward: Learning to Reward Long-form Agentic Tasks via Reinforcement Learning**, Ziyou Hu et.al., Paper: [http://arxiv.org/abs/2510.24636](http://arxiv.org/abs/2510.24636)
+- 2025-10-29, **OpenReward: Learning to Reward Long-form Agentic Tasks via Reinforcement Learning**, Ziyou Hu et.al., Paper: [http://arxiv.org/abs/2510.24636](http://arxiv.org/abs/2510.24636)
 - 2025-10-23, **Open-o3 Video: Grounded Video Reasoning with Explicit Spatio-Temporal Evidence**, Jiahao Meng et.al., Paper: [http://arxiv.org/abs/2510.20579](http://arxiv.org/abs/2510.20579)
 - 2025-10-21, **Online SFT for LLM Reasoning: Surprising Effectiveness of Self-Tuning without Rewards**, Mengqi Li et.al., Paper: [http://arxiv.org/abs/2510.18814](http://arxiv.org/abs/2510.18814)
 - 2025-10-20, **OncoReason: Structuring Clinical Reasoning in LLMs for Robust and Interpretable Survival Prediction**, Raghu Vamshi Hemadri et.al., Paper: [http://arxiv.org/abs/2510.17532](http://arxiv.org/abs/2510.17532)
@@ -1083,7 +1083,7 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 - 2025-10-20, **A Principle of Targeted Intervention for Multi-Agent Reinforcement Learning**, Anjie Liu et.al., Paper: [http://arxiv.org/abs/2510.17697](http://arxiv.org/abs/2510.17697)
 - 2025-10-23, **A Microphysical Probe of Neutron Star Interiors: Constraining the Equation of State with Glitch Dynamics**, Zhonghao Tu et.al., Paper: [http://arxiv.org/abs/2510.20791](http://arxiv.org/abs/2510.20791)
 
-<p align=right>(<a href=#updated-on-20251029>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20251030>back to top</a>)</p>
 
 Notes: 
 
