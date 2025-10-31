@@ -21,6 +21,26 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 
 |Publish Date|Title|Authors|PDF|Code|
 |---|---|---|---|---|
+|**2025-10-30**|**Gistify! Codebase-Level Understanding via Runtime Execution**|Hyunji Lee et.al.|[2510.26790](http://arxiv.org/abs/2510.26790)|null|
+|**2025-10-30**|**Remote Labor Index: Measuring AI Automation of Remote Work**|Mantas Mazeika et.al.|[2510.26787](http://arxiv.org/abs/2510.26787)|null|
+|**2025-10-30**|**Clone Deterministic 3D Worlds with Geometrically-Regularized World Models**|Zaishuo Xia et.al.|[2510.26782](http://arxiv.org/abs/2510.26782)|null|
+|**2025-10-30**|**The Oversight Game: Learning to Cooperatively Balance an AI Agent's Safety and Autonomy**|William Overman et.al.|[2510.26752](http://arxiv.org/abs/2510.26752)|null|
+|**2025-10-30**|**Using Copilot Agent Mode to Automate Library Migration: A Quantitative Assessment**|Aylton Almeida et.al.|[2510.26699](http://arxiv.org/abs/2510.26699)|null|
+|**2025-10-30**|**SlideAgent: Hierarchical Agentic Framework for Multi-Page Visual Document Understanding**|Yiqiao Jin et.al.|[2510.26615](http://arxiv.org/abs/2510.26615)|null|
+|**2025-10-30**|**A Multi-agent Large Language Model Framework to Automatically Assess Performance of a Clinical AI Triage Tool**|Adam E. Flanders et.al.|[2510.26498](http://arxiv.org/abs/2510.26498)|null|
+|**2025-10-30**|**Simulating and Experimenting with Social Media Mobilization Using LLM Agents**|Sadegh Shirani et.al.|[2510.26494](http://arxiv.org/abs/2510.26494)|null|
+|**2025-10-30**|**Nexus: Execution-Grounded Multi-Agent Test Oracle Synthesis**|Dong Huang et.al.|[2510.26423](http://arxiv.org/abs/2510.26423)|null|
+|**2025-10-30**|**A Pragmatic View of AI Personhood**|Joel Z. Leibo et.al.|[2510.26396](http://arxiv.org/abs/2510.26396)|null|
+|**2025-10-30**|**The Geometry of Dialogue: Graphing Language Models to Reveal Synergistic Teams for Multi-Agent Collaboration**|Kotaro Furuya et.al.|[2510.26352](http://arxiv.org/abs/2510.26352)|null|
+|**2025-10-30**|**Agent Skills Enable a New Class of Realistic and Trivially Simple Prompt Injections**|David Schmotz et.al.|[2510.26328](http://arxiv.org/abs/2510.26328)|null|
+|**2025-10-30**|**SCRIBE: Structured Chain Reasoning for Interactive Behaviour Explanations using Tool Calling**|Fares Fawzi et.al.|[2510.26322](http://arxiv.org/abs/2510.26322)|null|
+|**2025-10-30**|**Graph-Enhanced Policy Optimization in LLM Agent Training**|Jiazhen Yuan et.al.|[2510.26270](http://arxiv.org/abs/2510.26270)|null|
+|**2025-10-30**|**Retrieval Augmented Generation-Enhanced Distributed LLM Agents for Generalizable Traffic Signal Control with Emergency Vehicles**|Xinhang Li et.al.|[2510.26242](http://arxiv.org/abs/2510.26242)|null|
+|**2025-10-30**|**Who Grants the Agent Power? Defending Against Instruction Injection via Task-Centric Access Control**|Yifeng Cai et.al.|[2510.26212](http://arxiv.org/abs/2510.26212)|null|
+|**2025-10-30**|**Linking Heterogeneous Data with Coordinated Agent Flows for Social Media Analysis**|Shifu Chen et.al.|[2510.26172](http://arxiv.org/abs/2510.26172)|null|
+|**2025-10-30**|**One Model to Critique Them All: Rewarding Agentic Tool-Use via Efficient Reasoning**|Renhao Li et.al.|[2510.26167](http://arxiv.org/abs/2510.26167)|null|
+|**2025-10-30**|**The FM Agent**|Annan Li et.al.|[2510.26144](http://arxiv.org/abs/2510.26144)|null|
+|**2025-10-30**|**SIRAJ: Diverse and Efficient Red-Teaming for LLM Agents via Distilled Structured Reasoning**|Kaiwen Zhou et.al.|[2510.26037](http://arxiv.org/abs/2510.26037)|null|
 |**2025-10-30**|**Model-Document Protocol for AI Search**|Hongjin Qian et.al.|[2510.25160](http://arxiv.org/abs/2510.25160)|null|
 |**2025-10-29**|**Process-Level Trajectory Evaluation for Environment Configuration in Software Engineering Agents**|Jiayi Kuang et.al.|[2510.25694](http://arxiv.org/abs/2510.25694)|null|
 |**2025-10-29**|**Communication and Verification in LLM Agents towards Collaboration under Information Asymmetry**|Run Peng et.al.|[2510.25595](http://arxiv.org/abs/2510.25595)|null|
@@ -688,6 +708,26 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 
 |Publish Date|Title|Authors|PDF|Code|
 |---|---|---|---|---|
+|**2025-10-30**|**Masked Diffusion Captioning for Visual Feature Learning**|Chao Feng et.al.|[2510.26799](http://arxiv.org/abs/2510.26799)|null|
+|**2025-10-30**|**Defeating the Training-Inference Mismatch via FP16**|Penghui Qi et.al.|[2510.26788](http://arxiv.org/abs/2510.26788)|null|
+|**2025-10-30**|**ChartAB: A Benchmark for Chart Grounding & Dense Alignment**|Aniruddh Bansal et.al.|[2510.26781](http://arxiv.org/abs/2510.26781)|null|
+|**2025-10-30**|**SteerVLM: Robust Model Control through Lightweight Activation Steering for Vision Language Models**|Anushka Sivakumar et.al.|[2510.26769](http://arxiv.org/abs/2510.26769)|null|
+|**2025-10-30**|**AMO-Bench: Large Language Models Still Struggle in High School Math Competitions**|Shengnan An et.al.|[2510.26768](http://arxiv.org/abs/2510.26768)|null|
+|**2025-10-30**|**ProfOlaf: Semi-Automated Tool for Systematic Literature Reviews**|Martim Afonso et.al.|[2510.26750](http://arxiv.org/abs/2510.26750)|null|
+|**2025-10-30**|**ExpertFlow: Adaptive Expert Scheduling and Memory Coordination for Efficient MoE Inference**|Zixu Shen et.al.|[2510.26730](http://arxiv.org/abs/2510.26730)|null|
+|**2025-10-30**|**Unveiling Intrinsic Text Bias in Multimodal Large Language Models through Attention Key-Space Analysis**|Xinhan Zheng et.al.|[2510.26721](http://arxiv.org/abs/2510.26721)|null|
+|**2025-10-30**|**Value Drifts: Tracing Value Alignment During LLM Post-Training**|Mehar Bhatia et.al.|[2510.26707](http://arxiv.org/abs/2510.26707)|null|
+|**2025-10-30**|**Delegated Authorization for Agents Constrained to Semantic Task-to-Scope Matching**|Majed El Helou et.al.|[2510.26702](http://arxiv.org/abs/2510.26702)|null|
+|**2025-10-30**|**Using Copilot Agent Mode to Automate Library Migration: A Quantitative Assessment**|Aylton Almeida et.al.|[2510.26699](http://arxiv.org/abs/2510.26699)|null|
+|**2025-10-30**|**The End of Manual Decoding: Towards Truly End-to-End Language Models**|Zhichao Wang et.al.|[2510.26697](http://arxiv.org/abs/2510.26697)|null|
+|**2025-10-30**|**Kimi Linear: An Expressive, Efficient Attention Architecture**|Kimi Team et.al.|[2510.26692](http://arxiv.org/abs/2510.26692)|null|
+|**2025-10-30**|**LoRAQuant: Mixed-Precision Quantization of LoRA to Ultra-Low Bits**|Amir Reza Mirzaei et.al.|[2510.26690](http://arxiv.org/abs/2510.26690)|null|
+|**2025-10-30**|**Evontree: Ontology Rule-Guided Self-Evolution of Large Language Models**|Mingchen Tu et.al.|[2510.26683](http://arxiv.org/abs/2510.26683)|null|
+|**2025-10-30**|**The Era of Agentic Organization: Learning to Organize with Language Models**|Zewen Chi et.al.|[2510.26658](http://arxiv.org/abs/2510.26658)|null|
+|**2025-10-30**|**Accelerating mathematical research with language models: A case study of an interaction with GPT-5-Pro on a convex analysis problem**|Adil Salim et.al.|[2510.26647](http://arxiv.org/abs/2510.26647)|null|
+|**2025-10-30**|**All You Need for Object Detection: From Pixels, Points, and Prompts to Next-Gen Fusion and Multimodal LLMs/VLMs in Autonomous Vehicles**|Sayed Pedram Haeri Boroujeni et.al.|[2510.26641](http://arxiv.org/abs/2510.26641)|null|
+|**2025-10-30**|**Stitch: Step-by-step LLM Guided Tutoring for Scratch**|Yuan Si et.al.|[2510.26634](http://arxiv.org/abs/2510.26634)|null|
+|**2025-10-30**|**Low-Altitude UAV-Carried Movable Antenna for Joint Wireless Power Transfer and Covert Communications**|Chuang Zhang et.al.|[2510.26628](http://arxiv.org/abs/2510.26628)|null|
 |**2025-10-30**|**PairUni: Pairwise Training for Unified Multimodal Language Models**|Jiani Zheng et.al.|[2510.25682](http://arxiv.org/abs/2510.25682)|null|
 |**2025-10-30**|**Evaluating the Role of Verifiers in Test-Time Scaling for Legal Reasoning Tasks**|Davide Romano et.al.|[2510.25623](http://arxiv.org/abs/2510.25623)|null|
 |**2025-10-29**|**Gaperon: A Peppered English-French Generative Language Model Suite**|Nathan Godey et.al.|[2510.25771](http://arxiv.org/abs/2510.25771)|null|
@@ -915,6 +955,26 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 
 |Publish Date|Title|Authors|PDF|Code|
 |---|---|---|---|---|
+|**2025-10-30**|**Defeating the Training-Inference Mismatch via FP16**|Penghui Qi et.al.|[2510.26788](http://arxiv.org/abs/2510.26788)|null|
+|**2025-10-30**|**Automated event generation for S-wave quarkonium and leptonium production in NRQCD and NRQED**|Alice Colpani Serri et.al.|[2510.26773](http://arxiv.org/abs/2510.26773)|null|
+|**2025-10-30**|**The Oversight Game: Learning to Cooperatively Balance an AI Agent's Safety and Autonomy**|William Overman et.al.|[2510.26752](http://arxiv.org/abs/2510.26752)|null|
+|**2025-10-30**|**Characterization of the H2M Monolithic CMOS Sensor**|Rafael Ballabriga et.al.|[2510.26741](http://arxiv.org/abs/2510.26741)|null|
+|**2025-10-30**|**A General Incentives-Based Framework for Fairness in Multi-agent Resource Allocation**|Ashwin Kumar et.al.|[2510.26740](http://arxiv.org/abs/2510.26740)|null|
+|**2025-10-30**|**Wavefront Curvature and Transverse Atomic Motion in Time-Resolved Atom Interferometry: Impact and Mitigation**|Noam Mouelle et.al.|[2510.26739](http://arxiv.org/abs/2510.26739)|null|
+|**2025-10-30**|**Emergence of charge- $4e$ superconductivity from 2D nematic superconductors**|Xuan Zou et.al.|[2510.26720](http://arxiv.org/abs/2510.26720)|null|
+|**2025-10-30**|**Stabilizing Rayleigh-Benard convection with reinforcement learning trained on a reduced-order model**|Qiwei Chen et.al.|[2510.26705](http://arxiv.org/abs/2510.26705)|null|
+|**2025-10-30**|**Kimi Linear: An Expressive, Efficient Attention Architecture**|Kimi Team et.al.|[2510.26692](http://arxiv.org/abs/2510.26692)|null|
+|**2025-10-30**|**Flinch: A Differentiable Framework for Field-Level Inference of Cosmological parameters from curved sky data**|Andrea Crespi et.al.|[2510.26691](http://arxiv.org/abs/2510.26691)|null|
+|**2025-10-30**|**Generative sampling with physics-informed kernels**|Friederike Ihssen et.al.|[2510.26678](http://arxiv.org/abs/2510.26678)|null|
+|**2025-10-30**|**Action-Driven Processes for Continuous-Time Control**|Ruimin He et.al.|[2510.26672](http://arxiv.org/abs/2510.26672)|null|
+|**2025-10-30**|**Hybrid Consistency Policy: Decoupling Multi-Modal Diversity and Real-Time Efficiency in Robotic Manipulation**|Qianyou Zhao et.al.|[2510.26670](http://arxiv.org/abs/2510.26670)|null|
+|**2025-10-30**|**The Era of Agentic Organization: Learning to Organize with Language Models**|Zewen Chi et.al.|[2510.26658](http://arxiv.org/abs/2510.26658)|null|
+|**2025-10-30**|**Hybrid DQN-TD3 Reinforcement Learning for Autonomous Navigation in Dynamic Environments**|Xiaoyi He et.al.|[2510.26646](http://arxiv.org/abs/2510.26646)|null|
+|**2025-10-30**|**Low-Altitude UAV-Carried Movable Antenna for Joint Wireless Power Transfer and Covert Communications**|Chuang Zhang et.al.|[2510.26628](http://arxiv.org/abs/2510.26628)|null|
+|**2025-10-30**|**Tests of exogeneity in duration models with censored data**|Gilles Crommen et.al.|[2510.26613](http://arxiv.org/abs/2510.26613)|null|
+|**2025-10-30**|**A DRL-Empowered Multi-Level Jamming Approach for Secure Semantic Communication**|Weixuan Chen et.al.|[2510.26610](http://arxiv.org/abs/2510.26610)|null|
+|**2025-10-30**|**Emu3.5: Native Multimodal Models are World Learners**|Yufeng Cui et.al.|[2510.26583](http://arxiv.org/abs/2510.26583)|null|
+|**2025-10-30**|**Two-Timescale Optimization Framework for IAB-Enabled Heterogeneous UAV Networks**|Jikang Deng et.al.|[2510.26578](http://arxiv.org/abs/2510.26578)|null|
 |**2025-10-30**|**PairUni: Pairwise Training for Unified Multimodal Language Models**|Jiani Zheng et.al.|[2510.25682](http://arxiv.org/abs/2510.25682)|null|
 |**2025-10-30**|**Evaluating the Role of Verifiers in Test-Time Scaling for Legal Reasoning Tasks**|Davide Romano et.al.|[2510.25623](http://arxiv.org/abs/2510.25623)|null|
 |**2025-10-29**|**MetaLore: Learning to Orchestrate Communication and Computation for Metaverse Synchronization**|Elif Ebru Ohri et.al.|[2510.25705](http://arxiv.org/abs/2510.25705)|null|
