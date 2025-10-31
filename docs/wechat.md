@@ -1,5 +1,5 @@
 # Agent Research Papers
-> Updated on 2025.10.30
+> Updated on 2025.10.31
 Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Autonomous Agent`,`LLM Agent`
 
 > If you have any other keywords, please feel free to let us know :) 
@@ -271,7 +271,7 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 - 2025-10-14, **Multi-Agent Debate for LLM Judges with Adaptive Stability Detection**, Tianyu Hu et.al., Paper: [http://arxiv.org/abs/2510.12697](http://arxiv.org/abs/2510.12697)
 - 2025-09-09, **Multi Robot Coordination in Highly Dynamic Environments: Tackling Asymmetric Obstacles and Limited Communication**, Vincenzo Suriani et.al., Paper: [http://arxiv.org/abs/2509.08859](http://arxiv.org/abs/2509.08859)
 - 2025-10-19, **More with Less: An Empirical Study of Turn-Control Strategies for Efficient Coding Agents**, Pengfei Gao et.al., Paper: [http://arxiv.org/abs/2510.16786](http://arxiv.org/abs/2510.16786)
-- 2025-10-29, **Model-Document Protocol for AI Search**, Hongjin Qian et.al., Paper: [http://arxiv.org/abs/2510.25160](http://arxiv.org/abs/2510.25160)
+- 2025-10-30, **Model-Document Protocol for AI Search**, Hongjin Qian et.al., Paper: [http://arxiv.org/abs/2510.25160](http://arxiv.org/abs/2510.25160)
 - 2025-10-27, **Model Proficiency in Centralized Multi-Agent Systems: A Performance Study**, Anna Guerra et.al., Paper: [http://arxiv.org/abs/2510.23447](http://arxiv.org/abs/2510.23447)
 - 2025-10-24, **Mixture-of-Minds: Multi-Agent Reinforcement Learning for Table Understanding**, Yuhang Zhou et.al., Paper: [http://arxiv.org/abs/2510.20176](http://arxiv.org/abs/2510.20176)
 - 2025-09-28, **Mix-Ecom: Towards Mixed-Type E-Commerce Dialogues with Complex Domain Rules**, Chenyu Zhou et.al., Paper: [http://arxiv.org/abs/2509.23836](http://arxiv.org/abs/2509.23836)
@@ -680,7 +680,7 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 - 2025-10-13, **$How^{2}$ : How to learn from procedural How-to questions**, Gautier Dagan et.al., Paper: [http://arxiv.org/abs/2510.11144](http://arxiv.org/abs/2510.11144)
 - 2025-09-27, **"Shall We Dig Deeper?": Designing and Evaluating Strategies for LLM Agents to Advance Knowledge Co-Construction in Asynchronous Online Discussions**, Yuanhao Zhang et.al., Paper: [http://arxiv.org/abs/2509.23327](http://arxiv.org/abs/2509.23327)
 
-<p align=right>(<a href=#updated-on-20251030>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20251031>back to top</a>)</p>
 
 ## Large Language Models
 
@@ -766,7 +766,7 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 - 2025-10-27, **PixelRefer: A Unified Framework for Spatio-Temporal Object Referring with Arbitrary Granularity**, Yuqian Yuan et.al., Paper: [http://arxiv.org/abs/2510.23603](http://arxiv.org/abs/2510.23603)
 - 2025-10-21, **ParaStyleTTS: Toward Efficient and Robust Paralinguistic Style Control for Expressive Text-to-Speech Generation**, Haowei Lou et.al., Paper: [http://arxiv.org/abs/2510.18308](http://arxiv.org/abs/2510.18308)
 - 2025-10-24, **ParaRNN: Unlocking Parallel Training of Nonlinear RNNs for Large Language Models**, Federico Danieli et.al., Paper: [http://arxiv.org/abs/2510.21450](http://arxiv.org/abs/2510.21450)
-- 2025-10-29, **PairUni: Pairwise Training for Unified Multimodal Language Models**, Jiani Zheng et.al., Paper: [http://arxiv.org/abs/2510.25682](http://arxiv.org/abs/2510.25682)
+- 2025-10-30, **PairUni: Pairwise Training for Unified Multimodal Language Models**, Jiani Zheng et.al., Paper: [http://arxiv.org/abs/2510.25682](http://arxiv.org/abs/2510.25682)
 - 2025-10-28, **PRISM-Bench: A Benchmark of Puzzle-Based Visual Tasks with CoT Error Detection**, Yusu Qian et.al., Paper: [http://arxiv.org/abs/2510.23594](http://arxiv.org/abs/2510.23594)
 - 2025-10-28, **Optimizing Retrieval for RAG via Reinforced Contrastive Learning**, Jiawei Zhou et.al., Paper: [http://arxiv.org/abs/2510.24652](http://arxiv.org/abs/2510.24652)
 - 2025-10-29, **OpenReward: Learning to Reward Long-form Agentic Tasks via Reinforcement Learning**, Ziyou Hu et.al., Paper: [http://arxiv.org/abs/2510.24636](http://arxiv.org/abs/2510.24636)
@@ -843,7 +843,7 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 - 2025-10-21, **Exploring Membership Inference Vulnerabilities in Clinical Large Language Models**, Alexander Nemecek et.al., Paper: [http://arxiv.org/abs/2510.18674](http://arxiv.org/abs/2510.18674)
 - 2025-10-23, **Exploring Large Language Models for Access Control Policy Synthesis and Summarization**, Adarsh Vatsa et.al., Paper: [http://arxiv.org/abs/2510.20692](http://arxiv.org/abs/2510.20692)
 - 2025-10-28, **Evolving Diagnostic Agents in a Virtual Clinical Environment**, Pengcheng Qiu et.al., Paper: [http://arxiv.org/abs/2510.24654](http://arxiv.org/abs/2510.24654)
-- 2025-10-29, **Evaluating the Role of Verifiers in Test-Time Scaling for Legal Reasoning Tasks**, Davide Romano et.al., Paper: [http://arxiv.org/abs/2510.25623](http://arxiv.org/abs/2510.25623)
+- 2025-10-30, **Evaluating the Role of Verifiers in Test-Time Scaling for Legal Reasoning Tasks**, Davide Romano et.al., Paper: [http://arxiv.org/abs/2510.25623](http://arxiv.org/abs/2510.25623)
 - 2025-10-21, **Evaluating Large Language Models in detecting Secrets in Android Apps**, Marco Alecci et.al., Paper: [http://arxiv.org/abs/2510.18601](http://arxiv.org/abs/2510.18601)
 - 2025-10-21, **Evaluating LLM-Based Mobile App Recommendations: An Empirical Study**, Quim Motger et.al., Paper: [http://arxiv.org/abs/2510.18364](http://arxiv.org/abs/2510.18364)
 - 2025-10-21, **Enhancing Hotel Recommendations with AI: LLM-Based Review Summarization and Query-Driven Insights**, Nikolaos Belibasakis et.al., Paper: [http://arxiv.org/abs/2510.18277](http://arxiv.org/abs/2510.18277)
@@ -905,7 +905,7 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 - 2025-10-24, **A Multimodal Benchmark for Framing of Oil & Gas Advertising and Potential Greenwashing Detection**, Gaku Morio et.al., Paper: [http://arxiv.org/abs/2510.21679](http://arxiv.org/abs/2510.21679)
 - 2025-10-24, **A Data-Centric Approach to Multilingual E-Commerce Product Search: Case Study on Query-Category and Query-Item Relevance**, Yabo Yin et.al., Paper: [http://arxiv.org/abs/2510.21671](http://arxiv.org/abs/2510.21671)
 
-<p align=right>(<a href=#updated-on-20251030>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20251031>back to top</a>)</p>
 
 ## Reinforcement Learning
 
@@ -992,7 +992,7 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 - 2025-10-21, **PlanU: Large Language Model Decision Making through Planning under Uncertainty**, Ziwei Deng et.al., Paper: [http://arxiv.org/abs/2510.18442](http://arxiv.org/abs/2510.18442)
 - 2025-10-23, **Plan Then Retrieve: Reinforcement Learning-Guided Complex Reasoning over Knowledge Graphs**, Yanlin Song et.al., Paper: [http://arxiv.org/abs/2510.20691](http://arxiv.org/abs/2510.20691)
 - 2025-10-22, **Pico-Banana-400K: A Large-Scale Dataset for Text-Guided Image Editing**, Yusu Qian et.al., Paper: [http://arxiv.org/abs/2510.19808](http://arxiv.org/abs/2510.19808)
-- 2025-10-29, **PairUni: Pairwise Training for Unified Multimodal Language Models**, Jiani Zheng et.al., Paper: [http://arxiv.org/abs/2510.25682](http://arxiv.org/abs/2510.25682)
+- 2025-10-30, **PairUni: Pairwise Training for Unified Multimodal Language Models**, Jiani Zheng et.al., Paper: [http://arxiv.org/abs/2510.25682](http://arxiv.org/abs/2510.25682)
 - 2025-10-28, **Pair Approximation Meets Reality: Diffusion of Innovation in Organizational Networks within the biased-independence q-Voter Model**, Angelika Abramiuk-Szurlej et.al., Paper: [http://arxiv.org/abs/2510.24447](http://arxiv.org/abs/2510.24447)
 - 2025-10-21, **PGTT: Phase-Guided Terrain Traversal for Perceptive Legged Locomotion**, Alexandros Ntagkas et.al., Paper: [http://arxiv.org/abs/2510.18348](http://arxiv.org/abs/2510.18348)
 - 2025-10-21, **PCMS: Parallel Coupler For Multimodel Simulations**, Jacob S. Merson et.al., Paper: [http://arxiv.org/abs/2510.18838](http://arxiv.org/abs/2510.18838)
@@ -1070,7 +1070,7 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 - 2025-10-28, **Evolving Diagnostic Agents in a Virtual Clinical Environment**, Pengcheng Qiu et.al., Paper: [http://arxiv.org/abs/2510.24654](http://arxiv.org/abs/2510.24654)
 - 2025-10-20, **EvoSyn: Generalizable Evolutionary Data Synthesis for Verifiable Learning**, He Du et.al., Paper: [http://arxiv.org/abs/2510.17928](http://arxiv.org/abs/2510.17928)
 - 2025-10-21, **Every Step Evolves: Scaling Reinforcement Learning for Trillion-Scale Thinking Model**, Ling Team et.al., Paper: [http://arxiv.org/abs/2510.18855](http://arxiv.org/abs/2510.18855)
-- 2025-10-29, **Evaluating the Role of Verifiers in Test-Time Scaling for Legal Reasoning Tasks**, Davide Romano et.al., Paper: [http://arxiv.org/abs/2510.25623](http://arxiv.org/abs/2510.25623)
+- 2025-10-30, **Evaluating the Role of Verifiers in Test-Time Scaling for Legal Reasoning Tasks**, Davide Romano et.al., Paper: [http://arxiv.org/abs/2510.25623](http://arxiv.org/abs/2510.25623)
 - 2025-10-20, **Estimating Orbital Parameters of Direct Imaging Exoplanet Using Neural Network**, Bo Liang et.al., Paper: [http://arxiv.org/abs/2510.17459](http://arxiv.org/abs/2510.17459)
 - 2025-10-24, **Enhancing Tactile-based Reinforcement Learning for Robotic Control**, Elle Miller et.al., Paper: [http://arxiv.org/abs/2510.21609](http://arxiv.org/abs/2510.21609)
 - 2025-10-23, **EmbodiedBrain: Expanding Performance Boundaries of Task Planning for Embodied Intelligence**, Ding Zou et.al., Paper: [http://arxiv.org/abs/2510.20578](http://arxiv.org/abs/2510.20578)
@@ -1140,7 +1140,7 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 - 2025-10-23, **A Microphysical Probe of Neutron Star Interiors: Constraining the Equation of State with Glitch Dynamics**, Zhonghao Tu et.al., Paper: [http://arxiv.org/abs/2510.20791](http://arxiv.org/abs/2510.20791)
 - 2025-10-29, **3-Dimensional Adaptive Unstructured Tessellated Look-up Tables for the Approximation of Compton Form Factors**, Charles Hyde et.al., Paper: [http://arxiv.org/abs/2510.25699](http://arxiv.org/abs/2510.25699)
 
-<p align=right>(<a href=#updated-on-20251030>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20251031>back to top</a>)</p>
 
 Notes: 
 

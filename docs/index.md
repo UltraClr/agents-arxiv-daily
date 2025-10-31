@@ -3,7 +3,7 @@ layout: default
 ---
 
 # Agent Research Papers
-### Automatically Updated on 2025.10.30
+### Automatically Updated on 2025.10.31
 Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Autonomous Agent`,`LLM Agent`
 
 > If you have any other keywords, please feel free to let us know :) 
@@ -16,6 +16,7 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 
 | Publish Date | Title | Authors | PDF | Code |
 |:---------|:-----------------------|:---------|:------|:------|
+|**2025-10-30**|**Model-Document Protocol for AI Search**|Hongjin Qian et.al.|[2510.25160](http://arxiv.org/abs/2510.25160)|null|
 |**2025-10-29**|**Process-Level Trajectory Evaluation for Environment Configuration in Software Engineering Agents**|Jiayi Kuang et.al.|[2510.25694](http://arxiv.org/abs/2510.25694)|null|
 |**2025-10-29**|**Communication and Verification in LLM Agents towards Collaboration under Information Asymmetry**|Run Peng et.al.|[2510.25595](http://arxiv.org/abs/2510.25595)|null|
 |**2025-10-29**|**Standardization of Psychiatric Diagnoses -- Role of Fine-tuned LLM Consortium and OpenAI-gpt-oss Reasoning LLM Enabled Decision Support System**|Eranga Bandara et.al.|[2510.25588](http://arxiv.org/abs/2510.25588)|null|
@@ -25,7 +26,6 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 |**2025-10-29**|**From Medical Records to Diagnostic Dialogues: A Clinical-Grounded Approach and Dataset for Psychiatric Comorbidity**|Tianxi Wan et.al.|[2510.25232](http://arxiv.org/abs/2510.25232)|null|
 |**2025-10-29**|**ProMediate: A Socio-cognitive framework for evaluating proactive agents in multi-party negotiation**|Ziyi Liu et.al.|[2510.25224](http://arxiv.org/abs/2510.25224)|null|
 |**2025-10-29**|**FELA: A Multi-Agent Evolutionary System for Feature Engineering of Industrial Event Log Data**|Kun ouyang et.al.|[2510.25223](http://arxiv.org/abs/2510.25223)|null|
-|**2025-10-29**|**Model-Document Protocol for AI Search**|Hongjin Qian et.al.|[2510.25160](http://arxiv.org/abs/2510.25160)|null|
 |**2025-10-29**|**The Iceberg Index: Measuring Workforce Exposure Across the AI Economy**|Ayush Chopra et.al.|[2510.25137](http://arxiv.org/abs/2510.25137)|null|
 |**2025-10-29**|**DEBATE: A Large-Scale Benchmark for Role-Playing LLM Agents in Multi-Agent, Long-Form Debates**|Yun-Shiuan Chuang et.al.|[2510.25110](http://arxiv.org/abs/2510.25110)|null|
 |**2025-10-29**|**KnowCoder-A1: Incentivizing Agentic Reasoning Capability with Outcome Supervision for KBQA**|Zhuo Chen et.al.|[2510.25101](http://arxiv.org/abs/2510.25101)|null|
@@ -681,6 +681,8 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 
 | Publish Date | Title | Authors | PDF | Code |
 |:---------|:-----------------------|:---------|:------|:------|
+|**2025-10-30**|**PairUni: Pairwise Training for Unified Multimodal Language Models**|Jiani Zheng et.al.|[2510.25682](http://arxiv.org/abs/2510.25682)|null|
+|**2025-10-30**|**Evaluating the Role of Verifiers in Test-Time Scaling for Legal Reasoning Tasks**|Davide Romano et.al.|[2510.25623](http://arxiv.org/abs/2510.25623)|null|
 |**2025-10-29**|**Gaperon: A Peppered English-French Generative Language Model Suite**|Nathan Godey et.al.|[2510.25771](http://arxiv.org/abs/2510.25771)|null|
 |**2025-10-29**|**E-Scores for (In)Correctness Assessment of Generative Model Outputs**|Guneet S. Dhillon et.al.|[2510.25770](http://arxiv.org/abs/2510.25770)|null|
 |**2025-10-29**|**Decomposition-Enhanced Training for Post-Hoc Attributions In Language Models**|Sriram Balasubramaniam et.al.|[2510.25766](http://arxiv.org/abs/2510.25766)|null|
@@ -691,12 +693,10 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 |**2025-10-29**|**The Limits of Obliviate: Evaluating Unlearning in LLMs via Stimulus-Knowledge Entanglement-Behavior Framework**|Aakriti Shah et.al.|[2510.25732](http://arxiv.org/abs/2510.25732)|null|
 |**2025-10-29**|**Interpreting LLMs as Credit Risk Classifiers: Do Their Feature Explanations Align with Classical ML?**|Saeed AlMarri et.al.|[2510.25701](http://arxiv.org/abs/2510.25701)|null|
 |**2025-10-29**|**Process-Level Trajectory Evaluation for Environment Configuration in Software Engineering Agents**|Jiayi Kuang et.al.|[2510.25694](http://arxiv.org/abs/2510.25694)|null|
-|**2025-10-29**|**PairUni: Pairwise Training for Unified Multimodal Language Models**|Jiani Zheng et.al.|[2510.25682](http://arxiv.org/abs/2510.25682)|null|
 |**2025-10-29**|**ALDEN: Reinforcement Learning for Active Navigation and Evidence Gathering in Long Documents**|Tianyu Yang et.al.|[2510.25668](http://arxiv.org/abs/2510.25668)|null|
 |**2025-10-29**|**User Misconceptions of LLM-Based Conversational Programming Assistants**|Gabrielle O'Brien et.al.|[2510.25662](http://arxiv.org/abs/2510.25662)|null|
 |**2025-10-29**|**EHR-R1: A Reasoning-Enhanced Foundational Language Model for Electronic Health Record Analysis**|Yusheng Liao et.al.|[2510.25628](http://arxiv.org/abs/2510.25628)|null|
 |**2025-10-29**|**Are Language Models Efficient Reasoners? A Perspective from Logic Programming**|Andreas Opedal et.al.|[2510.25626](http://arxiv.org/abs/2510.25626)|null|
-|**2025-10-29**|**Evaluating the Role of Verifiers in Test-Time Scaling for Legal Reasoning Tasks**|Davide Romano et.al.|[2510.25623](http://arxiv.org/abs/2510.25623)|null|
 |**2025-10-29**|**FARSIQA: Faithful and Advanced RAG System for Islamic Question Answering**|Mohammad Aghajani Asl et.al.|[2510.25621](http://arxiv.org/abs/2510.25621)|null|
 |**2025-10-29**|**Don't Blind Your VLA: Aligning Visual Representations for OOD Generalization**|Nikita Kachaev et.al.|[2510.25616](http://arxiv.org/abs/2510.25616)|null|
 |**2025-10-29**|**INT v.s. FP: A Comprehensive Study of Fine-Grained Low-bit Quantization Formats**|Mengzhao Chen et.al.|[2510.25602](http://arxiv.org/abs/2510.25602)|null|
@@ -906,17 +906,17 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 
 | Publish Date | Title | Authors | PDF | Code |
 |:---------|:-----------------------|:---------|:------|:------|
+|**2025-10-30**|**PairUni: Pairwise Training for Unified Multimodal Language Models**|Jiani Zheng et.al.|[2510.25682](http://arxiv.org/abs/2510.25682)|null|
+|**2025-10-30**|**Evaluating the Role of Verifiers in Test-Time Scaling for Legal Reasoning Tasks**|Davide Romano et.al.|[2510.25623](http://arxiv.org/abs/2510.25623)|null|
 |**2025-10-29**|**MetaLore: Learning to Orchestrate Communication and Computation for Metaverse Synchronization**|Elif Ebru Ohri et.al.|[2510.25705](http://arxiv.org/abs/2510.25705)|null|
 |**2025-10-29**|**Scaling flow-based approaches for topology sampling in $\mathrm{SU}(3)$ gauge theory**|Claudio Bonanno et.al.|[2510.25704](http://arxiv.org/abs/2510.25704)|null|
 |**2025-10-29**|**3-Dimensional Adaptive Unstructured Tessellated Look-up Tables for the Approximation of Compton Form Factors**|Charles Hyde et.al.|[2510.25699](http://arxiv.org/abs/2510.25699)|null|
 |**2025-10-29**|**PyDPF: A Python Package for Differentiable Particle Filtering**|John-Joseph Brady et.al.|[2510.25693](http://arxiv.org/abs/2510.25693)|null|
-|**2025-10-29**|**PairUni: Pairwise Training for Unified Multimodal Language Models**|Jiani Zheng et.al.|[2510.25682](http://arxiv.org/abs/2510.25682)|null|
 |**2025-10-29**|**Navigation in a Three-Dimensional Urban Flow using Deep Reinforcement Learning**|Federica Tonti et.al.|[2510.25679](http://arxiv.org/abs/2510.25679)|null|
 |**2025-10-29**|**ALDEN: Reinforcement Learning for Active Navigation and Evidence Gathering in Long Documents**|Tianyu Yang et.al.|[2510.25668](http://arxiv.org/abs/2510.25668)|null|
 |**2025-10-29**|**Universal Features of Chiral Symmetry Breaking in Large- $N$ QCD**|Claudio Bonanno et.al.|[2510.25644](http://arxiv.org/abs/2510.25644)|null|
 |**2025-10-29**|**Learning to Plan & Schedule with Reinforcement-Learned Bimanual Robot Skills**|Weikang Wan et.al.|[2510.25634](http://arxiv.org/abs/2510.25634)|null|
 |**2025-10-29**|**EHR-R1: A Reasoning-Enhanced Foundational Language Model for Electronic Health Record Analysis**|Yusheng Liao et.al.|[2510.25628](http://arxiv.org/abs/2510.25628)|null|
-|**2025-10-29**|**Evaluating the Role of Verifiers in Test-Time Scaling for Legal Reasoning Tasks**|Davide Romano et.al.|[2510.25623](http://arxiv.org/abs/2510.25623)|null|
 |**2025-10-29**|**Inference on Welfare and Value Functionals under Optimal Treatment Assignment**|Xiaohong Chen et.al.|[2510.25607](http://arxiv.org/abs/2510.25607)|null|
 |**2025-10-29**|**On the instability of local learning algorithms: Q-learning can fail in infinite state spaces**|Vittorio Puricelli et.al.|[2510.25572](http://arxiv.org/abs/2510.25572)|null|
 |**2025-10-29**|**Deep Reinforcement Learning-Based Cooperative Rate Splitting for Satellite-to-Underground Communication Networks**|Kaiqiang Lin et.al.|[2510.25562](http://arxiv.org/abs/2510.25562)|null|
