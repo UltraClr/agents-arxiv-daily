@@ -16,6 +16,26 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 
 | Publish Date | Title | Authors | PDF | Code |
 |:---------|:-----------------------|:---------|:------|:------|
+|**2025-10-31**|**Interaction as Intelligence Part II: Asynchronous Human-Agent Rollout for Long-Horizon Task Training**|Dayuan Fu et.al.|[2510.27630](http://arxiv.org/abs/2510.27630)|null|
+|**2025-10-31**|**Validity Is What You Need**|Sebastian Benthall et.al.|[2510.27628](http://arxiv.org/abs/2510.27628)|null|
+|**2025-10-31**|**Visual Backdoor Attacks on MLLM Embodied Decision Making via Contrastive Trigger Learning**|Qiusi Zhan et.al.|[2510.27623](http://arxiv.org/abs/2510.27623)|null|
+|**2025-10-31**|**VeriMoA: A Mixture-of-Agents Framework for Spec-to-HDL Generation**|Heng Ping et.al.|[2510.27617](http://arxiv.org/abs/2510.27617)|null|
+|**2025-10-31**|**InnovatorBench: Evaluating Agents' Ability to Conduct Innovative LLM Research**|Yunze Wu et.al.|[2510.27598](http://arxiv.org/abs/2510.27598)|null|
+|**2025-10-31**|**Lucky Cars in Fubini Rankings and Unit Fubini Rankings**|Camilo Barreto et.al.|[2510.27574](http://arxiv.org/abs/2510.27574)|null|
+|**2025-10-31**|**Interact-RAG: Reason and Interact with the Corpus, Beyond Black-Box Retrieval**|Yulong Hui et.al.|[2510.27566](http://arxiv.org/abs/2510.27566)|null|
+|**2025-10-31**|**From Pixels to Paths: A Multi-Agent Framework for Editable Scientific Illustration**|Jianwen Sun et.al.|[2510.27452](http://arxiv.org/abs/2510.27452)|null|
+|**2025-10-31**|**Dynamic Affective Memory Management for Personalized LLM Agents**|Junfeng Lu et.al.|[2510.27418](http://arxiv.org/abs/2510.27418)|null|
+|**2025-10-31**|**Realistic pedestrian-driver interaction modelling using multi-agent RL with human perceptual-motor constraints**|Yueyang Wang et.al.|[2510.27383](http://arxiv.org/abs/2510.27383)|null|
+|**2025-10-31**|**ToolScope: An Agentic Framework for Vision-Guided and Long-Horizon Tool Use**|Mengjie Deng et.al.|[2510.27363](http://arxiv.org/abs/2510.27363)|null|
+|**2025-10-31**|**Can LLMs Help You at Work? A Sandbox for Evaluating LLM Agents in Enterprise Environments**|Harsh Vishwakarma et.al.|[2510.27287](http://arxiv.org/abs/2510.27287)|null|
+|**2025-10-31**|**FinPos: A Position-Aware Trading Agent System for Real Financial Markets**|Bijia Liu et.al.|[2510.27251](http://arxiv.org/abs/2510.27251)|null|
+|**2025-10-31**|**Fints: Efficient Inference-Time Personalization for LLMs with Fine-Grained Instance-Tailored Steering**|Kounianhua Du et.al.|[2510.27206](http://arxiv.org/abs/2510.27206)|null|
+|**2025-10-31**|**Glia: A Human-Inspired AI for Automated Systems Design and Optimization**|Pouya Hamadanian et.al.|[2510.27176](http://arxiv.org/abs/2510.27176)|null|
+|**2025-10-31**|**Measuring the Security of Mobile LLM Agents under Adversarial Prompts from Untrusted Third-Party Channels**|Chenghao Du et.al.|[2510.27140](http://arxiv.org/abs/2510.27140)|null|
+|**2025-10-31**|**AI Agents in Drug Discovery**|Srijit Seal et.al.|[2510.27130](http://arxiv.org/abs/2510.27130)|null|
+|**2025-10-31**|**A Memory-Efficient Retrieval Architecture for RAG-Enabled Wearable Medical LLMs-Agents**|Zhipeng Liao et.al.|[2510.27107](http://arxiv.org/abs/2510.27107)|null|
+|**2025-10-31**|**CombiGraph-Vis: A Curated Multimodal Olympiad Benchmark for Discrete Mathematical Reasoning**|Hamed Mahdavi et.al.|[2510.27094](http://arxiv.org/abs/2510.27094)|null|
+|**2025-10-30**|**Adaptive Data Flywheel: Applying MAPE Control Loops to AI Agent Improvement**|Aaditya Shukla et.al.|[2510.27051](http://arxiv.org/abs/2510.27051)|null|
 |**2025-10-30**|**Gistify! Codebase-Level Understanding via Runtime Execution**|Hyunji Lee et.al.|[2510.26790](http://arxiv.org/abs/2510.26790)|null|
 |**2025-10-30**|**Remote Labor Index: Measuring AI Automation of Remote Work**|Mantas Mazeika et.al.|[2510.26787](http://arxiv.org/abs/2510.26787)|null|
 |**2025-10-30**|**Clone Deterministic 3D Worlds with Geometrically-Regularized World Models**|Zaishuo Xia et.al.|[2510.26782](http://arxiv.org/abs/2510.26782)|null|
@@ -701,6 +721,16 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 
 | Publish Date | Title | Authors | PDF | Code |
 |:---------|:-----------------------|:---------|:------|:------|
+|**2025-10-31**|**Continuous Autoregressive Language Models**|Chenze Shao et.al.|[2510.27688](http://arxiv.org/abs/2510.27688)|null|
+|**2025-10-31**|**Phased DMD: Few-step Distribution Matching Distillation via Score Matching within Subintervals**|Xiangyu Fan et.al.|[2510.27684](http://arxiv.org/abs/2510.27684)|null|
+|**2025-10-31**|**PETAR: Localized Findings Generation with Mask-Aware Vision-Language Modeling for PET Automated Reporting**|Danyal Maqbool et.al.|[2510.27680](http://arxiv.org/abs/2510.27680)|null|
+|**2025-10-31**|**On Selecting Few-Shot Examples for LLM-based Code Vulnerability Detection**|Md Abdul Hannan et.al.|[2510.27675](http://arxiv.org/abs/2510.27675)|null|
+|**2025-10-31**|**RDMA Point-to-Point Communication for LLM Systems**|Nandor Licker et.al.|[2510.27656](http://arxiv.org/abs/2510.27656)|null|
+|**2025-10-31**|**SpecAttn: Speculating Sparse Attention**|Harsh Shah et.al.|[2510.27641](http://arxiv.org/abs/2510.27641)|null|
+|**2025-10-31**|**Interaction as Intelligence Part II: Asynchronous Human-Agent Rollout for Long-Horizon Task Training**|Dayuan Fu et.al.|[2510.27630](http://arxiv.org/abs/2510.27630)|null|
+|**2025-10-31**|**Validity Is What You Need**|Sebastian Benthall et.al.|[2510.27628](http://arxiv.org/abs/2510.27628)|null|
+|**2025-10-31**|**Visual Backdoor Attacks on MLLM Embodied Decision Making via Contrastive Trigger Learning**|Qiusi Zhan et.al.|[2510.27623](http://arxiv.org/abs/2510.27623)|null|
+|**2025-10-31**|**VeriMoA: A Mixture-of-Agents Framework for Spec-to-HDL Generation**|Heng Ping et.al.|[2510.27617](http://arxiv.org/abs/2510.27617)|null|
 |**2025-10-30**|**Masked Diffusion Captioning for Visual Feature Learning**|Chao Feng et.al.|[2510.26799](http://arxiv.org/abs/2510.26799)|null|
 |**2025-10-30**|**Defeating the Training-Inference Mismatch via FP16**|Penghui Qi et.al.|[2510.26788](http://arxiv.org/abs/2510.26788)|null|
 |**2025-10-30**|**ChartAB: A Benchmark for Chart Grounding & Dense Alignment**|Aniruddh Bansal et.al.|[2510.26781](http://arxiv.org/abs/2510.26781)|null|
@@ -946,6 +976,26 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 
 | Publish Date | Title | Authors | PDF | Code |
 |:---------|:-----------------------|:---------|:------|:------|
+|**2025-10-31**|**Challenges in Credit Assignment for Multi-Agent Reinforcement Learning in Open Agent Systems**|Alireza Saleh Abadi et.al.|[2510.27659](http://arxiv.org/abs/2510.27659)|null|
+|**2025-10-31**|**Probing cosmic isotropy with Gamma-ray bursts: A dipole and quadrupole analysis of BATSE and Fermi GBM data**|Debosi Mondal et.al.|[2510.27644](http://arxiv.org/abs/2510.27644)|null|
+|**2025-10-31**|**A Comprehensive Stress Test of Truncated Hilbert Space Bases against Green's function Monte Carlo in U(1) Lattice Gauge Theory**|Timo Jacobs et.al.|[2510.27611](http://arxiv.org/abs/2510.27611)|null|
+|**2025-10-31**|**Spatial-SSRL: Enhancing Spatial Understanding via Self-Supervised Reinforcement Learning**|Yuhong Liu et.al.|[2510.27606](http://arxiv.org/abs/2510.27606)|null|
+|**2025-10-31**|**DiffstarPop: A generative physical model of galaxy star formation history**|Alex Alarcon et.al.|[2510.27604](http://arxiv.org/abs/2510.27604)|null|
+|**2025-10-31**|**MARAG-R1: Beyond Single Retriever via Reinforcement-Learned Multi-Tool Agentic Retrieval**|Qi Luo et.al.|[2510.27569](http://arxiv.org/abs/2510.27569)|null|
+|**2025-10-31**|**Interact-RAG: Reason and Interact with the Corpus, Beyond Black-Box Retrieval**|Yulong Hui et.al.|[2510.27566](http://arxiv.org/abs/2510.27566)|null|
+|**2025-10-31**|**Holographic equation of state matched with hadron gas equation as a tool for the study of the quark-gluon plasma evolution**|A. V. Anufriev et.al.|[2510.27541](http://arxiv.org/abs/2510.27541)|null|
+|**2025-10-31**|**pDANSE: Particle-based Data-driven Nonlinear State Estimation from Nonlinear Measurements**|Anubhab Ghosh et.al.|[2510.27503](http://arxiv.org/abs/2510.27503)|null|
+|**2025-10-31**|**Study of Central Exclusive Production of $π^+π^-$, $K^+K^-$ and $p \bar{p}$ Pairs in Proton-Proton Collisions at $\sqrt{s} = 510$ GeV with the STAR Detector at RHIC**|Tomas Truhlar et.al.|[2510.27482](http://arxiv.org/abs/2510.27482)|null|
+|**2025-10-31**|**VCORE: Variance-Controlled Optimization-based Reweighting for Chain-of-Thought Supervision**|Xuan Gong et.al.|[2510.27462](http://arxiv.org/abs/2510.27462)|null|
+|**2025-10-31**|**Modeling partially-ionized dense plasma using wavepacket molecular dynamics**|Daniel Plummer et.al.|[2510.27446](http://arxiv.org/abs/2510.27446)|null|
+|**2025-10-31**|**Learning Soft Robotic Dynamics with Active Exploration**|Hehui Zheng et.al.|[2510.27428](http://arxiv.org/abs/2510.27428)|null|
+|**2025-10-31**|**DeepCompress: A Dual Reward Strategy for Dynamically Exploring and Compressing Reasoning Chains**|Tian Liang et.al.|[2510.27419](http://arxiv.org/abs/2510.27419)|null|
+|**2025-10-31**|**Dialogue as Discovery: Navigating Human Intent Through Principled Inquiry**|Jianwen Sun et.al.|[2510.27410](http://arxiv.org/abs/2510.27410)|null|
+|**2025-10-31**|**Muon veto system for the CROSS double-beta decay search experiment**|A. S. Barabash et.al.|[2510.27406](http://arxiv.org/abs/2510.27406)|null|
+|**2025-10-31**|**Realistic pedestrian-driver interaction modelling using multi-agent RL with human perceptual-motor constraints**|Yueyang Wang et.al.|[2510.27383](http://arxiv.org/abs/2510.27383)|null|
+|**2025-10-31**|**Reasoning Models Sometimes Output Illegible Chains of Thought**|Arun Jose et.al.|[2510.27338](http://arxiv.org/abs/2510.27338)|null|
+|**2025-10-31**|**When AI Trading Agents Compete: Adverse Selection of Meta-Orders by Reinforcement Learning-Based Market Making**|Ali Raza Jafree et.al.|[2510.27334](http://arxiv.org/abs/2510.27334)|null|
+|**2025-10-31**|**Reinforcement Learning for Long-Horizon Unordered Tasks: From Boolean to Coupled Reward Machines**|Kristina Levina et.al.|[2510.27329](http://arxiv.org/abs/2510.27329)|null|
 |**2025-10-30**|**Defeating the Training-Inference Mismatch via FP16**|Penghui Qi et.al.|[2510.26788](http://arxiv.org/abs/2510.26788)|null|
 |**2025-10-30**|**Automated event generation for S-wave quarkonium and leptonium production in NRQCD and NRQED**|Alice Colpani Serri et.al.|[2510.26773](http://arxiv.org/abs/2510.26773)|null|
 |**2025-10-30**|**The Oversight Game: Learning to Cooperatively Balance an AI Agent's Safety and Autonomy**|William Overman et.al.|[2510.26752](http://arxiv.org/abs/2510.26752)|null|
