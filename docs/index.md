@@ -16,11 +16,11 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 
 | Publish Date | Title | Authors | PDF | Code |
 |:---------|:-----------------------|:---------|:------|:------|
-|**2025-10-31**|**Interaction as Intelligence Part II: Asynchronous Human-Agent Rollout for Long-Horizon Task Training**|Dayuan Fu et.al.|[2510.27630](http://arxiv.org/abs/2510.27630)|null|
+|**2025-11-03**|**Interaction as Intelligence Part II: Asynchronous Human-Agent Rollout for Long-Horizon Task Training**|Dayuan Fu et.al.|[2510.27630](http://arxiv.org/abs/2510.27630)|null|
+|**2025-11-03**|**InnovatorBench: Evaluating Agents' Ability to Conduct Innovative LLM Research**|Yunze Wu et.al.|[2510.27598](http://arxiv.org/abs/2510.27598)|null|
 |**2025-10-31**|**Validity Is What You Need**|Sebastian Benthall et.al.|[2510.27628](http://arxiv.org/abs/2510.27628)|null|
 |**2025-10-31**|**Visual Backdoor Attacks on MLLM Embodied Decision Making via Contrastive Trigger Learning**|Qiusi Zhan et.al.|[2510.27623](http://arxiv.org/abs/2510.27623)|null|
 |**2025-10-31**|**VeriMoA: A Mixture-of-Agents Framework for Spec-to-HDL Generation**|Heng Ping et.al.|[2510.27617](http://arxiv.org/abs/2510.27617)|null|
-|**2025-10-31**|**InnovatorBench: Evaluating Agents' Ability to Conduct Innovative LLM Research**|Yunze Wu et.al.|[2510.27598](http://arxiv.org/abs/2510.27598)|null|
 |**2025-10-31**|**Lucky Cars in Fubini Rankings and Unit Fubini Rankings**|Camilo Barreto et.al.|[2510.27574](http://arxiv.org/abs/2510.27574)|null|
 |**2025-10-31**|**Interact-RAG: Reason and Interact with the Corpus, Beyond Black-Box Retrieval**|Yulong Hui et.al.|[2510.27566](http://arxiv.org/abs/2510.27566)|null|
 |**2025-10-31**|**From Pixels to Paths: A Multi-Agent Framework for Editable Scientific Illustration**|Jianwen Sun et.al.|[2510.27452](http://arxiv.org/abs/2510.27452)|null|
@@ -721,19 +721,19 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 
 | Publish Date | Title | Authors | PDF | Code |
 |:---------|:-----------------------|:---------|:------|:------|
+|**2025-11-03**|**Interaction as Intelligence Part II: Asynchronous Human-Agent Rollout for Long-Horizon Task Training**|Dayuan Fu et.al.|[2510.27630](http://arxiv.org/abs/2510.27630)|null|
+|**2025-11-03**|**InnovatorBench: Evaluating Agents' Ability to Conduct Innovative LLM Research**|Yunze Wu et.al.|[2510.27598](http://arxiv.org/abs/2510.27598)|null|
 |**2025-10-31**|**Continuous Autoregressive Language Models**|Chenze Shao et.al.|[2510.27688](http://arxiv.org/abs/2510.27688)|null|
 |**2025-10-31**|**Phased DMD: Few-step Distribution Matching Distillation via Score Matching within Subintervals**|Xiangyu Fan et.al.|[2510.27684](http://arxiv.org/abs/2510.27684)|null|
 |**2025-10-31**|**PETAR: Localized Findings Generation with Mask-Aware Vision-Language Modeling for PET Automated Reporting**|Danyal Maqbool et.al.|[2510.27680](http://arxiv.org/abs/2510.27680)|null|
 |**2025-10-31**|**On Selecting Few-Shot Examples for LLM-based Code Vulnerability Detection**|Md Abdul Hannan et.al.|[2510.27675](http://arxiv.org/abs/2510.27675)|null|
 |**2025-10-31**|**RDMA Point-to-Point Communication for LLM Systems**|Nandor Licker et.al.|[2510.27656](http://arxiv.org/abs/2510.27656)|null|
 |**2025-10-31**|**SpecAttn: Speculating Sparse Attention**|Harsh Shah et.al.|[2510.27641](http://arxiv.org/abs/2510.27641)|null|
-|**2025-10-31**|**Interaction as Intelligence Part II: Asynchronous Human-Agent Rollout for Long-Horizon Task Training**|Dayuan Fu et.al.|[2510.27630](http://arxiv.org/abs/2510.27630)|null|
 |**2025-10-31**|**Validity Is What You Need**|Sebastian Benthall et.al.|[2510.27628](http://arxiv.org/abs/2510.27628)|null|
 |**2025-10-31**|**Visual Backdoor Attacks on MLLM Embodied Decision Making via Contrastive Trigger Learning**|Qiusi Zhan et.al.|[2510.27623](http://arxiv.org/abs/2510.27623)|null|
 |**2025-10-31**|**VeriMoA: A Mixture-of-Agents Framework for Spec-to-HDL Generation**|Heng Ping et.al.|[2510.27617](http://arxiv.org/abs/2510.27617)|null|
 |**2025-10-31**|**ORGEval: Graph-Theoretic Evaluation of LLMs in Optimization Modeling**|Zhuohan Wang et.al.|[2510.27610](http://arxiv.org/abs/2510.27610)|null|
 |**2025-10-31**|**Spatial-SSRL: Enhancing Spatial Understanding via Self-Supervised Reinforcement Learning**|Yuhong Liu et.al.|[2510.27606](http://arxiv.org/abs/2510.27606)|null|
-|**2025-10-31**|**InnovatorBench: Evaluating Agents' Ability to Conduct Innovative LLM Research**|Yunze Wu et.al.|[2510.27598](http://arxiv.org/abs/2510.27598)|null|
 |**2025-10-31**|**AMD MI300X GPU Performance Analysis**|Chandrish Ambati et.al.|[2510.27583](http://arxiv.org/abs/2510.27583)|null|
 |**2025-10-31**|**MARAG-R1: Beyond Single Retriever via Reinforcement-Learned Multi-Tool Agentic Retrieval**|Qi Luo et.al.|[2510.27569](http://arxiv.org/abs/2510.27569)|null|
 |**2025-10-31**|**CodeAlignBench: Assessing Code Generation Models on Developer-Preferred Code Adjustments**|Forough Mehralian et.al.|[2510.27565](http://arxiv.org/abs/2510.27565)|null|
@@ -988,7 +988,7 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 |:---------|:-----------------------|:---------|:------|:------|
 |**2025-10-31**|**Challenges in Credit Assignment for Multi-Agent Reinforcement Learning in Open Agent Systems**|Alireza Saleh Abadi et.al.|[2510.27659](http://arxiv.org/abs/2510.27659)|null|
 |**2025-10-31**|**Probing cosmic isotropy with Gamma-ray bursts: A dipole and quadrupole analysis of BATSE and Fermi GBM data**|Debosi Mondal et.al.|[2510.27644](http://arxiv.org/abs/2510.27644)|null|
-|**2025-10-31**|**A Comprehensive Stress Test of Truncated Hilbert Space Bases against Green's function Monte Carlo in U(1) Lattice Gauge Theory**|Timo Jacobs et.al.|[2510.27611](http://arxiv.org/abs/2510.27611)|null|
+|**2025-10-31**|**A Comprehensive Stress Test of Truncated Hilbert Space Bases against Green's function Monte Carlo in U(1) Lattice Gauge Theory**|Timo Jakobs et.al.|[2510.27611](http://arxiv.org/abs/2510.27611)|null|
 |**2025-10-31**|**Spatial-SSRL: Enhancing Spatial Understanding via Self-Supervised Reinforcement Learning**|Yuhong Liu et.al.|[2510.27606](http://arxiv.org/abs/2510.27606)|null|
 |**2025-10-31**|**DiffstarPop: A generative physical model of galaxy star formation history**|Alex Alarcon et.al.|[2510.27604](http://arxiv.org/abs/2510.27604)|null|
 |**2025-10-31**|**MARAG-R1: Beyond Single Retriever via Reinforcement-Learned Multi-Tool Agentic Retrieval**|Qi Luo et.al.|[2510.27569](http://arxiv.org/abs/2510.27569)|null|
