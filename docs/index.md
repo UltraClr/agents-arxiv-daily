@@ -3,7 +3,7 @@ layout: default
 ---
 
 # Agent Research Papers
-### Automatically Updated on 2025.11.03
+### Automatically Updated on 2025.11.04
 Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Autonomous Agent`,`LLM Agent`
 
 > If you have any other keywords, please feel free to let us know :) 
@@ -731,6 +731,16 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 |**2025-10-31**|**Validity Is What You Need**|Sebastian Benthall et.al.|[2510.27628](http://arxiv.org/abs/2510.27628)|null|
 |**2025-10-31**|**Visual Backdoor Attacks on MLLM Embodied Decision Making via Contrastive Trigger Learning**|Qiusi Zhan et.al.|[2510.27623](http://arxiv.org/abs/2510.27623)|null|
 |**2025-10-31**|**VeriMoA: A Mixture-of-Agents Framework for Spec-to-HDL Generation**|Heng Ping et.al.|[2510.27617](http://arxiv.org/abs/2510.27617)|null|
+|**2025-10-31**|**ORGEval: Graph-Theoretic Evaluation of LLMs in Optimization Modeling**|Zhuohan Wang et.al.|[2510.27610](http://arxiv.org/abs/2510.27610)|null|
+|**2025-10-31**|**Spatial-SSRL: Enhancing Spatial Understanding via Self-Supervised Reinforcement Learning**|Yuhong Liu et.al.|[2510.27606](http://arxiv.org/abs/2510.27606)|null|
+|**2025-10-31**|**InnovatorBench: Evaluating Agents' Ability to Conduct Innovative LLM Research**|Yunze Wu et.al.|[2510.27598](http://arxiv.org/abs/2510.27598)|null|
+|**2025-10-31**|**AMD MI300X GPU Performance Analysis**|Chandrish Ambati et.al.|[2510.27583](http://arxiv.org/abs/2510.27583)|null|
+|**2025-10-31**|**MARAG-R1: Beyond Single Retriever via Reinforcement-Learned Multi-Tool Agentic Retrieval**|Qi Luo et.al.|[2510.27569](http://arxiv.org/abs/2510.27569)|null|
+|**2025-10-31**|**CodeAlignBench: Assessing Code Generation Models on Developer-Preferred Code Adjustments**|Forough Mehralian et.al.|[2510.27565](http://arxiv.org/abs/2510.27565)|null|
+|**2025-10-31**|**Multilingual BERT language model for medical tasks: Evaluation on domain-specific adaptation and cross-linguality**|Yinghao Luo et.al.|[2510.27552](http://arxiv.org/abs/2510.27552)|null|
+|**2025-10-31**|**Mechanics of Learned Reasoning 1: TempoBench, A Benchmark for Interpretable Deconstruction of Reasoning System Performance**|Nikolaus Holzer et.al.|[2510.27544](http://arxiv.org/abs/2510.27544)|null|
+|**2025-10-31**|**DialectalArabicMMLU: Benchmarking Dialectal Capabilities in Arabic and Multilingual Language Models**|Malik H. Altakrori et.al.|[2510.27543](http://arxiv.org/abs/2510.27543)|null|
+|**2025-10-31**|**Patient-Centered Summarization Framework for AI Clinical Summarization: A Mixed-Methods Design**|Maria Lizarazo Jimenez et.al.|[2510.27535](http://arxiv.org/abs/2510.27535)|null|
 |**2025-10-30**|**Masked Diffusion Captioning for Visual Feature Learning**|Chao Feng et.al.|[2510.26799](http://arxiv.org/abs/2510.26799)|null|
 |**2025-10-30**|**Defeating the Training-Inference Mismatch via FP16**|Penghui Qi et.al.|[2510.26788](http://arxiv.org/abs/2510.26788)|null|
 |**2025-10-30**|**ChartAB: A Benchmark for Chart Grounding & Dense Alignment**|Aniruddh Bansal et.al.|[2510.26781](http://arxiv.org/abs/2510.26781)|null|
