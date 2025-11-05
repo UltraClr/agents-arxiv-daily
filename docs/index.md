@@ -16,6 +16,16 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 
 | Publish Date | Title | Authors | PDF | Code |
 |:---------|:-----------------------|:---------|:------|:------|
+|**2025-11-04**|**Kosmos: An AI Scientist for Autonomous Discovery**|Ludovico Mitchener et.al.|[2511.02824](http://arxiv.org/abs/2511.02824)|null|
+|**2025-11-04**|**Optimizing AI Agent Attacks With Synthetic Data**|Chloe Loughridge et.al.|[2511.02823](http://arxiv.org/abs/2511.02823)|null|
+|**2025-11-04**|**MemSearcher: Training LLMs to Reason, Search and Manage Memory via End-to-End Reinforcement Learning**|Qianhao Yuan et.al.|[2511.02805](http://arxiv.org/abs/2511.02805)|null|
+|**2025-11-04**|**1 PoCo: Agentic Proof-of-Concept Exploit Generation for Smart Contracts**|Vivi Andersson et.al.|[2511.02780](http://arxiv.org/abs/2511.02780)|null|
+|**2025-11-04**|**VCode: a Multimodal Coding Benchmark with SVG as Symbolic Visual Representation**|Kevin Qinghong Lin et.al.|[2511.02778](http://arxiv.org/abs/2511.02778)|null|
+|**2025-11-04**|**From Solo to Symphony: Orchestrating Multi-Agent Collaboration with Single-Agent Demos**|Xun Wang et.al.|[2511.02762](http://arxiv.org/abs/2511.02762)|null|
+|**2025-11-04**|**CostBench: Evaluating Multi-Turn Cost-Optimal Planning and Adaptation in Dynamic Environments for LLM Tool-Use Agents**|Jiayu Liu et.al.|[2511.02734](http://arxiv.org/abs/2511.02734)|null|
+|**2025-11-04**|**Curriculum Design for Trajectory-Constrained Agent: Compressing Chain-of-Thought Tokens in LLMs**|Georgios Tzannetos et.al.|[2511.02690](http://arxiv.org/abs/2511.02690)|null|
+|**2025-11-04**|**The Collaboration Gap**|Tim R. Davidson et.al.|[2511.02687](http://arxiv.org/abs/2511.02687)|null|
+|**2025-11-04**|**Stochastic Redistribution of Indistinguishable Items in Shared Habitation: A Multi-Agent Simulation Framework**|Syed Haseeb Shah et.al.|[2511.02648](http://arxiv.org/abs/2511.02648)|null|
 |**2025-11-03**|**Interaction as Intelligence Part II: Asynchronous Human-Agent Rollout for Long-Horizon Task Training**|Dayuan Fu et.al.|[2510.27630](http://arxiv.org/abs/2510.27630)|null|
 |**2025-11-03**|**InnovatorBench: Evaluating Agents' Ability to Conduct Innovative LLM Research**|Yunze Wu et.al.|[2510.27598](http://arxiv.org/abs/2510.27598)|null|
 |**2025-10-31**|**Validity Is What You Need**|Sebastian Benthall et.al.|[2510.27628](http://arxiv.org/abs/2510.27628)|null|
@@ -721,6 +731,26 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 
 | Publish Date | Title | Authors | PDF | Code |
 |:---------|:-----------------------|:---------|:------|:------|
+|**2025-11-04**|**Agent-Omni: Test-Time Multimodal Reasoning via Model Coordination for Understanding Anything**|Huawei Lin et.al.|[2511.02834](http://arxiv.org/abs/2511.02834)|null|
+|**2025-11-04**|**In Good GRACEs: Principled Teacher Selection for Knowledge Distillation**|Abhishek Panigrahi et.al.|[2511.02833](http://arxiv.org/abs/2511.02833)|null|
+|**2025-11-04**|**TWIST2: Scalable, Portable, and Holistic Humanoid Data Collection System**|Yanjie Ze et.al.|[2511.02832](http://arxiv.org/abs/2511.02832)|null|
+|**2025-11-04**|**Can LLMs subtract numbers?**|Mayank Jobanputra et.al.|[2511.02795](http://arxiv.org/abs/2511.02795)|null|
+|**2025-11-04**|**When One Modality Sabotages the Others: A Diagnostic Lens on Multimodal Reasoning**|Chenyu Zhang et.al.|[2511.02794](http://arxiv.org/abs/2511.02794)|null|
+|**2025-11-04**|**When Visualizing is the First Step to Reasoning: MIRA, a Benchmark for Visual Chain-of-Thought**|Yiyang Zhou et.al.|[2511.02779](http://arxiv.org/abs/2511.02779)|null|
+|**2025-11-04**|**XR-1: Towards Versatile Vision-Language-Action Models via Learning Unified Vision-Motion Representations**|Shichao Fan et.al.|[2511.02776](http://arxiv.org/abs/2511.02776)|null|
+|**2025-11-04**|**Dynamic Reflections: Probing Video Representations with Text Alignment**|Tyler Zhu et.al.|[2511.02767](http://arxiv.org/abs/2511.02767)|null|
+|**2025-11-04**|**LLM-Supported Formal Knowledge Representation for Enhancing Control Engineering Content with an Interactive Semantic Layer**|Julius Fiedler et.al.|[2511.02759](http://arxiv.org/abs/2511.02759)|null|
+|**2025-11-04**|**ConMeZO: Adaptive Descent-Direction Sampling for Gradient-Free Finetuning of Large Language Models**|Lejs Deen Behric et.al.|[2511.02757](http://arxiv.org/abs/2511.02757)|null|
+|**2025-11-04**|**Controlling Performance and Budget of a Centralized Multi-agent LLM System with Reinforcement Learning**|Bowen Jin et.al.|[2511.02755](http://arxiv.org/abs/2511.02755)|null|
+|**2025-11-04**|**AI Diffusion in Low Resource Language Countries**|Amit Misra et.al.|[2511.02752](http://arxiv.org/abs/2511.02752)|null|
+|**2025-11-04**|**Agentic World Modeling for 6G: Near-Real-Time Generative State-Space Reasoning**|Farhad Rezazadeh et.al.|[2511.02748](http://arxiv.org/abs/2511.02748)|null|
+|**2025-11-04**|**CostBench: Evaluating Multi-Turn Cost-Optimal Planning and Adaptation in Dynamic Environments for LLM Tool-Use Agents**|Jiayu Liu et.al.|[2511.02734](http://arxiv.org/abs/2511.02734)|null|
+|**2025-11-04**|**LLEXICORP: End-user Explainability of Convolutional Neural Networks**|Vojtěch Kůr et.al.|[2511.02720](http://arxiv.org/abs/2511.02720)|null|
+|**2025-11-04**|**ReleaseEval: A Benchmark for Evaluating Language Models in Automated Release Note Generation**|Qianru Meng et.al.|[2511.02713](http://arxiv.org/abs/2511.02713)|null|
+|**2025-11-04**|**VidEmo: Affective-Tree Reasoning for Emotion-Centric Video Foundation Models**|Zhicheng Zhang et.al.|[2511.02712](http://arxiv.org/abs/2511.02712)|null|
+|**2025-11-04**|**Curriculum Design for Trajectory-Constrained Agent: Compressing Chain-of-Thought Tokens in LLMs**|Georgios Tzannetos et.al.|[2511.02690](http://arxiv.org/abs/2511.02690)|null|
+|**2025-11-04**|**Optimal Singular Damage: Efficient LLM Inference in Low Storage Regimes**|Mohammadsajad Alipour et.al.|[2511.02681](http://arxiv.org/abs/2511.02681)|null|
+|**2025-11-04**|**EasyTUS: A Comprehensive Framework for Fast and Accurate Table Union Search across Data Lakes**|Tim Otto et.al.|[2511.02674](http://arxiv.org/abs/2511.02674)|null|
 |**2025-11-03**|**Interaction as Intelligence Part II: Asynchronous Human-Agent Rollout for Long-Horizon Task Training**|Dayuan Fu et.al.|[2510.27630](http://arxiv.org/abs/2510.27630)|null|
 |**2025-11-03**|**InnovatorBench: Evaluating Agents' Ability to Conduct Innovative LLM Research**|Yunze Wu et.al.|[2510.27598](http://arxiv.org/abs/2510.27598)|null|
 |**2025-10-31**|**Continuous Autoregressive Language Models**|Chenze Shao et.al.|[2510.27688](http://arxiv.org/abs/2510.27688)|null|
@@ -986,6 +1016,26 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 
 | Publish Date | Title | Authors | PDF | Code |
 |:---------|:-----------------------|:---------|:------|:------|
+|**2025-11-04**|**Audience Amplified: Virtual Audiences in Asynchronously Performed AR Theater**|You-Jin Kim et.al.|[2511.02807](http://arxiv.org/abs/2511.02807)|null|
+|**2025-11-04**|**MemSearcher: Training LLMs to Reason, Search and Manage Memory via End-to-End Reinforcement Learning**|Qianhao Yuan et.al.|[2511.02805](http://arxiv.org/abs/2511.02805)|null|
+|**2025-11-04**|**From Solo to Symphony: Orchestrating Multi-Agent Collaboration with Single-Agent Demos**|Xun Wang et.al.|[2511.02762](http://arxiv.org/abs/2511.02762)|null|
+|**2025-11-04**|**Controlling Performance and Budget of a Centralized Multi-agent LLM System with Reinforcement Learning**|Bowen Jin et.al.|[2511.02755](http://arxiv.org/abs/2511.02755)|null|
+|**2025-11-04**|**Approximation by Certain Complex Nevai Operators : Theory and Applications**|Priyanka Majethiya et.al.|[2511.02750](http://arxiv.org/abs/2511.02750)|null|
+|**2025-11-04**|**From Densities to Potentials: Benchmarking Local Exchange-Correlation Approximations**|Visagan Ravindran et.al.|[2511.02744](http://arxiv.org/abs/2511.02744)|null|
+|**2025-11-04**|**Bayesian full waveform inversion with learned prior using deep convolutional autoencoder**|Shuhua Hu et.al.|[2511.02737](http://arxiv.org/abs/2511.02737)|null|
+|**2025-11-04**|**Observational tests of the conformal osculating Barthel-Kropina cosmological model**|Himanshu Chaudhary et.al.|[2511.02729](http://arxiv.org/abs/2511.02729)|null|
+|**2025-11-04**|**VidEmo: Affective-Tree Reasoning for Emotion-Centric Video Foundation Models**|Zhicheng Zhang et.al.|[2511.02712](http://arxiv.org/abs/2511.02712)|null|
+|**2025-11-04**|**The two-dimensional optical Su-Schrieffer-Heeger model: ground state and thermodynamic properties**|Jadson L. Portela e Silva et.al.|[2511.02707](http://arxiv.org/abs/2511.02707)|null|
+|**2025-11-04**|**Optimizing Kernel Discrepancies via Subset Selection**|Deyao Chen et.al.|[2511.02706](http://arxiv.org/abs/2511.02706)|null|
+|**2025-11-04**|**Policy Gradient Methods for Information-Theoretic Opacity in Markov Decision Processes**|Chongyang Shi et.al.|[2511.02704](http://arxiv.org/abs/2511.02704)|null|
+|**2025-11-04**|**Identification and Estimation of Continuous-Time Dynamic Discrete Choice Games**|Jason R. Blevins et.al.|[2511.02701](http://arxiv.org/abs/2511.02701)|null|
+|**2025-11-04**|**Curriculum Design for Trajectory-Constrained Agent: Compressing Chain-of-Thought Tokens in LLMs**|Georgios Tzannetos et.al.|[2511.02690](http://arxiv.org/abs/2511.02690)|null|
+|**2025-11-04**|**RL-Aided Cognitive ISAC: Robust Detection and Sensing-Communication Trade-offs**|Adam Umra et.al.|[2511.02672](http://arxiv.org/abs/2511.02672)|null|
+|**2025-11-04**|**Natural-gas storage modelling by deep reinforcement learning**|Tiziano Balaconi et.al.|[2511.02646](http://arxiv.org/abs/2511.02646)|null|
+|**2025-11-04**|**Supernova Classification using the Recurrent Neural Network in the CSST Ultra-Deep Field Survey**|Minglin Wang et.al.|[2511.02631](http://arxiv.org/abs/2511.02631)|null|
+|**2025-11-04**|**Adaptive GR(1) Specification Repair for Liveness-Preserving Shielding in Reinforcement Learning**|Tiberiu-Andrei Georgescu et.al.|[2511.02605](http://arxiv.org/abs/2511.02605)|null|
+|**2025-11-04**|**CGES: Confidence-Guided Early Stopping for Efficient and Accurate Self-Consistency**|Ehsan Aghazadeh et.al.|[2511.02603](http://arxiv.org/abs/2511.02603)|null|
+|**2025-11-04**|**Directional-Clamp PPO**|Gilad Karpel et.al.|[2511.02577](http://arxiv.org/abs/2511.02577)|null|
 |**2025-10-31**|**Challenges in Credit Assignment for Multi-Agent Reinforcement Learning in Open Agent Systems**|Alireza Saleh Abadi et.al.|[2510.27659](http://arxiv.org/abs/2510.27659)|null|
 |**2025-10-31**|**Probing cosmic isotropy with Gamma-ray bursts: A dipole and quadrupole analysis of BATSE and Fermi GBM data**|Debosi Mondal et.al.|[2510.27644](http://arxiv.org/abs/2510.27644)|null|
 |**2025-10-31**|**A Comprehensive Stress Test of Truncated Hilbert Space Bases against Green's function Monte Carlo in U(1) Lattice Gauge Theory**|Timo Jakobs et.al.|[2510.27611](http://arxiv.org/abs/2510.27611)|null|
