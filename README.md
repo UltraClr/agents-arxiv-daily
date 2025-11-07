@@ -1,5 +1,5 @@
 # Agent Research Papers
-### Automatically Updated on 2025.11.06
+### Automatically Updated on 2025.11.07
 Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Autonomous Agent`,`LLM Agent`
 
 > If you have any other keywords, please feel free to let us know :) 
@@ -751,7 +751,7 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 |**2025-08-21**|**Noise, Adaptation, and Strategy: Assessing LLM Fidelity in Decision-Making**|Yuanjun Feng et.al.|[2508.15926](http://arxiv.org/abs/2508.15926)|null|
 |**2025-08-21**|**End-to-End Agentic RAG System Training for Traceable Diagnostic Reasoning**|Qiaoyu Zheng et.al.|[2508.15746](http://arxiv.org/abs/2508.15746)|null|
 
-<p align=right>(<a href=#updated-on-20251106>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20251107>back to top</a>)</p>
 
 ## Large Language Models
 
@@ -772,6 +772,11 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 |**2025-11-05**|**MultiZebraLogic: A Multilingual Logical Reasoning Benchmark**|Sofie Helene Bruun et.al.|[2511.03553](http://arxiv.org/abs/2511.03553)|null|
 |**2025-11-05**|**Uncovering Code Insights: Leveraging GitHub Artifacts for Deeper Code Understanding**|Ziv Nevo et.al.|[2511.03549](http://arxiv.org/abs/2511.03549)|null|
 |**2025-11-05**|**SOLVE-Med: Specialized Orchestration for Leading Vertical Experts across Medical Specialties**|Roberta Di Marino et.al.|[2511.03542](http://arxiv.org/abs/2511.03542)|null|
+|**2025-11-05**|**U2F: Encouraging SWE-Agent to Seize Novelty without Losing Feasibility**|Wencheng Ye et.al.|[2511.03517](http://arxiv.org/abs/2511.03517)|null|
+|**2025-11-05**|**One Battle After Another: Probing LLMs' Limits on Multi-Turn Instruction Following with a Benchmark Evolving Framework**|Qi Jia et.al.|[2511.03508](http://arxiv.org/abs/2511.03508)|null|
+|**2025-11-05**|**BanglaSTEM: A Parallel Corpus for Technical Domain Bangla-English Translation**|Kazi Reyazul Hasan et.al.|[2511.03498](http://arxiv.org/abs/2511.03498)|null|
+|**2025-11-05**|**RAGBoost: Efficient Retrieval-Augmented Generation with Accuracy-Preserving Context Reuse**|Yinsicheng Jiang et.al.|[2511.03475](http://arxiv.org/abs/2511.03475)|null|
+|**2025-11-05**|**Towards Scalable Web Accessibility Audit with MLLMs as Copilots**|Ming Gu et.al.|[2511.03471](http://arxiv.org/abs/2511.03471)|null|
 |**2025-11-04**|**Agent-Omni: Test-Time Multimodal Reasoning via Model Coordination for Understanding Anything**|Huawei Lin et.al.|[2511.02834](http://arxiv.org/abs/2511.02834)|null|
 |**2025-11-04**|**In Good GRACEs: Principled Teacher Selection for Knowledge Distillation**|Abhishek Panigrahi et.al.|[2511.02833](http://arxiv.org/abs/2511.02833)|null|
 |**2025-11-04**|**TWIST2: Scalable, Portable, and Holistic Humanoid Data Collection System**|Yanjie Ze et.al.|[2511.02832](http://arxiv.org/abs/2511.02832)|null|
@@ -1053,7 +1058,7 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 |**2025-10-21**|**DelvePO: Direction-Guided Self-Evolving Framework for Flexible Prompt Optimization**|Tao Tao et.al.|[2510.18257](http://arxiv.org/abs/2510.18257)|null|
 |**2025-10-21**|**Illusions of reflection: open-ended task reveals systematic failures in Large Language Models' reflective reasoning**|Sion Weatherhead et.al.|[2510.18254](http://arxiv.org/abs/2510.18254)|null|
 
-<p align=right>(<a href=#updated-on-20251106>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20251107>back to top</a>)</p>
 
 ## Reinforcement Learning
 
@@ -1370,7 +1375,7 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 |**2025-10-20**|**Learning to Design Soft Hands using Reward Models**|Xueqian Bai et.al.|[2510.17086](http://arxiv.org/abs/2510.17086)|null|
 |**2025-10-20**|**Consistent Zero-Shot Imitation with Contrastive Goal Inference**|Kathryn Wantlin et.al.|[2510.17059](http://arxiv.org/abs/2510.17059)|null|
 
-<p align=right>(<a href=#updated-on-20251106>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20251107>back to top</a>)</p>
 
 Notes: 
 

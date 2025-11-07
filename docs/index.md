@@ -3,7 +3,7 @@ layout: default
 ---
 
 # Agent Research Papers
-### Automatically Updated on 2025.11.06
+### Automatically Updated on 2025.11.07
 Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Autonomous Agent`,`LLM Agent`
 
 > If you have any other keywords, please feel free to let us know :) 
@@ -765,6 +765,11 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 |**2025-11-05**|**MultiZebraLogic: A Multilingual Logical Reasoning Benchmark**|Sofie Helene Bruun et.al.|[2511.03553](http://arxiv.org/abs/2511.03553)|null|
 |**2025-11-05**|**Uncovering Code Insights: Leveraging GitHub Artifacts for Deeper Code Understanding**|Ziv Nevo et.al.|[2511.03549](http://arxiv.org/abs/2511.03549)|null|
 |**2025-11-05**|**SOLVE-Med: Specialized Orchestration for Leading Vertical Experts across Medical Specialties**|Roberta Di Marino et.al.|[2511.03542](http://arxiv.org/abs/2511.03542)|null|
+|**2025-11-05**|**U2F: Encouraging SWE-Agent to Seize Novelty without Losing Feasibility**|Wencheng Ye et.al.|[2511.03517](http://arxiv.org/abs/2511.03517)|null|
+|**2025-11-05**|**One Battle After Another: Probing LLMs' Limits on Multi-Turn Instruction Following with a Benchmark Evolving Framework**|Qi Jia et.al.|[2511.03508](http://arxiv.org/abs/2511.03508)|null|
+|**2025-11-05**|**BanglaSTEM: A Parallel Corpus for Technical Domain Bangla-English Translation**|Kazi Reyazul Hasan et.al.|[2511.03498](http://arxiv.org/abs/2511.03498)|null|
+|**2025-11-05**|**RAGBoost: Efficient Retrieval-Augmented Generation with Accuracy-Preserving Context Reuse**|Yinsicheng Jiang et.al.|[2511.03475](http://arxiv.org/abs/2511.03475)|null|
+|**2025-11-05**|**Towards Scalable Web Accessibility Audit with MLLMs as Copilots**|Ming Gu et.al.|[2511.03471](http://arxiv.org/abs/2511.03471)|null|
 |**2025-11-04**|**Agent-Omni: Test-Time Multimodal Reasoning via Model Coordination for Understanding Anything**|Huawei Lin et.al.|[2511.02834](http://arxiv.org/abs/2511.02834)|null|
 |**2025-11-04**|**In Good GRACEs: Principled Teacher Selection for Knowledge Distillation**|Abhishek Panigrahi et.al.|[2511.02833](http://arxiv.org/abs/2511.02833)|null|
 |**2025-11-04**|**TWIST2: Scalable, Portable, and Holistic Humanoid Data Collection System**|Yanjie Ze et.al.|[2511.02832](http://arxiv.org/abs/2511.02832)|null|
