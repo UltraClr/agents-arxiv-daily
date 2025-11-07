@@ -21,6 +21,25 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 
 |Publish Date|Title|Authors|PDF|Code|
 |---|---|---|---|---|
+|**2025-11-06**|**DR. WELL: Dynamic Reasoning and Learning with Symbolic World Model for Embodied LLM-Based Multi-Agent Collaboration**|Narjes Nourzad et.al.|[2511.04646](http://arxiv.org/abs/2511.04646)|null|
+|**2025-11-06**|**Unclonable Cryptography in Linear Quantum Memory**|Omri Shmueli et.al.|[2511.04633](http://arxiv.org/abs/2511.04633)|null|
+|**2025-11-06**|**Jr. AI Scientist and Its Risk Report: Autonomous Scientific Exploration from a Baseline Paper**|Atsuyuki Miyai et.al.|[2511.04583](http://arxiv.org/abs/2511.04583)|null|
+|**2025-11-06**|**Large Language Models for Cyber Security**|Raunak Somani et.al.|[2511.04508](http://arxiv.org/abs/2511.04508)|null|
+|**2025-11-06**|**RAGalyst: Automated Human-Aligned Agentic Evaluation for Domain-Specific RAG**|Joshua Gao et.al.|[2511.04502](http://arxiv.org/abs/2511.04502)|null|
+|**2025-11-06**|**Promoting Sustainable Web Agents: Benchmarking and Estimating Energy Consumption through Empirical and Theoretical Analysis**|Lars Krupp et.al.|[2511.04481](http://arxiv.org/abs/2511.04481)|null|
+|**2025-11-06**|**Beyond Shortest Path: Agentic Vehicular Routing with Semantic Context**|Carnot Braun et.al.|[2511.04464](http://arxiv.org/abs/2511.04464)|null|
+|**2025-11-06**|**Speed at the Cost of Quality? The Impact of LLM Agent Assistance on Software Development**|Hao He et.al.|[2511.04427](http://arxiv.org/abs/2511.04427)|null|
+|**2025-11-06**|**Supersymmetry Breaking with Fields, Strings and Branes**|E. Dudas et.al.|[2511.04367](http://arxiv.org/abs/2511.04367)|null|
+|**2025-11-06**|**Shared Spatial Memory Through Predictive Coding**|Zhengru Fang et.al.|[2511.04235](http://arxiv.org/abs/2511.04235)|null|
+|**2025-11-06**|**When Empowerment Disempowers**|Claire Yang et.al.|[2511.04177](http://arxiv.org/abs/2511.04177)|null|
+|**2025-11-06**|**Testing the Testers: Human-Driven Quality Assessment of Voice AI Testing Platforms**|Miguel E. Andres et.al.|[2511.04133](http://arxiv.org/abs/2511.04133)|null|
+|**2025-11-06**|**Agentmandering: A Game-Theoretic Framework for Fair Redistricting via Large Language Model Agents**|Hao Li et.al.|[2511.04076](http://arxiv.org/abs/2511.04076)|null|
+|**2025-11-06**|**Benchmarking and Studying the LLM-based Agent System in End-to-End Software Development**|Zhengran Zeng et.al.|[2511.04064](http://arxiv.org/abs/2511.04064)|null|
+|**2025-11-06**|**ArchPilot: A Proxy-Guided Multi-Agent Approach for Machine Learning Engineering**|Zhuowen Yuan et.al.|[2511.03985](http://arxiv.org/abs/2511.03985)|null|
+|**2025-11-06**|**Multi-Agent Collaborative Framework For Math Problem Generation**|Kia Karbasi et.al.|[2511.03958](http://arxiv.org/abs/2511.03958)|null|
+|**2025-11-06**|**PEFA-AI: Advancing Open-source LLMs for RTL generation using Progressive Error Feedback Agentic-AI**|Athma Narayanan et.al.|[2511.03934](http://arxiv.org/abs/2511.03934)|null|
+|**2025-11-05**|**Security Analysis of Agentic AI Communication Protocols: A Comparative Evaluation**|Yedidel Louck et.al.|[2511.03841](http://arxiv.org/abs/2511.03841)|null|
+|**2025-11-05**|**Scaling Agent Learning via Experience Synthesis**|Zhaorun Chen et.al.|[2511.03773](http://arxiv.org/abs/2511.03773)|null|
 |**2025-11-05**|**Outbidding and Outbluffing Elite Humans: Mastering Liar's Poker via Self-Play and Reinforcement Learning**|Richard Dewey et.al.|[2511.03724](http://arxiv.org/abs/2511.03724)|null|
 |**2025-11-05**|**AnaFlow: Agentic LLM-based Workflow for Reasoning-Driven Explainable and Sample-Efficient Analog Circuit Sizing**|Mohsen Ahmadzadeh et.al.|[2511.03697](http://arxiv.org/abs/2511.03697)|null|
 |**2025-11-05**|**LiveTradeBench: Seeking Real-World Alpha with Large Language Models**|Haofei Yu et.al.|[2511.03628](http://arxiv.org/abs/2511.03628)|null|
@@ -757,6 +776,26 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 
 |Publish Date|Title|Authors|PDF|Code|
 |---|---|---|---|---|
+|**2025-11-06**|**SIMS-V: Simulated Instruction-Tuning for Spatial Video Understanding**|Ellis Brown et.al.|[2511.04668](http://arxiv.org/abs/2511.04668)|null|
+|**2025-11-06**|**SAFe-Copilot: Unified Shared Autonomy Framework**|Phat Nguyen et.al.|[2511.04664](http://arxiv.org/abs/2511.04664)|null|
+|**2025-11-06**|**VeriCoT: Neuro-symbolic Chain-of-Thought Validation via Logical Consistency Checks**|Yu Feng et.al.|[2511.04662](http://arxiv.org/abs/2511.04662)|null|
+|**2025-11-06**|**Benchmark Designers Should "Train on the Test Set" to Expose Exploitable Non-Visual Shortcuts**|Ellis Brown et.al.|[2511.04655](http://arxiv.org/abs/2511.04655)|null|
+|**2025-11-06**|**Logit-Entropy Adaptive Stopping Heuristic for Efficient Chain-of-Thought Reasoning**|Mohammad Atif Quamar et.al.|[2511.04654](http://arxiv.org/abs/2511.04654)|null|
+|**2025-11-06**|**Optimal Inference Schedules for Masked Diffusion Models**|Sitan Chen et.al.|[2511.04647](http://arxiv.org/abs/2511.04647)|null|
+|**2025-11-06**|**When retrieval outperforms generation: Dense evidence retrieval for scalable fake news detection**|Alamgir Munir Qazi et.al.|[2511.04643](http://arxiv.org/abs/2511.04643)|null|
+|**2025-11-06**|**PixCLIP: Achieving Fine-grained Visual Language Understanding via Any-granularity Pixel-Text Alignment Learning**|Yicheng Xiao et.al.|[2511.04601](http://arxiv.org/abs/2511.04601)|null|
+|**2025-11-06**|**Neural Computation Without Slots: Steps Towards Biologically Plausible Memory and Attention in Natural and Artificial Intelligence**|Shaunak Bhandarkar et.al.|[2511.04593](http://arxiv.org/abs/2511.04593)|null|
+|**2025-11-06**|**Question the Questions: Auditing Representation in Online Deliberative Processes**|Soham De et.al.|[2511.04588](http://arxiv.org/abs/2511.04588)|null|
+|**2025-11-06**|**ARETE: an R package for Automated REtrieval from TExt with large language models**|Vasco V. Branco et.al.|[2511.04573](http://arxiv.org/abs/2511.04573)|null|
+|**2025-11-06**|**Thinking with Video: Video Generation as a Promising Multimodal Reasoning Paradigm**|Jingqi Tong et.al.|[2511.04570](http://arxiv.org/abs/2511.04570)|null|
+|**2025-11-06**|**Evo-1: Lightweight Vision-Language-Action Model with Preserved Semantic Alignment**|Tao Lin et.al.|[2511.04555](http://arxiv.org/abs/2511.04555)|null|
+|**2025-11-06**|**LLM-as-a-Judge: Toward World Models for Slate Recommendation Systems**|Baptiste Bonin et.al.|[2511.04541](http://arxiv.org/abs/2511.04541)|null|
+|**2025-11-06**|**From Model to Breach: Towards Actionable LLM-Generated Vulnerabilities Reporting**|Cyril Vallez et.al.|[2511.04538](http://arxiv.org/abs/2511.04538)|null|
+|**2025-11-06**|**Are language models aware of the road not taken? Token-level uncertainty and hidden state dynamics**|Amir Zur et.al.|[2511.04527](http://arxiv.org/abs/2511.04527)|null|
+|**2025-11-06**|**Large Language Models for Cyber Security**|Raunak Somani et.al.|[2511.04508](http://arxiv.org/abs/2511.04508)|null|
+|**2025-11-06**|**Modeling Clinical Uncertainty in Radiology Reports: from Explicit Uncertainty Markers to Implicit Reasoning Pathways**|Paloma Rabaey et.al.|[2511.04506](http://arxiv.org/abs/2511.04506)|null|
+|**2025-11-06**|**RAGalyst: Automated Human-Aligned Agentic Evaluation for Domain-Specific RAG**|Joshua Gao et.al.|[2511.04502](http://arxiv.org/abs/2511.04502)|null|
+|**2025-11-06**|**Large language models replicate and predict human cooperation across experiments in game theory**|Andrea Cera Palatsi et.al.|[2511.04500](http://arxiv.org/abs/2511.04500)|null|
 |**2025-11-05**|**Disentangled Concepts Speak Louder Than Words:Explainable Video Action Recognition**|Jongseo Lee et.al.|[2511.03725](http://arxiv.org/abs/2511.03725)|null|
 |**2025-11-05**|**Outbidding and Outbluffing Elite Humans: Mastering Liar's Poker via Self-Play and Reinforcement Learning**|Richard Dewey et.al.|[2511.03724](http://arxiv.org/abs/2511.03724)|null|
 |**2025-11-05**|**LLM-enhanced Air Quality Monitoring Interface via Model Context Protocol**|Yu-Erh Pan et.al.|[2511.03706](http://arxiv.org/abs/2511.03706)|null|
@@ -1064,6 +1103,26 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 
 |Publish Date|Title|Authors|PDF|Code|
 |---|---|---|---|---|
+|**2025-11-06**|**GentleHumanoid: Learning Upper-body Compliance for Contact-rich Human and Object Interaction**|Qingzhou Lu et.al.|[2511.04679](http://arxiv.org/abs/2511.04679)|null|
+|**2025-11-06**|**On the Exoplanet Yield of Gaia Astrometry**|Caleb Lammers et.al.|[2511.04673](http://arxiv.org/abs/2511.04673)|null|
+|**2025-11-06**|**Forgetting is Everywhere**|Ben Sanati et.al.|[2511.04666](http://arxiv.org/abs/2511.04666)|null|
+|**2025-11-06**|**Environment Agnostic Goal-Conditioning, A Study of Reward-Free Autonomous Learning**|Hampus Åström et.al.|[2511.04598](http://arxiv.org/abs/2511.04598)|null|
+|**2025-11-06**|**Combining Harmonic Sampling with the Worm Algorithm to Improve the Efficiency of Path Integral Monte Carlo**|Sourav Karmakar et.al.|[2511.04597](http://arxiv.org/abs/2511.04597)|null|
+|**2025-11-06**|**Continuous matrix product operators for quantum fields**|Erickson Tjoa et.al.|[2511.04545](http://arxiv.org/abs/2511.04545)|null|
+|**2025-11-06**|**End-to-End Reinforcement Learning of Koopman Models for eNMPC of an Air Separation Unit**|Daniel Mayfrank et.al.|[2511.04522](http://arxiv.org/abs/2511.04522)|null|
+|**2025-11-06**|**Approaching the thermodynamic limit of a bounded one-component plasma**|D. I. Zhukhovitskii et.al.|[2511.04516](http://arxiv.org/abs/2511.04516)|null|
+|**2025-11-06**|**Scalable Domain-decomposed Monte Carlo Neutral Transport for Nuclear Fusion**|Oskar Lappi et.al.|[2511.04489](http://arxiv.org/abs/2511.04489)|null|
+|**2025-11-06**|**V-Thinker: Interactive Thinking with Images**|Runqi Qiao et.al.|[2511.04460](http://arxiv.org/abs/2511.04460)|null|
+|**2025-11-06**|**Fitting Reinforcement Learning Model to Behavioral Data under Bandits**|Hao Zhu et.al.|[2511.04454](http://arxiv.org/abs/2511.04454)|null|
+|**2025-11-06**|**The Peril of Preference: Why GRPO fails on Ordinal Rewards**|Anisha Garg et.al.|[2511.04439](http://arxiv.org/abs/2511.04439)|null|
+|**2025-11-06**|**Temporal Action Selection for Action Chunking**|Yueyang Weng et.al.|[2511.04421](http://arxiv.org/abs/2511.04421)|null|
+|**2025-11-06**|**On the Estimation of Own Funds for Life Insurers: A Study of Direct, Indirect, and Control Variate Methods in a Risk-Neutral Pricing Framework**|Mark-Oliver Wolf et.al.|[2511.04412](http://arxiv.org/abs/2511.04412)|null|
+|**2025-11-06**|**Mixed-State Measurement-Induced Phase Transitions in Imaginary-Time Dynamics**|Yi-Ming Ding et.al.|[2511.04402](http://arxiv.org/abs/2511.04402)|null|
+|**2025-11-06**|**Artificial Precision Polarization Array: Sensitivity for the axion-like dark matter with clock satellites**|Hanyu Jiang et.al.|[2511.04400](http://arxiv.org/abs/2511.04400)|null|
+|**2025-11-06**|**GraSP-VLA: Graph-based Symbolic Action Representation for Long-Horizon Planning with VLA Policies**|Maëlic Neau et.al.|[2511.04357](http://arxiv.org/abs/2511.04357)|null|
+|**2025-11-06**|**Stochastic simulation of partial discharge inception**|Jannis Teunissen et.al.|[2511.04356](http://arxiv.org/abs/2511.04356)|null|
+|**2025-11-06**|**MacroNav: Multi-Task Context Representation Learning Enables Efficient Navigation in Unknown Environments**|Kuankuan Sima et.al.|[2511.04320](http://arxiv.org/abs/2511.04320)|null|
+|**2025-11-06**|**DeepPAAC: A New Deep Galerkin Method for Principal-Agent Problems**|Michael Ludkovski et.al.|[2511.04309](http://arxiv.org/abs/2511.04309)|null|
 |**2025-11-05**|**Outbidding and Outbluffing Elite Humans: Mastering Liar's Poker via Self-Play and Reinforcement Learning**|Richard Dewey et.al.|[2511.03724](http://arxiv.org/abs/2511.03724)|null|
 |**2025-11-05**|**Shrinking the Variance: Shrinkage Baselines for Reinforcement Learning with Verifiable Rewards**|Guanning Zeng et.al.|[2511.03710](http://arxiv.org/abs/2511.03710)|null|
 |**2025-11-05**|**AnaFlow: Agentic LLM-based Workflow for Reasoning-Driven Explainable and Sample-Efficient Analog Circuit Sizing**|Mohsen Ahmadzadeh et.al.|[2511.03697](http://arxiv.org/abs/2511.03697)|null|
