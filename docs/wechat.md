@@ -1,5 +1,5 @@
 # Agent Research Papers
-> Updated on 2025.11.09
+> Updated on 2025.11.10
 Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Autonomous Agent`,`LLM Agent`
 
 > If you have any other keywords, please feel free to let us know :) 
@@ -768,7 +768,7 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 - 2025-10-13, **$How^{2}$ : How to learn from procedural How-to questions**, Gautier Dagan et.al., Paper: [http://arxiv.org/abs/2510.11144](http://arxiv.org/abs/2510.11144)
 - 2025-09-27, **"Shall We Dig Deeper?": Designing and Evaluating Strategies for LLM Agents to Advance Knowledge Co-Construction in Asynchronous Online Discussions**, Yuanhao Zhang et.al., Paper: [http://arxiv.org/abs/2509.23327](http://arxiv.org/abs/2509.23327)
 
-<p align=right>(<a href=#updated-on-20251109>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20251110>back to top</a>)</p>
 
 ## Large Language Models
 
@@ -1093,7 +1093,7 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 - 2025-10-24, **A Multimodal Benchmark for Framing of Oil & Gas Advertising and Potential Greenwashing Detection**, Gaku Morio et.al., Paper: [http://arxiv.org/abs/2510.21679](http://arxiv.org/abs/2510.21679)
 - 2025-10-24, **A Data-Centric Approach to Multilingual E-Commerce Product Search: Case Study on Query-Category and Query-Item Relevance**, Yabo Yin et.al., Paper: [http://arxiv.org/abs/2510.21671](http://arxiv.org/abs/2510.21671)
 
-<p align=right>(<a href=#updated-on-20251109>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20251110>back to top</a>)</p>
 
 ## Reinforcement Learning
 
@@ -1428,7 +1428,7 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 - 2025-10-31, **A Comprehensive Stress Test of Truncated Hilbert Space Bases against Green's function Monte Carlo in U(1) Lattice Gauge Theory**, Timo Jakobs et.al., Paper: [http://arxiv.org/abs/2510.27611](http://arxiv.org/abs/2510.27611)
 - 2025-10-29, **3-Dimensional Adaptive Unstructured Tessellated Look-up Tables for the Approximation of Compton Form Factors**, Charles Hyde et.al., Paper: [http://arxiv.org/abs/2510.25699](http://arxiv.org/abs/2510.25699)
 
-<p align=right>(<a href=#updated-on-20251109>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20251110>back to top</a>)</p>
 
 Notes: 
 
