@@ -16,6 +16,26 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 
 | Publish Date | Title | Authors | PDF | Code |
 |:---------|:-----------------------|:---------|:------|:------|
+|**2025-11-10**|**DigiData: Training and Evaluating General-Purpose Mobile Control Agents**|Yuxuan Sun et.al.|[2511.07413](http://arxiv.org/abs/2511.07413)|null|
+|**2025-11-10**|**TwinOR: Photorealistic Digital Twins of Dynamic Operating Rooms for Embodied AI Research**|Han Zhang et.al.|[2511.07412](http://arxiv.org/abs/2511.07412)|null|
+|**2025-11-10**|**People Perceive More Phantom Costs From Autonomous Agents When They Make Unreasonably Generous Offers**|Benjamin Lebrun et.al.|[2511.07401](http://arxiv.org/abs/2511.07401)|null|
+|**2025-11-10**|**Surgical Agent Orchestration Platform for Voice-directed Patient Data Interaction**|Hyeryun Park et.al.|[2511.07392](http://arxiv.org/abs/2511.07392)|null|
+|**2025-11-10**|**FinRpt: Dataset, Evaluation System and LLM-based Multi-agent Framework for Equity Research Report Generation**|Song Jin et.al.|[2511.07322](http://arxiv.org/abs/2511.07322)|null|
+|**2025-11-10**|**JPRO: Automated Multimodal Jailbreaking via Multi-Agent Collaboration Framework**|Yuxuan Zhou et.al.|[2511.07315](http://arxiv.org/abs/2511.07315)|null|
+|**2025-11-10**|**When Intelligence Overloads Infrastructure: A Forecast Model for AI-Driven Bottlenecks**|Gamal Refai-Ahmed et.al.|[2511.07265](http://arxiv.org/abs/2511.07265)|null|
+|**2025-11-10**|**AgenticSciML: Collaborative Multi-Agent Systems for Emergent Discovery in Scientific Machine Learning**|Qile Jiang et.al.|[2511.07262](http://arxiv.org/abs/2511.07262)|null|
+|**2025-11-10**|**Graph Representation-based Model Poisoning on the Heterogeneous Internet of Agents**|Hanlin Cai et.al.|[2511.07176](http://arxiv.org/abs/2511.07176)|null|
+|**2025-11-10**|**LLMscape**|Gottfried Haider et.al.|[2511.07161](http://arxiv.org/abs/2511.07161)|null|
+|**2025-11-10**|**More Agents Helps but Adversarial Robustness Gap Persists**|Khashayar Alavi et.al.|[2511.07112](http://arxiv.org/abs/2511.07112)|null|
+|**2025-11-10**|**LLM Driven Processes to Foster Explainable AI**|Marcel Pehlke et.al.|[2511.07086](http://arxiv.org/abs/2511.07086)|null|
+|**2025-11-10**|**Sequential Causal Normal Form Games: Theory, Computation, and Strategic Signaling**|Dennis Thumm et.al.|[2511.06934](http://arxiv.org/abs/2511.06934)|null|
+|**2025-11-10**|**AgentSUMO: An Agentic Framework for Interactive Simulation Scenario Generation in SUMO via Large Language Models**|Minwoo Jeong et.al.|[2511.06804](http://arxiv.org/abs/2511.06804)|null|
+|**2025-11-10**|**SAFENLIDB: A Privacy-Preserving Safety Alignment Framework for LLM-based Natural Language Database Interfaces**|Ruiheng Liu et.al.|[2511.06778](http://arxiv.org/abs/2511.06778)|null|
+|**2025-11-10**|**S-DAG: A Subject-Based Directed Acyclic Graph for Multi-Agent Heterogeneous Reasoning**|Jiangwen Dong et.al.|[2511.06727](http://arxiv.org/abs/2511.06727)|null|
+|**2025-11-10**|**Explainable Cross-Disease Reasoning for Cardiovascular Risk Assessment from LDCT**|Yifei Zhang et.al.|[2511.06625](http://arxiv.org/abs/2511.06625)|null|
+|**2025-11-09**|**Offloading Data Center Tax**|Akshay Revankar et.al.|[2511.06558](http://arxiv.org/abs/2511.06558)|null|
+|**2025-11-09**|**Brain-Inspired Planning for Better Generalization in Reinforcement Learning**|Mingde "Harry" Zhao et.al.|[2511.06470](http://arxiv.org/abs/2511.06470)|null|
+|**2025-11-09**|**A Multi-Agent System for Semantic Mapping of Relational Data to Knowledge Graphs**|Milena Trajanoska et.al.|[2511.06455](http://arxiv.org/abs/2511.06455)|null|
 |**2025-11-07**|**SWE-Compass: Towards Unified Evaluation of Agentic Coding Abilities for Large Language Models**|Jingxuan Xu et.al.|[2511.05459](http://arxiv.org/abs/2511.05459)|null|
 |**2025-11-07**|**Story Arena: A Multi-Agent Environment for Envisioning the Future of Software Engineering**|Justin D. Weisz et.al.|[2511.05410](http://arxiv.org/abs/2511.05410)|null|
 |**2025-11-07**|**Reasoning Is All You Need for Urban Planning AI**|Sijie Yang et.al.|[2511.05375](http://arxiv.org/abs/2511.05375)|null|
@@ -783,6 +803,26 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 
 | Publish Date | Title | Authors | PDF | Code |
 |:---------|:-----------------------|:---------|:------|:------|
+|**2025-11-10**|**Routing Manifold Alignment Improves Generalization of Mixture-of-Experts LLMs**|Zhongyang Li et.al.|[2511.07419](http://arxiv.org/abs/2511.07419)|null|
+|**2025-11-10**|**Using Vision Language Models as Closed-Loop Symbolic Planners for Robotic Applications: A Control-Theoretic Perspective**|Hao Wang et.al.|[2511.07410](http://arxiv.org/abs/2511.07410)|null|
+|**2025-11-10**|**SPOT: An Annotated French Corpus and Benchmark for Detecting Critical Interventions in Online Conversations**|Manon Berriche et.al.|[2511.07405](http://arxiv.org/abs/2511.07405)|null|
+|**2025-11-10**|**SpatialThinker: Reinforcing 3D Reasoning in Multimodal LLMs via Spatial Rewards**|Hunar Batra et.al.|[2511.07403](http://arxiv.org/abs/2511.07403)|null|
+|**2025-11-10**|**ConvFill: Model Collaboration for Responsive Conversational Voice Agents**|Vidya Srinivas et.al.|[2511.07397](http://arxiv.org/abs/2511.07397)|null|
+|**2025-11-10**|**C3PO: Optimized Large Language Model Cascades with Probabilistic Cost Constraints for Reasoning**|Antonios Valkanas et.al.|[2511.07396](http://arxiv.org/abs/2511.07396)|null|
+|**2025-11-10**|**Surgical Agent Orchestration Platform for Voice-directed Patient Data Interaction**|Hyeryun Park et.al.|[2511.07392](http://arxiv.org/abs/2511.07392)|null|
+|**2025-11-10**|**Teaching Pretrained Language Models to Think Deeper with Retrofitted Recurrence**|Sean McLeish et.al.|[2511.07384](http://arxiv.org/abs/2511.07384)|null|
+|**2025-11-10**|**Retriv at BLP-2025 Task 2: Test-Driven Feedback-Guided Framework for Bangla-to-Python Code Generation**|K M Nafi Asib et.al.|[2511.07382](http://arxiv.org/abs/2511.07382)|null|
+|**2025-11-10**|**Selecting Auxiliary Data via Neural Tangent Kernels for Low-Resource Domains**|Pingjie Wang et.al.|[2511.07380](http://arxiv.org/abs/2511.07380)|null|
+|**2025-11-10**|**Transformers Provably Learn Chain-of-Thought Reasoning with Length Generalization**|Yu Huang et.al.|[2511.07378](http://arxiv.org/abs/2511.07378)|null|
+|**2025-11-10**|**Provable Benefit of Curriculum in Transformer Tree-Reasoning Post-Training**|Dake Bu et.al.|[2511.07372](http://arxiv.org/abs/2511.07372)|null|
+|**2025-11-10**|**Consistency Is Not Always Correct: Towards Understanding the Role of Exploration in Post-Training Reasoning**|Dake Bu et.al.|[2511.07368](http://arxiv.org/abs/2511.07368)|null|
+|**2025-11-10**|**Self-Evaluating LLMs for Multi-Step Tasks: Stepwise Confidence Estimation for Failure Detection**|Vaibhav Mavi et.al.|[2511.07364](http://arxiv.org/abs/2511.07364)|null|
+|**2025-11-10**|**DeepPersona: A Generative Engine for Scaling Deep Synthetic Personas**|Zhen Wang et.al.|[2511.07338](http://arxiv.org/abs/2511.07338)|null|
+|**2025-11-10**|**Preparation of Fractal-Inspired Computational Architectures for Advanced Large Language Model Analysis**|Yash Mittal et.al.|[2511.07329](http://arxiv.org/abs/2511.07329)|null|
+|**2025-11-10**|**When Bias Pretends to Be Truth: How Spurious Correlations Undermine Hallucination Detection in LLMs**|Shaowen Wang et.al.|[2511.07318](http://arxiv.org/abs/2511.07318)|null|
+|**2025-11-10**|**RLVE: Scaling Up Reinforcement Learning for Language Models with Adaptive Verifiable Environments**|Zhiyuan Zeng et.al.|[2511.07317](http://arxiv.org/abs/2511.07317)|null|
+|**2025-11-10**|**ACE-ICD: Acronym Expansion As Data Augmentation For Automated ICD Coding**|Tuan-Dung Le et.al.|[2511.07311](http://arxiv.org/abs/2511.07311)|null|
+|**2025-11-10**|**VADER: Towards Causal Video Anomaly Understanding with Relation-Aware Large Language Models**|Ying Cheng et.al.|[2511.07299](http://arxiv.org/abs/2511.07299)|null|
 |**2025-11-07**|**Visual Spatial Tuning**|Rui Yang et.al.|[2511.05491](http://arxiv.org/abs/2511.05491)|null|
 |**2025-11-07**|**A Metamorphic Testing Perspective on Knowledge Distillation for Language Models of Code: Does the Student Deeply Mimic the Teacher?**|Md. Abdul Awal et.al.|[2511.05476](http://arxiv.org/abs/2511.05476)|null|
 |**2025-11-07**|**Semantic-Guided Natural Language and Visual Fusion for Cross-Modal Interaction Based on Tiny Object Detection**|Xian-Hong Huang et.al.|[2511.05474](http://arxiv.org/abs/2511.05474)|null|
@@ -1128,6 +1168,26 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 
 | Publish Date | Title | Authors | PDF | Code |
 |:---------|:-----------------------|:---------|:------|:------|
+|**2025-11-10**|**Robot Learning from a Physical World Model**|Jiageng Mao et.al.|[2511.07416](http://arxiv.org/abs/2511.07416)|null|
+|**2025-11-10**|**Unified Humanoid Fall-Safety Policy from a Few Demonstrations**|Zhengjie Xu et.al.|[2511.07407](http://arxiv.org/abs/2511.07407)|null|
+|**2025-11-10**|**SpatialThinker: Reinforcing 3D Reasoning in Multimodal LLMs via Spatial Rewards**|Hunar Batra et.al.|[2511.07403](http://arxiv.org/abs/2511.07403)|null|
+|**2025-11-10**|**Policy Learning for Perturbance-wise Linear Quadratic Control Problem**|Haoran Zhang et.al.|[2511.07388](http://arxiv.org/abs/2511.07388)|null|
+|**2025-11-10**|**samsara: A Continuous-Time Markov Chain Monte Carlo Sampler for Trans-Dimensional Bayesian Analysis**|Gabriele Astorino et.al.|[2511.07385](http://arxiv.org/abs/2511.07385)|null|
+|**2025-11-10**|**Real-Time LiDAR Super-Resolution via Frequency-Aware Multi-Scale Fusion**|June Moh Goo et.al.|[2511.07377](http://arxiv.org/abs/2511.07377)|null|
+|**2025-11-10**|**Provable Benefit of Curriculum in Transformer Tree-Reasoning Post-Training**|Dake Bu et.al.|[2511.07372](http://arxiv.org/abs/2511.07372)|null|
+|**2025-11-10**|**Consistency Is Not Always Correct: Towards Understanding the Role of Exploration in Post-Training Reasoning**|Dake Bu et.al.|[2511.07368](http://arxiv.org/abs/2511.07368)|null|
+|**2025-11-10**|**UAV-Assisted Resilience in 6G and Beyond Network Energy Saving: A Multi-Agent DRL Approach**|Dao Lan Vy Dinh et.al.|[2511.07366](http://arxiv.org/abs/2511.07366)|null|
+|**2025-11-10**|**Bayesian compartmental modelling of MRSA transmission within hospitals in Edmonton, Canada**|Ruoyu Li et.al.|[2511.07353](http://arxiv.org/abs/2511.07353)|null|
+|**2025-11-10**|**Smoothing Out Sticking Points: Sampling from Discrete-Continuous Mixtures with Dynamical Monte Carlo by Mapping Discrete Mass into a Latent Universe**|Andrew Chin et.al.|[2511.07340](http://arxiv.org/abs/2511.07340)|null|
+|**2025-11-10**|**Grounding Computer Use Agents on Human Demonstrations**|Aarash Feizi et.al.|[2511.07332](http://arxiv.org/abs/2511.07332)|null|
+|**2025-11-10**|**Q-RAG: Long Context Multi-step Retrieval via Value-based Embedder Training**|Artyom Sorokin et.al.|[2511.07328](http://arxiv.org/abs/2511.07328)|null|
+|**2025-11-10**|**IterResearch: Rethinking Long-Horizon Agents via Markovian State Reconstruction**|Guoxin Chen et.al.|[2511.07327](http://arxiv.org/abs/2511.07327)|null|
+|**2025-11-10**|**FinRpt: Dataset, Evaluation System and LLM-based Multi-agent Framework for Equity Research Report Generation**|Song Jin et.al.|[2511.07322](http://arxiv.org/abs/2511.07322)|null|
+|**2025-11-10**|**RLVE: Scaling Up Reinforcement Learning for Language Models with Adaptive Verifiable Environments**|Zhiyuan Zeng et.al.|[2511.07317](http://arxiv.org/abs/2511.07317)|null|
+|**2025-11-10**|**Superhuman AI for Stratego Using Self-Play Reinforcement Learning and Test-Time Search**|Samuel Sokota et.al.|[2511.07312](http://arxiv.org/abs/2511.07312)|null|
+|**2025-11-10**|**Enabling Off-Policy Imitation Learning with Deep Actor Critic Stabilization**|Sayambhu Sen et.al.|[2511.07288](http://arxiv.org/abs/2511.07288)|null|
+|**2025-11-10**|**Bridging the divide: axion searches and axino phenomenology at colliders**|Gabe Hoshino et.al.|[2511.07224](http://arxiv.org/abs/2511.07224)|null|
+|**2025-11-10**|**Unlocking the Regression Space**|Liudas Giraitis et.al.|[2511.07183](http://arxiv.org/abs/2511.07183)|null|
 |**2025-11-07**|**Visual Spatial Tuning**|Rui Yang et.al.|[2511.05491](http://arxiv.org/abs/2511.05491)|null|
 |**2025-11-07**|**TimeSearch-R: Adaptive Temporal Search for Long-Form Video Understanding via Self-Verification Reinforcement Learning**|Junwen Pan et.al.|[2511.05489](http://arxiv.org/abs/2511.05489)|null|
 |**2025-11-07**|**Minority-Aware Satisfaction Estimation in Dialogue Systems via Preference-Adaptive Reinforcement Learning**|Yahui Fu et.al.|[2511.05407](http://arxiv.org/abs/2511.05407)|null|
