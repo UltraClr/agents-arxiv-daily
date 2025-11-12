@@ -143,9 +143,9 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 |**2025-10-30**|**One Model to Critique Them All: Rewarding Agentic Tool-Use via Efficient Reasoning**|Renhao Li et.al.|[2510.26167](http://arxiv.org/abs/2510.26167)|null|
 |**2025-10-30**|**The FM Agent**|Annan Li et.al.|[2510.26144](http://arxiv.org/abs/2510.26144)|null|
 |**2025-10-30**|**SIRAJ: Diverse and Efficient Red-Teaming for LLM Agents via Distilled Structured Reasoning**|Kaiwen Zhou et.al.|[2510.26037](http://arxiv.org/abs/2510.26037)|null|
+|**2025-10-30**|**Communication and Verification in LLM Agents towards Collaboration under Information Asymmetry**|Run Peng et.al.|[2510.25595](http://arxiv.org/abs/2510.25595)|null|
 |**2025-10-30**|**Model-Document Protocol for AI Search**|Hongjin Qian et.al.|[2510.25160](http://arxiv.org/abs/2510.25160)|null|
 |**2025-10-29**|**Process-Level Trajectory Evaluation for Environment Configuration in Software Engineering Agents**|Jiayi Kuang et.al.|[2510.25694](http://arxiv.org/abs/2510.25694)|null|
-|**2025-10-29**|**Communication and Verification in LLM Agents towards Collaboration under Information Asymmetry**|Run Peng et.al.|[2510.25595](http://arxiv.org/abs/2510.25595)|null|
 |**2025-10-29**|**Standardization of Psychiatric Diagnoses -- Role of Fine-tuned LLM Consortium and OpenAI-gpt-oss Reasoning LLM Enabled Decision Support System**|Eranga Bandara et.al.|[2510.25588](http://arxiv.org/abs/2510.25588)|null|
 |**2025-10-29**|**What Challenges Do Developers Face in AI Agent Systems? An Empirical Study on Stack Overflow**|Ali Asgari et.al.|[2510.25423](http://arxiv.org/abs/2510.25423)|null|
 |**2025-10-29**|**CRMWeaver: Building Powerful Business Agent via Agentic RL and Shared Memories**|Yilong Lai et.al.|[2510.25333](http://arxiv.org/abs/2510.25333)|null|
@@ -553,6 +553,7 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 |**2025-10-03**|**CoDA: Agentic Systems for Collaborative Data Visualization**|Zichen Chen et.al.|[2510.03194](http://arxiv.org/abs/2510.03194)|null|
 |**2025-10-03**|**AudioToolAgent: An Agentic Framework for Audio-Language Models**|Gijs Wijngaard et.al.|[2510.02995](http://arxiv.org/abs/2510.02995)|null|
 |**2025-10-03**|**Beyond the Final Answer: Evaluating the Reasoning Trajectories of Tool-Augmented Agents**|Wonjoong Kim et.al.|[2510.02837](http://arxiv.org/abs/2510.02837)|null|
+|**2025-10-03**|**AgentDAM: Privacy Leakage Evaluation for Autonomous Web Agents**|Arman Zharmagambetov et.al.|[2503.09780](http://arxiv.org/abs/2503.09780)|null|
 |**2025-10-02**|**AgentCaster: Reasoning-Guided Tornado Forecasting**|Michael Chen et.al.|[2510.03349](http://arxiv.org/abs/2510.03349)|null|
 |**2025-10-02**|**Orchestrating Human-AI Teams: The Manager Agent as a Unifying Research Challenge**|Charlie Masters et.al.|[2510.02557](http://arxiv.org/abs/2510.02557)|null|
 |**2025-10-02**|**StockBench: Can LLM Agents Trade Stocks Profitably In Real-world Markets?**|Yanxu Chen et.al.|[2510.02209](http://arxiv.org/abs/2510.02209)|null|
@@ -803,6 +804,24 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 |**2025-08-22**|**IR-Agent: Expert-Inspired LLM Agents for Structure Elucidation from Infrared Spectra**|Heewoong Noh et.al.|[2508.16112](http://arxiv.org/abs/2508.16112)|null|
 |**2025-08-21**|**Noise, Adaptation, and Strategy: Assessing LLM Fidelity in Decision-Making**|Yuanjun Feng et.al.|[2508.15926](http://arxiv.org/abs/2508.15926)|null|
 |**2025-08-21**|**End-to-End Agentic RAG System Training for Traceable Diagnostic Reasoning**|Qiaoyu Zheng et.al.|[2508.15746](http://arxiv.org/abs/2508.15746)|null|
+|**2025-08-21**|**PROV-AGENT: Unified Provenance for Tracking AI Agent Interactions in Agentic Workflows**|Renan Souza et.al.|[2508.02866](http://arxiv.org/abs/2508.02866)|null|
+|**2025-08-20**|**Chain-of-Agents: End-to-End Agent Foundation Models via Multi-Agent Distillation and Agentic RL**|Weizhen Li et.al.|[2508.13167](http://arxiv.org/abs/2508.13167)|null|
+|**2025-08-13**|**Context Engineering for Multi-Agent LLM Code Assistants Using Elicit, NotebookLM, ChatGPT, and Claude Code**|Muhammad Haseeb et.al.|[2508.08322](http://arxiv.org/abs/2508.08322)|null|
+|**2025-08-08**|**OmniEAR: Benchmarking Agent Reasoning in Embodied Tasks**|Zixuan Wang et.al.|[2508.05614](http://arxiv.org/abs/2508.05614)|null|
+|**2025-08-04**|**Agent Network Protocol Technical White Paper**|Gaowei Chang et.al.|[2508.00007](http://arxiv.org/abs/2508.00007)|null|
+|**2025-07-30**|**Agentic Web: Weaving the Next Web with AI Agents**|Yingxuan Yang et.al.|[2507.21206](http://arxiv.org/abs/2507.21206)|null|
+|**2025-07-04**|**MedAide: Information Fusion and Anatomy of Medical Intents via LLM-based Agent Collaboration**|Dingkang Yang et.al.|[2410.12532](http://arxiv.org/abs/2410.12532)|null|
+|**2025-06-27**|**LLM-Based Human-Agent Collaboration and Interaction Systems: A Survey**|Henry Peng Zou et.al.|[2505.00753](http://arxiv.org/abs/2505.00753)|null|
+|**2025-06-09**|**AutoML-Agent: A Multi-Agent LLM Framework for Full-Pipeline AutoML**|Patara Trirat et.al.|[2410.02958](http://arxiv.org/abs/2410.02958)|null|
+|**2025-06-04**|**Will Agents Replace Us? Perceptions of Autonomous Multi-Agent AI**|Nikola Balic et.al.|[2506.02055](http://arxiv.org/abs/2506.02055)|null|
+|**2025-04-29**|**From LLM Reasoning to Autonomous AI Agents: A Comprehensive Review**|Mohamed Amine Ferrag et.al.|[2504.19678](http://arxiv.org/abs/2504.19678)|null|
+|**2025-02-17**|**AgentGuard: Repurposing Agentic Orchestrator for Safety Evaluation of Tool Orchestration**|Jizhou Chen et.al.|[2502.09809](http://arxiv.org/abs/2502.09809)|null|
+|**2024-12-10**|**Towards Effective GenAI Multi-Agent Collaboration: Design and Evaluation for Enterprise Applications**|Raphael Shu et.al.|[2412.05449](http://arxiv.org/abs/2412.05449)|null|
+|**2024-10-30**|**Watch Out for Your Agents! Investigating Backdoor Threats to LLM-Based Agents**|Wenkai Yang et.al.|[2402.11208](http://arxiv.org/abs/2402.11208)|null|
+|**2024-07-11**|**Internet of Agents: Weaving a Web of Heterogeneous Agents for Collaborative Intelligence**|Weize Chen et.al.|[2407.07061](http://arxiv.org/abs/2407.07061)|null|
+|**2024-02-20**|**KG-Agent: An Efficient Autonomous Agent Framework for Complex Reasoning over Knowledge Graph**|Jinhao Jiang et.al.|[2402.11163](http://arxiv.org/abs/2402.11163)|null|
+|**2024-01-30**|**A mechanism for discovering semantic relationships among agent communication protocols**|Idoia Berges et.al.|[2401.16216](http://arxiv.org/abs/2401.16216)|null|
+|**2024-01-23**|**Semantic Web Technology for Agent Communication Protocols**|Idoia Berges et.al.|[2401.11841](http://arxiv.org/abs/2401.11841)|null|
 
 <p align=right>(<a href=#updated-on-20251112>back to top</a>)</p>
 
@@ -1170,6 +1189,26 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 |**2025-10-21**|**UWBench: A Comprehensive Vision-Language Benchmark for Underwater Understanding**|Da Zhang et.al.|[2510.18262](http://arxiv.org/abs/2510.18262)|null|
 |**2025-10-21**|**DelvePO: Direction-Guided Self-Evolving Framework for Flexible Prompt Optimization**|Tao Tao et.al.|[2510.18257](http://arxiv.org/abs/2510.18257)|null|
 |**2025-10-21**|**Illusions of reflection: open-ended task reveals systematic failures in Large Language Models' reflective reasoning**|Sion Weatherhead et.al.|[2510.18254](http://arxiv.org/abs/2510.18254)|null|
+|**2025-07-31**|**Instruction-tuned Large Language Models for Machine Translation in the Medical Domain**|Miguel Rios et.al.|[2408.16440](http://arxiv.org/abs/2408.16440)|null|
+|**2025-05-28**|**WizardCoder: Empowering Code Large Language Models with Evol-Instruct**|Ziyang Luo et.al.|[2306.08568](http://arxiv.org/abs/2306.08568)|null|
+|**2025-05-28**|**WizardLM: Empowering large pre-trained language models to follow complex instructions**|Can Xu et.al.|[2304.12244](http://arxiv.org/abs/2304.12244)|null|
+|**2025-03-18**|**In-context Learning vs. Instruction Tuning: The Case of Small and Multilingual Language Models**|David Ponce et.al.|[2503.01611](http://arxiv.org/abs/2503.01611)|null|
+|**2025-02-19**|**Efficient Alignment of Large Language Models via Data Sampling**|Amrit Khera et.al.|[2411.10545](http://arxiv.org/abs/2411.10545)|null|
+|**2025-02-19**|**Acoustic Prompt Tuning: Empowering Large Language Models with Audition Capabilities**|Jinhua Liang et.al.|[2312.00249](http://arxiv.org/abs/2312.00249)|null|
+|**2024-11-12**|**PediatricsGPT: Large Language Models as Chinese Medical Assistants for Pediatric Applications**|Dingkang Yang et.al.|[2405.19266](http://arxiv.org/abs/2405.19266)|null|
+|**2024-11-06**|**Multi-modal Preference Alignment Remedies Degradation of Visual Instruction Tuning on Language Models**|Shengzhi Li et.al.|[2402.10884](http://arxiv.org/abs/2402.10884)|null|
+|**2024-05-31**|**X-Instruction: Aligning Language Model in Low-resource Languages with Self-curated Cross-lingual Instructions**|Chong Li et.al.|[2405.19744](http://arxiv.org/abs/2405.19744)|null|
+|**2024-05-31**|**Not All Experts are Equal: Efficient Expert Pruning and Skipping for Mixture-of-Experts Large Language Models**|Xudong Lu et.al.|[2402.14800](http://arxiv.org/abs/2402.14800)|null|
+|**2024-04-17**|**Learning From Failure: Integrating Negative Examples when Fine-tuning Large Language Models as Agents**|Renxi Wang et.al.|[2402.11651](http://arxiv.org/abs/2402.11651)|null|
+|**2024-04-09**|**A Survey on Transformer Compression**|Yehui Tang et.al.|[2402.05964](http://arxiv.org/abs/2402.05964)|null|
+|**2024-03-27**|**Are Compressed Language Models Less Subgroup Robust?**|Leonidas Gee et.al.|[2403.17811](http://arxiv.org/abs/2403.17811)|null|
+|**2024-02-20**|**Demystifying Instruction Mixing for Fine-tuning Large Language Models**|Renxi Wang et.al.|[2312.10793](http://arxiv.org/abs/2312.10793)|null|
+|**2023-11-14**|**FinGPT: Instruction Tuning Benchmark for Open-Source Large Language Models in Financial Datasets**|Neng Wang et.al.|[2310.04793](http://arxiv.org/abs/2310.04793)|null|
+|**2023-11-09**|**PB-LLM: Partially Binarized Large Language Models**|Yuzhang Shang et.al.|[2310.00034](http://arxiv.org/abs/2310.00034)|null|
+|**2023-11-07**|**Adapting Language Models to Compress Contexts**|Alexis Chevalier et.al.|[2305.14788](http://arxiv.org/abs/2305.14788)|null|
+|**2023-10-02**|**Jais and Jais-chat: Arabic-Centric Foundation and Instruction-Tuned Open Generative Large Language Models**|Neha Sengupta et.al.|[2308.16149](http://arxiv.org/abs/2308.16149)|null|
+|**2023-09-06**|**Making Large Language Models Better Reasoners with Alignment**|Peiyi Wang et.al.|[2309.02144](http://arxiv.org/abs/2309.02144)|null|
+|**2023-06-27**|**Low-Rank Prune-And-Factorize for Language Model Compression**|Siyu Ren et.al.|[2306.14152](http://arxiv.org/abs/2306.14152)|null|
 
 <p align=right>(<a href=#updated-on-20251112>back to top</a>)</p>
 
@@ -1547,6 +1586,26 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 |**2025-10-20**|**Continuous Q-Score Matching: Diffusion Guided Reinforcement Learning for Continuous-Time Control**|Chengxiu Hua et.al.|[2510.17122](http://arxiv.org/abs/2510.17122)|null|
 |**2025-10-20**|**Learning to Design Soft Hands using Reward Models**|Xueqian Bai et.al.|[2510.17086](http://arxiv.org/abs/2510.17086)|null|
 |**2025-10-20**|**Consistent Zero-Shot Imitation with Contrastive Goal Inference**|Kathryn Wantlin et.al.|[2510.17059](http://arxiv.org/abs/2510.17059)|null|
+|**2025-05-13**|**ROLeR: Effective Reward Shaping in Offline Reinforcement Learning for Recommender Systems**|Yi Zhang et.al.|[2407.13163](http://arxiv.org/abs/2407.13163)|null|
+|**2025-01-14**|**Towards an Information Theoretic Framework of Context-Based Offline Meta-Reinforcement Learning**|Lanqing Li et.al.|[2402.02429](http://arxiv.org/abs/2402.02429)|null|
+|**2024-12-10**|**Policy Agnostic RL: Offline RL and Online RL Fine-Tuning of Any Class and Backbone**|Max Sobol Mark et.al.|[2412.06685](http://arxiv.org/abs/2412.06685)|null|
+|**2024-10-30**|**Making Offline RL Online: Collaborative World Models for Offline Visual Reinforcement Learning**|Qi Wang et.al.|[2305.15260](http://arxiv.org/abs/2305.15260)|null|
+|**2024-10-03**|**From Reward Shaping to Q-Shaping: Achieving Unbiased Learning with LLM-Guided Knowledge**|Xiefeng Wu et.al.|[2410.01458](http://arxiv.org/abs/2410.01458)|null|
+|**2024-05-30**|**Offline-Boosted Actor-Critic: Adaptively Blending Optimal Historical Behaviors in Deep Off-Policy RL**|Yu Luo et.al.|[2405.18520](http://arxiv.org/abs/2405.18520)|null|
+|**2023-06-22**|**Reward Shaping via Diffusion Process in Reinforcement Learning**|Peeyush Kumar et.al.|[2306.11885](http://arxiv.org/abs/2306.11885)|null|
+|**2023-02-14**|**Review of Deep Reinforcement Learning for Autonomous Driving**|B. Udugama et.al.|[2302.06370](http://arxiv.org/abs/2302.06370)|null|
+|**2023-01-02**|**Offline Policy Optimization in RL with Variance Regularizaton**|Riashat Islam et.al.|[2212.14405](http://arxiv.org/abs/2212.14405)|null|
+|**2022-11-29**|**Domain Generalization for Robust Model-Based Offline Reinforcement Learning**|Alan Clark et.al.|[2211.14827](http://arxiv.org/abs/2211.14827)|null|
+|**2022-11-22**|**Model-based Trajectory Stitching for Improved Offline Reinforcement Learning**|Charles A. Hepburn et.al.|[2211.11603](http://arxiv.org/abs/2211.11603)|null|
+|**2022-11-09**|**State Advantage Weighting for Offline RL**|Jiafei Lyu et.al.|[2210.04251](http://arxiv.org/abs/2210.04251)|null|
+|**2022-11-07**|**Contrastive Value Learning: Implicit Models for Simple Offline RL**|Bogdan Mazoure et.al.|[2211.02100](http://arxiv.org/abs/2211.02100)|null|
+|**2021-11-30**|**Improving Zero-shot Generalization in Offline Reinforcement Learning using Generalized Similarity Functions**|Bogdan Mazoure et.al.|[2111.14629](http://arxiv.org/abs/2111.14629)|null|
+|**2021-09-24**|**A Workflow for Offline Model-Free Robotic Reinforcement Learning**|Aviral Kumar et.al.|[2109.10813](http://arxiv.org/abs/2109.10813)|null|
+|**2020-11-25**|**An Optimistic Perspective on Offline Reinforcement Learning**|Rishabh Agarwal et.al.|[1907.04543](http://arxiv.org/abs/1907.04543)|null|
+|**2020-08-20**|**Conservative Q-Learning for Offline Reinforcement Learning**|Aviral Kumar et.al.|[2006.04779](http://arxiv.org/abs/2006.04779)|null|
+|**2020-05-19**|**On-Policy Robot Imitation Learning from a Converging Supervisor**|Ashwin Balakrishna et.al.|[1907.03423](http://arxiv.org/abs/1907.03423)|null|
+|**2019-11-14**|**Accelerating Training in Pommerman with Imitation and Reinforcement Learning**|Hardik Meisheri et.al.|[1911.04947](http://arxiv.org/abs/1911.04947)|null|
+|**2018-11-20**|**Modelling the Dynamic Joint Policy of Teammates with Attention Multi-agent DDPG**|Hangyu Mao et.al.|[1811.07029](http://arxiv.org/abs/1811.07029)|null|
 
 <p align=right>(<a href=#updated-on-20251112>back to top</a>)</p>
 
