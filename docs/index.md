@@ -3,7 +3,7 @@ layout: default
 ---
 
 # Agent Research Papers
-### Automatically Updated on 2025.11.13
+### Automatically Updated on 2025.11.14
 Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Autonomous Agent`,`LLM Agent`
 
 > If you have any other keywords, please feel free to let us know :) 
@@ -1585,6 +1585,7 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 |**2024-05-30**|**Offline-Boosted Actor-Critic: Adaptively Blending Optimal Historical Behaviors in Deep Off-Policy RL**|Yu Luo et.al.|[2405.18520](http://arxiv.org/abs/2405.18520)|null|
 |**2023-06-22**|**Reward Shaping via Diffusion Process in Reinforcement Learning**|Peeyush Kumar et.al.|[2306.11885](http://arxiv.org/abs/2306.11885)|null|
 |**2023-02-14**|**Review of Deep Reinforcement Learning for Autonomous Driving**|B. Udugama et.al.|[2302.06370](http://arxiv.org/abs/2302.06370)|null|
+|**2023-01-04**|**Transformer in Transformer as Backbone for Deep Reinforcement Learning**|Hangyu Mao et.al.|[2212.14538](http://arxiv.org/abs/2212.14538)|null|
 |**2023-01-02**|**Offline Policy Optimization in RL with Variance Regularizaton**|Riashat Islam et.al.|[2212.14405](http://arxiv.org/abs/2212.14405)|null|
 |**2022-11-29**|**Domain Generalization for Robust Model-Based Offline Reinforcement Learning**|Alan Clark et.al.|[2211.14827](http://arxiv.org/abs/2211.14827)|null|
 |**2022-11-22**|**Model-based Trajectory Stitching for Improved Offline Reinforcement Learning**|Charles A. Hepburn et.al.|[2211.11603](http://arxiv.org/abs/2211.11603)|null|

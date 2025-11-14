@@ -1,5 +1,5 @@
 # Agent Research Papers
-> Updated on 2025.11.13
+> Updated on 2025.11.14
 Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Autonomous Agent`,`LLM Agent`
 
 > If you have any other keywords, please feel free to let us know :) 
@@ -821,7 +821,7 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 - 2025-10-13, **$How^{2}$ : How to learn from procedural How-to questions**, Gautier Dagan et.al., Paper: [http://arxiv.org/abs/2510.11144](http://arxiv.org/abs/2510.11144)
 - 2025-09-27, **"Shall We Dig Deeper?": Designing and Evaluating Strategies for LLM Agents to Advance Knowledge Co-Construction in Asynchronous Online Discussions**, Yuanhao Zhang et.al., Paper: [http://arxiv.org/abs/2509.23327](http://arxiv.org/abs/2509.23327)
 
-<p align=right>(<a href=#updated-on-20251113>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20251114>back to top</a>)</p>
 
 ## Large Language Models
 
@@ -1206,7 +1206,7 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 - 2025-10-24, **A Data-Centric Approach to Multilingual E-Commerce Product Search: Case Study on Query-Category and Query-Item Relevance**, Yabo Yin et.al., Paper: [http://arxiv.org/abs/2510.21671](http://arxiv.org/abs/2510.21671)
 - 2025-11-07, **$\mathbf{S^2LM}$ : Towards Semantic Steganography via Large Language Models**, Huanqi Wu et.al., Paper: [http://arxiv.org/abs/2511.05319](http://arxiv.org/abs/2511.05319)
 
-<p align=right>(<a href=#updated-on-20251113>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20251114>back to top</a>)</p>
 
 ## Reinforcement Learning
 
@@ -1241,6 +1241,7 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 - 2025-11-10, **UAV-Assisted Resilience in 6G and Beyond Network Energy Saving: A Multi-Agent DRL Approach**, Dao Lan Vy Dinh et.al., Paper: [http://arxiv.org/abs/2511.07366](http://arxiv.org/abs/2511.07366)
 - 2025-10-21, **Two-loop QCD corrections for real and off-shell diphoton and triphoton production via quark loops**, Dario Kermanschah et.al., Paper: [http://arxiv.org/abs/2510.18801](http://arxiv.org/abs/2510.18801)
 - 2025-10-30, **Two-Timescale Optimization Framework for IAB-Enabled Heterogeneous UAV Networks**, Jikang Deng et.al., Paper: [http://arxiv.org/abs/2510.26578](http://arxiv.org/abs/2510.26578)
+- 2023-01-04, **Transformer in Transformer as Backbone for Deep Reinforcement Learning**, Hangyu Mao et.al., Paper: [http://arxiv.org/abs/2212.14538](http://arxiv.org/abs/2212.14538)
 - 2025-10-20, **Train for Truth, Keep the Skills: Binary Retrieval-Augmented Reward Mitigates Hallucinations**, Tong Chen et.al., Paper: [http://arxiv.org/abs/2510.17733](http://arxiv.org/abs/2510.17733)
 - 2025-10-20, **Trading with the Devil: Risk and Return in Foundation Model Strategies**, Jinrui Zhang et.al., Paper: [http://arxiv.org/abs/2510.17165](http://arxiv.org/abs/2510.17165)
 - 2025-01-14, **Towards an Information Theoretic Framework of Context-Based Offline Meta-Reinforcement Learning**, Lanqing Li et.al., Paper: [http://arxiv.org/abs/2402.02429](http://arxiv.org/abs/2402.02429)
@@ -1601,7 +1602,7 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 - 2025-10-31, **A Comprehensive Stress Test of Truncated Hilbert Space Bases against Green's function Monte Carlo in U(1) Lattice Gauge Theory**, Timo Jakobs et.al., Paper: [http://arxiv.org/abs/2510.27611](http://arxiv.org/abs/2510.27611)
 - 2025-10-29, **3-Dimensional Adaptive Unstructured Tessellated Look-up Tables for the Approximation of Compton Form Factors**, Charles Hyde et.al., Paper: [http://arxiv.org/abs/2510.25699](http://arxiv.org/abs/2510.25699)
 
-<p align=right>(<a href=#updated-on-20251113>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20251114>back to top</a>)</p>
 
 Notes: 
 
