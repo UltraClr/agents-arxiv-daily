@@ -1,5 +1,5 @@
 # Agent Research Papers
-### Automatically Updated on 2025.11.15
+### Automatically Updated on 2025.11.16
 Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Autonomous Agent`,`LLM Agent`
 
 > If you have any other keywords, please feel free to let us know :) 
@@ -843,7 +843,7 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 |**2024-01-30**|**A mechanism for discovering semantic relationships among agent communication protocols**|Idoia Berges et.al.|[2401.16216](http://arxiv.org/abs/2401.16216)|null|
 |**2024-01-23**|**Semantic Web Technology for Agent Communication Protocols**|Idoia Berges et.al.|[2401.11841](http://arxiv.org/abs/2401.11841)|null|
 
-<p align=right>(<a href=#updated-on-20251115>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20251116>back to top</a>)</p>
 
 ## Large Language Models
 
@@ -1250,7 +1250,7 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 |**2023-09-06**|**Making Large Language Models Better Reasoners with Alignment**|Peiyi Wang et.al.|[2309.02144](http://arxiv.org/abs/2309.02144)|null|
 |**2023-06-27**|**Low-Rank Prune-And-Factorize for Language Model Compression**|Siyu Ren et.al.|[2306.14152](http://arxiv.org/abs/2306.14152)|null|
 
-<p align=right>(<a href=#updated-on-20251115>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20251116>back to top</a>)</p>
 
 ## Reinforcement Learning
 
@@ -1668,7 +1668,7 @@ Current Search Keywords: `Agent`,`Multi-Agent`,`Tool Learning`,`Agent RL`,`Auton
 |**2019-11-14**|**Accelerating Training in Pommerman with Imitation and Reinforcement Learning**|Hardik Meisheri et.al.|[1911.04947](http://arxiv.org/abs/1911.04947)|null|
 |**2018-11-20**|**Modelling the Dynamic Joint Policy of Teammates with Attention Multi-agent DDPG**|Hangyu Mao et.al.|[1811.07029](http://arxiv.org/abs/1811.07029)|null|
 
-<p align=right>(<a href=#updated-on-20251115>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20251116>back to top</a>)</p>
 
 Notes: 
 
